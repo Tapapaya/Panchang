@@ -151,36 +151,38 @@ export interface City {
   country: string;
   lat: number;
   lon: number;
+  // IANA timezone name — passed directly to panchang-ts which handles DST internally
+  tzName: string;
 }
 
 export const CITY_LIST: City[] = [
-  // India
-  { id: 'mumbai', name: 'Mumbai', country: 'India', lat: 19.076, lon: 72.8777 },
-  { id: 'delhi', name: 'New Delhi', country: 'India', lat: 28.7041, lon: 77.1025 },
-  { id: 'bangalore', name: 'Bangalore', country: 'India', lat: 12.9716, lon: 77.5946 },
-  { id: 'kolkata', name: 'Kolkata', country: 'India', lat: 22.5726, lon: 88.3639 },
-  { id: 'chennai', name: 'Chennai', country: 'India', lat: 13.0827, lon: 80.2707 },
-  { id: 'hyderabad', name: 'Hyderabad', country: 'India', lat: 17.385, lon: 78.4867 },
-  { id: 'ahmedabad', name: 'Ahmedabad', country: 'India', lat: 23.0225, lon: 72.5714 },
-  { id: 'pune', name: 'Pune', country: 'India', lat: 18.5204, lon: 73.8567 },
-  // USA
-  { id: 'new-york', name: 'New York', country: 'USA', lat: 40.7128, lon: -74.006 },
-  { id: 'los-angeles', name: 'Los Angeles', country: 'USA', lat: 34.0522, lon: -118.2437 },
-  { id: 'chicago', name: 'Chicago', country: 'USA', lat: 41.8781, lon: -87.6298 },
-  { id: 'houston', name: 'Houston', country: 'USA', lat: 29.7604, lon: -95.3698 },
-  { id: 'san-francisco', name: 'San Francisco', country: 'USA', lat: 37.7749, lon: -122.4194 },
-  // UK
-  { id: 'london', name: 'London', country: 'UK', lat: 51.5074, lon: -0.1278 },
-  { id: 'leicester', name: 'Leicester', country: 'UK', lat: 52.6369, lon: -1.1398 },
-  // Canada
-  { id: 'toronto', name: 'Toronto', country: 'Canada', lat: 43.6532, lon: -79.3832 },
-  { id: 'vancouver', name: 'Vancouver', country: 'Canada', lat: 49.2827, lon: -123.1207 },
-  // Australia
-  { id: 'sydney', name: 'Sydney', country: 'Australia', lat: -33.8688, lon: 151.2093 },
-  { id: 'melbourne', name: 'Melbourne', country: 'Australia', lat: -37.8136, lon: 144.9631 },
-  // Others
-  { id: 'singapore', name: 'Singapore', country: 'Singapore', lat: 1.3521, lon: 103.8198 },
-  { id: 'dubai', name: 'Dubai', country: 'UAE', lat: 25.2048, lon: 55.2708 },
+  // India — all on IST (Asia/Kolkata, UTC+5:30, no DST)
+  { id: 'mumbai',      name: 'Mumbai',      country: 'India',     lat: 19.076,   lon: 72.8777,   tzName: 'Asia/Kolkata' },
+  { id: 'delhi',       name: 'New Delhi',   country: 'India',     lat: 28.7041,  lon: 77.1025,   tzName: 'Asia/Kolkata' },
+  { id: 'bangalore',   name: 'Bangalore',   country: 'India',     lat: 12.9716,  lon: 77.5946,   tzName: 'Asia/Kolkata' },
+  { id: 'kolkata',     name: 'Kolkata',     country: 'India',     lat: 22.5726,  lon: 88.3639,   tzName: 'Asia/Kolkata' },
+  { id: 'chennai',     name: 'Chennai',     country: 'India',     lat: 13.0827,  lon: 80.2707,   tzName: 'Asia/Kolkata' },
+  { id: 'hyderabad',   name: 'Hyderabad',   country: 'India',     lat: 17.385,   lon: 78.4867,   tzName: 'Asia/Kolkata' },
+  { id: 'ahmedabad',   name: 'Ahmedabad',   country: 'India',     lat: 23.0225,  lon: 72.5714,   tzName: 'Asia/Kolkata' },
+  { id: 'pune',        name: 'Pune',        country: 'India',     lat: 18.5204,  lon: 73.8567,   tzName: 'Asia/Kolkata' },
+  // USA — DST-observing; panchang-ts resolves offset from tzName at the given date
+  { id: 'new-york',    name: 'New York',    country: 'USA',       lat: 40.7128,  lon: -74.006,   tzName: 'America/New_York' },
+  { id: 'los-angeles', name: 'Los Angeles', country: 'USA',       lat: 34.0522,  lon: -118.2437, tzName: 'America/Los_Angeles' },
+  { id: 'chicago',     name: 'Chicago',     country: 'USA',       lat: 41.8781,  lon: -87.6298,  tzName: 'America/Chicago' },
+  { id: 'houston',     name: 'Houston',     country: 'USA',       lat: 29.7604,  lon: -95.3698,  tzName: 'America/Chicago' },
+  { id: 'san-francisco', name: 'San Francisco', country: 'USA',   lat: 37.7749,  lon: -122.4194, tzName: 'America/Los_Angeles' },
+  // UK — DST-observing (GMT/BST)
+  { id: 'london',      name: 'London',      country: 'UK',        lat: 51.5074,  lon: -0.1278,   tzName: 'Europe/London' },
+  { id: 'leicester',   name: 'Leicester',   country: 'UK',        lat: 52.6369,  lon: -1.1398,   tzName: 'Europe/London' },
+  // Canada — DST-observing
+  { id: 'toronto',     name: 'Toronto',     country: 'Canada',    lat: 43.6532,  lon: -79.3832,  tzName: 'America/Toronto' },
+  { id: 'vancouver',   name: 'Vancouver',   country: 'Canada',    lat: 49.2827,  lon: -123.1207, tzName: 'America/Vancouver' },
+  // Australia — DST-observing (AEST/AEDT)
+  { id: 'sydney',      name: 'Sydney',      country: 'Australia', lat: -33.8688, lon: 151.2093,  tzName: 'Australia/Sydney' },
+  { id: 'melbourne',   name: 'Melbourne',   country: 'Australia', lat: -37.8136, lon: 144.9631,  tzName: 'Australia/Melbourne' },
+  // Others — no DST
+  { id: 'singapore',   name: 'Singapore',   country: 'Singapore', lat: 1.3521,   lon: 103.8198,  tzName: 'Asia/Singapore' },
+  { id: 'dubai',       name: 'Dubai',       country: 'UAE',       lat: 25.2048,  lon: 55.2708,   tzName: 'Asia/Dubai' },
 ];
 
 // ─── Rules ─────────────────────────────────────────────────────────────────

@@ -1,8 +1,8 @@
 import { getTodayPanchang } from '../PanchangService';
 import type { City } from '../../types/content';
 
-const MUMBAI: City = { id: 'mumbai', name: 'Mumbai', country: 'India', lat: 19.076, lon: 72.8777 };
-const NEW_YORK: City = { id: 'new-york', name: 'New York', country: 'USA', lat: 40.7128, lon: -74.006 };
+const MUMBAI: City = { id: 'mumbai', name: 'Mumbai', country: 'India', lat: 19.076, lon: 72.8777, tzName: 'Asia/Kolkata' };
+const NEW_YORK: City = { id: 'new-york', name: 'New York', country: 'USA', lat: 40.7128, lon: -74.006, tzName: 'America/New_York' };
 
 describe('getTodayPanchang', () => {
   it('returns a PanchangDay for Mumbai on a normal date', () => {

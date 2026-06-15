@@ -23,15 +23,12 @@ function formatTime(d: Date): string {
 }
 
 export function getTodayPanchang(city: City, date: Date = new Date()): PanchangDay | null {
-  // Device timezone: negate getTimezoneOffset() which returns minutes WEST of UTC.
-  // e.g. IST (UTC+5:30): getTimezoneOffset() = -330 → timezone = 330 ✓
-  // e.g. EST (UTC-5): getTimezoneOffset() = 300 → timezone = -300 ✓
-  const timezone = -date.getTimezoneOffset();
-
+  // Pass the city's IANA timezone name so panchang-ts resolves the correct
+  // UTC offset (including DST) for the given date and city — not the device's timezone.
   const result = getDailyPanchang(
     date,
     { latitude: city.lat, longitude: city.lon },
-    { timezone, masaSystem: 'amanta', language: 'en', computeEndTimes: true },
+    { timezone: city.tzName, masaSystem: 'amanta', language: 'en', computeEndTimes: true },
   );
 
   if (!result) return null;

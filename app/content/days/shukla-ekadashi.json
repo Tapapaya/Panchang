@@ -115,9 +115,10 @@
 
   "hair_nail_non_veg": {
     "override_rules": true,
-    "haircut": { "allowed": false, "reason": "Ekadashi is sacred to Vishnu — haircut is forbidden" },
-    "nailcut": { "allowed": false, "reason": "Same as above" },
-    "non_veg": { "allowed": false, "reason": "Non-veg is strictly forbidden on Ekadashi. Even eating grain is avoided, let alone meat." }
+    "haircut": false,
+    "nailcut": false,
+    "non_veg": false,
+    "notes": "Ekadashi is sacred to Vishnu — haircut, nailcut, and non-veg are all forbidden. Even grain is avoided; meat is strictly off-limits."
   },
 
   "marathi_calendar_info": {
@@ -141,5 +142,5 @@
     { "ref": "ekadashi-core-shlokas", "shloka_id": "ekadashi-phala-shloka" }
   ],
 
-  "sankalp_template_id": "ekadashi-vrat-sankalp"
+  "sankalp_template_id": "ekadashi-vrat"
 }
