@@ -1,0 +1,61 @@
+{
+  "id": "ekadashi-core-shlokas",
+  "name": "Core Shlokas for Ekadashi",
+  "category": "ekadashi",
+
+  "shlokas": [
+    {
+      "id": "ekadashi-sankalpa",
+      "name": "Ekadashi Vrat Sankalpa",
+      "purpose": "Declaration of intent before beginning the Ekadashi fast",
+      "when_to_chant": "On the morning of Ekadashi, before sunrise or at sunrise, after bathing",
+      "sanskrit": "ममात्मनः सर्वपापक्षयपूर्वकदीर्घायुर्बलपुष्टिनैरुज्यैश्वर्याभिवृद्ध्यर्थं धर्मार्थकाममोक्षचतुर्विधफलपुरुषार्थसिद्ध्यर्थं श्रीविष्णुप्रसादसिद्ध्यर्थं एकादश्यां उपवासं करिष्ये ।",
+      "iast": "mamātmanaḥ sarvapāpakṣayapūrvakadīrghāyurbalapuṣṭinairujyaiśvaryābhivṛddhyarthaṃ dharmārthakāmamokṣacaturvidhaphalapuruṣārthasiddhyarthaṃ śrīviṣṇuprasādasiddhyarthaṃ ekādaśyāṃ upavāsaṃ kariṣye |",
+      "english_meaning": "For the destruction of all my sins, for long life, strength, good health, and prosperity, for the attainment of the four goals of life (Dharma, Artha, Kama, Moksha), and for the grace of Lord Vishnu — I now undertake the Ekadashi fast.",
+      "notes": "This sankalpa is spoken while holding water in your cupped hands. After completing the sankalpa, release the water into a vessel or into the earth.",
+      "reviewed": false
+    },
+    {
+      "id": "vishnu-ashtottara-ekadashi",
+      "name": "Vishnu Ashtottara Sata Namashtaka (8 names for Ekadashi)",
+      "purpose": "Short recitation of 8 names of Vishnu — ideal for those who cannot recite the full Sahasranama",
+      "when_to_chant": "During Ekadashi puja; after bathing; as many times as possible throughout the day",
+      "sanskrit": "ओं विष्णवे नमः । ओं जनार्दनाय नमः । ओं वासुदेवाय नमः ।\nओं नारायणाय नमः । ओं श्रीधराय नमः । ओं हृषीकेशाय नमः ।\nओं पद्मनाभाय नमः । ओं दामोदराय नमः ॥",
+      "iast": "oṃ viṣṇave namaḥ | oṃ janārdanāya namaḥ | oṃ vāsudevāya namaḥ |\noṃ nārāyaṇāya namaḥ | oṃ śrīdharāya namaḥ | oṃ hṛṣīkeśāya namaḥ |\noṃ padmanābhāya namaḥ | oṃ dāmodarāya namaḥ ||",
+      "english_meaning": "Salutations to Vishnu | Salutations to Janardana (who liberates beings) | Salutations to Vasudeva | Salutations to Narayana | Salutations to Sridhara (bearer of Lakshmi) | Salutations to Hrishikesha (lord of the senses) | Salutations to Padmanabha (lotus-navel) | Salutations to Damodara (the one with a rope around His waist — Krishna).",
+      "word_meanings": {
+        "viṣṇu": "the all-pervading one",
+        "janārdana": "one who grants liberation to devotees",
+        "vāsudeva": "son of Vasudeva; the indweller",
+        "nārāyaṇa": "abode of all beings; refuge of all",
+        "śrīdhara": "bearer of Lakshmi on his chest",
+        "hṛṣīkeśa": "lord of the senses",
+        "padmanābha": "one with a lotus in his navel from which Brahma was born",
+        "dāmodara": "one whose belly was tied with a rope (by Yashoda as Krishna)"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "ekadashi-parana-shloka",
+      "name": "Parana Shloka (Fast-Breaking Prayer)",
+      "purpose": "Chanted the next morning (Dwadashi) when breaking the Ekadashi fast",
+      "when_to_chant": "On Dwadashi morning, before eating, during the auspicious Parana window (shown in app)",
+      "sanskrit": "अज्ञानात् कृतपापानां ज्ञानाद् वा सुरपुङ्गव ।\nपारणं कुरु देवेश एकादश्याः फलं मम ॥",
+      "iast": "ajñānāt kṛtapāpānāṃ jñānād vā surapuṅgava |\npāraṇaṃ kuru deveśa ekādaśyāḥ phalaṃ mama ||",
+      "english_meaning": "O Best among the gods, O Lord of the gods — for the sins I have committed knowingly or unknowingly, please bestow upon me the complete fruit of the Ekadashi fast as I now break it.",
+      "notes": "After chanting, eat Tulsi leaves dissolved in water, then eat food. Ideally break fast with sesame, banana, or other sattvic food. Avoid rice on Dwadashi.",
+      "reviewed": false
+    },
+    {
+      "id": "ekadashi-phala-shloka",
+      "name": "Ekadashi Mahima — Greatness of Ekadashi",
+      "purpose": "Understanding the glory and significance of Ekadashi — for reading or listening",
+      "when_to_chant": "During the day of Ekadashi; while keeping vigil at night (jaagran)",
+      "sanskrit": "एकादश्यां न भुञ्जीत पक्षयोरुभयोरपि ।\nप्राप्नोति ब्रह्महत्यायास्तत्पापं नात्र संशयः ॥",
+      "iast": "ekādaśyāṃ na bhuñjīta pakṣayorobhayorapi |\nprāpnoti brahmahatyāyāstatpāpaṃ nātra saṃśayaḥ ||",
+      "english_meaning": "One who eats on Ekadashi of either paksha (fortnight) incurs the sin equivalent to killing a Brahmin. There is no doubt about this.",
+      "notes": "This verse from the Puranas describes the gravity of breaking the Ekadashi fast — meant to motivate observance, not to cause fear.",
+      "reviewed": false
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "lakshmi-puja-shlokas",
+  "name": "Core Shlokas for Lakshmi Puja",
+  "category": "lakshmi",
+
+  "shlokas": [
+    {
+      "id": "shri-suktam",
+      "name": "Shri Suktam — The Vedic Hymn to Lakshmi (6 Key Verses)",
+      "purpose": "The most ancient and powerful hymn to Goddess Lakshmi, from the Rigveda. Recited during Diwali Lakshmi Puja and all Lakshmi worship.",
+      "when_to_chant": "During Lakshmi Puja on Diwali, Kojagari Purnima, and Fridays. Also chanted when beginning any new financial venture.",
+      "verses": [
+        {
+          "verse_id": "shri-suktam-1",
+          "title": "Opening invocation of Lakshmi",
+          "sanskrit": "हिरण्यवर्णां हरिणीं सुवर्णरजतस्रजाम् ।\nचन्द्रां हिरण्मयीं लक्ष्मीं जातवेदो म आवह ॥",
+          "iast": "hiraṇyavarṇāṃ hariṇīṃ suvarṇarajatasrajām |\ncandraṃ hiraṇmayīṃ lakṣmīṃ jātavedo ma āvaha ||",
+          "english_meaning": "O Jataveda (the all-knowing fire), bring to me Lakshmi — she who is golden in complexion, deer-like in grace, wearing garlands of gold and silver, radiant as the moon, herself made of gold.",
+          "word_meanings": {
+            "hiraṇyavarṇā": "golden-colored, golden-complexioned",
+            "hariṇī": "deer-like, graceful, green/golden",
+            "suvarṇarajatasrajā": "wearing garlands of gold and silver",
+            "candraṃ": "one who is like the moon (radiant, cool, beautiful)",
+            "hiraṇmayī": "made of gold, entirely golden",
+            "jātaveda": "fire — literally 'one who knows all births/knowledge'"
+          },
+          "significance": "The first verse calls Lakshmi through Agni (fire) — everything offered in fire (yajna) reaches the gods. This verse asks Agni to be the messenger, to bring Lakshmi to you."
+        },
+        {
+          "verse_id": "shri-suktam-2",
+          "title": "Lakshmi who brings abundance",
+          "sanskrit": "तां म आवह जातवेदो लक्ष्मीमनपगामिनीम् ।\nयस्यां हिरण्यं विन्देयं गामश्वं पुरुषानहम् ॥",
+          "iast": "tāṃ ma āvaha jātavedo lakṣmīmanapagāminīm |\nyasyāṃ hiraṇyaṃ vindeya gāmaśvaṃ puruṣānaham ||",
+          "english_meaning": "O Jataveda, bring to me that Lakshmi who does not depart once she comes. With her grace, I shall find gold, cows, horses, and good people (servants/helpers/family).",
+          "significance": "This verse names the specific boon: not just any wealth, but Lakshmi who STAYS. The Hindu tradition recognizes that Lakshmi is fickle (Chanchala) — she leaves the lazy, the impure, the dishonest. This prayer asks for the stable form of her grace."
+        },
+        {
+          "verse_id": "shri-suktam-3",
+          "title": "Lakshmi who is Padma — the lotus goddess",
+          "sanskrit": "अश्वपूर्वां रथमध्यां हस्तिनादप्रबोधिनीम् ।\nश्रियं देवीमुपह्वये श्रीर्मा देवी जुषतांम् ॥",
+          "iast": "aśvapūrvāṃ rathamadhyāṃ hastinādaprabodhināim |\nśriyaṃ devīmupahvaye śrīrmā devī juṣatāṃm ||",
+          "english_meaning": "She who is preceded by horses, who rides in the middle of a chariot, who is awakened by the sound of elephants — I call that Shri Devi here. May the Goddess Shri be pleased with me.",
+          "word_meanings": {
+            "aśvapūrvā": "preceded by horses (royal entrance)",
+            "rathamadhyā": "in the center of a chariot",
+            "hastinādapraborhinī": "awakened/heralded by the sound of elephants"
+          },
+          "significance": "This verse describes Lakshmi arriving as royalty — the elephants (Airavata), horses, chariot. This is the famous image of Gajalakshmi (Lakshmi flanked by two elephants pouring water). Lakshmi comes where there is honor, preparation, and welcome."
+        },
+        {
+          "verse_id": "shri-suktam-4",
+          "title": "Lakshmi born from the cosmic lotus",
+          "sanskrit": "कांसोस्मितां हिरण्यप्राकारामार्द्रां ज्वलन्तीं तृप्तां तर्पयन्तीम् ।\nपद्मे स्थितां पद्मवर्णां तामिहोपह्वये श्रियम् ॥",
+          "iast": "kāṃsosmitāṃ hiraṇyaprākārāmārdrāṃ jvalantīṃ tṛptāṃ tarpayantīm |\npadme sthitāṃ padmavarṇāṃ tāmihopahvaye śriyam ||",
+          "english_meaning": "She who smiles like gold (bronze smile), surrounded by a golden fortress, moist/tender, blazing (with energy), content in herself, satisfying others, standing on a lotus, lotus-complexioned — I invoke that Shri here.",
+          "word_meanings": {
+            "ādrā": "moist, tender — the opposite of dry/harsh; compassion flows from her",
+            "jvalantī": "blazing, radiant",
+            "tṛptā": "content, satisfied in herself — Lakshmi is not hungry for more",
+            "tarpayantī": "one who satisfies, nourishes others"
+          }
+        },
+        {
+          "verse_id": "shri-suktam-5",
+          "title": "Removing poverty — the most requested blessing",
+          "sanskrit": "क्षुत्पिपासामलां ज्येष्ठामलक्ष्मीं नाशयाम्यहम् ।\nअभूतिमसमृद्धिं च सर्वां निर्णुद मे गृहात् ॥",
+          "iast": "kṣutpipāsāmalāṃ jyeṣṭhāmalakṣmīṃ nāśayāmyaham |\nabhūtimasamṛddhiṃ ca sarvāṃ nirṇuda me gṛhāt ||",
+          "english_meaning": "I destroy Alakshmi — the elder sister of Lakshmi, who is the impurity of hunger and thirst. Drive away all misfortune and lack of prosperity from my home.",
+          "significance": "This verse names Alakshmi — the opposite of Lakshmi. Alakshmi represents poverty, strife, ill-omen, the energy that drives away abundance. Traditional belief: Alakshmi leaves where there is cleanliness, the sound of mantras, the smell of incense, and the worship of Lakshmi. This is why houses are cleaned before Diwali."
+        },
+        {
+          "verse_id": "shri-suktam-6",
+          "title": "Lakshmi's abode — the lotus",
+          "sanskrit": "पद्मप्रिये पद्मिनि पद्महस्ते पद्मालये पद्मदलायताक्षि ।\nविश्वप्रिये विष्णुमनोऽनुकूले त्वत्पादपद्मं मयि सन्निधत्स्व ॥",
+          "iast": "padmapriye padmini padmahaste padmālaye padmadalāyatākṣi |\nviśvapriye viṣṇumano'nukūle tvatpādapadmaṃ mayi sannidhatsva ||",
+          "english_meaning": "O beloved of the lotus, O Padmini, O lotus-handed, O one who abides in the lotus, O one with eyes as wide as lotus petals, O beloved of the world, O one who is pleasing to Vishnu's heart — place your lotus feet near me.",
+          "significance": "Seven lotus epithets in one verse — the lotus is Lakshmi's symbol because it rises from mud without being stained by it. She represents purity in prosperity, beauty amid chaos."
+        }
+      ],
+      "how_to_chant": "Ideally recite all 15 verses of Shri Suktam in full. If not, these 6 verses capture the essential prayer. Chant while looking at the lotus flower, or while burning a ghee lamp. Best time: Friday evenings, Diwali Puja, or any new financial beginning.",
+      "reviewed": false
+    },
+    {
+      "id": "mahalakshmi-ashtakam",
+      "name": "Mahalakshmi Ashtakam — 8 Verses to the Great Lakshmi",
+      "purpose": "Highly concentrated hymn to Mahalakshmi — each of 8 verses names a different aspect of her power",
+      "when_to_chant": "During Lakshmi Puja on Diwali, Fridays, Kojagari Purnima — or daily in front of Lakshmi's image",
+      "verses": [
+        {
+          "verse_id": "ashtakam-1",
+          "sanskrit": "नमस्तेऽस्तु महामाये श्रीपीठे सुरपूजिते ।\nशङ्खचक्रगदाहस्ते महालक्ष्मि नमोऽस्तु ते ॥",
+          "iast": "namaste'stu mahāmāye śrīpīṭhe surapūjite |\nśaṃkhacakragadāhaste mahālakṣmi namo'stu te ||",
+          "english_meaning": "Salutations to You, O great Mahamaya, worshipped on the auspicious throne (Sripitha), adored by the gods. O Mahalakshmi holding the conch, discus, and mace — salutations to You.",
+          "word_meanings": {
+            "mahāmāyā": "the great Maya/illusion — she is the power that makes the world appear",
+            "śrīpīṭha": "the auspicious seat/throne",
+            "surapūjita": "worshipped by the gods themselves"
+          }
+        },
+        {
+          "verse_id": "ashtakam-2",
+          "sanskrit": "नमस्ते गरुडारूढे कोलासुरभयङ्करि ।\nसर्वपापहरे देवि महालक्ष्मि नमोऽस्तु ते ॥",
+          "iast": "namaste garuḍārūḍhe kolāsurabhayaṃkari |\nsarvapāpahare devi mahālakṣmi namo'stu te ||",
+          "english_meaning": "Salutations to You who ride the eagle Garuda, who is fearful to the demon Kolasura, who removes all sins — O Mahalakshmi, salutations to You."
+        },
+        {
+          "verse_id": "ashtakam-3",
+          "sanskrit": "सर्वज्ञे सर्ववरदे सर्वदुष्टभयङ्करि ।\nसर्वदुःखहरे देवि महालक्ष्मि नमोऽस्तु ते ॥",
+          "iast": "sarvajñe sarvavarade sarvaduṣṭabhayaṃkari |\nsarvaduḥkhahare devi mahālakṣmi namo'stu te ||",
+          "english_meaning": "O all-knowing, O granter of all boons, O terrible to all evil-doers, O remover of all sorrows — O Mahalakshmi, salutations to You."
+        },
+        {
+          "verse_id": "ashtakam-8",
+          "title": "Closing verse — the complete fruit",
+          "sanskrit": "महालक्ष्म्यष्टकं स्तोत्रं यः पठेद्भक्तिमान्नरः ।\nसर्वसिद्धिमवाप्नोति राज्यं प्राप्नोति सर्वदा ॥",
+          "iast": "mahālakṣmyaṣṭakaṃ stotraṃ yaḥ paṭhedbhaktimānnараḥ |\nsarvasiddhimavāpnoti rājyaṃ prāpnoti sarvadā ||",
+          "english_meaning": "The devoted person who reads this Mahalakshmi Ashtakam hymn — obtains all perfections and prosperity always."
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "lakshmi-gayatri",
+      "name": "Mahalakshmi Gayatri",
+      "purpose": "The Gayatri mantra form of Lakshmi worship — structured like the Vedic Gayatri for meditation",
+      "when_to_chant": "During Lakshmi Puja, on Fridays, or at sunrise/sunset facing the rising/setting sun",
+      "sanskrit": "ॐ महालक्ष्म्यै च विद्महे विष्णुपत्न्यै च धीमहि ।\nतन्नो लक्ष्मीः प्रचोदयात् ॥",
+      "iast": "oṃ mahālakṣmyai ca vidmahe viṣṇupatnyai ca dhīmahi |\ntanno lakṣmīḥ pracodayāt ||",
+      "english_meaning": "We know Mahalakshmi. We meditate on the wife of Vishnu. May that Lakshmi inspire and enlighten us.",
+      "structure_note": "Gayatri form = 'We know... We meditate on... May that [deity] enlighten us.' This is the pattern of all Gayatris, originating from the famous Savitri Gayatri (Om Bhur Bhuva Svaha). Here applied to Lakshmi, it becomes a meditative practice, not just a wish.",
+      "reviewed": false
+    },
+    {
+      "id": "lakshmi-puja-sankalpa",
+      "name": "Lakshmi Puja Sankalpa",
+      "purpose": "Declaration of intent before beginning the puja — specific to prosperity and family well-being",
+      "when_to_chant": "At the beginning of Lakshmi Puja, holding flowers and water",
+      "sanskrit": "ममात्मनः परिवारस्य च समृद्ध्यर्थं\nधनधान्यसम्पदप्राप्त्यर्थं\nश्रीमहालक्ष्मीप्रसादसिद्ध्यर्थं\nश्रीमहालक्ष्मीपूजनं करिष्ये ।",
+      "iast": "mamātmanaḥ parivārasya ca samṛddhyarthaṃ\ndharaṇadhānyasampada prāptyarthaṃ\nśrīmahālakṣmīprasādasiddhyarthaṃ\nśrīmahālakṣmīpūjanaṃ kariṣye |",
+      "english_meaning": "For my own and my family's prosperity, for the attainment of wealth, grain, and abundance, and for the grace of Mahalakshmi — I perform the worship of Mahalakshmi.",
+      "reviewed": false
+    }
+  ]
+}

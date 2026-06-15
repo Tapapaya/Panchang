@@ -1,0 +1,76 @@
+{
+  "id": "ganesh-shlokas",
+  "name": "Core Shlokas for Ganesha Worship",
+  "category": "ganesh",
+
+  "shlokas": [
+    {
+      "id": "ganesh-dhyana-shloka",
+      "name": "Ganesha Dhyana — Meditation on Ganesha",
+      "purpose": "Opening meditation before any puja — Ganesha is always worshipped first",
+      "when_to_chant": "Before beginning any puja or ritual, before starting any new work",
+      "sanskrit": "शुक्लाम्बरधरं विष्णुं शशिवर्णं चतुर्भुजम् ।\nप्रसन्नवदनं ध्यायेत् सर्वविघ्नोपशान्तये ॥",
+      "iast": "śuklāmbaradharaṃ viṣṇuṃ śaśivarṇaṃ caturbhujam |\nprasannavadanaṃ dhyāyet sarvaVighnopaśāntaye ||",
+      "english_meaning": "Meditate on the one wearing white garments, who pervades all (Vishnu-like in omnipresence), who is moon-white in complexion, who has four arms, and whose face is ever cheerful — for the removal of all obstacles.",
+      "word_meanings": {
+        "śuklāmbara": "white-garmented",
+        "śaśivarṇa": "moon-white complexion",
+        "caturbhuja": "four-armed",
+        "prasannavadana": "cheerful/smiling face",
+        "vighnopaśānti": "pacification/removal of obstacles"
+      },
+      "how_to_chant": "Close your eyes, visualize Ganesha — large-bellied, elephant-headed, holding modak and ankusha — and chant once before beginning any ritual.",
+      "reviewed": false
+    },
+    {
+      "id": "ganesh-mool-mantra",
+      "name": "Ganesha Mool Mantra",
+      "purpose": "Core Ganesha mantra — chanted 108 times for Sankashti and all Ganesha pujas",
+      "when_to_chant": "During Ganesha puja, on Chaturthi, before any new endeavour, 108 times on Sankashti",
+      "sanskrit": "ॐ गं गणपतये नमः ।",
+      "iast": "oṃ gaṃ gaṇapataye namaḥ |",
+      "english_meaning": "Salutations to Ganapati (Lord of all categories/groups) — the seed syllable 'Gam' is the bija (seed) mantra of Ganesha.",
+      "word_meanings": {
+        "oṃ": "the primordial sound, the absolute",
+        "gaṃ": "bija (seed) mantra of Ganesha",
+        "gaṇapati": "lord (pati) of all groups/categories (gaṇa); the one who leads all",
+        "namaḥ": "salutations/I bow"
+      },
+      "how_to_chant": "Use a mala (rosary) of 108 beads. For each bead, chant once. The mala completes one full circuit = 108 chants. On Sankashti, this is the minimum.",
+      "what_to_visualize": "Red-colored Ganesha, holding modak (sweet) in one hand and ankusha (goad) in another, with his elephant head and large ears spread wide. He is smiling at you.",
+      "reviewed": false
+    },
+    {
+      "id": "ganesh-pancharatnam",
+      "name": "Ganesha Pancharatnam (First Verse)",
+      "purpose": "Opening verse of Adi Shankaracharya's Ganesha Pancharatnam — 'Five Jewels of Ganesha'",
+      "when_to_chant": "During Ganesha puja, Sankashti, Ganesh Chaturthi",
+      "sanskrit": "मुदाकरात्तमोदकं सदा विमुक्तिसाधकं\nकलाधरावतंसकं विलासिलोकरक्षकम् ।\nअनायकैकनायकं विनाशितेभदैत्यकं\nनताशुभाशुनाशकं नमामि तं विनायकम् ॥",
+      "iast": "mudākarāttamodakaṃ sadā vimuktisādhakaṃ\nkalādharāvataṃsakaṃ vilāsilokrakṣakam |\nanāyakaikānāyakaṃ vināśitebhadaityakaṃ\nnatāśubhāśunāśakaṃ namāmi taṃ vināyakam ||",
+      "english_meaning": "I salute that Vinayaka who holds the modak joyfully in His hand, who is always the means to liberation, who wears the crescent moon as an ornament (inherited from Shiva), who protects the world of the playful, who is the one supreme leader among those who have no (other) leader, who destroyed the demon Gajasura, and who quickly destroys the inauspicious of those who bow to Him.",
+      "reviewed": false
+    },
+    {
+      "id": "sankashti-moonrise-prayer",
+      "name": "Sankashti Moonrise Prayer",
+      "purpose": "Chanted after sighting the moon on Sankashti Chaturthi — the fast is broken after this",
+      "when_to_chant": "On Sankashti Chaturthi, immediately after sighting the moon in the evening",
+      "sanskrit": "गणाधिपं गणेशं च हेरम्बं गजकर्णकम् ।\nलम्बोदरं शूर्पकर्णं पाशाङ्कुशधरं विभुम् ॥\nवरदं सिद्धिदं देवं स्कन्दाग्रजमव्ययम् ।\nगणाध्यक्षं निर्विघ्नं च भालचन्द्रं नमाम्यहम् ॥",
+      "iast": "gaṇādhipaṃ gaṇeśaṃ ca herambaṃ gajakarṇakam |\nlambodaṃ śūrpakarṇaṃ pāśāṅkuśadharaṃ vibhum ||\nvaradaṃ siddhidaṃ devaṃ skandāgrajamavyayam |\ngaṇādhyakṣaṃ nirvighnaṃ ca bhālacandraṃ namāmyaham ||",
+      "english_meaning": "I bow to the lord of all groups, Ganesha, Heramba, elephant-eared, large-bellied, fan-eared, holding the noose and goad, the all-pervading, the bestower of boons and siddhis, the imperishable, the elder brother of Skanda, the superintendent of all ganas, remover of obstacles, the one who bears the moon on his forehead.",
+      "how_to_chant": "Stand facing the direction of the moon. Look at the moon directly. Chant this prayer once. Then offer water (Arghya) to the moon and bow. The fast is now complete.",
+      "reviewed": false
+    },
+    {
+      "id": "atharvashirsha-opening",
+      "name": "Ganapati Atharvashirsha (Opening)",
+      "purpose": "The most sacred Ganesha upanishad text. Full recitation takes ~15 minutes. Opening verse is the essence.",
+      "when_to_chant": "During Ganesh Chaturthi, Sankashti, or any formal Ganesha puja. Full text on major occasions.",
+      "sanskrit": "ॐ नमस्ते गणपतये ।\nत्वमेव प्रत्यक्षं तत्त्वमसि ।\nत्वमेव केवलं कर्ताऽसि ।\nत्वमेव केवलं धर्ताऽसि ।\nत्वमेव केवलं हर्ताऽसि ।\nत्वमेव सर्वं खल्विदं ब्रह्मासि ।\nत्वं साक्षादात्माऽसि नित्यम् ॥",
+      "iast": "oṃ namaste gaṇapataye |\ntvameva pratyakṣaṃ tattvamasi |\ntvameva kevalaṃ kartā'si |\ntvameva kevalaṃ dhartā'si |\ntvameva kevalaṃ hartā'si |\ntvameva sarvaṃ khalvidaṃ brahmāsi |\ntvaṃ sākṣādātmā'si nityam ||",
+      "english_meaning": "Salutations to You, O Ganapati. You alone are the visible (directly perceptible) Reality. You alone are the Doer. You alone are the Sustainer. You alone are the Destroyer. You alone are all this — truly, You are Brahman (the Absolute). You are directly the eternal Atman (Self).",
+      "significance": "This opening verse of the Ganapati Atharvashirsha declares Ganesha to be nothing less than Brahman — the universal Absolute. This is not mere prayer; it is a Vedantic identification of the deity with the ultimate reality.",
+      "reviewed": false
+    }
+  ]
+}

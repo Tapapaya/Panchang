@@ -1,0 +1,102 @@
+{
+  "key": "trayodashi-pradosha",
+  "type": "observance",
+  "tithi": "Trayodashi",
+  "alternate_names": ["Pradosh", "Pradosha", "Teras"],
+  "deity": "Lord Shiva and Goddess Parvati",
+
+  "significance": {
+    "title": "Trayodashi Pradosha — The Dusk of Shiva's Dance",
+    "summary": "Pradosha is the most powerful time for Shiva worship that occurs twice every lunar month — on the 13th tithi (Trayodashi) of both Shukla and Krishna Paksha. The word 'Pradosha' means 'at the beginning of night' — referring to the twilight window of 90 minutes centered on sunset. During this twilight on Trayodashi, Lord Shiva is said to be in a particularly gracious mood, dancing his Ananda Tandava (Dance of Bliss) on Mount Kailash, and all the gods gather to watch. Any prayer offered during this window receives Shiva's direct attention.",
+    "why_trayodashi": "The Trayodashi connection to Pradosha comes from the story of the Samudra Manthan (Churning of the Cosmic Ocean). When the gods and demons churned the ocean for nectar, a terrible poison (Halahala) emerged first. Lord Shiva alone was willing to drink this poison to save the universe — he drank it on the 13th tithi. As the poison was trapped in his throat (turning it blue — hence the name Nilakaṇṭha), the universe was saved. The gods celebrated with a dance and music. Pradosha worship on Trayodashi is thanksgiving for that cosmic sacrifice.",
+    "weekday_types": [
+      { "day": "Sunday (Ravivar)", "name": "Bhaanu Pradosha", "special_benefit": "Freedom from disease; longevity" },
+      { "day": "Monday (Somvar)", "name": "Soma Pradosha", "special_benefit": "Most beloved Pradosha — Shiva and Chandra (moon) combine. Blessings for marriage, fertility, emotional peace" },
+      { "day": "Tuesday (Mangalvar)", "name": "Bhauma Pradosha", "special_benefit": "Debt relief; freedom from enemies; courage" },
+      { "day": "Wednesday (Budvar)", "name": "Saumya Pradosha", "special_benefit": "Intelligence; success in studies and communication" },
+      { "day": "Thursday (Guruvar)", "name": "Guru Pradosha", "special_benefit": "Wisdom; teacher's blessings; financial prosperity" },
+      { "day": "Friday (Shukravar)", "name": "Shukra Pradosha", "special_benefit": "Beauty; luxury; success in arts; marriage" },
+      { "day": "Saturday (Shanivar)", "name": "Shani Pradosha", "special_benefit": "The most powerful Pradosha — Shani's obstacles are removed; Saturn's malefic effects neutralized; liberation from karmic debts" }
+    ],
+    "shani_pradosha_note": "Shani Pradosha (Saturday Trayodashi) is particularly significant because Saturn and Shiva share an unusual relationship in Hindu cosmology. Shiva's grace alone is said to overcome even Saturn's most severe afflictions. Worshipping Shiva during Shani Pradosha brings relief from 7.5 year Saturn period (Sade Sati) and other Saturn-related difficulties."
+  },
+
+  "pradosha_kaal": {
+    "definition": "The Pradosha window spans 45 minutes before sunset to 45 minutes after sunset on Trayodashi",
+    "importance": "This 90-minute window is THE time to be at the Shiva Linga. Abhishek, Bilva archana, mantra chanting — all performed during this window carry maximum merit",
+    "display_prominence": "HIGHEST — Pradosha time must be shown prominently on this day",
+    "closing_warning": "App will alert 15 minutes before the Pradosha window closes"
+  },
+
+  "vrat_guide": {
+    "fast_type": "From sunrise on Trayodashi to after the Pradosha puja (post-sunset). The fast is broken after the evening puja — not just at moonrise.",
+    "key_practice": "The Shiva Abhishek during the 90-minute Pradosha Kaal window is the central act. Pour milk, water, or Panchamrit over the Shiva Linga while chanting Om Namah Shivaya without stopping.",
+    "temple_vs_home": "Temple is strongly preferred for Pradosha puja — the energy of a Shiva temple on Pradosha is unmistakable. However, home worship with a Shiva Linga is fully valid.",
+    "nandi_circumambulation": "At a Shiva temple: traditionally walk clockwise around the temple once, then stand before Nandi (the bull) and look through his horns at the Shiva Linga. This darshan through Nandi's eyes is called 'Nandi Darshan' and is considered especially auspicious on Pradosha."
+  },
+
+  "shlokas": [
+    {
+      "shloka_id": "panchakshara-mantra",
+      "context": "Continuous chanting during Abhishek in the Pradosha window",
+      "source_file": "shiva-shlokas.json"
+    },
+    {
+      "shloka_id": "shiva-pradosha-stuti",
+      "context": "The formal prayer/sankalpa for Pradosha vrat — recited at the opening of Pradosha Kaal",
+      "source_file": "shiva-shlokas.json"
+    },
+    {
+      "shloka_id": "shiva-panchakshara-stotram-verse1",
+      "context": "Recited during the Pradosha window — all 5 verses if possible",
+      "source_file": "shiva-shlokas.json"
+    },
+    {
+      "shloka_id": "maha-mrityunjaya-mantra",
+      "context": "Chanted at least 11 times during the Pradosha window for healing",
+      "source_file": "shiva-shlokas.json"
+    },
+    {
+      "shloka_id": "shiva-abhishek-mantra",
+      "context": "Chanted while pouring water/milk on the Shiva Linga during Abhishek",
+      "source_file": "shiva-shlokas.json"
+    }
+  ],
+
+  "dos_and_donts": {
+    "dos": [
+      "Be at the Shiva Linga (home or temple) when the Pradosha window opens",
+      "Perform Abhishek with milk, Panchamrit, or at minimum pure water during Pradosha",
+      "Offer Bilva (Bael) leaves — minimum 3, ideally 11 or more",
+      "Chant Om Namah Shivaya continuously during the Pradosha window",
+      "Apply Vibhuti (sacred ash) to your forehead before the puja and keep it on",
+      "On Shani Pradosha: visit a Shani temple first (brief prayer) then Shiva temple for the main puja"
+    ],
+    "donts": [
+      "Do not eat before the Pradosha puja — observe the fast",
+      "Do not cut hair or nails on Trayodashi",
+      "Do not offer Tulsi or Ketaki flowers to Shiva — these two flowers are specifically excluded from Shiva worship",
+      "Do not arrive late for Pradosha — the 90-minute window is non-negotiable",
+      "Do not sleep during the Pradosha window — Shiva's grace flows then; being asleep misses it"
+    ]
+  },
+
+  "hair_nail_non_veg": {
+    "override_rules": true,
+    "haircut": false,
+    "nailcut": false,
+    "non_veg": false,
+    "notes": "Trayodashi is Shiva's tithi (connected to Shivaratri on Chaturdashi). All three are forbidden as acts of purification for Shiva's grace."
+  },
+
+  "marathi_calendar_notes": {
+    "regional_significance": "Maharashtra has deep Shiva devotion — the 12 Jyotirlinga temples include Trimbakeshwar (Nashik), Bhimashankar (Pune district), and Aundha Nagnath (Hingoli). Pradosha at any of these Jyotirlingas is extraordinarily powerful.",
+    "shani_shingnapur_connection": "Shani Pradosha draws particular attention in Maharashtra due to the famous Shani Shingnapur temple — on Shani Pradosha, both Shiva and Shani blessings are sought.",
+    "shravan_pradosha": "Pradosha during the Shravan month (holy month of Shiva) carries the combined merit of both Shravan and Pradosha — the most meritorious Pradosha days of the year."
+  },
+
+  "rashifal": {
+    "note": "All signs benefit from Shiva's grace on Pradosha. Saturn-ruled signs (Capricorn, Aquarius) benefit especially on Shani Pradosha.",
+    "general_guidance": "Pradosha is a release day — good for letting go of worries, forgiving grudges, and surrendering burdens to Shiva. Not the best day for strategic planning — better for prayer and spiritual work."
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "template_id": "pradosha-vrat",
+  "name": "Pradosha Vrat — Trayodashi Shiva Worship",
+  "deity": "Lord Shiva and Goddess Parvati",
+  "duration_days": 1,
+  "duration_note": "The fast is on Trayodashi (13th tithi). The primary worship window is Pradosha Kaal — the 1.5 hours around sunset on Trayodashi.",
+  "recurrence": {
+    "pattern": "monthly_tithi",
+    "tithi": "trayodashi",
+    "suggested_repeat_count": 12,
+    "repeat_note": "Occurs twice per month — Shukla Trayodashi and Krishna Trayodashi. Most devotees observe both (24 per year). Pradosha on Saturday (Shani Pradosha) is especially powerful. Pradosha on Monday (Soma Pradosha) is most beloved."
+  },
+  "calendar_color": "saffron",
+
+  "sankalpa_text_template": "ममात्मनः सर्वपापक्षयपूर्वकदीर्घायुरारोग्यसम्पत्प्राप्त्यर्थं श्रीशिवप्रसादसिद्ध्यर्थं प्रदोषव्रतं करिष्ये ।",
+  "sankalpa_guide": "On Trayodashi morning, after bathing. Face north (Shiva's direction). Hold water. Recite the sankalpa. Release water.",
+
+  "guide": {
+    "preparation": [
+      "Know the Pradosha Kaal: it begins 45 minutes before sunset and ends 45 minutes after sunset on Trayodashi. The app will show the exact window for your location.",
+      "Prepare for the fast: eat only once on Dwadashi (day before). Do not eat on Trayodashi morning.",
+      "Puja materials: Bilva leaves, white flowers, milk, Panchamrit, vibhuti, rudraksha mala",
+      "If visiting a temple: go at least 30 minutes before the Pradosha window opens — temples fill up quickly for Pradosha",
+      "Note: Pradosha on different weekdays has different special names — Soma Pradosha (Monday), Bhauma Pradosha (Tuesday), Shani Pradosha (Saturday). Each amplifies a specific blessing."
+    ],
+
+    "materials": [
+      { "name": "Bilva leaves", "quantity": "11 sets of 3 (33 total) or minimum 3", "purpose": "Essential for Shiva puja during Pradosha — offer in sets of 3 during the Pradosha window", "substitute": "If unavailable, offer 3 durva blades instead with apology prayer" },
+      { "name": "Milk", "quantity": "500ml", "purpose": "For Shiva Abhishek during the Pradosha window", "substitute": "Clean water — Shiva is equally pleased" },
+      { "name": "White flowers", "quantity": "Handful", "purpose": "Shiva's flowers for Pradosha puja", "substitute": "Any flower except Tulsi and Ketaki" },
+      { "name": "Vibhuti (sacred ash)", "quantity": "Small amount", "purpose": "Applied to the Linga and your forehead", "substitute": "None — essential Shiva item" },
+      { "name": "Ghee lamp", "quantity": "1 large or multiple small", "purpose": "The ghee lamp must be lit at the start of Pradosha Kaal and kept burning through the entire window", "substitute": "Oil lamp" },
+      { "name": "Datura flower (white)", "quantity": "1–3 if available", "purpose": "Shiva's special flower for Pradosha — its mild intoxication mirrors the divine trance", "substitute": "White jasmine, any white flower" },
+      { "name": "Panchamrit", "quantity": "Small quantity", "purpose": "For proper Abhishek — 5 nectars poured over Shiva Linga", "substitute": "Milk alone" }
+    ],
+
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Morning — Sankalpa and Fast Begins",
+        "action": "On Trayodashi morning, bathe before sunrise. Take the Pradosha Vrat Sankalpa. Do not eat anything until after the evening Pradosha puja.",
+        "mantra_id": "panchakshara-mantra",
+        "mantra_count": 11,
+        "note": "Even drinking water is technically restricted in the strictest form. However, drinking water is permitted for health."
+      },
+      {
+        "step_number": 2,
+        "title": "Morning Shiva Puja",
+        "action": "A brief morning puja before starting the day: light incense, offer Bilva, chant Om Namah Shivaya 108 times.",
+        "mantra_id": "panchakshara-mantra",
+        "mantra_count": 108,
+        "duration_minutes": 15
+      },
+      {
+        "step_number": 3,
+        "title": "Spend the day in Shiva's contemplation",
+        "action": "Throughout the day, continue chanting Om Namah Shivaya mentally. Avoid angry conversations, gossip, and TV. Read about Shiva if possible.",
+        "note": "Pradosha comes from 'Pra-dosha' — 'before the dosha (impurity) of night enters.' The entire day of Trayodashi is a preparatory space for the evening's peak worship."
+      },
+      {
+        "step_number": 4,
+        "title": "Pradosha Puja — The Main Worship (App alarm fires)",
+        "action": "At the Pradosha alarm: immediately light the ghee lamp. Go to your altar or Shiva temple. Begin the Pradosha Stuti prayer. This is the most important moment of the vrat.",
+        "mantra_id": "shiva-pradosha-stuti",
+        "mantra_count": 1,
+        "duration_minutes": 5,
+        "note": "Be fully ready BEFORE the alarm fires — the window is only 90 minutes and the first 30 minutes are most powerful."
+      },
+      {
+        "step_number": 5,
+        "title": "Shiva Abhishek during Pradosha",
+        "action": "During the Pradosha window: perform Abhishek with Panchamrit or milk on the Shiva Linga. Pour slowly and continuously while chanting Om Namah Shivaya.",
+        "mantra_id": "shiva-abhishek-mantra",
+        "mantra_count": 108,
+        "duration_minutes": 20
+      },
+      {
+        "step_number": 6,
+        "title": "Bilva Archana",
+        "action": "Offer Bilva leaves during the Pradosha window. If offering 11 sets of 3, chant one Panchakshara mantra for each leaf.",
+        "mantra_id": "panchakshara-mantra",
+        "mantra_count": 33,
+        "duration_minutes": 10
+      },
+      {
+        "step_number": 7,
+        "title": "Shiva Panchakshara Stotram",
+        "action": "During the Pradosha window, chant the full Shiva Panchakshara Stotram (5 verses — one for each syllable of Na Ma Si Va Ya). This is the signature prayer for Pradosha.",
+        "mantra_id": "shiva-panchakshara-stotram-verse1",
+        "mantra_count": 5,
+        "duration_minutes": 5
+      },
+      {
+        "step_number": 8,
+        "title": "Maha Mrityunjaya Japa",
+        "action": "Sit quietly within the Pradosha window and chant Maha Mrityunjaya 11 times slowly, focusing on healing for yourself and your family.",
+        "mantra_id": "maha-mrityunjaya-mantra",
+        "mantra_count": 11,
+        "duration_minutes": 10
+      },
+      {
+        "step_number": 9,
+        "title": "Break Fast after Pradosha Puja",
+        "action": "After the Pradosha puja concludes (or after the window closes): drink the Charanamrit (Abhishek water), eat Bilva prasad (a small piece of the Bel fruit is Shiva's prasad), then have a simple sattvic meal.",
+        "note": "Ideal to include milk and any fruit. Some devotees do a partial fast and break with sabudana and fruit — grain-free is the traditional Pradosha fast-break."
+      },
+      {
+        "step_number": 10,
+        "title": "Kshama Prarthana",
+        "action": "After the meal, recite Kshama Prarthana for any errors or missed steps during the vrat.",
+        "mantra_id": "kshama-prarthana",
+        "mantra_count": 1
+      }
+    ],
+
+    "mantras_explained": [
+      {
+        "mantra_id": "shiva-pradosha-stuti",
+        "why_this_mantra": "This prayer is the formal declaration of the Pradosha vrat — it asks Shiva directly for the power to complete the vrat without obstacles. It names Shiva as 'Nilakaṇṭha' — the blue-throated one who drank the world's poison (Halahala) during the churning of the cosmic ocean. During Pradosha, when the sky turns twilight blue, you are looking at the colour of Shiva's throat — the colour of divine sacrifice.",
+        "how_to_pronounce": "De-va-de-va Ma-haa-de-va Nee-la-kan-tha Na-mos-tu Te | Kar-tu-mich-chaa-mya-ham De-va Shi-va-raa-tri-vra-tam Ta-va ||",
+        "what_to_visualize": "The Trayodashi twilight sky — the exact moment when day becomes night. Shiva stands at this threshold. He holds the poison of the world in his throat to protect all beings. You are offering the Pradosha puja in gratitude for that sacrifice."
+      },
+      {
+        "mantra_id": "shiva-panchakshara-stotram-verse1",
+        "why_this_mantra": "Adi Shankaracharya wrote this poem to explain what the syllable 'Na' of 'Om Namah Shivaya' means — and it takes an entire verse to explain one syllable. The full poem takes 5 verses. This is the depth of the Panchakshara. Chanting all 5 verses is the most complete possible meditation on Om Namah Shivaya during Pradosha.",
+        "how_to_pronounce": "Naa-gen-dra-haa-raa-ya Tri-lo-cha-naa-ya | Bhas-maan-ga-raa-gaa-ya Ma-hesh-va-raa-ya | Ni-tyaa-ya Shud-dhaa-ya Di-gam-ba-raa-ya | Tas-mai Na Kaa-raa-ya Na-mah Shi-vaa-ya ||",
+        "what_to_visualize": "Shiva as Digambara — clothed in space itself, wearing nothing, needing nothing. He has ash on his body not as poverty but as the sign that he has burned attachment. The serpents around his neck are controlled, not threatening. He is the master of everything that others fear."
+      }
+    ]
+  },
+
+  "alarms": [
+    {
+      "alarm_id": "pradosha-morning-sankalpa",
+      "label": "Pradosha Vrat — Sankalpa at Sunrise",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": 0,
+      "notification_message": "Trayodashi Pradosha — bathe and take Sankalpa. Fast begins now.",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "pradosha-kaal-begins",
+      "label": "Pradosha Kaal Opens — Begin Puja NOW",
+      "time_type": "pradosha",
+      "offset_minutes": 0,
+      "mantra_id": "shiva-pradosha-stuti",
+      "notification_message": "Pradosha Kaal open! Light the lamp and begin Shiva Abhishek — 90 minute window",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "pradosha-kaal-closing",
+      "label": "Pradosha Kaal closing in 15 minutes",
+      "time_type": "pradosha",
+      "offset_minutes": 75,
+      "notification_message": "Pradosha window closes in 15 minutes — complete Abhishek and aarti now",
+      "repeat_daily": false
+    }
+  ],
+
+  "after_completion": {
+    "materials_disposal": [
+      { "material": "Bilva leaves (offered)", "disposal_method": "Keep on the Shiva Linga (at home altar) or return to the Bel tree", "note": "" },
+      { "material": "Abhishek Charanamrit", "disposal_method": "Drink as prasad — all family members take a sip of the milk/water that flowed off the Linga", "note": "Charanamrit from Pradosha is especially potent for healing" },
+      { "material": "White flowers", "disposal_method": "Immerse in water or bury", "note": "" },
+      { "material": "Vibhuti", "disposal_method": "Apply remaining vibhuti as Tripundra on the forehead of all family members", "note": "Vibhuti from Pradosha puja protects through the night" }
+    ],
+    "prasad_distribution": "Charanamrit (Abhishek liquid) to all family. Bilva fruit (if bel fruit available) as prasad. White flowers can be distributed to neighbors.",
+    "next_steps": [
+      "Mark this Pradosha as complete",
+      "Next Pradosha is in approximately 14–15 days (opposite fortnight)",
+      "Special note: if this was Shani Pradosha (Saturday), today's vrat has additional Shani-specific benefits — Saturn afflictions are alleviated"
+    ],
+    "udyapan": {
+      "required": false,
+      "description": "Individual Pradosha vrats do not require formal Udyapan. However, if you vowed to observe a specific number (e.g. 26 consecutive Pradoshas = 1 year), the final Pradosha should be marked with a larger puja, Brahmin dakshina, and distribution of food to the needy."
+    }
+  },
+
+  "forgiveness_mantra_id": "kshama-prarthana"
+}

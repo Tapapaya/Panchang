@@ -1,0 +1,37 @@
+{
+  "_comment": "Rules derived from traditional Marathi/North Indian panchang. App computes these from panchang-ts; day content files can override with 'override_rules: true'.",
+  "version": "1.0",
+  "tithis": {
+    "Shukla Pratipada":   { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "" },
+    "Shukla Dwitiya":     { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "" },
+    "Shukla Tritiya":     { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "Auspicious day — Akha Teej falls here" },
+    "Shukla Chaturthi":   { "haircut": false, "nailcut": false, "non_veg": false, "notes": "Vinayak Chaturthi — sacred to Lord Ganesha" },
+    "Shukla Panchami":    { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "" },
+    "Shukla Shashthi":    { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "" },
+    "Shukla Saptami":     { "haircut": false, "nailcut": false, "non_veg": true,  "notes": "Sapta means seven — some traditions avoid haircut" },
+    "Shukla Ashtami":     { "haircut": false, "nailcut": false, "non_veg": true,  "notes": "Sacred to Durga Mata; avoid in Navratri context" },
+    "Shukla Navami":      { "haircut": false, "nailcut": false, "non_veg": false, "notes": "Navami is Devi's tithi — considered inauspicious for haircut" },
+    "Shukla Dashami":     { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "" },
+    "Shukla Ekadashi":    { "haircut": false, "nailcut": false, "non_veg": false, "notes": "Ekadashi vrat — complete fast or grain-free fast observed" },
+    "Shukla Dwadashi":    { "haircut": false, "nailcut": false, "non_veg": false, "notes": "Dwadashi follows Ekadashi; parana (fast-break) day — remain sattvic" },
+    "Shukla Trayodashi":  { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "Pradosha Vrata on Trayodashi — those fasting avoid non-veg" },
+    "Shukla Chaturdashi": { "haircut": false, "nailcut": false, "non_veg": false, "notes": "Shiva's tithi — Maha Shivaratri falls here; avoid meat" },
+    "Purnima":            { "haircut": false, "nailcut": false, "non_veg": false, "notes": "Full moon — sacred, auspicious for charity; avoid haircut and meat" },
+
+    "Krishna Pratipada":  { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "" },
+    "Krishna Dwitiya":    { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "" },
+    "Krishna Tritiya":    { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "" },
+    "Krishna Chaturthi":  { "haircut": false, "nailcut": false, "non_veg": false, "notes": "Sankashti Chaturthi — Ganesha vrat; complete fast till moonrise" },
+    "Krishna Panchami":   { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "" },
+    "Krishna Shashthi":   { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "" },
+    "Krishna Saptami":    { "haircut": false, "nailcut": false, "non_veg": true,  "notes": "" },
+    "Krishna Ashtami":    { "haircut": false, "nailcut": false, "non_veg": false, "notes": "Krishna Janmashtami falls here; sacred to Krishna" },
+    "Krishna Navami":     { "haircut": false, "nailcut": false, "non_veg": false, "notes": "" },
+    "Krishna Dashami":    { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "" },
+    "Krishna Ekadashi":   { "haircut": false, "nailcut": false, "non_veg": false, "notes": "Ekadashi vrat — complete fast or grain-free fast observed" },
+    "Krishna Dwadashi":   { "haircut": false, "nailcut": false, "non_veg": false, "notes": "Dwadashi parana day — remain sattvic" },
+    "Krishna Trayodashi": { "haircut": true,  "nailcut": true,  "non_veg": true,  "notes": "Pradosha Vrata for those fasting" },
+    "Krishna Chaturdashi":{ "haircut": false, "nailcut": false, "non_veg": false, "notes": "Maha Shivaratri tithi; Narak Chaturdashi on Kartik Krishna Chaturdashi" },
+    "Amavasya":           { "haircut": false, "nailcut": false, "non_veg": false, "notes": "New moon — Pitru Tarpan day; sacred to ancestors; avoid haircut and meat" }
+  }
+}

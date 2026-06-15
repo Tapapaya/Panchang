@@ -1,0 +1,187 @@
+{
+  "template_id": "navratri-vrat",
+  "name": "Navratri Vrat — 9 Days of Devi Worship",
+  "deity": "Goddess Durga (Nav Durga — 9 forms)",
+  "duration_days": 9,
+  "duration_note": "Navratri runs from Pratipada (Day 1) through Navami (Day 9). Different forms of Devi are worshipped each day.",
+  "recurrence": {
+    "pattern": "yearly_festival",
+    "suggested_repeat_count": 1,
+    "repeat_note": "Two major Navratris per year — Chaitra (spring) and Sharad/Ashwin (autumn, most celebrated). Many devotees observe both."
+  },
+  "calendar_color": "red",
+
+  "sankalpa_text_template": "ममात्मनः सर्वपापक्षयपूर्वकदीर्घायुर्बलपुष्टिनैरुज्यैश्वर्याभिवृद्ध्यर्थं सर्वाभीष्टसिद्ध्यर्थं श्रीदुर्गाप्रसादसिद्ध्यर्थं नवरात्र्यां नवदिनपर्यन्तं उपवासं करिष्ये देवीं च पूजयिष्ये ।",
+  "sankalpa_guide": "On Pratipada morning (Day 1): bathe, wear clean clothes (avoid black). Face east. Hold flowers and water. Say your name, gotra, and location, then recite the sankalpa.",
+
+  "fasting_levels": {
+    "strict_nirjala": {
+      "name": "Nirjala (no water)",
+      "description": "No food or water from sunrise to sunset each day. Very austere — generally only on Ashtami and Navami for even serious devotees.",
+      "note": "NOT recommended for all 9 days unless you are in excellent health"
+    },
+    "phalahar": {
+      "name": "Phalahar (fruit fast)",
+      "description": "Only fruits, milk, dry fruits, sabudana (sago), singhara atta (water chestnut flour) allowed. No grain, no lentils, no salt (use sendha namak only), no onion-garlic.",
+      "allowed": ["Fresh fruits", "Milk and dairy", "Dry fruits and nuts", "Sabudana (sago) khichdi", "Singhara atta (water chestnut flour)", "Sendha namak (rock salt only)", "Potatoes", "Makhana (fox nuts)"],
+      "avoid": ["Rice, wheat, any grain", "Onion and garlic", "Regular table salt", "Meat, fish, eggs", "Alcohol"]
+    },
+    "grain_free": {
+      "name": "Grain-free (no grain)",
+      "description": "No grains but everything else is permitted. Most accessible starting point.",
+      "note": "A good way to begin Navratri observance"
+    }
+  },
+
+  "guide": {
+    "preparation": [
+      "Clean the house before Pratipada — Navratri begins with a clean home",
+      "Set up the Devi puja space: a small altar with Devi's image/idol, a red cloth, a Kalash (pot of water with mango leaves and coconut), a ghee lamp",
+      "Prepare the Kalash: copper pot filled with water, place mango leaves around the mouth, place a coconut on top. This Kalash represents the Goddess herself — it stays for all 9 days",
+      "Buy or pick red flowers (hibiscus, red marigold, roses) — Devi is fond of red flowers",
+      "For Garba/Dandiya: prepare your clothes and find a local event — communal celebration is an essential part of Navratri",
+      "Note the Ashtami and Navami dates — these are the most important days of the 9"
+    ],
+
+    "materials": [
+      { "name": "Kalash (copper pot)", "quantity": "1", "purpose": "The Kalash is the Goddess's temporary home for 9 days. Set it up on Day 1 and immerse/conclude on Day 10 (Dasami/Vijaya Dashami).", "substitute": "Any clean clay pot" },
+      { "name": "Mango leaves", "quantity": "5 or 11", "purpose": "For decorating the Kalash", "substitute": "Tulsi or any auspicious leaves" },
+      { "name": "Coconut", "quantity": "1 on Kalash + as needed for prasad", "purpose": "Placed on the Kalash as the deity's head; also offered at various points", "substitute": "Essential — do not skip for the Kalash" },
+      { "name": "Red flowers", "quantity": "Fresh daily", "purpose": "Devi's favorite — offer fresh flowers each day", "substitute": "Any flower if red unavailable" },
+      { "name": "Red cloth", "quantity": "1 piece", "purpose": "Altar covering and to drape Devi's image", "substitute": "Saffron or yellow" },
+      { "name": "Ghee lamp + oil lamp", "quantity": "2", "purpose": "The Akhanda Jyot (eternal flame) — an unbroken lamp kept burning for all 9 days. This is the heart of Navratri.", "substitute": "If Akhanda Jyot not possible, light lamp each morning and evening" },
+      { "name": "Kumkum (red vermilion)", "quantity": "Small packet", "purpose": "Devi is adorned with kumkum — apply to the image and to Kalash", "substitute": "Red turmeric if kumkum unavailable" },
+      { "name": "Nav Durga images or a single Durga image", "quantity": "1–9 images", "purpose": "Each day corresponds to one form of Devi (see navdurga-names shloka)", "substitute": "Single Durga image is perfectly fine — shift focus through intention, not necessarily 9 separate images" }
+    ],
+
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Day 1 (Pratipada) — Kalash Sthapana and Sankalpa",
+        "action": "This is the most important morning of Navratri. Bathe. Set up the Kalash on the altar. Light the Akhanda Jyot (eternal lamp). Take the Navratri Vrat Sankalpa. Worship Shailputri (Day 1 form of Devi) with red flowers and 'Om Aim Hrim Klim Shailputryai Namah'.",
+        "mantra_id": "navratri-sankalpa",
+        "mantra_count": 1,
+        "note": "The Akhanda Jyot should remain lit for all 9 days. Assign someone to watch it. If it goes out accidentally, relight immediately without panic — mistakes can be covered by Kshama Prarthana."
+      },
+      {
+        "step_number": 2,
+        "title": "Days 1–9 — Daily Morning Puja (same structure every day)",
+        "action": "Every morning: bathe before puja. Light fresh incense and ensure lamp is burning. Offer fresh flowers to the Kalash and Devi image. Chant that day's Nav Durga mantra 108 times. Read one chapter of Devi Mahatmya (or Ya Devi Sarvabhuteshu).",
+        "mantra_id": "ya-devi-sarvabhuteshu",
+        "mantra_count": 9,
+        "duration_minutes": 20,
+        "note": "The Nav Durga mantra for each day changes — Shailputri on Day 1, Brahmacharini on Day 2, etc. The app will show today's form and mantra."
+      },
+      {
+        "step_number": 3,
+        "title": "Day 1–7 — Evening Aarti and Garba",
+        "action": "Every evening: perform Aarti before Devi with ghee lamp and incense. Sing 'Aigiri Nandini' or any Devi bhajan. If attending Garba: dance with devotion — Garba is a prayer in movement, each circle around the lamp is a pradakshina (circumambulation) around Devi.",
+        "mantra_id": "aigiri-nandini-verse1",
+        "mantra_count": 3,
+        "duration_minutes": 20
+      },
+      {
+        "step_number": 4,
+        "title": "Day 8 (Ashtami) — Durga Puja and Kanya Puja",
+        "action": "Most important day after Day 1. Perform full Devi puja with Shri Suktam and Durga Ashtami shloka. Worship Mahagauri (Day 8 form). If possible, perform Kanya Puja: invite 9 young girls (representing the 9 forms of Devi), wash their feet, offer food, and give them gifts.",
+        "duration_minutes": 45,
+        "note": "Kanya Puja (also called Kumari Puja) is said to be the culmination of Navratri — seeing Devi in the faces of young girls. Any girl under puberty can participate. Offer: puri, chana, halwa prasad."
+      },
+      {
+        "step_number": 5,
+        "title": "Day 9 (Navami) — Navami Havan and Conclusion",
+        "action": "Worship Siddhidatri (Day 9 form). Many families perform a Havan (fire ritual) on Navami. Conclude the Kanya Puja if not done on Ashtami. Offer Navami prasad: puri, chana, sooji halwa. Pray for the completion of the 9-day vrat.",
+        "mantra_id": "navratri-sankalpa",
+        "mantra_count": 1,
+        "duration_minutes": 30
+      },
+      {
+        "step_number": 6,
+        "title": "Day 10 (Vijaya Dashami / Dussehra) — Kalash Visarjan",
+        "action": "This is the day of Devi's victory over Mahishasura. Perform the final aarti. Remove the Kalash: pour the water on a plant or into a river. Keep the coconut as prasad. Immerse any flowers or used items in water. The lamp can now be extinguished with a prayer.",
+        "note": "Vijaya Dashami (Dussehra) is the day of new beginnings — traditionally the best day to start new ventures, purchase weapons, learn a new skill, or begin a new course."
+      },
+      {
+        "step_number": 7,
+        "title": "Kshama Prarthana — After all 9 days",
+        "action": "After the Kalash visarjan on Day 10, sit quietly and offer the Kshama Prarthana for any day you could not fast fully, any puja steps missed, any lamp that went out.",
+        "mantra_id": "kshama-prarthana",
+        "mantra_count": 1
+      }
+    ],
+
+    "mantras_explained": [
+      {
+        "mantra_id": "ya-devi-sarvabhuteshu",
+        "why_this_mantra": "This prayer from Devi Mahatmya is the heart of all Navratri worship. It does something radical: it says the Goddess is not separate from the world — she IS the world, in every form, in every being. Even hunger, even sleep, even fear — all are her forms. Navratri is not about escaping the world to find Devi. It's about seeing Devi IN the world, in every experience.",
+        "how_to_pronounce": "Yaa De-vii Sar-va-bhu-te-shu — Shah-kti-ru-pe-na Sam-sthi-taa | Na-mas-ta-syai Na-mas-ta-syai Na-mas-ta-syai Na-mo Na-mah ||",
+        "what_to_visualize": "The Goddess expanding from your altar to fill the room, the house, the city, the world. Every woman you see is Her. Every force in nature is Her. You are not worshipping something outside yourself — you are worshipping the intelligence that runs through everything."
+      },
+      {
+        "mantra_id": "navdurga-names",
+        "why_this_mantra": "The 9 forms of Devi follow a narrative arc: from pure Shailputri (before penance) through Kalaratri (the dark night of transformation) to radiant Mahagauri (purity after transformation) to Siddhidatri (fulfilment). The 9 days are a 9-step inner journey: entering the dark, facing it, being transformed, and emerging complete.",
+        "how_to_pronounce": "Each form's name is pronounced as written. The bija mantras Aim, Hrim, Klim are said: 'Aim' = roughly 'I'm', 'Hrim' = 'Hreem', 'Klim' = 'Kleem'.",
+        "what_to_visualize": "On each day, visualize only that day's form. On Day 7 (Kalaratri), do not be afraid of the fearsome form — visualize the darkness as the darkness before dawn, the chaos before creation. On Day 8 (Mahagauri), see the same face now radiant and peaceful."
+      }
+    ]
+  },
+
+  "alarms": [
+    {
+      "alarm_id": "navratri-pratipada-kalash",
+      "label": "Navratri Day 1 — Kalash Sthapana Time",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": 30,
+      "notification_message": "Navratri Day 1 — bathe and set up the Kalash before the Abhijit Muhurta",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "navratri-daily-morning-puja",
+      "label": "Navratri Morning Puja",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": 45,
+      "mantra_id": "ya-devi-sarvabhuteshu",
+      "notification_message": "Time for morning Devi puja — offer flowers and chant today's Nav Durga mantra",
+      "repeat_daily": true
+    },
+    {
+      "alarm_id": "navratri-evening-aarti",
+      "label": "Navratri Evening Aarti",
+      "time_type": "relative_to_sunset",
+      "offset_minutes": -15,
+      "mantra_id": "aigiri-nandini-verse1",
+      "notification_message": "Navratri evening aarti time — light the lamp and sing Aigiri Nandini",
+      "repeat_daily": true
+    },
+    {
+      "alarm_id": "navratri-ashtami-kanya-puja",
+      "label": "Ashtami — Kanya Puja Today",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": 60,
+      "notification_message": "Navratri Ashtami — plan for Kanya Puja today. Invite 9 young girls for Devi darshan.",
+      "repeat_daily": false,
+      "active_dates_note": "Fires only on Ashtami (Day 8 of Navratri)"
+    }
+  ],
+
+  "after_completion": {
+    "materials_disposal": [
+      { "material": "Kalash water", "disposal_method": "Pour on a plant in the garden or in a river/lake. Do not dispose in drain.", "note": "The Kalash water has absorbed 9 days of prayer — it is sanctified" },
+      { "material": "Kalash coconut", "disposal_method": "Break and distribute as prasad to all family members", "note": "" },
+      { "material": "Flowers from 9 days", "disposal_method": "Collect all offered flowers and immerse in a body of water or bury in the garden", "note": "" },
+      { "material": "Red cloth from altar", "disposal_method": "Keep — this cloth can be used for next year's Navratri altar", "note": "Navratri cloth gains sanctity with repeated use" }
+    ],
+    "prasad_distribution": "Kanya Puja prasad (puri, chana, halwa) is distributed to the young girls and then to all family. On Vijaya Dashami, sweet prasad is shared with neighbors.",
+    "next_steps": [
+      "On Vijaya Dashami: begin something new — it is the most auspicious day in the Hindu calendar for new beginnings",
+      "Many people observe the next Navratri (opposite season) — note those dates in the app",
+      "The merit of Navratri vrat is enhanced by food donation to the needy on Dashami"
+    ],
+    "udyapan": {
+      "required": true,
+      "description": "Navratri has an implicit Udyapan on Day 10 (Vijaya Dashami) — the Kalash visarjan IS the formal conclusion. Some families also perform a Kanya Puja on Navami as the formal udyapan of the vrat. If you vowed a specific number of Navratris (e.g. 3 consecutive years), the final Dashami requires a more elaborate puja with Brahmin dakshina."
+    }
+  },
+
+  "forgiveness_mantra_id": "kshama-prarthana"
+}

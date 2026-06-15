@@ -1,0 +1,76 @@
+{
+  "_comment": "Vara (weekday) rules. Applied on top of tithi_rules — the more restrictive rule wins unless day content overrides.",
+  "version": "1.0",
+  "vara": {
+    "Raviwara": {
+      "english": "Sunday",
+      "haircut": false,
+      "nailcut": false,
+      "non_veg": true,
+      "deity": "Surya (Sun)",
+      "auspicious_for": ["Surya puja", "starting new work", "government matters"],
+      "avoid": ["haircut", "oil massage"],
+      "notes": "Sunday is Surya's day. Haircut and oil application are traditionally avoided."
+    },
+    "Somawara": {
+      "english": "Monday",
+      "haircut": true,
+      "nailcut": true,
+      "non_veg": false,
+      "deity": "Chandra (Moon) and Shiva",
+      "auspicious_for": ["Shiva puja", "Somvar vrat", "starting journeys"],
+      "avoid": ["non-vegetarian food"],
+      "notes": "Monday is Somavar — Shiva's day. Many Hindus observe a fast or avoid non-veg on Mondays."
+    },
+    "Mangalawara": {
+      "english": "Tuesday",
+      "haircut": false,
+      "nailcut": false,
+      "non_veg": false,
+      "deity": "Mangal (Mars) and Hanuman",
+      "auspicious_for": ["Hanuman puja", "Mangalvar vrat"],
+      "avoid": ["haircut", "nailcut", "oil massage"],
+      "notes": "Tuesday is Mangalvar — Hanuman's special day. Haircut is avoided; many observe a fast or avoid non-veg."
+    },
+    "Budhawara": {
+      "english": "Wednesday",
+      "haircut": true,
+      "nailcut": true,
+      "non_veg": true,
+      "deity": "Budha (Mercury)",
+      "auspicious_for": ["business matters", "education", "writing"],
+      "avoid": [],
+      "notes": "Wednesday is neutral — no traditional restrictions for haircut or non-veg."
+    },
+    "Guruwara": {
+      "english": "Thursday",
+      "haircut": false,
+      "nailcut": false,
+      "non_veg": false,
+      "deity": "Brihaspati (Jupiter) and Vishnu",
+      "auspicious_for": ["Vishnu puja", "Guru puja", "reading scriptures", "Brihaspati vrat"],
+      "avoid": ["haircut", "washing hair", "non-vegetarian food"],
+      "notes": "Thursday is Guruvar — sacred to Vishnu and Brihaspati. Haircut and non-veg avoided by devotees."
+    },
+    "Shukrawara": {
+      "english": "Friday",
+      "haircut": true,
+      "nailcut": true,
+      "non_veg": true,
+      "deity": "Shukra (Venus) and Lakshmi",
+      "auspicious_for": ["Lakshmi puja", "shopping for jewellery/clothes", "buying gold/silver"],
+      "avoid": [],
+      "notes": "Friday is Shukravar — auspicious for Lakshmi puja and purchasing precious items."
+    },
+    "Shaniwara": {
+      "english": "Saturday",
+      "haircut": false,
+      "nailcut": false,
+      "non_veg": true,
+      "deity": "Shani (Saturn)",
+      "auspicious_for": ["Shani puja", "oil lamp offering", "helping the poor"],
+      "avoid": ["haircut", "nailcut", "buying iron items"],
+      "notes": "Saturday is Shanivar — Shani's day. Haircut is considered inauspicious. Donate sesame and black items."
+    }
+  }
+}

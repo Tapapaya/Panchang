@@ -1,0 +1,162 @@
+{
+  "template_id": "krishna-janmashtami-vrat",
+  "name": "Krishna Janmashtami Vrat — The Birthday of Lord Krishna",
+  "deity": "Lord Krishna (Bal Gopal — the Divine Child)",
+  "duration_days": 2,
+  "duration_note": "Main fast on Ashtami day. The fast is broken at midnight — the exact birth time of Krishna. Parana on Navami morning.",
+  "recurrence": {
+    "pattern": "yearly_festival",
+    "suggested_repeat_count": 1,
+    "repeat_note": "Observed once per year on Krishna Ashtami of Bhadrapada month (August–September). Smarta tradition observes on Rohini Nakshatra day; Vaishnava tradition on the day when both Ashtami and Rohini coincide."
+  },
+  "calendar_color": "blue",
+
+  "sankalpa_text_template": "ममात्मनः सर्वपापक्षयपूर्वकसकलाभीष्टसिद्ध्यर्थं श्रीकृष्णजन्माष्टमिव्रतं करिष्ये श्रीकृष्णं च पूजयिष्ये ।",
+  "sankalpa_guide": "On Ashtami morning. Face east. Hold water and yellow flowers. Say your name and gotra. Recite the sankalpa.",
+
+  "guide": {
+    "preparation": [
+      "Janmashtami is celebrated at midnight — plan your evening around the midnight birth celebration",
+      "Decorate your home: blue and yellow decorations, peacock feathers, a small jhula (swing) for the baby Krishna idol",
+      "Prepare Krishna's bhog: the traditional offerings include makhan (fresh butter), mishri (sugar crystals), panchamrit, curd, fruits, and 'chappan bhog' (56 items) if doing a full puja",
+      "Clean the Krishna altar and dress the idol in new clothes the morning of Ashtami",
+      "The main celebration is the midnight Abhishek and the baby Krishna's bath — invite family to be awake for this",
+      "Dahi handi event on Navami — if participating in community events, plan for Navami too"
+    ],
+
+    "materials": [
+      { "name": "Baby Krishna idol (Bal Gopal)", "quantity": "1", "purpose": "The central focus — baby Krishna in the cradle/jhula. The idol is bathed at midnight.", "substitute": "Any Krishna image" },
+      { "name": "Jhula (small swing/cradle)", "quantity": "1 if possible", "purpose": "Krishna is placed in a small decorated swing — this is the signature element of Janmashtami celebration", "substitute": "Not essential — the puja itself is complete without it" },
+      { "name": "Makhan (fresh white butter)", "quantity": "A small bowl", "purpose": "Krishna's most beloved food — even in the Bhagavatam, Krishna steals makhan. Offered at midnight.", "substitute": "Unsalted butter or cream" },
+      { "name": "Misri (sugar crystals)", "quantity": "Small amount", "purpose": "Mixed with makhan as the offering — sweet as Krishna's flute music", "substitute": "Sugar" },
+      { "name": "Panchamrit", "quantity": "Full quantity (milk, curd, honey, ghee, sugar)", "purpose": "For the midnight Abhishek (bathing) of baby Krishna", "substitute": "At minimum: milk and honey" },
+      { "name": "Yellow and blue flowers", "quantity": "Handful of each", "purpose": "Krishna's colors — blue (his skin) and yellow (his pitambar robe)", "substitute": "Any flower" },
+      { "name": "Tulsi leaves", "quantity": "21", "purpose": "Essential for Vishnu/Krishna puja", "substitute": "Dried Tulsi" },
+      { "name": "Peacock feather", "quantity": "1–3", "purpose": "Krishna's crown feather — placed on the idol or altar", "substitute": "A picture of peacock feather" },
+      { "name": "Flute (Bansuri) — tiny, for the idol", "quantity": "1 if available", "purpose": "A tiny decorative flute to place in baby Krishna's hands — the flute is his defining symbol", "substitute": "A picture is fine" }
+    ],
+
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Dawn Bath and Sankalpa (Ashtami morning)",
+        "action": "Bathe at dawn on Ashtami. Take the Janmashtami Vrat Sankalpa. The fast begins now and continues until midnight.",
+        "mantra_id": "ganesh-dhyana-shloka",
+        "mantra_count": 1,
+        "note": "Begin with Ganesha's blessing before taking the sankalpa — he removes obstacles from the day-long fast and night celebration."
+      },
+      {
+        "step_number": 2,
+        "title": "Morning — Dress the Krishna Idol",
+        "action": "Bathe the baby Krishna idol with Panchamrit and then water. Dress the idol in new clothes. Apply fragrant oil to the idol's feet. Set up the jhula (swing) and place the idol in it. Decorate the altar with peacock feathers and flowers.",
+        "duration_minutes": 20,
+        "note": "The morning ritual of dressing Krishna is considered a devotional act equal to formal puja — you are caring for the divine child."
+      },
+      {
+        "step_number": 3,
+        "title": "Daytime — Chant and Tell Krishna's Stories",
+        "action": "Throughout Ashtami: chant 'Om Namo Bhagavate Vasudevaya' or 'Hare Krishna Hare Krishna Krishna Krishna Hare Hare | Hare Rama Hare Rama Rama Rama Hare Hare'. Read or listen to the stories of Krishna's birth from the Bhagavatam.",
+        "duration_minutes": null,
+        "note": "The birth story: Krishna was born in a prison cell at midnight, during a storm, in chains — and immediately manifested as the four-armed Vishnu before taking the form of the infant. Vasudeva carried him through the flooding Yamuna — the river parted for him."
+      },
+      {
+        "step_number": 4,
+        "title": "Evening — Decorate and Set the Stage for Midnight",
+        "action": "From 9 PM onward: light lamps and decorate the Krishna area festively. Play devotional music or bhajans. Count down to midnight together with family.",
+        "duration_minutes": 30,
+        "note": "Janmashtami is a CELEBRATION — not a solemn fast. Even the fast is joyful. The midnight birth should feel like waiting for something wonderful to happen."
+      },
+      {
+        "step_number": 5,
+        "title": "MIDNIGHT — Krishna Janma (The Cosmic Birth Moment)",
+        "action": "At midnight (app alarm fires): ring bells, blow the conch (shankha), beat drums. Recite 'Nanda ghar anand bhayo, Jai Kanhaiya Lal ki!' Everyone shouts together. Light additional lamps. The baby Krishna is 'born' at this moment.",
+        "duration_minutes": 5,
+        "note": "This is the most joyful moment — not solemn, but explosive with joy. Even if it's just your family at home, ring the bell loudly, shout 'Jai Shri Krishna!' Light sparklers if it's safe. Krishna's birth is CELEBRATED, not just observed."
+      },
+      {
+        "step_number": 6,
+        "title": "Midnight Abhishek and Bhog",
+        "action": "After the birth announcement: perform the midnight Abhishek. Bathe the baby Krishna idol with Panchamrit (milk, curd, honey, ghee, sugar — each poured slowly and lovingly). Offer makhan, misri, fruits, and all prepared bhog items.",
+        "duration_minutes": 20,
+        "note": "When pouring Panchamrit over the idol, do it slowly — as if bathing a real infant with great care and love. This mindset transforms the ritual."
+      },
+      {
+        "step_number": 7,
+        "title": "Aarti and Break Fast (After Midnight)",
+        "action": "After the midnight Abhishek: perform aarti with the ghee lamp while singing Krishna aarti ('Aarti Kunj Bihari ki'). After aarti: the fast is officially broken. Eat the prasad — first the makhan-misri, then the other bhog items.",
+        "duration_minutes": 15,
+        "note": "Breaking the fast with makhan-misri is the traditional Janmashtami fast-break. Just as Krishna stole butter as the divine act of joy — you 'receive' the butter from him at midnight."
+      },
+      {
+        "step_number": 8,
+        "title": "Kshama Prarthana",
+        "action": "After the celebration calms and before sleeping, recite the Kshama Prarthana quietly.",
+        "mantra_id": "kshama-prarthana",
+        "mantra_count": 1
+      }
+    ],
+
+    "mantras_explained": [
+      {
+        "mantra_id": "ganesh-dhyana-shloka",
+        "why_this_mantra": "Ganesha is always invoked first — even for Krishna, even for Shiva. He is the universal principle of auspicious beginning. Krishna himself, in the Bhagavatam, says Ganesha is worshipped first so that divine intelligence flows into every ritual, removing obstacles of distraction, ego, and error.",
+        "how_to_pronounce": "Shuk-lam-ba-ra-dha-ram Vish-num Sha-shi-var-nam Cha-tur-bhu-jam | Pra-san-na-va-da-nam Dhyaa-yet Sar-va-Vig-hno-pa-shaan-ta-ye ||",
+        "what_to_visualize": "Ganesha sitting at the entrance of the puja space — large, cheerful, holding the modak. He is the doorman of the divine. Once he is acknowledged, the door opens."
+      },
+      {
+        "mantra_id": "kshama-prarthana",
+        "why_this_mantra": "Krishna is the most forgiving deity in the Hindu tradition. He forgave even Shishupala, who insulted him 100 times before Krishna acted. A midnight Janmashtami celebration with children is full of excited noise, distractions, and missed puja steps. The Kshama Prarthana at the end says: 'I showed up. I tried. The rest is yours.' Krishna accepts this completely.",
+        "how_to_pronounce": "See kshama-prarthana shloka file for full text",
+        "what_to_visualize": "Baby Krishna, freshly bathed in Panchamrit, looking at you with his wide dark eyes. He is not judging the puja's correctness — he is delighted you came. He reaches up with one small hand and touches your cheek."
+      }
+    ]
+  },
+
+  "alarms": [
+    {
+      "alarm_id": "janmashtami-fast-begins",
+      "label": "Janmashtami — Fast Begins",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": 0,
+      "notification_message": "Janmashtami fast begins. Dress Baby Krishna and prepare for the midnight birth celebration!",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "janmashtami-evening-prep",
+      "label": "Countdown to Krishna's Birth — 3 hours to midnight",
+      "time_type": "fixed_time",
+      "time_of_day": "21:00",
+      "notification_message": "3 hours to Krishna's birth! Decorate the altar and gather family for the midnight celebration.",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "janmashtami-midnight-birth",
+      "label": "KRISHNA JANMA — Born at Midnight!",
+      "time_type": "midnight",
+      "offset_minutes": 0,
+      "notification_message": "JAI SHRI KRISHNA! Krishna is born! Ring the bell, perform Abhishek, and break the fast with makhan!",
+      "repeat_daily": false
+    }
+  ],
+
+  "after_completion": {
+    "materials_disposal": [
+      { "material": "Panchamrit (from midnight Abhishek)", "disposal_method": "Distribute to all family as Charanamrit prasad — drink with devotion", "note": "Janmashtami Charanamrit is auspicious and healing" },
+      { "material": "Makhan-misri (offered)", "disposal_method": "Distribute to all present — first to children. Then keep some for the next morning.", "note": "Children receiving makhan-misri prasad on Janmashtami is a beloved family tradition" },
+      { "material": "Flowers (offered)", "disposal_method": "Immerse in water or place in garden", "note": "" },
+      { "material": "New clothes on Krishna idol", "disposal_method": "KEEP on the idol — these are now the deity's garments", "note": "" }
+    ],
+    "prasad_distribution": "Makhan-misri to everyone present, especially children. Distribute the full bhog to all who attended. The next morning (Navami), distribute remaining prasad to neighbors.",
+    "next_steps": [
+      "Navami (next day): Dahi Handi celebration — the human pyramid game. Participate if there is a community event.",
+      "Keep the jhula (swing) set up for several days after Janmashtami — it is auspicious",
+      "Next Janmashtami is in approximately 1 year"
+    ],
+    "udyapan": {
+      "required": false,
+      "description": "Janmashtami is self-complete in its midnight celebration. No separate Udyapan required. Some families take a vow to observe Janmashtami for a specific number of years (e.g. 5 or 11 years) — the final year's celebration is marked with expanded puja and broader prasad distribution to the community."
+    }
+  },
+
+  "forgiveness_mantra_id": "kshama-prarthana"
+}

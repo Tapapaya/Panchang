@@ -1,0 +1,145 @@
+{
+  "_comment": "Template for ALL Shukla Ekadashi days. Specific Ekadashis (Nirjala, Devuthani, Ashadhi etc.) have their own festival files that extend this. The app merges this base with the specific Ekadashi file.",
+  "schema_version": "1.0",
+  "key": "shukla-ekadashi",
+  "type": "ekadashi",
+  "ekadashi_paksha": "shukla",
+  "regions": ["general", "north-indian", "maharashtra"],
+  "unverified": false,
+  "reviewed_by": {
+    "name": "Pending pandit review",
+    "source": "Padma Purana, Skanda Purana, traditional Ekadashi Mahatmya texts"
+  },
+
+  "significance": {
+    "title": "Ekadashi — The Most Sacred Day of the Month",
+    "what_is_ekadashi": "Ekadashi literally means 'eleven' (eka = one, dashi = ten). It is the 11th day of each lunar fortnight — occurring twice a month (Shukla Ekadashi in the bright fortnight, Krishna Ekadashi in the dark fortnight). Ekadashi is the most sacred day for devotees of Lord Vishnu.",
+    "why_is_it_special": "According to the Padma Purana, Lord Vishnu himself declared that He resides in the grain on Ekadashi. Those who eat grain on this day consume Him — which is considered deeply inauspicious. Fasting on Ekadashi and staying awake at night (Jagran) in worship of Vishnu is said to wash away sins accumulated over many lifetimes.",
+    "scientific_basis": "The 11th day of the lunar cycle corresponds to specific gravitational and tidal forces on the earth and water in human bodies. Fasting on this day, especially avoiding heavy grains, gives the digestive system a rest and aligns the body's biological cycles with the lunar cycle.",
+    "story_of_ekadashi": "Long ago, a demon named Mura terrorized the gods. Lord Vishnu fought him for a thousand years until, exhausted, He retired to a cave to rest. From His sleeping form emerged a radiant goddess who slew Mura. Pleased, Lord Vishnu named her 'Ekadashi' (born on the 11th day) and declared: 'Whoever fasts on this day and worships Me shall be freed from sin, and I shall grant them liberation.'",
+    "types_note": "There are 24 Ekadashis in a year (26 in a leap year with Adhika Masa). Each has its own name and specific mahatmya (glory). Today's specific Ekadashi name is shown above."
+  },
+
+  "vrat_guide": {
+    "start": "Ekadashi vrat begins from the previous evening (Dashami — 10th tithi). After sunset on Dashami, one should ideally eat only once and avoid beans, grains, and rice.",
+    "on_ekadashi_day": [
+      {
+        "time": "Before sunrise (Brahma Muhurta)",
+        "action": "Wake up, bathe, and offer water to the sun (Arghya)",
+        "note": "The earlier the better — Brahma Muhurta (approximately 1.5 hours before sunrise) is the ideal time"
+      },
+      {
+        "time": "Sunrise",
+        "action": "Take Sankalpa (declaration of vrat) while holding water",
+        "shloka_id": "ekadashi-sankalpa",
+        "note": "Stand facing east, take water in cupped hands, recite the sankalpa, and release the water"
+      },
+      {
+        "time": "Morning",
+        "action": "Perform Vishnu puja — offer Tulsi leaves, yellow flowers, incense, and a ghee lamp",
+        "note": "Tulsi is the most sacred offering to Vishnu. Even one Tulsi leaf offered with devotion is sufficient."
+      },
+      {
+        "time": "Throughout the day",
+        "action": "Chant Vishnu Sahasranama, or the 8 names of Vishnu (Ashtottara Sata Namashtaka), or simply 'Om Namo Narayanaya'",
+        "shloka_id": "vishnu-ashtottara-ekadashi",
+        "note": "Reading the Ekadashi Mahatmya (story of that specific Ekadashi) is also highly meritorious"
+      },
+      {
+        "time": "Evening (Pradosha time — sunset to 3 hours after)",
+        "action": "Light a ghee lamp before Vishnu, offer sandalwood paste, and chant",
+        "note": "Staying awake through the night (Jagran) in Vishnu's name is the highest form of Ekadashi observance"
+      },
+      {
+        "time": "Night (optional but highly meritorious)",
+        "action": "Stay awake — sing bhajans, listen to or read the Bhagavata, chant Vishnu's names",
+        "note": "Even staying awake till midnight counts. The tradition is that Vishnu is pleased by those who do not sleep on His day."
+      }
+    ],
+    "breaking_the_fast": {
+      "name": "Parana",
+      "when": "Next morning (Dwadashi) within the prescribed Parana window — check the app for today's specific window",
+      "how": [
+        "Chant the Parana Shloka (ekadashi-parana-shloka)",
+        "First consume a few Tulsi leaves dissolved in water",
+        "Then eat sattvic food — fruits, milk products, vegetables",
+        "Avoid rice on Dwadashi",
+        "Ideally eat sesame (til), banana, or donate food to Brahmins before eating yourself"
+      ],
+      "parana_window_note": "The Parana window is shown prominently in the app — breaking the fast before this window or after it reduces the merit of the entire Ekadashi vrat. Do not miss it.",
+      "shloka_id": "ekadashi-parana-shloka"
+    }
+  },
+
+  "fasting_rules": {
+    "complete_fast": {
+      "name": "Nirjal (waterless) fast",
+      "description": "No food and no water for the entire day. Extremely rigorous. Nirjala Ekadashi (Jyeshtha Shukla Ekadashi) is the one day of the year when this is especially performed — it is said to give the merit of all 24 Ekadashis."
+    },
+    "partial_fast": {
+      "name": "Phalahar (fruit fast)",
+      "description": "The most common form. Only fruits, milk, curd, nuts, sendha namak (rock salt), and water are consumed. Grain, pulses, and regular salt are avoided.",
+      "allowed": ["Fruits (all)", "Milk", "Curd (dahi)", "Paneer", "Ghee", "Nuts (almonds, walnuts, cashews)", "Sendha namak (rock salt)", "Sabudana (tapioca)", "Rajgira (amaranth flour)", "Samak rice (barnyard millet)", "Potatoes (in many traditions)", "Water"],
+      "avoid": ["All grains (wheat, rice, dal, bajra, etc.)", "Onion", "Garlic", "Regular salt (iodized)", "Non-vegetarian food", "Alcohol", "Tobacco"]
+    },
+    "grain_free_fast": {
+      "name": "Anaj-free (grain-free) fast",
+      "description": "A middle path — grain is avoided but regular vegetables and salt are allowed. Common for those who cannot do full Phalahar due to health conditions."
+    }
+  },
+
+  "dos_and_donts": {
+    "dos": [
+      "Wake up before sunrise and bathe — cleanliness of body and mind is essential",
+      "Offer Tulsi to Lord Vishnu — even one leaf is highly meritorious",
+      "Chant 'Om Namo Narayanaya' or 'Om Namo Bhagavate Vasudevaya' throughout the day",
+      "Read or listen to the story (Mahatmya) of this specific Ekadashi",
+      "Stay awake at night (Jagran) if possible — even for a few hours",
+      "Donate food, clothing, or money to the needy on this day",
+      "Visit a Vishnu temple if possible",
+      "Practice forgiving — Ekadashi is the day to let go of grudges and resentments",
+      "If you cannot fast, at minimum avoid grain and offer Tulsi to Vishnu"
+    ],
+    "donts": [
+      "Do not eat grain (wheat, rice, dal, regular bread) — this is the core rule of Ekadashi",
+      "Do not eat non-vegetarian food",
+      "Do not sleep during the day — sleeping on Ekadashi is said to reduce the vrat's merit",
+      "Do not cut hair or nails",
+      "Do not use oil (hair oil or cooking oil where possible) — some traditions allow ghee",
+      "Do not engage in arguments or harsh speech",
+      "Do not gamble or engage in entertainment (TV, etc.) on the vrat day",
+      "Do not speak lies",
+      "Do not break the fast before the prescribed Parana window on Dwadashi"
+    ]
+  },
+
+  "hair_nail_non_veg": {
+    "override_rules": true,
+    "haircut": { "allowed": false, "reason": "Ekadashi is sacred to Vishnu — haircut is forbidden" },
+    "nailcut": { "allowed": false, "reason": "Same as above" },
+    "non_veg": { "allowed": false, "reason": "Non-veg is strictly forbidden on Ekadashi. Even eating grain is avoided, let alone meat." }
+  },
+
+  "marathi_calendar_info": {
+    "significance": "In Maharashtra, Ekadashi is widely observed — especially Ashadhi Ekadashi and Kartiki Ekadashi (Prabodhini Ekadashi) which are the grand pilgrimage Ekadashis to Pandharpur. Warkari tradition is deeply rooted in Ekadashi observance.",
+    "sankashti_today": false,
+    "pitrupaksha_active": false,
+    "good_for_gold_silver": false,
+    "donation_note": "Donating food and cloth on Ekadashi is highly meritorious. Annadaan (food donation) on Ekadashi is said to please Lord Vishnu directly.",
+    "planetary_changes_today": []
+  },
+
+  "rashifal": {
+    "_note": "Rashifal is computed dynamically. On Ekadashi, the guidance for each rashi leans toward spiritual activity and introspection.",
+    "ekadashi_rashifal_note": "Ekadashi is a day of inward focus for all rashis. Regardless of your moon sign, the guidance today is: fast, chant, forgive, and reflect. Material pursuits can wait."
+  },
+
+  "shlokas": [
+    { "ref": "ekadashi-core-shlokas", "shloka_id": "ekadashi-sankalpa" },
+    { "ref": "ekadashi-core-shlokas", "shloka_id": "vishnu-ashtottara-ekadashi" },
+    { "ref": "ekadashi-core-shlokas", "shloka_id": "ekadashi-parana-shloka" },
+    { "ref": "ekadashi-core-shlokas", "shloka_id": "ekadashi-phala-shloka" }
+  ],
+
+  "sankalp_template_id": "ekadashi-vrat-sankalp"
+}

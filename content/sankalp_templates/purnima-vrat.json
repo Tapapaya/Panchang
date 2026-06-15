@@ -1,0 +1,160 @@
+{
+  "template_id": "purnima-vrat",
+  "name": "Purnima Vrat — Full Moon Fast",
+  "deity": "Lord Vishnu (and Chandra — the Moon deity)",
+  "duration_days": 1,
+  "duration_note": "Fast from sunrise on Purnima until the moon rises and Arghya is offered. Evening puja focused on the full moon.",
+  "recurrence": {
+    "pattern": "monthly_tithi",
+    "tithi": "purnima",
+    "suggested_repeat_count": 12,
+    "repeat_note": "Observed on every Purnima — 12 per year (13 in Adhika Masa years). Each Purnima has a different name and specific blessing based on the lunar month: Sharad Purnima (most celebrated), Kartika Purnima (Dev Diwali), Vaishakha Purnima (Buddha Purnima), etc."
+  },
+  "calendar_color": "white",
+
+  "sankalpa_text_template": "ममात्मनः समस्तपापक्षयपूर्वकपुण्यफलप्राप्तये श्रीविष्णोर्देवस्य प्रसादसिद्ध्यर्थं पूर्णिमायाम् उपवासं करिष्ये चन्द्रदर्शनम् अर्घ्यं च दास्यामि ।",
+  "sankalpa_guide": "On Purnima morning, after bathing. Face east. Hold water and flowers. Recite the sankalpa.",
+
+  "guide": {
+    "preparation": [
+      "Check the moonrise time for your city (the app shows this) — the entire fast leads up to this moment",
+      "Purnima is the day Satyanarayan Puja is traditionally performed — if doing that too, plan for the afternoon",
+      "Prepare a copper vessel for the Chandra Arghya — you'll pour water toward the moon at moonrise",
+      "On special Purnimas: Sharad Purnima — prepare Kheer (rice pudding) to place under moonlight. Kartika Purnima — prepare a diya to float on water.",
+      "Wear white on Purnima — the moon's color"
+    ],
+
+    "materials": [
+      { "name": "Copper vessel (Tambe ka lota)", "quantity": "1", "purpose": "For offering Arghya to the moon at moonrise", "substitute": "Any clean vessel" },
+      { "name": "White flowers", "quantity": "Handful", "purpose": "Offered to the moon (Chandra Arghya often includes flowers)", "substitute": "Any clean flower" },
+      { "name": "Rice (raw)", "quantity": "A handful", "purpose": "Mixed in the Arghya water — rice is Chandra's grain", "substitute": "Not required, but traditional" },
+      { "name": "Milk", "quantity": "500ml", "purpose": "For Vishnu Abhishek and for Kheer preparation on Sharad Purnima", "substitute": "Water for the Arghya" },
+      { "name": "Kheer (rice pudding) — for Sharad Purnima only", "quantity": "Enough for family", "purpose": "On Sharad Purnima specifically, Kheer is placed under moonlight and consumed as moon-blessed prasad", "substitute": "Only for Sharad Purnima — any sweet if Kheer not possible" },
+      { "name": "Vishnu image or Shaligram", "quantity": "1", "purpose": "Vishnu puja is performed on Purnima — Purnima is Vishnu's sacred tithi", "substitute": "Any Vishnu image" },
+      { "name": "Tulsi leaves", "quantity": "11", "purpose": "Essential for Vishnu puja", "substitute": "Dried Tulsi if fresh unavailable" }
+    ],
+
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Dawn Bath and Sankalpa",
+        "action": "Bathe at dawn on Purnima. Some devotees bathe in a river or lake — the Purnima bath in flowing water is especially auspicious. Then take the Purnima Vrat Sankalpa.",
+        "mantra_id": "chandra-arghya-mantra",
+        "mantra_count": 3,
+        "note": "If near a river or lake, go there for the dawn bath on Purnima. If not, the home bath is complete."
+      },
+      {
+        "step_number": 2,
+        "title": "Morning Vishnu Puja",
+        "action": "Perform a brief Vishnu puja: light ghee lamp, offer Tulsi leaves, chant 'Om Namo Narayanaya' or Vishnu Sahasranama (or any portion of it).",
+        "duration_minutes": 15,
+        "note": "Purnima is Vishnu's tithi — the 15th tithi of Shukla Paksha, the fullest expression of the waxing moon, corresponds to Vishnu's complete grace."
+      },
+      {
+        "step_number": 3,
+        "title": "Satyanarayan Puja (optional but traditional)",
+        "action": "Many families perform Satyanarayan Puja on Purnima afternoon. If combining: the Purnima fast and Satyanarayan Puja are fully complementary — the katha is read in the afternoon, the fast is broken only after moonrise.",
+        "duration_minutes": 120,
+        "note": "If combining with Satyanarayan Puja, use the full Satyanarayan Puja template. The Sheera prasad can be offered first to Vishnu (Satyanarayan Puja) and the official fast-break is after the moonrise Arghya."
+      },
+      {
+        "step_number": 4,
+        "title": "Sharad Purnima Kheer preparation (only in Ashwin month)",
+        "action": "On Sharad Purnima specifically: prepare rice pudding (Kheer) and place it in a clean container outside under the open sky to receive moonlight. Leave it for 1–3 hours after moonrise.",
+        "note": "Sharad Purnima moonlight is believed in Ayurveda to have special healing properties. The cooled moonlight Kheer is both medicine and prasad."
+      },
+      {
+        "step_number": 5,
+        "title": "Evening Chandra Stotra",
+        "action": "One hour before moonrise: light the ghee lamp. Recite the Chandra Stotra (hymn to the moon). Prepare the Arghya water in the copper vessel.",
+        "mantra_id": "chandra-stotra",
+        "mantra_count": 1,
+        "duration_minutes": 10
+      },
+      {
+        "step_number": 6,
+        "title": "Moonrise — Chandra Arghya (The Culmination)",
+        "action": "When the moonrise alarm fires: go outside. Face the direction of the rising moon. When you see it, cup water in both hands (or pour from vessel) and release it toward the moon while chanting the Chandra Arghya Mantra.",
+        "mantra_id": "chandra-arghya-mantra",
+        "mantra_count": 3,
+        "note": "The fast is complete after the Arghya. Look directly at the full moon for a few moments — this is itself considered a darshan (divine viewing)."
+      },
+      {
+        "step_number": 7,
+        "title": "Break the Fast",
+        "action": "After Arghya: bring in the Kheer (if Sharad Purnima), offer it to Vishnu, then distribute and eat. Otherwise, begin your meal with prasad from the day's puja.",
+        "note": "Purnima fast is broken with white foods ideally: milk, rice, kheer, curd. Not non-veg."
+      },
+      {
+        "step_number": 8,
+        "title": "Kshama Prarthana",
+        "action": "Conclude with the forgiveness prayer.",
+        "mantra_id": "kshama-prarthana",
+        "mantra_count": 1
+      }
+    ],
+
+    "mantras_explained": [
+      {
+        "mantra_id": "chandra-arghya-mantra",
+        "why_this_mantra": "The Arghya mantra calls the moon by multiple names: Chandra (shining), Soma (the nectar-being), Mahabhaga (of great fortune), Sudhakara (nectar-possessor). In Vedic understanding, the moon literally stores and releases Soma — the divine nectar that nourishes plants, herbs, and all life. When you offer water to the moon, you are giving back — water goes up to the moon, the moon gives Soma nectar down. A circular offering.",
+        "how_to_pronounce": "Om Chan-dram Ga-chha Ma-haa-bha-ga Chan-dra So-ma Shu-bha-pra-da | Chan-dra-kaan-ta Ma-haa-bha-ga Gri-haa-naar-ghyam Na-mos-tu Te ||",
+        "what_to_visualize": "The full moon floating in the sky — not a rock but a being of light, of coolness, of nectar. As you pour the water in an arc toward it, see the moonlight catch the water stream. Your offering enters the moon. The moon receives it and smiles — its light grows a shade brighter."
+      },
+      {
+        "mantra_id": "chandra-stotra",
+        "why_this_mantra": "The Chandra Stotra calls the moon 'the lord of all herbs' — this is Ayurvedic knowledge encoded in prayer. Every medicinal plant's potency waxes and wanes with the moon. Full moon = maximum potency. Purnima is when you collect herbs, when you plant healing gardens, when you take medicinal tonics. The stotra acknowledges this cosmic pharmacist.",
+        "how_to_pronounce": "De-vaa-naam Cha Ri-shee-naam Cha Ga-naa-naam-cha Su-par-va-naam | U-da-yas-tvam U-paa-yaa-si Yaj-nyaa-naam Pa-ti-re-va Cha ||",
+        "what_to_visualize": "The full moon rising above the eastern horizon. Imagine every herb and plant in the world leaning toward the moonlight, absorbing its Soma energy. You are part of this planetary breathing — inhaling the moonlight, exhaling gratitude."
+      }
+    ]
+  },
+
+  "alarms": [
+    {
+      "alarm_id": "purnima-dawn-bath",
+      "label": "Purnima — Dawn Bath and Sankalpa",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": -30,
+      "notification_message": "Purnima dawn — ideal time for the holy bath and Sankalpa",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "purnima-moonrise-prep",
+      "label": "Prepare Chandra Arghya — Moonrise in 30 min",
+      "time_type": "moonrise",
+      "offset_minutes": -30,
+      "notification_message": "Moonrise in 30 minutes — prepare the copper vessel with water and flowers",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "purnima-moonrise-arghya",
+      "label": "PURNIMA MOONRISE — Offer Arghya Now",
+      "time_type": "moonrise",
+      "offset_minutes": 0,
+      "mantra_id": "chandra-arghya-mantra",
+      "notification_message": "The full moon has risen — go outside, offer water, and break your fast!",
+      "repeat_daily": false
+    }
+  ],
+
+  "after_completion": {
+    "materials_disposal": [
+      { "material": "Kheer (if Sharad Purnima)", "disposal_method": "First offer to the moon (leave under open sky for 1–2 hours), then distribute to all family", "note": "Sharad Purnima Kheer is the most auspicious prasad of the year — every family member should eat some" },
+      { "material": "Flowers from Chandra Arghya", "disposal_method": "Immerse in flowing water or bury", "note": "" },
+      { "material": "Arghya water", "disposal_method": "Pour on a plant or pour on the earth — not in the drain", "note": "" }
+    ],
+    "prasad_distribution": "Kheer or any sweet offered on Purnima should be distributed to family and neighbors. On Kartika Purnima, sending sweets to neighbors and charity to the poor is part of the vrat.",
+    "next_steps": [
+      "Mark this Purnima as complete",
+      "Next Purnima is in approximately 30 days — the app will remind you",
+      "Note which Purnima this was: special names carry special energy (Sharad = moonlight healing, Kartika = Dev Diwali, Vaishakha = Buddha Purnima)"
+    ],
+    "udyapan": {
+      "required": false,
+      "description": "Monthly Purnima vrats do not require formal Udyapan. Each Purnima is complete in itself. If you undertook a specific Purnima vrat commitment (e.g. 12 Purnimas), conclude with a Vishnu puja and distribution of white prasad (kheer, rice pudding) to the needy."
+    }
+  },
+
+  "forgiveness_mantra_id": "kshama-prarthana"
+}

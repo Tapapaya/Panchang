@@ -1,0 +1,190 @@
+{
+  "template_id": "ekadashi-vrat",
+  "name": "Ekadashi Vrat",
+  "deity": "Lord Vishnu",
+  "duration_days": 2,
+  "duration_note": "The Ekadashi vrat spans 2 days: the fast on Ekadashi and the Parana (fast-breaking) on Dwadashi morning",
+  "recurrence": {
+    "pattern": "monthly_tithi",
+    "tithi": "ekadashi",
+    "suggested_repeat_count": 12,
+    "repeat_note": "Ideally observed every Ekadashi (24 times a year). Starting with one Ekadashi per month (12 times) is the most common vow."
+  },
+  "calendar_color": "blue",
+
+  "sankalpa_text_template": "ममात्मनः सर्वपापक्षयपूर्वकदीर्घायुर्बलपुष्टिनैरुज्यैश्वर्याभिवृद्ध्यर्थं... [user fills name, gotra, location] ...एकादश्यां उपवासं करिष्ये ।",
+  "sankalpa_guide": "Stand facing east. Hold water in your cupped hands. Say your name, your father's name (or gotra if known), and your location. Then recite the sankalpa. Release the water into a vessel or onto the earth.",
+
+  "guide": {
+    "preparation": [
+      "On Dashami (day before Ekadashi): eat only once, avoid beans, lentils, and meat. Eat before sunset.",
+      "Prepare a clean space for Vishnu puja — wash the idol or image",
+      "Gather puja materials (Tulsi leaves, yellow flowers, incense, ghee lamp, bell)",
+      "Inform family members of your vrat — their cooperation helps",
+      "Charge your phone to ensure the Parana alarm doesn't miss"
+    ],
+
+    "materials": [
+      { "name": "Tulsi leaves (fresh)", "quantity": "5–11 leaves", "purpose": "Primary offering to Vishnu — the most essential item", "substitute": "Dried Tulsi if fresh unavailable, but fresh is far superior" },
+      { "name": "Yellow/white flowers", "quantity": "A handful", "purpose": "Flower offering to Vishnu", "substitute": "Any clean flower" },
+      { "name": "Ghee lamp (diya)", "quantity": "1", "purpose": "Light offering", "substitute": "Any oil lamp" },
+      { "name": "Incense sticks", "quantity": "3–5", "purpose": "Fragrance offering", "substitute": "Dhoop (incense cone)" },
+      { "name": "Bell (ghanta)", "quantity": "1", "purpose": "To announce the puja to the deity", "substitute": "Clap hands gently three times" },
+      { "name": "Water in a copper vessel", "quantity": "As needed", "purpose": "For Arghya (water offering) and Abhishek", "substitute": "Any clean vessel" },
+      { "name": "Fruits", "quantity": "As available", "purpose": "Prasad offering and food during the fast", "substitute": "Any seasonal fruit" },
+      { "name": "Sesame seeds (til)", "quantity": "A small handful", "purpose": "For Parana on Dwadashi — auspicious to eat when breaking fast", "substitute": "Banana or Tulsi water" }
+    ],
+
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Wake up before sunrise",
+        "action": "Set an alarm for Brahma Muhurta (app alarm fires automatically). Wake up, drink a glass of water, and go to the bathroom.",
+        "note": "If you cannot wake up at Brahma Muhurta, waking up at sunrise is acceptable."
+      },
+      {
+        "step_number": 2,
+        "title": "Bathe and purify",
+        "action": "Take a full bath. If not possible, wash hands, feet, and face at minimum. Wear clean clothes — light colors preferred (white or yellow).",
+        "note": "Physical purity is the outer gate to inner purity."
+      },
+      {
+        "step_number": 3,
+        "title": "Take the Sankalpa",
+        "action": "Stand facing east. Hold water in cupped hands. Say your name and location, then recite the Ekadashi Vrat Sankalpa (shown on screen). Release the water.",
+        "mantra_id": "ekadashi-sankalpa",
+        "mantra_count": 1,
+        "note": "The sankalpa is the formal beginning of the vrat. It makes your intention concrete and conscious."
+      },
+      {
+        "step_number": 4,
+        "title": "Perform Vishnu Puja",
+        "action": "Light the ghee lamp and incense. Offer Tulsi leaves and flowers to Vishnu's image. Ring the bell. Chant the 8 names of Vishnu (Ashtottara Sata Namashtaka).",
+        "mantra_id": "vishnu-ashtottara-ekadashi",
+        "mantra_count": 3,
+        "duration_minutes": 15,
+        "note": "Tulsi is essential. Without Tulsi, Vishnu puja is incomplete."
+      },
+      {
+        "step_number": 5,
+        "title": "Spend the day in spiritual activities",
+        "action": "Throughout the day: chant 'Om Namo Narayanaya' or 'Om Namo Bhagavate Vasudevaya'. Read the Mahatmya of today's Ekadashi. Avoid TV and social media where possible.",
+        "mantra_id": "vishnu-ashtottara-ekadashi",
+        "duration_minutes": null,
+        "note": "Even 10 minutes of chanting counts. Quality of attention matters more than quantity."
+      },
+      {
+        "step_number": 6,
+        "title": "Pradosha Puja (Evening)",
+        "action": "At sunset, light another ghee lamp before Vishnu. Offer sandalwood paste (chandan). Chant the 8 names again. Perform aarti.",
+        "mantra_id": "vishnu-ashtottara-ekadashi",
+        "mantra_count": 1,
+        "duration_minutes": 10
+      },
+      {
+        "step_number": 7,
+        "title": "Night vigil (optional but meritorious)",
+        "action": "Stay awake through the night in Vishnu's name. Sing bhajans, listen to Vishnu Sahasranama, or read Bhagavad Gita. Even staying awake till midnight counts.",
+        "note": "Jagran (night vigil) on Ekadashi is said to give merit equivalent to performing the Ashwamedha yajna."
+      },
+      {
+        "step_number": 8,
+        "title": "Parana — Breaking the fast (next morning, Dwadashi)",
+        "action": "App alarm fires at the Parana start time. Chant the Parana Shloka. First eat a few Tulsi leaves dissolved in water. Then eat sattvic food — fruit, milk, or grain (rice is allowed on Dwadashi).",
+        "mantra_id": "ekadashi-parana-shloka",
+        "mantra_count": 1,
+        "note": "Breaking the fast outside the Parana window reduces the vrat's merit. The app will alert you when the window opens and when it closes."
+      },
+      {
+        "step_number": 9,
+        "title": "Kshama Prarthana — Forgiveness",
+        "action": "After Parana, sit quietly and chant the Kshama Prarthana for any steps you missed or mistakes you made during the vrat.",
+        "mantra_id": "kshama-prarthana",
+        "mantra_count": 1,
+        "note": "This step completes the vrat regardless of imperfections. God accepts sincere effort, not perfect ritual."
+      }
+    ],
+
+    "mantras_explained": [
+      {
+        "mantra_id": "ekadashi-sankalpa",
+        "why_this_mantra": "The Sankalpa is a formal declaration to God and to yourself: 'I am doing this consciously, with a specific intention.' It creates a container for the entire day. Without sankalpa, the fast is just not eating — with sankalpa, it becomes a vrat (vow) that carries spiritual weight.",
+        "how_to_pronounce": "Speak slowly and clearly. The words matter less than the intention behind them. If you mispronounce, it is forgiven — God listens to the heart, not just the lips.",
+        "what_to_visualize": "See yourself standing before Lord Vishnu, who is seated on Ananta Shesha in the cosmic ocean. He is looking at you with infinite patience and love. You are making a promise to Him."
+      },
+      {
+        "mantra_id": "vishnu-ashtottara-ekadashi",
+        "why_this_mantra": "Each of these 8 names of Vishnu describes a different quality of God: the all-pervading, the liberator, the indweller, the refuge, the bearer of Lakshmi, the lord of the senses, the lotus-navel, the one bound by Yashoda's love. Chanting all 8 is like greeting God from 8 different angles — each name activates a different aspect of His grace.",
+        "how_to_pronounce": "Om Vishna-ve na-mah | Om Ja-nar-da-na-ya na-mah | Om Vaa-su-de-va-ya na-mah | Om Naa-raa-ya-na-ya na-mah | Om Shree-dha-ra-ya na-mah | Om Hri-shee-ke-sha-ya na-mah | Om Pad-ma-naa-bha-ya na-mah | Om Daa-mo-da-ra-ya na-mah",
+        "what_to_visualize": "See the four-armed Vishnu in his Vaikuntha form — holding the Shankha (conch), Chakra (discus), Gada (mace), and Padma (lotus). He is smiling at you."
+      },
+      {
+        "mantra_id": "ekadashi-parana-shloka",
+        "why_this_mantra": "The Parana shloka is gratitude. It says: 'I completed this vrat imperfectly, as a human must. Please give me the full fruit of it anyway.' It is the closing handshake that seals the vrat.",
+        "how_to_pronounce": "Aj-nyaa-naat kri-ta-paa-paa-naam jnyaa-naad vaa su-ra-pun-ga-va | Paa-ra-nam ku-ru de-ve-sha e-kaa-da-shyaah pha-lam ma-ma ||",
+        "what_to_visualize": "See yourself completing the journey. The fast is over. Lord Vishnu is receiving your offering with both hands."
+      }
+    ]
+  },
+
+  "alarms": [
+    {
+      "alarm_id": "brahma-muhurta-wake",
+      "label": "Brahma Muhurta — Wake up for Ekadashi",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": -96,
+      "notification_message": "Ekadashi Brahma Muhurta — Wake up, bathe, and take Sankalpa",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "ekadashi-pradosha",
+      "label": "Pradosha Puja Time",
+      "time_type": "relative_to_sunset",
+      "offset_minutes": 0,
+      "mantra_id": "vishnu-ashtottara-ekadashi",
+      "notification_message": "Pradosha time — Light the lamp and offer Tulsi to Vishnu",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "parana-start",
+      "label": "Parana Window Opens — Break your fast now",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": 0,
+      "mantra_id": "ekadashi-parana-shloka",
+      "notification_message": "Parana window open! Chant the Parana Shloka and break your Ekadashi fast",
+      "repeat_daily": false,
+      "active_dates_note": "This alarm fires on Dwadashi morning, not Ekadashi morning — computed by the app"
+    },
+    {
+      "alarm_id": "parana-end-warning",
+      "label": "Parana window closing in 15 minutes",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": 225,
+      "notification_message": "Parana window closes in 15 minutes — break your fast now if you haven't yet",
+      "repeat_daily": false,
+      "active_dates_note": "This alarm fires on Dwadashi morning, approximately 3 hrs 45 min after sunrise"
+    }
+  ],
+
+  "after_completion": {
+    "materials_disposal": [
+      { "material": "Tulsi leaves (offered)", "disposal_method": "Leave on the altar or place at the base of the Tulsi plant", "note": "Do not throw in the trash — Tulsi is sacred" },
+      { "material": "Flowers (offered)", "disposal_method": "Immerse in flowing water or bury in the earth", "note": "" },
+      { "material": "Ashes from incense", "disposal_method": "Scatter in the garden or near a tree", "note": "" },
+      { "material": "Diya wax/oil remnants", "disposal_method": "Dispose respectfully in earth or compost", "note": "Do not throw in the regular trash" },
+      { "material": "Prasad (fruit)", "disposal_method": "Distribute to family members and eat yourself", "note": "Ekadashi prasad — fruit offered to Vishnu — is auspicious and should be consumed, not discarded" }
+    ],
+    "prasad_distribution": "Distribute fruit prasad to all family members. If sesame was offered, it can be mixed with water and consumed during Parana.",
+    "next_steps": [
+      "Mark this Ekadashi as completed in the app",
+      "On Dwadashi, donate food or money to Brahmins or the needy — Dwadashi is the ideal day for Annadaan",
+      "The next Ekadashi is in approximately 14–15 days — the app will remind you 2 days before"
+    ],
+    "udyapan": {
+      "required": false,
+      "description": "Ekadashi vrat does not require a formal Udyapan. Each Ekadashi is complete in itself. However, if you vowed to observe a specific number of Ekadashis (e.g. 12), a simple thanks-giving puja on the last one is appropriate."
+    }
+  },
+
+  "forgiveness_mantra_id": "kshama-prarthana"
+}

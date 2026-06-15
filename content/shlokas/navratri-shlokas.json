@@ -1,0 +1,115 @@
+{
+  "id": "navratri-shlokas",
+  "name": "Core Shlokas for Navratri and Devi Worship",
+  "category": "navratri",
+
+  "shlokas": [
+    {
+      "id": "ya-devi-sarvabhuteshu",
+      "name": "Ya Devi Sarvabhuteshu — Devi Vandana",
+      "purpose": "The most universal prayer to Goddess Devi, from Devi Mahatmya (Durga Saptashati) Chapter 5",
+      "when_to_chant": "Every morning of Navratri; at the start of Devi puja; anytime you seek Devi's grace",
+      "verses": [
+        {
+          "verse_id": "ya-devi-shakti",
+          "title": "Devi as Shakti (Power)",
+          "sanskrit": "या देवी सर्वभूतेषु शक्तिरूपेण संस्थिता ।\nनमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥",
+          "iast": "yā devī sarvabhūteṣu śaktirūpeṇa saṃsthitā |\nnamastasyai namastasyai namastasyai namo namaḥ ||",
+          "english_meaning": "That Goddess who dwells in all beings as Power/Energy — salutations to Her, salutations to Her, salutations to Her, salutations again and again.",
+          "what_changes": "Replace 'śaktirūpeṇa' with any of the forms below to salute different aspects of Devi"
+        },
+        {
+          "verse_id": "ya-devi-buddhi",
+          "title": "Devi as Buddhi (Wisdom/Intelligence)",
+          "sanskrit": "या देवी सर्वभूतेषु बुद्धिरूपेण संस्थिता ।\nनमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥",
+          "iast": "yā devī sarvabhūteṣu buddhirūpeṇa saṃsthitā |\nnamastasyai namastasyai namastasyai namo namaḥ ||",
+          "english_meaning": "That Goddess who dwells in all beings as Intelligence/Wisdom — salutations to Her, again and again."
+        },
+        {
+          "verse_id": "ya-devi-nidra",
+          "title": "Devi as Nidra (Sleep/Rest) and Maya",
+          "sanskrit": "या देवी सर्वभूतेषु निद्रारूपेण संस्थिता ।\nनमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥",
+          "iast": "yā devī sarvabhūteṣu nidrārūpeṇa saṃsthitā |\nnamastasyai namastasyai namastasyai namo namaḥ ||",
+          "english_meaning": "That Goddess who dwells in all beings as sleep/rest — salutations to Her, again and again."
+        },
+        {
+          "verse_id": "ya-devi-kshudhaa",
+          "title": "Devi as Kshudhaa (Hunger) — even hunger is divine",
+          "sanskrit": "या देवी सर्वभूतेषु क्षुधारूपेण संस्थिता ।\nनमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥",
+          "iast": "yā devī sarvabhūteṣu kṣudhārūpeṇa saṃsthitā |\nnamastasyai namastasyai namastasyai namo namaḥ ||",
+          "english_meaning": "That Goddess who dwells in all beings as hunger — salutations to Her, again and again.",
+          "significance": "This verse is revolutionary: the prayer says even hunger, even sleep, even pain is a form of the Goddess. Everything is Her."
+        }
+      ],
+      "how_to_chant": "Chant all 4 verses together, 3 times per verse, every morning. Or chant continuously, cycling through the verses. Traditionally 16 different aspects of Devi are saluted — all use the same refrain with different noun in place.",
+      "significance": "The Devi Mahatmya (also called Chandi or Durga Saptashati) has 700 verses. This prayer from Chapter 5 is its heart — it says: the Goddess is not separate from the world. She IS the world, in every form, in every being.",
+      "reviewed": false
+    },
+    {
+      "id": "aigiri-nandini-verse1",
+      "name": "Mahishasura Mardini Stotram — Aigiri Nandini (First Verse)",
+      "purpose": "Celebration of Durga's defeat of the buffalo demon Mahishasura — the story Navratri commemorates",
+      "when_to_chant": "During Navratri especially; also on Fridays, Ashtami, Navami; as a morning energizer",
+      "sanskrit": "अयि गिरिनन्दिनि नन्दितमेदिनि विश्वविनोदिनि नन्दनुते\nगिरिवरविन्ध्यशिरोऽधिनिवासिनि विष्णुविलासिनि जिष्णुनुते ।\nभगवति हे शितिकण्ठकुटुम्बिनि भूरिकुटुम्बिनि भूरिकृते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥",
+      "iast": "ayi girinandini nanditamedini viśvavinodini nandanute\ngirivaravindhyaśiro'dhinavāsini viṣṇuvilāsini jiṣṇunute |\nbhagavati he śitikaṇṭhakuṭumbini bhūrikuṭumbini bhūrikṛte\njaya jaya he mahiṣāsuramardini ramyakapardinī śailasute ||",
+      "english_meaning": "O daughter of the mountain (Girija), who delights the earth, who is the joy of the universe, who is praised by Nanda, who resides on the great Vindhya mountain, who is adored by Vishnu and Jishnu — O Bhagavati, wife of the blue-throated (Shiva), mother of a great family, doer of great deeds — Victory! Victory! O slayer of Mahishasura, with beautiful matted locks, daughter of the mountain!",
+      "significance": "Composed in an intricate Sanskrit meter (Anandashalagati) that mimics the rolling rhythm of a charging goddess. It is meant to be sung, not just chanted — the rhythm itself is the experience.",
+      "how_to_chant": "Best sung, not just chanted. The rhythm is fast and energetic — it builds like a battle cry. All 21 verses build to a crescendo. Even one verse sung with feeling is deeply powerful.",
+      "reviewed": false
+    },
+    {
+      "id": "devi-kavach-opening",
+      "name": "Devi Kavach — The Armour of the Goddess (Opening)",
+      "purpose": "Protective prayer — calling Devi to protect every part of the body and life",
+      "when_to_chant": "Every morning during Navratri; before leaving home; for protection",
+      "sanskrit": "विनियोगः\nओं अस्य श्री चण्डी कवचस्य ब्रह्मा ऋषिः अनुष्टुप् छन्दः\nचामुण्डा देवता अङ्गन्यासोक्तमातरो बीजम् दिग्बन्धदेवताः शक्तिः\nश्री जगदम्बा प्रीत्यर्थे सप्तशती पाठाङ्गत्वेन जपे विनियोगः ।",
+      "kavach_verses": {
+        "head": {
+          "sanskrit": "शिरो मे रक्ष चामुण्डा चाक्षुषी नेत्रयोस्तु मे ।",
+          "iast": "śiro me rakṣa cāmuṇḍā cākṣuṣī netrayos tu me |",
+          "english_meaning": "May Chamunda protect my head; may the Eye-goddess protect my eyes."
+        },
+        "speech": {
+          "sanskrit": "वाग्देवी च मुखं पातु कण्ठं मे रक्ष चण्डिका ।",
+          "iast": "vāgdevī ca mukhaṃ pātu kaṇṭhaṃ me rakṣa caṇḍikā |",
+          "english_meaning": "May Vagdevi (goddess of speech) protect my mouth; may Chandika protect my throat."
+        },
+        "heart": {
+          "sanskrit": "हृदयं ललिता पातु उदरं पातु चामुण्डा ।",
+          "iast": "hṛdayaṃ lalitā pātu udaraṃ pātu cāmuṇḍā |",
+          "english_meaning": "May Lalita protect my heart; may Chamunda protect my stomach."
+        }
+      },
+      "significance": "The Devi Kavach is a 'kavach' (armour) — it mentally places the Goddess at every point of the body and every direction of space, creating a complete shield of divine protection. Traditionally recited before the Durga Saptashati.",
+      "reviewed": false
+    },
+    {
+      "id": "navratri-sankalpa",
+      "name": "Navratri Vrat Sankalpa",
+      "purpose": "Declaration of the 9-day Navratri vrat at the start of Pratipada (Day 1)",
+      "when_to_chant": "On the first morning of Navratri, while holding water for the Sankalpa",
+      "sanskrit": "ममात्मनः सर्वपापक्षयपूर्वकदीर्घायुर्बलपुष्टिनैरुज्यैश्वर्याभिवृद्ध्यर्थं\nसर्वाभीष्टसिद्ध्यर्थं श्री दुर्गाप्रसादसिद्ध्यर्थं नवरात्र्यां\nनवदिनपर्यन्तं उपवासं करिष्ये देवीं च पूजयिष्ये ।",
+      "iast": "mamātmanaḥ sarvapāpakṣayapūrvakadīrghāyurbalapuṣṭinairujyaiśvaryābhivṛddhyarthaṃ\nsarvābhīṣṭasiddhyarthaṃ śrī durgāprasādasiddhyarthaṃ navarātryāṃ\nnavadinaparyantaṃ upavāsaṃ kariṣye devīṃ ca pūjayiṣye |",
+      "english_meaning": "For the destruction of all sins, for long life, strength, health, and prosperity, for the fulfilment of all desires, and for the grace of Goddess Durga — I vow to fast and worship the Goddess for nine days of Navratri.",
+      "reviewed": false
+    },
+    {
+      "id": "navdurga-names",
+      "name": "Nine Forms of Durga — Nav Durga Namashtaka",
+      "purpose": "One form of Devi is worshipped each day of Navratri. Knowing the form for each day structures the 9-day worship.",
+      "when_to_chant": "Each morning of Navratri — chant the name of that day's form 108 times",
+      "forms": [
+        { "day": 1, "name": "Shailputri", "meaning": "Daughter of the Mountain (Himavat)", "color": "Grey", "mantra": "ॐ ऐं ह्रीं क्लीं शैलपुत्र्यै नमः", "mantra_iast": "oṃ aiṃ hrīṃ klīṃ śailaputryai namaḥ", "significance": "She rides a bull (Nandi), holds a trident and lotus. She is Parvati before her marriage to Shiva — embodying perfect purity." },
+        { "day": 2, "name": "Brahmacharini", "meaning": "One who practises Brahmacharya (spiritual discipline)", "color": "Orange", "mantra": "ॐ ऐं ह्रीं क्लीं ब्रह्मचारिण्यै नमः", "mantra_iast": "oṃ aiṃ hrīṃ klīṃ brahmacāriṇyai namaḥ", "significance": "She represents the intense penance Parvati underwent to win Shiva's love. She teaches us that the most important things are worth the deepest effort." },
+        { "day": 3, "name": "Chandraghanta", "meaning": "One who wears a half-moon like a bell on her forehead", "color": "White", "mantra": "ॐ ऐं ह्रीं क्लीं चन्द्रघण्टायै नमः", "mantra_iast": "oṃ aiṃ hrīṃ klīṃ candraghaṇṭāyai namaḥ", "significance": "She has 10 arms and rides a tiger. The bell on her forehead emits a fearful sound that destroys evil. She is Parvati after her marriage — now a complete, powerful being." },
+        { "day": 4, "name": "Kushmanda", "meaning": "The one whose cosmic laugh (smiling) created the universe", "color": "Orange/Red", "mantra": "ॐ ऐं ह्रीं क्लीं कूष्माण्डायै नमः", "mantra_iast": "oṃ aiṃ hrīṃ klīṃ kūṣmāṇḍāyai namaḥ", "significance": "She is the primordial creative force. She resides in the sun and gives it energy. She holds a pot of nectar and a discus." },
+        { "day": 5, "name": "Skandamata", "meaning": "Mother of Skanda (Kartikeya, god of war)", "color": "White", "mantra": "ॐ ऐं ह्रीं क्लीं स्कन्दमातायै नमः", "mantra_iast": "oṃ aiṃ hrīṃ klīṃ skandamātāyai namaḥ", "significance": "She holds infant Skanda on her lap, riding a lion. She teaches that true power is not separate from tenderness." },
+        { "day": 6, "name": "Katyayani", "meaning": "Born to sage Katyayana to destroy Mahishasura", "color": "Red", "mantra": "ॐ ऐं ह्रीं क्लीं कात्यायन्यै नमः", "mantra_iast": "oṃ aiṃ hrīṃ klīṃ kātyāyanyai namaḥ", "significance": "The warrior form. She is four-armed, rides a lion, carries a sword and lotus. The Gopis of Vrindavan worshipped her to get Krishna as their husband — she is also worshipped for marriage wishes." },
+        { "day": 7, "name": "Kalaratri", "meaning": "The dark night of time — destroyer of darkness", "color": "Black", "mantra": "ॐ ऐं ह्रीं क्लीं कालरात्र्यै नमः", "mantra_iast": "oṃ aiṃ hrīṃ klīṃ kālarātryai namaḥ", "significance": "The most fearsome form — black-skinned, wild-haired, wearing a garland of skulls. But she is called 'Shubhankari' — the one who does good. True transformation requires facing the darkest aspects of ourselves." },
+        { "day": 8, "name": "Mahagauri", "meaning": "The great white/fair goddess", "color": "White/Pink", "mantra": "ॐ ऐं ह्रीं क्लीं महागौर्यै नमः", "mantra_iast": "oṃ aiṃ hrīṃ klīṃ mahāgauryai namaḥ", "significance": "Parvati after Shiva bathed her, washing away all the ash and dirt of her penance. She becomes radiant white — the darkness of Kalaratri is transformed into pure light. What you sacrifice becomes beauty." },
+        { "day": 9, "name": "Siddhidatri", "meaning": "The giver of all supernatural powers (Siddhis)", "color": "Purple/Violet", "mantra": "ॐ ऐं ह्रीं क्लीं सिद्धिदात्र्यै नमः", "mantra_iast": "oṃ aiṃ hrīṃ klīṃ siddhidātryai namaḥ", "significance": "The final form — seated on a lotus, four-armed, serene. She grants all 8 siddhis (supernatural powers) and 9 nidhis (treasures). She is the Devi who is beyond all forms — the source of all power and fulfillment." }
+      ],
+      "reviewed": false
+    }
+  ]
+}

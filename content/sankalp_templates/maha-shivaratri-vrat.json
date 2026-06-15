@@ -1,0 +1,228 @@
+{
+  "template_id": "maha-shivaratri-vrat",
+  "name": "Maha Shivaratri Vrat — The Great Night of Shiva",
+  "deity": "Lord Shiva (Mahadeva — the Great God)",
+  "duration_days": 2,
+  "duration_note": "Maha Shivaratri spans 2 days: the main fast and 4-prahar worship on Chaturdashi night, and the fast-break on the morning of Amavasya.",
+  "recurrence": {
+    "pattern": "yearly_festival",
+    "suggested_repeat_count": 1,
+    "repeat_note": "Observed once per year on Krishna Chaturdashi of Phalguna month (February–March). The greatest Shiva festival of the year."
+  },
+  "calendar_color": "saffron",
+
+  "sankalpa_text_template": "ममात्मनः सर्वपापक्षयपूर्वकचतुर्विधफलप्राप्त्यर्थं महाशिवरात्रिव्रतं करिष्ये शिवं च पूजयिष्ये ।",
+  "sankalpa_guide": "On Chaturdashi morning. Face north. Hold water and Bilva leaves. Say your name and gotra. Recite the sankalpa. Release the water and leaves.",
+
+  "four_prahar_worship": {
+    "description": "The defining feature of Maha Shivaratri: 4 Prahar (3-hour watches) of worship through the night. Each Prahar has specific offerings.",
+    "prahar_1": {
+      "time": "Evening (sunset to ~9 PM)",
+      "offering": "Milk (Ksheera Abhishek)",
+      "significance": "Shiva as the peaceful, cooling force — like milk"
+    },
+    "prahar_2": {
+      "time": "Night (~9 PM to midnight)",
+      "offering": "Curd (Dadhi Abhishek)",
+      "significance": "Shiva as the fermenting, transformative force"
+    },
+    "prahar_3": {
+      "time": "After midnight (~12 AM to 3 AM)",
+      "offering": "Ghee (Ghrita Abhishek)",
+      "significance": "Shiva as the pure, clarified consciousness"
+    },
+    "prahar_4": {
+      "time": "Pre-dawn (~3 AM to sunrise)",
+      "offering": "Honey (Madhu Abhishek)",
+      "significance": "Shiva as the sweetness of liberation — the dawn of moksha"
+    }
+  },
+
+  "guide": {
+    "preparation": [
+      "Maha Shivaratri is the most important Shiva festival — ideally visit a Shiva temple for the 4-Prahar worship",
+      "Prepare Panchamrit for Abhishek: milk, curd, honey, ghee, sugar — enough for 4 sessions through the night",
+      "Stock up on Bilva leaves — ideally 108 sets. Temple provides them, but have your own if doing home puja",
+      "The night is the puja — sleeping through it reduces merit significantly. Plan your schedule accordingly.",
+      "If doing home puja through the night: set up a proper space so you can sit comfortably for 6–8 hours",
+      "Fast begins at sunrise on Chaturdashi — strictly no food, preferably no water until morning of Amavasya"
+    ],
+
+    "materials": [
+      { "name": "Bilva (Bael) leaves", "quantity": "Minimum 108 total across the night — 27 per Prahar", "purpose": "The single most essential item for Shivaratri — Bilva offerings throughout the night are the defining act", "substitute": "No substitute — if unavailable, offer flowers with extra devotion and Kshama Prarthana" },
+      { "name": "Milk (for Prahar 1)", "quantity": "500ml", "purpose": "First Prahar offering — milk Abhishek to Shiva Linga", "substitute": "Cannot substitute — each Prahar has its specific substance" },
+      { "name": "Curd (for Prahar 2)", "quantity": "250ml", "purpose": "Second Prahar offering", "substitute": "Cannot substitute" },
+      { "name": "Ghee (for Prahar 3)", "quantity": "100ml", "purpose": "Third Prahar offering", "substitute": "Cannot substitute" },
+      { "name": "Honey (for Prahar 4)", "quantity": "100ml", "purpose": "Fourth (final) Prahar offering before dawn", "substitute": "Jaggery dissolved in water if honey unavailable" },
+      { "name": "Vibhuti (sacred ash)", "quantity": "Large amount", "purpose": "Applied to forehead throughout the night — multiple applications", "substitute": "None" },
+      { "name": "Rudraksha mala", "quantity": "1", "purpose": "For counting Panchakshara and Maha Mrityunjaya repetitions through the night", "substitute": "Any mala" },
+      { "name": "Datura flowers (white)", "quantity": "As many as available", "purpose": "Shiva's sacred flower for Shivaratri", "substitute": "White flowers of any kind" },
+      { "name": "Dhatura fruit (thorn apple)", "quantity": "1 if available", "purpose": "Traditional Shivaratri offering — toxic plant that Shiva alone is said to enjoy", "substitute": "Do not consume — just offer and discard safely after" }
+    ],
+
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Dawn Bath and Fast Begins",
+        "action": "Bathe at dawn on Chaturdashi. The fast begins immediately — nothing enters the mouth today until tomorrow morning. If at a river, bathe there. If at home, bathe with intention.",
+        "mantra_id": "panchakshara-mantra",
+        "mantra_count": 108,
+        "note": "Maha Shivaratri fast is ideally Nirjal (no water). However drinking water is permitted. What is NOT permitted: food of any kind."
+      },
+      {
+        "step_number": 2,
+        "title": "Morning Sankalpa",
+        "action": "After bathing, take the Maha Shivaratri Vrat Sankalpa. This is the most important sankalpa of the year for Shiva devotees.",
+        "mantra_id": "shiva-pradosha-stuti",
+        "mantra_count": 1,
+        "note": "The Pradosha Stuti is used as the Sankalpa prayer for Maha Shivaratri — it explicitly states the vrat intention."
+      },
+      {
+        "step_number": 3,
+        "title": "Daytime — Continuous Shiva Japa",
+        "action": "Throughout the day: chant Om Namah Shivaya continuously, mentally or quietly. Visit a Shiva temple for the daytime darshan. Read about Shiva — the Shiva Purana stories. Listen to Shiva bhajans.",
+        "mantra_id": "panchakshara-mantra",
+        "duration_minutes": null,
+        "note": "The entire day is a preparation for the night. Move slowly, speak little, eat nothing."
+      },
+      {
+        "step_number": 4,
+        "title": "First Prahar — Milk Abhishek (Evening, ~Sunset)",
+        "action": "App alarm fires at sunset. Begin First Prahar worship: Abhishek with milk. Pour slowly over the Shiva Linga while chanting Om Namah Shivaya. Offer 27 Bilva leaves, one by one, each with a mantra. Light the ghee lamp.",
+        "mantra_id": "panchakshara-mantra",
+        "mantra_count": 108,
+        "duration_minutes": 30,
+        "note": "If at temple: join the queue for Milk Abhishek in the First Prahar."
+      },
+      {
+        "step_number": 5,
+        "title": "Second Prahar — Curd Abhishek (~9 PM – Midnight)",
+        "action": "App alarm fires. Begin Second Prahar: Abhishek with curd. Continue Bilva archana. This is the deepest night — Shiva's energy intensifies. Chant Maha Mrityunjaya.",
+        "mantra_id": "maha-mrityunjaya-mantra",
+        "mantra_count": 108,
+        "duration_minutes": 30,
+        "note": "The second Prahar is when most devotees find themselves becoming sleepy — push through. The half-night battle with sleep is part of the vrat."
+      },
+      {
+        "step_number": 6,
+        "title": "Third Prahar — Ghee Abhishek (Midnight – 3 AM)",
+        "action": "App alarm fires at midnight. Third Prahar: Abhishek with ghee. The deepest point of Maha Shivaratri. Shiva is said to dance his Tandava at this hour. Chant the Shiva Panchakshara Stotram in full (all 5 verses).",
+        "mantra_id": "shiva-panchakshara-stotram-verse1",
+        "mantra_count": 5,
+        "duration_minutes": 30,
+        "note": "Midnight of Maha Shivaratri is the most auspicious hour in the entire Hindu calendar for Shiva devotees. Even sitting in silence with the lamp burning carries the highest merit."
+      },
+      {
+        "step_number": 7,
+        "title": "Fourth Prahar — Honey Abhishek (3 AM – Sunrise)",
+        "action": "App alarm fires at 3 AM. Fourth and final Prahar: Abhishek with honey. This is the Brahma Muhurta Prahar — the dawn of liberation. Complete the remaining Bilva offerings. Chant Maha Mrityunjaya 108 times as the sky lightens.",
+        "mantra_id": "maha-mrityunjaya-mantra",
+        "mantra_count": 108,
+        "duration_minutes": 30,
+        "note": "As the sun rises, the night is complete. You have stayed awake through Shiva's night. This is the Jagran (night vigil) — one of the most meritorious acts in Hindu practice."
+      },
+      {
+        "step_number": 8,
+        "title": "Dawn — Visarjan and Fast Break",
+        "action": "At sunrise on Amavasya morning (the day after Chaturdashi): complete the night's puja. Bow to the Shiva Linga. Light the final Bilva offerings. Then break the fast: drink the Abhishek Charanamrit, eat Bilva prasad, and have a simple sattvic breakfast.",
+        "note": "Breaking the Maha Shivaratri fast with Charanamrit (the Abhishek liquid) is the ideal conclusion."
+      },
+      {
+        "step_number": 9,
+        "title": "Kshama Prarthana",
+        "action": "After breaking the fast, recite the Kshama Prarthana. After a night of intense practice, this is a graceful closure.",
+        "mantra_id": "kshama-prarthana",
+        "mantra_count": 1
+      }
+    ],
+
+    "mantras_explained": [
+      {
+        "mantra_id": "panchakshara-mantra",
+        "why_this_mantra": "Om Namah Shivaya on Maha Shivaratri is not just a mantra — it is the entire universe's song to its own source. The night of Shivaratri is when the veil between the physical and the divine is at its thinnest. Every Om Namah Shivaya chanted on this night carries the force of 1,000 chanted on other days. That is why people chant all night.",
+        "how_to_pronounce": "Om — Na-Mah — Shi-Vaa-Ya. Five syllables. The mantra has no effort — it chants itself once you surrender to it.",
+        "what_to_visualize": "Shiva in deep meditation on Mount Kailash, surrounded by the Himalayan night. He is absolutely still. Snakes coil around him. The Ganga flows from his hair. He is unmoving. You — and every devotee in the world chanting tonight — are the Ganga, flowing toward him."
+      },
+      {
+        "mantra_id": "maha-mrityunjaya-mantra",
+        "why_this_mantra": "Maha Shivaratri is the night Shiva himself stayed awake — meditating, unmoving, master of death and time. Maha Mrityunjaya on this night connects you to that mastery. You are chanting to the God who conquered death, in his most powerful night, when his grace flows most freely. The mantra's healing power is amplified enormously tonight.",
+        "how_to_pronounce": "Om — Try-am-ba-kam — Ya-jaa-ma-he — Su-gan-dhim — Push-ti-var-dha-nam | Ur-vaa-ru-ka-mi-va — Ban-dha-naan — Mri-tyor-Muk-shee-ya — Maa-Mri-taat ||",
+        "what_to_visualize": "Shiva's closed third eye. When it opens, it destroys. But tonight, it stays closed — and in its closure, it heals. The stillness of the closed eye is the deepest peace. You are that stillness."
+      },
+      {
+        "mantra_id": "shiva-panchakshara-stotram-verse1",
+        "why_this_mantra": "Adi Shankaracharya composed this in 5 verses to explain the 5 syllables of Om Namah Shivaya. Reciting all 5 verses on Maha Shivaratri midnight is the equivalent of reciting the entire Shiva Purana. It is a compressed masterpiece. Each verse takes one syllable and expands it into all of Shiva's qualities.",
+        "how_to_pronounce": "Slowly and with full attention to meaning. This is not a fast chant. Each verse should take about 30 seconds, said clearly.",
+        "what_to_visualize": "Shiva wearing the snake garland (Nagendra hara), with ash-smeared body (vibhuti), wearing space as his garment (digambara). He is not dressed — he needs nothing from the world. He is complete."
+      }
+    ]
+  },
+
+  "alarms": [
+    {
+      "alarm_id": "shivaratri-fast-begins",
+      "label": "Maha Shivaratri — Fast Begins at Sunrise",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": 0,
+      "notification_message": "Maha Shivaratri: the greatest night of Shiva begins. Fast starts now.",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "shivaratri-prahar-1",
+      "label": "First Prahar — Milk Abhishek",
+      "time_type": "relative_to_sunset",
+      "offset_minutes": 0,
+      "mantra_id": "panchakshara-mantra",
+      "notification_message": "First Prahar begins — Milk Abhishek. Light the lamp and begin Shiva Linga worship.",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "shivaratri-prahar-2",
+      "label": "Second Prahar — Curd Abhishek",
+      "time_type": "fixed_time",
+      "time_of_day": "21:00",
+      "mantra_id": "maha-mrityunjaya-mantra",
+      "notification_message": "Second Prahar — Curd Abhishek. Stay awake — midnight approaches.",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "shivaratri-prahar-3-midnight",
+      "label": "Third Prahar (MIDNIGHT) — Ghee Abhishek",
+      "time_type": "midnight",
+      "offset_minutes": 0,
+      "mantra_id": "shiva-panchakshara-stotram-verse1",
+      "notification_message": "MIDNIGHT — most sacred hour of Maha Shivaratri! Third Prahar: Ghee Abhishek. Shiva's Tandava!",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "shivaratri-prahar-4-brahma",
+      "label": "Fourth Prahar — Honey Abhishek at Brahma Muhurta",
+      "time_type": "brahma_muhurta",
+      "offset_minutes": 0,
+      "mantra_id": "maha-mrityunjaya-mantra",
+      "notification_message": "Brahma Muhurta — Fourth Prahar: Honey Abhishek. Dawn is near. Complete the night vigil!",
+      "repeat_daily": false
+    }
+  ],
+
+  "after_completion": {
+    "materials_disposal": [
+      { "material": "Bilva leaves (all 108+)", "disposal_method": "Leave on the Shiva Linga altar or return to the Bel tree. Bilva offered on Shivaratri is especially sacred.", "note": "Do not throw in trash" },
+      { "material": "Abhishek liquid (all 4 Prahars)", "disposal_method": "The mixed Charanamrit is the most sacred — distribute to all family members and devotees present", "note": "Shivaratri Charanamrit is believed to have healing properties" },
+      { "material": "Vibhuti", "disposal_method": "Apply remainder to forehead as Tripundra for all family members", "note": "Vibhuti from Shivaratri is the most auspicious of the year" },
+      { "material": "Datura flower (if offered)", "disposal_method": "Remove and dispose in garden or near a Shiva temple. Do not allow children to handle.", "note": "Datura is toxic — handle with care and dispose safely" }
+    ],
+    "prasad_distribution": "Shivaratri Charanamrit (the four-Prahar Abhishek liquid) is the primary prasad. Bilva fruit (if bel fruit was available) is also sacred prasad. Give Vibhuti to all who attended.",
+    "next_steps": [
+      "Maha Shivaratri is complete — this is the most meritorious night in the Shiva calendar",
+      "Next Maha Shivaratri is in approximately 1 year",
+      "Regular Shivaratri (monthly Chaturdashi) also carries special merit — consider observing Pradosha Vrat monthly to maintain the connection"
+    ],
+    "udyapan": {
+      "required": false,
+      "description": "Maha Shivaratri is self-complete — no separate Udyapan required. The four-Prahar worship itself IS the complete ritual. However, offering food to the needy on the morning after (Amavasya morning) amplifies the vrat's merit."
+    }
+  },
+
+  "forgiveness_mantra_id": "kshama-prarthana"
+}

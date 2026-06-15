@@ -1,0 +1,102 @@
+{
+  "id": "satyanarayan-shlokas",
+  "name": "Core Shlokas for Satyanarayan Puja",
+  "category": "satyanarayan",
+
+  "shlokas": [
+    {
+      "id": "satyanarayan-sankalpa",
+      "name": "Satyanarayan Puja Sankalpa",
+      "purpose": "The formal vow taken before the Satyanarayan Puja begins — declaring your intention and seeking Lord Vishnu's grace",
+      "when_to_chant": "At the very beginning of Satyanarayan Puja, before any rituals start, while holding water and a flower",
+      "sanskrit": "ममात्मनः श्रेयःसिद्ध्यर्थं सकलपापक्षयपूर्वकं\nधर्मार्थकाममोक्षचतुर्विधफलप्राप्त्यर्थं\nश्रीसत्यनारायणदेवप्रसादसिद्ध्यर्थं च\nसत्यनारायणव्रतपूजां करिष्ये ।",
+      "iast": "mamātmanaḥ śreyaḥsiddhyarthaṃ sakalapāpakṣayapūrvakaṃ\ndharmaarthakāmamokṣacaturvidhafalprāptyarthaṃ\nśrīsatyanārāyaṇadevarasādasiddhyarthaṃ ca\nsatyanārāyaṇavratapūjāṃ kariṣye |",
+      "english_meaning": "For my highest welfare, after the destruction of all sins, for the attainment of the four goals of life (Dharma, Artha, Kama, Moksha), and for the grace of Lord Satyanarayan — I perform the Satyanarayan Vrat Puja.",
+      "significance": "The four goals (Purusharthas) listed in the sankalpa are complete: Dharma (right living), Artha (prosperity), Kama (fulfillment of desires), Moksha (liberation). Satyanarayan Puja is said to fulfill all four — not just material wishes.",
+      "reviewed": false
+    },
+    {
+      "id": "vishnu-shodashopachara",
+      "name": "Vishnu Shodashopachara — 16-step Worship Invocation",
+      "purpose": "The classic 16-step puja framework — each step is an offering to the Lord who is treated as an honored royal guest",
+      "when_to_chant": "During the Satyanarayan Puja, at each offering step",
+      "steps": [
+        { "step": 1, "name": "Dhyana", "sanskrit": "ॐ ध्यानं समर्पयामि", "action": "Close eyes, meditate on Satyanarayan", "meaning": "I offer meditation" },
+        { "step": 2, "name": "Avahana", "sanskrit": "ॐ आवाहनं समर्पयामि", "action": "Invite the Lord to the seat with folded hands", "meaning": "I offer an invitation — come, O Lord" },
+        { "step": 3, "name": "Asana", "sanskrit": "ॐ आसनं समर्पयामि", "action": "Offer a clean cloth or flower as the divine seat", "meaning": "I offer a seat" },
+        { "step": 4, "name": "Padya", "sanskrit": "ॐ पाद्यं समर्पयामि", "action": "Offer water to wash the Lord's feet (sprinkle water)", "meaning": "I offer water for your feet" },
+        { "step": 5, "name": "Arghya", "sanskrit": "ॐ अर्घ्यं समर्पयामि", "action": "Offer water with flowers for the hands", "meaning": "I offer water for your hands" },
+        { "step": 6, "name": "Achamana", "sanskrit": "ॐ आचमनं समर्पयामि", "action": "Offer water for sipping/drinking", "meaning": "I offer water for drinking" },
+        { "step": 7, "name": "Madhuparka", "sanskrit": "ॐ मधुपर्कं समर्पयामि", "action": "Offer honey+ghee+curd mixture", "meaning": "I offer the sweet honey mixture" },
+        { "step": 8, "name": "Snaana", "sanskrit": "ॐ स्नानं समर्पयामि", "action": "Pour water or Panchamrit over the image", "meaning": "I offer a bath" },
+        { "step": 9, "name": "Vastra", "sanskrit": "ॐ वस्त्रं समर्पयामि", "action": "Offer a piece of cloth or yellow fabric", "meaning": "I offer clothing" },
+        { "step": 10, "name": "Yajnopavita", "sanskrit": "ॐ यज्ञोपवीतं समर्पयामि", "action": "Offer a sacred thread", "meaning": "I offer the sacred thread" },
+        { "step": 11, "name": "Gandha", "sanskrit": "ॐ गन्धं समर्पयामि", "action": "Apply sandalwood paste to the image", "meaning": "I offer fragrant sandalwood" },
+        { "step": 12, "name": "Pushpa", "sanskrit": "ॐ पुष्पाणि समर्पयामि", "action": "Offer flowers — Tulsi and Lotus especially", "meaning": "I offer flowers" },
+        { "step": 13, "name": "Dhupa", "sanskrit": "ॐ धूपं समर्पयामि", "action": "Offer incense — wave it in circles", "meaning": "I offer incense" },
+        { "step": 14, "name": "Dipa", "sanskrit": "ॐ दीपं समर्पयामि", "action": "Offer a lit ghee lamp — wave it in circles", "meaning": "I offer light" },
+        { "step": 15, "name": "Naivedya", "sanskrit": "ॐ नैवेद्यं समर्पयामि", "action": "Offer the Panchamrit prasad and then the Satyanarayan Sheera", "meaning": "I offer food to the Lord" },
+        { "step": 16, "name": "Pradakshina and Namaskara", "sanskrit": "ॐ प्रदक्षिणनमस्कारान् समर्पयामि", "action": "Walk around the altar clockwise once (or do it mentally), then bow", "meaning": "I offer circumambulation and prostration" }
+      ],
+      "significance": "These 16 steps mirror how an ancient Indian king would receive an honored guest — water for feet, water for hands, bath, food, clothing, fragrance, light. The concept: God is your guest, and you are the host. This inversion of the usual prayer relationship makes the devotee feel empowered and responsible.",
+      "reviewed": false
+    },
+    {
+      "id": "satyanarayan-katha-shloka",
+      "name": "Satyanarayan Katha Introduction Shloka",
+      "purpose": "Recited before reading or listening to any of the 5 chapters of Satyanarayan Katha (the story)",
+      "when_to_chant": "Just before beginning to read or tell the Satyanarayan Katha stories",
+      "sanskrit": "सत्यनारायणस्य व्रतकथां श्रोष्यामः ।\nप्रणम्य सत्यनारायणं सकलविघ्नहरं देवम् ॥",
+      "iast": "satyanārāyaṇasya vratakathāṃ śroṣyāmaḥ |\npraṇamya satyanārāyaṇaṃ sakalavighnaharaṃ devam ||",
+      "english_meaning": "We shall hear the vrat katha (sacred story) of Satyanarayan. We bow first to Satyanarayan, the divine remover of all obstacles.",
+      "the_five_stories": [
+        { "chapter": 1, "title": "Narada asks Vishnu about the vrat", "lesson": "Even the sage Narada, who roams all worlds freely, needed to ask: what practice can remove all suffering? Vishnu's answer: the Satyanarayan Vrat. This vrat is not ancient — it is available now, to anyone." },
+        { "chapter": 2, "title": "The poor woodcutter Krishnadatta", "lesson": "A poor man follows the vrat sincerely without knowing all the rules — and his life transforms. Sincerity matters more than perfection." },
+        { "chapter": 3, "title": "The merchant Sadhu and King Ulkamukha", "lesson": "A merchant who forgets his vow loses everything. A king who stays humble prospers. The story is about follow-through — completing what you promised." },
+        { "chapter": 4, "title": "The merchant's daughter Kalvati's husband rescued", "lesson": "When the merchant insults the Prasad (Sheera), his son-in-law is taken to prison. When he accepts and distributes the prasad with devotion, the son-in-law is freed. Never reject or insult prasad." },
+        { "chapter": 5, "title": "The boatman Naubhadra and his family", "lesson": "A boatman's wife performs the puja but the boatman stays on the boat out of greed. He loses his cargo and nearly his family until he accepts the prasad. Material greed versus spiritual openness." }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "satyanarayan-arti",
+      "name": "Satyanarayan Aarti — Jay Lakshmi Ramana",
+      "purpose": "The closing aarti of Satyanarayan Puja — sung while waving the ghee lamp in circles before the Lord",
+      "when_to_chant": "At the end of Satyanarayan Puja, after the Prasad offering, while performing aarti",
+      "verses": [
+        {
+          "verse_id": "aarti-verse-1",
+          "sanskrit": "जय लक्ष्मीरमणा, जय लक्ष्मीरमणा ।\nसत्यनारायण स्वामी जन पातकहरणा ॥",
+          "iast": "jaya lakṣmīramaṇā, jaya lakṣmīramaṇā |\nsatyanārāyaṇa svāmī jana pātakaharaṇā ||",
+          "english_meaning": "Victory to the consort of Lakshmi! Victory! O Satyanarayan Swami, remover of the sins of the people."
+        },
+        {
+          "verse_id": "aarti-verse-2",
+          "sanskrit": "रत्नजड़ित सिंहासन अद्भुत छवि राजे ।\nनारद करत निरंतर वीणा वादन बाजे ॥",
+          "iast": "ratnajhaḍita siṃhāsana adbhuta chavi rāje |\nnārada karata nirantara vīṇā vādana bāje ||",
+          "english_meaning": "On the gem-studded throne, your beauty shines wonderful. Narada continuously plays the veena before you."
+        },
+        {
+          "verse_id": "aarti-verse-3",
+          "sanskrit": "प्रकट भए कलि कारण द्विज को दर्शन दीन्हा ।\nबूढ़ो ब्राह्मण बनकर कनक महल दिखाया ॥",
+          "iast": "prakaṭa bhaye kali kāraṇa dvija ko darśana dīnhā |\nbūḍho brāhmaṇa banakara kanaka mahala dikhāyā ||",
+          "english_meaning": "You appeared for the Kali Yuga, gave darshan to the Brahmin. Taking the form of an old Brahmin, you showed the golden palace."
+        }
+      ],
+      "how_to_sing": "Sing in a call-and-response style if family is present. Wave the aarti plate (with lit lamp) clockwise in circular motions before the deity's image. Ring the bell. Everyone sings together.",
+      "reviewed": false
+    },
+    {
+      "id": "satyanarayan-prasad-mantra",
+      "name": "Satyanarayan Sheera Prasad Mantra",
+      "purpose": "Mantra chanted while offering and then distributing the Sheera (semolina pudding prasad) — the defining item of Satyanarayan Puja",
+      "when_to_chant": "While placing the Sheera before the Lord as Naivedya, and again while distributing to everyone",
+      "sanskrit": "ॐ नमो भगवते वासुदेवाय ।\nनैवेद्यं समर्पयामि ।\nसत्यनारायणाय नमः ॥",
+      "iast": "oṃ namo bhagavate vāsudevāya |\nnaivedyaṃ samarpayāmi |\nsatyanārāyaṇāya namaḥ ||",
+      "english_meaning": "Salutations to the Lord Vasudeva. I offer this food. Salutations to Satyanarayan.",
+      "sheera_recipe_note": "Traditional Satyanarayan Sheera: semolina (suji) fried in ghee, then mixed with milk, sugar, banana, and dried fruits. The aroma of ghee-fried suji is itself considered an offering to the Lord.",
+      "note_on_prasad": "The Satyanarayan Katha (Chapter 4) specifically warns: do not reject or dishonour the Sheera prasad. Accept it with both hands, eat at least a little — even if you are fasting. Rejecting the prasad is rejecting the Lord's grace.",
+      "reviewed": false
+    }
+  ]
+}

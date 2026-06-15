@@ -1,0 +1,170 @@
+{
+  "template_id": "lakshmi-puja-sankalp",
+  "name": "Lakshmi Puja Sankalp",
+  "deity": "Goddess Mahalakshmi",
+  "duration_days": 1,
+  "duration_note": "Performed as a full puja session (1–2 hours). Most powerful on Diwali night, Kojagari Purnima, and Fridays.",
+  "recurrence": {
+    "pattern": "weekly",
+    "suggested_repeat_count": 16,
+    "repeat_note": "Most traditional: every Friday for 16 consecutive Fridays (Solah Shukrawar Vrat). Also performed on each Purnima. Or once a year on Diwali as the grand family puja."
+  },
+  "calendar_color": "gold",
+
+  "sankalpa_text_template": "ममात्मनः परिवारस्य च समृद्ध्यर्थं धनधान्यसम्पदप्राप्त्यर्थं श्रीमहालक्ष्मीप्रसादसिद्ध्यर्थं श्रीमहालक्ष्मीपूजनं करिष्ये ।",
+  "sankalpa_guide": "Face east. Hold flowers and water. Say your name, gotra, and family members you include in this puja. Recite the sankalpa. Release the water.",
+
+  "guide": {
+    "preparation": [
+      "Clean the house thoroughly before Lakshmi Puja — Lakshmi does not enter dirty or cluttered homes",
+      "Decorate the entrance with rangoli and flowers — especially lotus motifs",
+      "Light ghee lamps in every room of the house to invite Lakshmi",
+      "Wear yellow or gold clothing",
+      "If fasting: take only one meal before the puja (fruit and milk) and fast after the puja",
+      "For Friday Vrat: observe every Friday for 16 consecutive weeks. Keep track in the app."
+    ],
+
+    "materials": [
+      { "name": "Lotus flowers (or lotus-shaped items)", "quantity": "As available", "purpose": "Lakshmi's seat and most beloved flower", "substitute": "White or yellow marigold" },
+      { "name": "Gold or silver coin", "quantity": "1 (even small)", "purpose": "Placed before Lakshmi during puja — sanctified and kept in the home after", "substitute": "Any coin — the act of placing it matters more than its value" },
+      { "name": "Shri Yantra (if available)", "quantity": "1", "purpose": "The geometric form of Lakshmi's energy — placing it on the altar focuses her grace", "substitute": "A clear image of Mahalakshmi" },
+      { "name": "Rice", "quantity": "A small heap", "purpose": "Placed under the Lakshmi image — rice is Lakshmi's grain (Dhaanya Lakshmi — Lakshmi as grain)", "substitute": "Any grain" },
+      { "name": "Turmeric (haldi)", "quantity": "A pinch", "purpose": "Lakshmi is associated with gold — turmeric's gold color is her symbol", "substitute": "Saffron" },
+      { "name": "Red vermilion (kumkum)", "quantity": "Small amount", "purpose": "Applied to Lakshmi's forehead and offered", "substitute": "None — kumkum is essential for Devi worship" },
+      { "name": "Ghee lamp", "quantity": "Multiple — one in each room is ideal", "purpose": "Inviting Lakshmi through light into every room of the house", "substitute": "Oil lamp" },
+      { "name": "Incense (sandalwood or jasmine)", "quantity": "5–7 sticks", "purpose": "Fragrance offering to Lakshmi — she is said to be pleased by sweet fragrances", "substitute": "Any incense" },
+      { "name": "Kheer (rice pudding) or Panjiri", "quantity": "Enough for family", "purpose": "Lakshmi's naivedya — sweet offerings for the goddess of abundance", "substitute": "Any sweet" }
+    ],
+
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Purify and Set Up",
+        "action": "Bathe. Light ghee lamps throughout the house first. Then set up the altar: yellow/gold cloth, Lakshmi's image/idol, the gold/silver coin, the Shri Yantra if available. Place rice underneath the image.",
+        "note": "The lights throughout the house are part of the puja — they are invitations to Lakshmi to enter every room."
+      },
+      {
+        "step_number": 2,
+        "title": "Ganesha Vandana (First)",
+        "action": "Always begin with Ganesha — the remover of obstacles that would interrupt the puja.",
+        "mantra_id": "ganesh-dhyana-shloka",
+        "mantra_count": 3
+      },
+      {
+        "step_number": 3,
+        "title": "Sankalpa",
+        "action": "Hold water and flowers. Recite the Lakshmi Puja Sankalpa — name your family members explicitly in the sankalpa — this puja's abundance is for the whole family.",
+        "mantra_id": "lakshmi-puja-sankalpa",
+        "mantra_count": 1
+      },
+      {
+        "step_number": 4,
+        "title": "Invoke Lakshmi — Shri Suktam",
+        "action": "Chant the 6 key verses of Shri Suktam. This is the heart of the puja. Chant with full attention, imagining Lakshmi arriving at your door as a beloved guest.",
+        "mantra_id": "shri-suktam",
+        "mantra_count": 1,
+        "duration_minutes": 10,
+        "note": "If you know all 15 verses of Shri Suktam, recite all 15. Even just verses 1 and 5 (golden Lakshmi + removing Alakshmi) are powerful."
+      },
+      {
+        "step_number": 5,
+        "title": "Offer 16 items (Shodashopachara)",
+        "action": "Offer each puja item to Lakshmi: flowers, incense, lamp, food, water, kumkum, turmeric, sandalwood paste, cloth, ornaments. With each offering, recite 'Om Mahalaksmyai Namah'.",
+        "duration_minutes": 20,
+        "note": "If short on time: the 5 essential offerings are light (diya), flowers, incense, kumkum, and naivedya (kheer). These 5 alone are complete."
+      },
+      {
+        "step_number": 6,
+        "title": "Chant Mahalakshmi Ashtakam",
+        "action": "Recite all 8 verses of the Mahalakshmi Ashtakam. Each verse names a different power of the Goddess.",
+        "mantra_id": "mahalakshmi-ashtakam",
+        "mantra_count": 1,
+        "duration_minutes": 5
+      },
+      {
+        "step_number": 7,
+        "title": "Lakshmi Gayatri — 108 repetitions",
+        "action": "Sit quietly with a mala. Chant the Mahalakshmi Gayatri 108 times — this is the meditative core of the puja.",
+        "mantra_id": "lakshmi-gayatri",
+        "mantra_count": 108,
+        "duration_minutes": 20,
+        "note": "This is the closest thing to Lakshmi Dhyan (meditation). Eyes closed, focus on the image of Lakshmi as golden light entering your home and your heart."
+      },
+      {
+        "step_number": 8,
+        "title": "Aarti — Jay Mahalakshmi Mata",
+        "action": "Wave the ghee lamp in circles before Lakshmi while singing aarti. Ring the bell.",
+        "duration_minutes": 5
+      },
+      {
+        "step_number": 9,
+        "title": "Distribute Prasad",
+        "action": "Offer the kheer or sweet to Lakshmi. Then distribute to all family. If possible, leave some prasad outside the house — for any passerby — this is charity in Lakshmi's name.",
+        "note": "Lakshmi multiplies through sharing. Keeping all prasad for yourself without sharing reduces her flow."
+      },
+      {
+        "step_number": 10,
+        "title": "Kshama Prarthana",
+        "action": "Conclude with the forgiveness prayer for any errors.",
+        "mantra_id": "kshama-prarthana",
+        "mantra_count": 1
+      }
+    ],
+
+    "mantras_explained": [
+      {
+        "mantra_id": "shri-suktam",
+        "why_this_mantra": "Shri Suktam is from the Rigveda — among the oldest hymns in any living tradition. It calls Lakshmi through fire (Agni) as messenger, describes her as golden, lotus-seated, and compassionate. Verse 5 explicitly asks to remove 'Alakshmi' — the energy of poverty and strife. This is pragmatic spirituality: name what you want to leave, name what you want to arrive.",
+        "how_to_pronounce": "Hi-ran-ya-var-naam Ha-ri-neem Su-var-na-ra-ja-ta-sra-jaam | Chan-draam Hi-ran-ma-yeem Lak-shmeem Jaa-ta-ve-do Ma Aa-va-ha ||",
+        "what_to_visualize": "The goddess arriving — preceded by elephants pouring water, in the center of a chariot, draped in gold. She arrives at YOUR door. She steps inside your home. She looks around: is this a worthy home? And you show her: yes, it is clean, lit, and fragrant. She smiles and sits."
+      },
+      {
+        "mantra_id": "lakshmi-gayatri",
+        "why_this_mantra": "The Gayatri form of Lakshmi worship is not a petition — it is a meditation. 'We know her... we meditate on her... may she enlighten us.' This moves beyond asking for money to seeking the wisdom that creates abundance. Lakshmi is not just material prosperity — she is also Vidya Lakshmi (wisdom), Dhairya Lakshmi (courage), Vijaya Lakshmi (victory). The Gayatri connects you to all 8 forms at once.",
+        "how_to_pronounce": "Om Ma-haa-Lak-shmyai Cha Vid-ma-he Vish-nu-pat-nyai Cha Dhee-ma-hi | Tan-no Lak-shmih Pra-cho-da-yaat ||",
+        "what_to_visualize": "Lakshmi seated on a lotus in a still lake. The lake is your mind — when it becomes still and clean, the lotus of Lakshmi can bloom in it. Each repetition of the Gayatri is one ripple across the lake's surface — until the water becomes mirror-still."
+      }
+    ]
+  },
+
+  "alarms": [
+    {
+      "alarm_id": "lakshmi-puja-friday-morning",
+      "label": "Friday — Lakshmi Vrat Day",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": 30,
+      "notification_message": "Shukravar (Friday) — Lakshmi Puja day. Fast and prepare for evening puja.",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "lakshmi-puja-evening",
+      "label": "Evening Lakshmi Puja — Light All Lamps",
+      "time_type": "relative_to_sunset",
+      "offset_minutes": -15,
+      "mantra_id": "shri-suktam",
+      "notification_message": "Light lamps in all rooms now — Lakshmi Puja begins at sunset",
+      "repeat_daily": false
+    }
+  ],
+
+  "after_completion": {
+    "materials_disposal": [
+      { "material": "Gold/silver coin (puja coin)", "disposal_method": "KEEP — do not throw. Place in your wallet, safe, or keep on the altar permanently.", "note": "This coin has received Lakshmi's blessing during the puja — it becomes a permanent token of her presence in your home" },
+      { "material": "Rice (from under Lakshmi's image)", "disposal_method": "Cook and eat this rice — it is Dhaanya Lakshmi prasad (grain blessing)", "note": "" },
+      { "material": "Flowers (offered)", "disposal_method": "Immerse in water or give to a garden", "note": "" },
+      { "material": "Kheer/sweet prasad", "disposal_method": "Distribute to all family and neighbors. Send some to the poor.", "note": "Annadaan (food charity) in Lakshmi's name multiplies her grace" }
+    ],
+    "prasad_distribution": "Distribute kheer to all family first. Then send some to neighbors. Leave a portion outside or give to anyone who passes by. Lakshmi flows through generosity.",
+    "next_steps": [
+      "If doing Solah Shukrawar Vrat: mark this Friday as complete. Count: this is Friday [X] of 16.",
+      "The 16th (final) Friday requires a larger puja with Brahmin dakshina and broader prasad distribution",
+      "Keep all lamps burning as long as possible on puja night — do not rush to extinguish them"
+    ],
+    "udyapan": {
+      "required": true,
+      "description": "Solah Shukrawar Vrat (16 Fridays) has a mandatory Udyapan on the 16th Friday. This includes: expanded puja with full Shri Suktam, invitation of female relatives for blessings, offering gold ornaments to a married woman (Suhagan), and distributing prasad widely. The 16th Friday puja is meant to be the biggest of the 16."
+    }
+  },
+
+  "forgiveness_mantra_id": "kshama-prarthana"
+}

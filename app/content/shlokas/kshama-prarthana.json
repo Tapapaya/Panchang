@@ -1,0 +1,67 @@
+{
+  "id": "kshama-prarthana",
+  "name": "Kshama Prarthana — Forgiveness Prayer",
+  "category": "universal",
+  "when_to_chant": "At the end of any puja, ritual, or sankalp — especially if steps were missed, mistakes were made, or the ritual could not be completed fully",
+  "importance": "In Hindu tradition, it is accepted that humans are imperfect. The Kshama Prarthana acknowledges this and asks the deity for forgiveness for any errors — of action, speech, mind, or omission. Chanting this with sincerity completes any ritual regardless of mistakes.",
+
+  "verses": [
+    {
+      "verse_number": 1,
+      "sanskrit": "आवाहनं न जानामि न जानामि विसर्जनम् ।\nपूजां चैव न जानामि क्षमस्व परमेश्वर ॥",
+      "iast": "āvāhanaṃ na jānāmi na jānāmi visarjanam |\npūjāṃ caiva na jānāmi kṣamasva parameśvara ||",
+      "english_meaning": "I do not know how to invoke You, nor how to bid You farewell. I do not know how to worship You properly. O Supreme Lord, please forgive me.",
+      "word_meanings": {
+        "āvāhanaṃ": "invocation (calling the deity)",
+        "visarjanam": "farewell/dismissal (releasing the deity after puja)",
+        "pūjāṃ": "worship/ritual",
+        "kṣamasva": "please forgive",
+        "parameśvara": "Supreme Lord (God)"
+      }
+    },
+    {
+      "verse_number": 2,
+      "sanskrit": "मन्त्रहीनं क्रियाहीनं भक्तिहीनं सुरेश्वर ।\nयत्पूजितं मया देव परिपूर्णं तदस्तु मे ॥",
+      "iast": "mantrahīnaṃ kriyāhīnaṃ bhaktihīnaṃ sureśvara |\nyatpūjitaṃ mayā deva paripūrṇaṃ tadastu me ||",
+      "english_meaning": "O Lord of the Gods, my worship may have been without the proper mantras, without the proper actions, and without true devotion — yet may the puja I have offered to You be made complete and perfect.",
+      "word_meanings": {
+        "mantrahīnaṃ": "lacking (proper) mantras",
+        "kriyāhīnaṃ": "lacking (proper) actions/rituals",
+        "bhaktihīnaṃ": "lacking (true) devotion",
+        "sureśvara": "Lord of the gods",
+        "paripūrṇaṃ": "complete/perfect",
+        "tadastu me": "may that be so for me"
+      }
+    },
+    {
+      "verse_number": 3,
+      "sanskrit": "अपराध सहस्राणि क्रियन्तेऽहर्निशं मया ।\nदासोऽयमिति मां मत्वा क्षमस्व परमेश्वर ॥",
+      "iast": "aparādha sahasrāṇi kriyante'harniśaṃ mayā |\ndāso'yamiti māṃ matvā kṣamasva parameśvara ||",
+      "english_meaning": "Thousands of offences are committed by me day and night. Considering that I am Your servant, O Supreme Lord, please forgive me.",
+      "word_meanings": {
+        "aparādha": "offence/mistake",
+        "sahasrāṇi": "thousands",
+        "aharniśaṃ": "day and night",
+        "dāsa": "servant/devotee",
+        "kṣamasva": "please forgive",
+        "parameśvara": "Supreme Lord"
+      }
+    }
+  ],
+
+  "how_to_chant": [
+    "Sit quietly after completing the puja or ritual",
+    "Fold your hands (Anjali mudra) with palms pressed together at the heart",
+    "Close your eyes and speak from the heart — the words matter less than the sincerity",
+    "Chant all three verses slowly, once each",
+    "After the last verse, bow your head and silently ask the deity for completion of the ritual"
+  ],
+
+  "significance": "The Kshama Prarthana is the safety net of every Hindu ritual. The tradition acknowledges that we are human — we forget words, we rush, our minds wander, or life circumstances prevent full completion. This prayer says: 'I tried my best. Please accept what I offered and make it whole.' The scriptures assure that a sincere Kshama Prarthana makes any imperfect puja complete in God's eyes.",
+
+  "audio_url": null,
+  "reviewed_by": {
+    "name": "Pending pandit review",
+    "source": "Grihastha Puja Paddhati (traditional compendium)"
+  }
+}

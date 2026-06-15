@@ -1,0 +1,91 @@
+{
+  "id": "purnima-shlokas",
+  "name": "Core Shlokas for Purnima (Full Moon) Worship",
+  "category": "purnima",
+
+  "shlokas": [
+    {
+      "id": "chandra-arghya-mantra",
+      "name": "Chandra Arghya — Offering Water to the Full Moon",
+      "purpose": "The primary Purnima ritual — offering water (Arghya) to the moon while chanting this mantra",
+      "when_to_chant": "On Purnima evening when the full moon rises — stand facing the moon and pour water toward it",
+      "sanskrit": "ॐ चन्द्रं गच्छ महाभाग चन्द्र सोम शुभप्रद ।\nचन्द्रकान्त महाभाग गृहाणार्घ्यं नमोऽस्तु ते ॥",
+      "iast": "oṃ candraṃ gaccha mahābhāga candra soma śubhaprada |\ncandrakānta mahābhāga gṛhāṇārghyaṃ namo'stu te ||",
+      "english_meaning": "O Moon of great fortune — O Chandra, O Soma, O giver of auspiciousness — O the beloved of the moon (moonstone), O greatly fortunate one — accept this water offering. Salutations to You.",
+      "word_meanings": {
+        "candra": "moon — the shining one",
+        "mahābhāga": "of great fortune/destiny",
+        "soma": "Soma — the moon deity, also the divine nectar. The moon 'pours' Soma nectar that nourishes all life.",
+        "śubhaprada": "giver of auspiciousness/goodness",
+        "arghya": "water offering — held in cupped hands and poured toward the moon"
+      },
+      "how_to_perform": "Fill a copper vessel or cupped hands with water. After moonrise, stand outdoors facing the moon. Pour the water slowly in the direction of the moon while chanting. The water catches the moonlight as it falls — this is the offering.",
+      "reviewed": false
+    },
+    {
+      "id": "chandra-stotra",
+      "name": "Chandra Stotra — Praise of the Moon",
+      "purpose": "Complete hymn to the Moon deity — recited on Purnima especially on Sharad Purnima (Kojagari) and Kartika Purnima",
+      "when_to_chant": "On Purnima evenings, especially Sharad Purnima and Kartika Purnima; also on Somavar (Monday) evenings",
+      "verses": [
+        {
+          "verse_id": "chandra-1",
+          "title": "The moon as Soma — nourisher of all life",
+          "sanskrit": "देवानां च ऋषीणां च गणानाञ्च सुपर्वणाम् ।\nउदयस्त्वमुपायासि यज्ञानां पतिरेव च ॥",
+          "iast": "devānāṃ ca ṛṣīṇāṃ ca gaṇānāñca suparvaṇām |\nudayastvamupāyāsi yajñānāṃ patireva ca ||",
+          "english_meaning": "You rise as the protector of gods, sages, and all auspicious groups. You are indeed the master of all sacrifices (yajnas)."
+        },
+        {
+          "verse_id": "chandra-2",
+          "title": "The moon as physician",
+          "sanskrit": "ओषधीनां प्रभुर्देव रोहिण्याः पतिरेव च ।\nसुधाकरो महाभाग सुधांशो मृगलाञ्छन ॥",
+          "iast": "oṣadhīnāṃ prabhurdeva rohiṇyāḥ patireva ca |\nsudhākaro mahābhāga sudhāṃśo mṛgalāñchana ||",
+          "english_meaning": "O Lord of medicinal herbs, O husband of Rohini (the moon's favorite wife among the 27 nakshatras), O great-fortuned, O possessor of nectar, O moon marked with the deer (the dark shadow on the moon's surface).",
+          "significance": "The moon rules all herbs and medicinal plants in Ayurveda. Herbs are best collected at the full moon when their potency is highest. The 'deer' in the moon is the dark shadow visible to the naked eye — a beloved traditional image."
+        },
+        {
+          "verse_id": "chandra-3",
+          "title": "The moon who causes tides — and emotions",
+          "sanskrit": "जगतः पितरं नित्यं सर्वग्रहगणेश्वरम् ।\nनमस्कृत्य प्रसन्नास्मि सुखीभव जगत्पते ॥",
+          "iast": "jagataḥ pitaraṃ nityaṃ sarvagrahagaṇeśvaram |\nnamaskṛtya prasannāsmi sukhībhava jagatpate ||",
+          "english_meaning": "Bowing to the eternal father of the world, the lord of all the group of planets — may you be pleased, O master of the universe. Be happy (be pleased).",
+          "significance": "The moon called 'father of the world' — because the lunar calendar and lunar rhythms structure the months, festivals, and agricultural cycles of all of Hindu culture. Life flows with the moon."
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "satyanarayan-purnima-sankalpa",
+      "name": "Purnima Satyanarayan Vrat Sankalpa",
+      "purpose": "Many families perform Satyanarayan Puja on Purnima. This sankalpa is for that combination.",
+      "when_to_chant": "On Purnima, before performing Satyanarayan Puja",
+      "sanskrit": "ममात्मनः श्रेयःसिद्ध्यर्थं पूर्णिमायां सत्यनारायणपूजनं करिष्ये ।",
+      "iast": "mamātmanaḥ śreyaḥsiddhyarthaṃ pūrṇimāyāṃ satyanārāyaṇapūjanaṃ kariṣye |",
+      "english_meaning": "For my highest welfare, I perform the Satyanarayan Puja on this Purnima.",
+      "reviewed": false
+    },
+    {
+      "id": "kojagari-lakshmi-puja",
+      "name": "Kojagari Purnima — Lakshmi Night Worship Mantra",
+      "purpose": "Special for Sharad Purnima (Kojagari) — Lakshmi descends to earth on this night asking 'who is awake?'",
+      "when_to_chant": "On Sharad Purnima (Ashwin Purnima) night — especially after midnight",
+      "sanskrit": "को जागर्ति को जागर्ति भक्त्या भजत मां सदा ।\nधनं धान्यं ददाम्येषां भक्तानां वाञ्छितं फलम् ॥",
+      "iast": "ko jāgarti ko jāgarti bhaktyā bhajata māṃ sadā |\ndhanaṃ dhānyaṃ dadāmyeṣāṃ bhaktānāṃ vāñchitaṃ phalam ||",
+      "english_meaning": "Who is awake? Who is awake? Worship Me with devotion always. I give wealth and grain, and the desired fruit to my devoted ones.",
+      "significance": "Kojagari = 'Ko Jagarti?' (Who is awake?). On Sharad Purnima night, Lakshmi walks the earth asking who is awake in her name. Those who stay awake through the night, worshipping her, are said to receive her direct blessing — wealth, health, and fulfilment.",
+      "how_to_observe": "Stay awake through Kojagari Purnima night. Place a pot of milk and rice pudding (kheer) under the moonlight — moonlight on this night is said to have healing and nourishing properties. Offer the moonlit kheer to Lakshmi and distribute as prasad.",
+      "reviewed": false
+    },
+    {
+      "id": "kartika-purnima-deepdaan",
+      "name": "Kartika Purnima — Deepdaan (Lamp Offering) Mantra",
+      "purpose": "Kartika Purnima is the most sacred Purnima — Tripura Sundari festival, Pushkar fair, and the night Dev Diwali (gods' Diwali). Lamps are floated on water.",
+      "when_to_chant": "On Kartika Purnima evening, while floating a diya on water or placing it on the banks of a river/lake",
+      "sanskrit": "कार्तिक पूर्णिमायाम् दीपदानं करोमि ।\nत्रिपुरान्तकाय नमः । देव दीपावलि नमस्ते ॥",
+      "iast": "kārtika pūrṇimāyāṃ dīpadānaṃ karomi |\ntripurāntakāya namaḥ | deva dīpāvali namaste ||",
+      "english_meaning": "On Kartika Purnima, I offer this lamp. Salutations to Shiva who destroyed Tripura (the triple demon cities). Salutations to Dev Diwali.",
+      "significance": "Kartika Purnima celebrates Shiva's victory over the three demon cities (Tripura) — he destroyed all three with a single arrow. The gods celebrated with lamps, hence 'Dev Diwali' — the Diwali of the gods, held exactly 15 days after the human Diwali (Kartika Amavasya). Lighting lamps on water on this night is one of the most ancient Hindu rituals.",
+      "reviewed": false
+    }
+  ]
+}

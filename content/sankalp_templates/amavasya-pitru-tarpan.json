@@ -1,0 +1,171 @@
+{
+  "template_id": "amavasya-pitru-tarpan",
+  "name": "Amavasya Pitru Tarpan — Ancestral Water Offering",
+  "deity": "Pitru Devatas (Ancestral Deities) and Lord Yama",
+  "duration_days": 1,
+  "duration_note": "Performed on Amavasya morning from sunrise until approximately midday. The primary ritual window is Kutupa Muhurta — around 12:00 noon on Amavasya.",
+  "recurrence": {
+    "pattern": "monthly_tithi",
+    "tithi": "amavasya",
+    "suggested_repeat_count": 12,
+    "repeat_note": "Performed on every Amavasya — 12 per year (13 in Adhika Masa years). Mahalaya Amavasya (last day of Pitrupaksha, in Ashwin month) is the most powerful and should never be missed."
+  },
+  "calendar_color": "white",
+
+  "sankalpa_text_template": "ममपितृपितामहप्रपितामहादीनां सर्वेषां पितॄणां तृप्त्यर्थं पितृतर्पणं करिष्ये ।",
+  "sankalpa_guide": "Face south (the direction of the ancestors). Hold water with sesame seeds. Say your father's name and grandfather's name if known. Recite the sankalpa.",
+
+  "guide": {
+    "preparation": [
+      "Amavasya is the new moon — the moon is invisible. The ancestors are believed to visit the earth on this day.",
+      "Fast from the previous evening (or at minimum: no non-veg, no alcohol on Amavasya)",
+      "Collect black sesame seeds (kala til) — the most sacred item for Tarpan. Without sesame, Tarpan is incomplete.",
+      "If near a river, sea, or lake: go there. Tarpan at a river is most potent. If not, use a vessel of water at home.",
+      "Know your ancestors' names if possible — father's, grandfather's, great-grandfather's. If unknown, use the title: Pitamaha, Prapitamaha.",
+      "Kusha grass blades: ideally used to hold the Tarpan — available at puja shops. If not available, use your fingers with the specific Pitriteertha mudra (water poured from between the index and thumb)."
+    ],
+
+    "materials": [
+      { "name": "Black sesame seeds (kala til)", "quantity": "2–3 tablespoons", "purpose": "THE most essential item for Pitru Tarpan. Ancestors are most pleased by sesame.", "substitute": "No true substitute — white sesame is second-best if black unavailable" },
+      { "name": "Kusha (darbha) grass", "quantity": "A handful", "purpose": "Held while performing Tarpan — ancestors flow through Kusha grass", "substitute": "Fingers (Pitriteertha mudra) if Kusha unavailable" },
+      { "name": "Water (river water preferred)", "quantity": "2–3 liters", "purpose": "The offering itself — water offered is transformed into spiritual nourishment for ancestors", "substitute": "Any clean water; adding gangajal (Ganga water) if available greatly amplifies the merit" },
+      { "name": "Gangajal", "quantity": "Even a few drops if available", "purpose": "A few drops in the Tarpan water transforms ordinary water into sacred water", "substitute": "Pure clean water alone is sufficient" },
+      { "name": "Rice balls (Pinda — optional)", "quantity": "3 small balls", "purpose": "Pinda Daan — offering rice balls to ancestors on Amavasya. More essential on Pitrupaksha.", "substitute": "Not essential on regular Amavasya — essential on Mahalaya Amavasya" },
+      { "name": "Milk (for mixing with Tarpan water)", "quantity": "A small amount", "purpose": "Some traditions add milk to the Tarpan water — nourishing the ancestors", "substitute": "Water alone is complete" }
+    ],
+
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Early Morning Bath (before sunrise)",
+        "action": "Wake before sunrise on Amavasya and bathe. If near a river, bathe there. As you bathe, mentally invite your ancestors: 'I remember you today. I am bathing in your memory. May this water carry my love to you.'",
+        "mantra_id": "pitru-gayatri",
+        "mantra_count": 3,
+        "note": "The Amavasya bath before sunrise has special Pitru merit. The darkness of Amavasya (no moon) mirrors the realm of the ancestors — you meet them in the dark, before dawn."
+      },
+      {
+        "step_number": 2,
+        "title": "Sankalpa",
+        "action": "After bathing, stand facing south (the ancestral direction). Hold water with sesame seeds in cupped hands. Speak your father's name and your grandfather's name aloud. Recite the Pitru Tarpan Sankalpa.",
+        "mantra_id": "pitru-tarpan-sankalpa",
+        "mantra_count": 1,
+        "note": "Speaking your ancestors' names aloud is itself a powerful remembrance. Do not worry about perfect pronunciation — the sincerity of memory reaches them."
+      },
+      {
+        "step_number": 3,
+        "title": "Tarpan for Father (Pita)",
+        "action": "Mix sesame seeds into the water. Hold the water in Pitriteertha mudra (between thumb and index finger) or through Kusha grass. Pour the water slowly toward the south while saying your father's name and the Pita Tarpan mantra. Do this 3 times.",
+        "mantra_id": "tarpan-mantra-pita",
+        "mantra_count": 3,
+        "note": "If your father is still alive, skip this step or adapt it by offering to your paternal great-grandfather (who you know is deceased)."
+      },
+      {
+        "step_number": 4,
+        "title": "Tarpan for Grandfather (Pitamaha) and Great-grandfather (Prapitamaha)",
+        "action": "Repeat the same pouring action for the grandfather (say 'Pitamaha' if name unknown) and great-grandfather (say 'Prapitamaha'). 3 pours for each.",
+        "mantra_id": "tarpan-mantra-pita",
+        "mantra_count": 3,
+        "duration_minutes": 5
+      },
+      {
+        "step_number": 5,
+        "title": "Tarpan for All Unknown Ancestors",
+        "action": "After the named Tarpan: pour water one final time saying 'May all my ancestors, named and unnamed, those I remember and those I have forgotten — may all of them receive this water offering.'",
+        "mantra_id": "pitru-gayatri",
+        "mantra_count": 3,
+        "note": "This catch-all Tarpan is especially important — many ancestors are forgotten within 2–3 generations. This offering reaches them."
+      },
+      {
+        "step_number": 6,
+        "title": "Pinda Daan (optional — most important on Mahalaya Amavasya)",
+        "action": "On Mahalaya Amavasya specifically: prepare 3 small balls of cooked rice mixed with sesame, milk, and honey (Pinda). Place these on a Kusha mat or leaf. Offer them to the ancestors with the Mahalaya Prayer.",
+        "mantra_id": "mahalaya-prayer",
+        "mantra_count": 1,
+        "note": "On regular monthly Amavasya, Pinda Daan is optional. On Mahalaya Amavasya — it is essential."
+      },
+      {
+        "step_number": 7,
+        "title": "Crow Feeding",
+        "action": "Prepare a ball of cooked rice with sesame. Place it on a leaf in an open area where crows can see and reach it. Speak the Crow Offering Mantra. Wait and watch.",
+        "mantra_id": "crow-offering-mantra",
+        "mantra_count": 1,
+        "note": "Crows are Yama's messengers and are believed to embody ancestral souls. If a crow eats the offering, it is auspicious — the offering is accepted. Don't be disappointed if it doesn't come immediately — leave it and check after 30 minutes."
+      },
+      {
+        "step_number": 8,
+        "title": "Pitru Sukta Recitation",
+        "action": "Sit quietly and recite the Pitru Sukta verse from the Rigveda. This is the oldest known prayer to the ancestors — it calls them gently and thanks them.",
+        "mantra_id": "pitru-sukta-verse1",
+        "mantra_count": 3,
+        "duration_minutes": 5
+      },
+      {
+        "step_number": 9,
+        "title": "Charity (Annadaan) in Ancestors' Name",
+        "action": "Give food to someone in need — Brahmin, poor person, or anyone hungry. Even giving a glass of water to a stranger is ancestral offering. The merit of this charity reaches the ancestors directly.",
+        "note": "Amavasya is the best day for Annadaan (food charity). It is believed that when you feed someone on Amavasya in your ancestors' name, the ancestors receive it as nourishment regardless of where they are in the cosmic cycle."
+      },
+      {
+        "step_number": 10,
+        "title": "Kshama Prarthana",
+        "action": "Conclude with the forgiveness prayer — especially important if you don't know your ancestors' full names or could not complete all the steps.",
+        "mantra_id": "kshama-prarthana",
+        "mantra_count": 1
+      }
+    ],
+
+    "mantras_explained": [
+      {
+        "mantra_id": "tarpan-mantra-pita",
+        "why_this_mantra": "The Tarpan mantra names three cosmic groups the ancestors belong to: Vasus (Day 1 form), Rudras (Day 2 form), or Adityas (Day 3 form). These are the three levels of ancestors — recently deceased, older ancestors, and ancient ancestors. 'Svadhaa Namah' is the special mantra for Pitru offerings — not 'Swaha' (which is for gods) but 'Svadhaa' (which is specifically for the ancestors). This small difference matters.",
+        "how_to_pronounce": "[Father's name] Shar-man Va-su-ru-pa Pi-tah Sva-dhaa Na-mah | Tar-pa-yaa-mi Tar-pa-yaa-mi Tar-pa-yaa-mi |",
+        "what_to_visualize": "Your father (or ancestor) seated somewhere peaceful — perhaps the place you last saw him happy. He is looking at you. He sees the water you are pouring. He receives it — not as water but as your remembrance, your love, your acknowledgement that he existed and mattered. He nods. He is at peace."
+      },
+      {
+        "mantra_id": "mahalaya-prayer",
+        "why_this_mantra": "The Mahalaya prayer is unique in all of Hindu ritual: it explicitly includes ancestors from OTHER lives — not just this one. 'Those who were relatives in other births' — this prayer reaches across all your lifetimes to the souls you have been connected to across time. This is the deepest expression of the Hindu belief in reincarnation: the love between souls persists beyond individual lives.",
+        "how_to_pronounce": "Ye Baan-dha-vaa Baan-dha-va-de-ha-bhaa-jah ye Chaa-nya-jan-maar-ji-ta-ban-dhu-var-gaah | Te Sar-va Ma-haa-la-ya-maa-sa-mag-ne Ma-haa-la-ye Yaan-tu Su-kham Pi-trit-vam ||",
+        "what_to_visualize": "All the souls you have ever known across all your lifetimes — a vast group, too many to count. They are gathered at the edge of the Pitru realm, which looks like a wide, calm river at dusk. You stand on this shore. You pour the water. It flows toward all of them. Each soul receives a drop."
+      }
+    ]
+  },
+
+  "alarms": [
+    {
+      "alarm_id": "amavasya-pre-sunrise-bath",
+      "label": "Amavasya — Pre-Sunrise Bath for Tarpan",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": -45,
+      "notification_message": "Amavasya — wake for pre-sunrise bath before Pitru Tarpan",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "amavasya-tarpan-kutupa",
+      "label": "Kutupa Muhurta — Best Time for Tarpan",
+      "time_type": "fixed_time",
+      "time_of_day": "11:30",
+      "notification_message": "Kutupa Muhurta approaching — the most auspicious window for Pitru Tarpan begins",
+      "repeat_daily": false
+    }
+  ],
+
+  "after_completion": {
+    "materials_disposal": [
+      { "material": "Sesame (used in Tarpan)", "disposal_method": "Pour the Tarpan water (including sesame) into a flowing body of water or onto the earth — NOT in a drain", "note": "Sesame offered to ancestors is sacred — it must return to the earth" },
+      { "material": "Pinda (rice balls)", "disposal_method": "Leave on the Kusha mat near the crow-offering spot or immerse in water", "note": "Crows may eat the Pinda — this is the intended outcome" },
+      { "material": "Kusha grass (used for Tarpan)", "disposal_method": "Immerse in water or place at the base of a tree", "note": "" }
+    ],
+    "prasad_distribution": "On Amavasya, there is no specific prasad to distribute — rather, GIVING is the Amavasya practice. Distribute food to the needy in the ancestors' name.",
+    "next_steps": [
+      "Note which Amavasya this was — Mahalaya Amavasya in Ashwin month is the most important",
+      "Make a point to know your ancestors' full names for next time — ask elderly relatives",
+      "Next Amavasya is in approximately 30 days — the app will remind you"
+    ],
+    "udyapan": {
+      "required": false,
+      "description": "Amavasya Tarpan is an ongoing duty (Nitya Karma) for the eldest son/descendant — it does not conclude with a formal Udyapan. It continues through life as a monthly act of love and remembrance. If you undertook a specific 12-Amavasya vrat, conclude with a Shraddha puja (full ancestral feast) on the 12th Amavasya where food is offered to Brahmins in the ancestors' name."
+    }
+  },
+
+  "forgiveness_mantra_id": "kshama-prarthana"
+}

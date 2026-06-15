@@ -1,0 +1,94 @@
+{
+  "id": "amavasya-pitru-shlokas",
+  "name": "Pitru Tarpan Mantras for Amavasya and Pitrupaksha",
+  "category": "pitru",
+  "note": "These mantras are recited during Tarpan (water offering to ancestors). They require special care and should be performed with sincere intent.",
+
+  "shlokas": [
+    {
+      "id": "pitru-tarpan-sankalpa",
+      "name": "Pitru Tarpan Sankalpa",
+      "purpose": "The declaration made before performing Tarpan (water offering) for ancestors on Amavasya",
+      "when_to_chant": "Before beginning Tarpan on Amavasya morning, after bathing but before eating",
+      "sanskrit": "ममपितृपितामहप्रपितामहादीनां सर्वेषां पितॄणाम्\nतृप्त्यर्थं पितृतर्पणं करिष्ये ।",
+      "iast": "mamapitṛpitāmahaprapitāmahādīnāṃ sarveṣāṃ pitṝṇām\ntṛptyarthaṃ pitṛtarpaṇaṃ kariṣye |",
+      "english_meaning": "For the satisfaction of my father, grandfather, great-grandfather, and all ancestral souls — I perform the Pitru Tarpan.",
+      "who_is_honored": "The three generations most closely honored in Tarpan are: Pita (father/recently deceased), Pitamaha (grandfather), Prapitamaha (great-grandfather). On Pitrupaksha, all 3 paternal AND 3 maternal generations are honored.",
+      "reviewed": false
+    },
+    {
+      "id": "tarpan-mantra-pita",
+      "name": "Tarpan for Father (Pita)",
+      "purpose": "Water offering specifically for your father (or the recently deceased)",
+      "when_to_chant": "During Tarpan, first offering — for father",
+      "sanskrit": "[पिता का नाम] शर्मन् / वर्मन् वसुरूप पितः स्वधा नमः ।\nतर्पयामि तर्पयामि तर्पयामि ।",
+      "iast": "[father's name] śarman/varman vasurupa pitaḥ svadhā namaḥ |\ntarpayāmi tarpayāmi tarpayāmi |",
+      "english_meaning": "O my father [name], in your Vasu form — svadhā (the sacred name for ancestral offering), salutations. I satisfy you, I satisfy you, I satisfy you.",
+      "instructions": {
+        "how_to_fill_name": "Say your father's name where it says [father's name]. Add 'Sharma' if Brahmin, 'Varma' if Kshatriya, or skip the suffix if unsure.",
+        "how_to_offer": "Hold a small amount of water (using the tip of your fingers or a specific tilted cup gesture called 'Pitriteertha') and let it flow slowly as you chant. Do this 3 times.",
+        "direction": "Face south while performing Tarpan. The ancestors (Pitru Lok) are associated with the south direction.",
+        "adding_sesame": "Mix black sesame seeds (til) in the water before offering. Sesame is most dear to ancestors.",
+        "timing": "Perform on Amavasya morning, ideally between sunrise and midday (Kutupa Muhurta — around 12:00 noon — is most auspicious for Pitru rituals)"
+      },
+      "three_generations_template": [
+        { "relation": "Father (Pita)", "form": "Vasu", "note": "Use father's name" },
+        { "relation": "Grandfather (Pitamaha)", "form": "Rudra", "note": "Use grandfather's name if known; if unknown say 'Pitamaha'" },
+        { "relation": "Great-grandfather (Prapitamaha)", "form": "Aditya", "note": "Usually unknown; say 'Prapitamaha'" }
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "pitru-sukta-verse1",
+      "name": "Pitru Sukta (Rigveda 10.15) — First Verse",
+      "purpose": "The most ancient Vedic hymn to the ancestors — from Rigveda Mandala 10, the 'Pitru Sukta'",
+      "when_to_chant": "During Shraddha, Tarpan, or any ancestral remembrance",
+      "sanskrit": "उद्बुध्यस्वाग्ने प्रति जागृहि त्वमिष्टापूर्ते सं सृजेथामयञ्च ।\nअस्मिन्त्सधस्थे अध्युत्तरस्मिन्त्सिषीद महान्तः स्वस्तये ।।",
+      "iast": "udbudhyasvāgne prati jāgṛhi tvamiṣṭāpūrte saṃ sṛjethāmayañca |\nasmintsa dhasthe adhyuttarasmintsisiīda mahāntaḥ svastaye ||",
+      "english_meaning": "Arise, O Agni! Awaken! May you and our ancestors come together with the fruits of sacrifice and good deeds. O great ones, be seated in this highest abode, for our welfare.",
+      "significance": "This verse calls the ancestors through Agni — fire is again the messenger. The Pitru Sukta is the oldest and most direct communication with ancestors in the Vedic tradition. It does not ask them for anything — it calls them, welcomes them, thanks them.",
+      "reviewed": false
+    },
+    {
+      "id": "pitru-gayatri",
+      "name": "Pitru Gayatri",
+      "purpose": "Gayatri mantra form for offering to ancestors — for meditation on ancestral souls",
+      "when_to_chant": "During Amavasya, Pitrupaksha, or any time you wish to meditate on your ancestors with gratitude",
+      "sanskrit": "ॐ पितृगणाय विद्महे जगत्धारिणे धीमहि ।\nतन्नः पितरः प्रचोदयात् ॥",
+      "iast": "oṃ pitṛgaṇāya vidmahe jagatdhāriṇe dhīmahi |\ntannaḥ pitaraḥ pracodayāt ||",
+      "english_meaning": "We know the group of ancestors. We meditate on those who sustain the world. May those ancestors inspire and enlighten us.",
+      "significance": "The Pitru Gayatri frames ancestors not as spirits to be appeased but as forces that still sustain us and can still guide us. The line 'jagatdhāriṇe' — 'sustainers of the world' — means our ancestors literally hold us up through the genetic, cultural, and karmic inheritance they passed on.",
+      "reviewed": false
+    },
+    {
+      "id": "mahalaya-prayer",
+      "name": "Mahalaya Prayer — Pitrupaksha's Most Sacred Day",
+      "purpose": "Special prayer for Mahalaya Amavasya — the last and most important day of Pitrupaksha, when all ancestors receive blessings",
+      "when_to_chant": "On Mahalaya Amavasya (the Amavasya at the end of Pitrupaksha) morning",
+      "sanskrit": "ये बान्धवा बान्धवदेहभाजः ये चान्यजन्मार्जितबन्धुवर्गाः ।\nते सर्व महालयमासमग्ने महालये यान्तु सुखं पितृत्वम् ॥",
+      "iast": "ye bāndhavā bāndavadehabhājaḥ ye cānyajanmārjitabanduvargāḥ |\nte sarva mahālayamāsamagne mahālaye yāntu sukhaṃ pitṛtvam ||",
+      "english_meaning": "Those who are relatives in this life-body, and those who were relatives in other lives — may all of them, at the arrival of Mahalaya month (Pitrupaksha), attain happiness and the state of ancestors (Pitrutva).",
+      "significance": "Mahalaya is the most powerful day for ancestral offering. The prayer notably includes: 'relatives from other lives' — not just this birth. Hinduism holds that the soul bonds from previous lives also deserve honoring. On this day, even those who died in difficult circumstances or without proper last rites can receive peace through the sincere prayer of a descendant.",
+      "what_to_do_on_mahalaya": [
+        "Wake before sunrise and bathe",
+        "Perform Tarpan at a river, lake, or sea if possible (or use a vessel of water at home)",
+        "Offer black sesame, water, and kusha grass while reciting ancestral names",
+        "Feed a Brahmin or donate food to the needy — ancestors receive merit through your acts of dharma",
+        "Light a ghee lamp in the evening in memory of all ancestral souls",
+        "Avoid non-veg, onion, and garlic on this day"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "crow-offering-mantra",
+      "name": "Crow (Kaka) Offering Mantra during Tarpan",
+      "purpose": "Crows are believed to be embodiments of ancestors. Offering food to crows during Pitrupaksha is a direct ancestral offering.",
+      "when_to_chant": "When placing food for crows during Pitrupaksha or Amavasya",
+      "sanskrit": "ॐ काकाय नमः, ये मे पितरः संसारे ते तृप्यन्तु ।\nशिंशपापत्रेण तृणेन वा अस्मिन्खाद्ये तृप्तिः सर्वपितृगणस्य ।",
+      "iast": "oṃ kākāya namaḥ, ye me pitaraḥ saṃsāre te tṛpyantu |\nśiṃśapāpatreṇa tṛṇena vā asmin khādye tṛptiḥ sarvapitṛgaṇasya |",
+      "english_meaning": "Salutations to the crow. May all my ancestors in this world be satisfied. Through this leaf, through this grass, through this food — may all the group of ancestors be satisfied.",
+      "how_to_offer": "Prepare a small ball of cooked rice mixed with sesame and milk. Place it on a leaf (not in your hand directly) in an open area where crows can access it. Wait and watch — if a crow comes and eats, it is auspicious and the offering is accepted. Call them with 'Kak! Kak!' if needed.",
+      "reviewed": false
+    }
+  ]
+}

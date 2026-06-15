@@ -1,0 +1,74 @@
+{
+  "_comment": "Month-level and special period rules. These override tithi + vara rules when active.",
+  "version": "1.0",
+  "masa_rules": {
+    "Shravana": {
+      "non_veg": false,
+      "non_veg_reason": "Shravan (sacred month of Shiva) — entire month is considered a period of abstinence. Non-veg strictly avoided by most Hindus, especially in Maharashtra.",
+      "notes": "Mondays in Shravan are especially sacred (Shravan Somvar). Fasting, Shiva abhishek, and Bilva patra offering are traditional."
+    },
+    "Kartika": {
+      "non_veg": false,
+      "non_veg_reason": "Kartik month is the most sacred month of Vishnu — non-veg avoided throughout.",
+      "notes": "Kartik Ekadashi (Prabodhini/Devuthani) is the most important Ekadashi of the year. Tulsi Vivah happens in this month."
+    }
+  },
+  "special_periods": {
+    "pitrupaksha": {
+      "name": "Pitrupaksha / Shraddha Paksha",
+      "description": "The 15-day period in Krishna Paksha of Bhadrapada (or Ashwina in some traditions) dedicated to ancestors. Falls in September–October.",
+      "non_veg": false,
+      "haircut": false,
+      "nailcut": false,
+      "non_veg_reason": "Pitrupaksha is a period of remembrance for ancestors. Non-veg, alcohol, and festivities are avoided.",
+      "haircut_reason": "Haircut and nailcut are avoided during Pitrupaksha out of respect for ancestors.",
+      "rituals": [
+        "Shraddha puja on the tithi matching the ancestor's death date",
+        "Tarpan (offering of water with sesame seeds) daily",
+        "Feeding Brahmins and poor",
+        "Crow feeding (crows are believed to carry ancestor souls)",
+        "Pitru Visarjan on Sarva Pitru Amavasya (last day)"
+      ],
+      "significance": "It is believed that during this period the departed souls come closest to the earth. Performing Shraddha with devotion ensures the ancestors' peace and blessings for the family."
+    },
+    "navratri": {
+      "name": "Navratri",
+      "description": "9 nights dedicated to Goddess Durga in her 9 forms. Occurs twice a year — Chaitra Navratri (spring) and Ashwina/Sharada Navratri (autumn, the main one).",
+      "non_veg": false,
+      "non_veg_reason": "Non-veg avoided during Navratri by devotees of Devi. Sattvic diet recommended.",
+      "onion_garlic": false,
+      "notes": "Many devotees observe a partial or full fast throughout Navratri, eating only once a day (Phalahar) or once every alternate day."
+    },
+    "adhika_masa": {
+      "name": "Adhika Masa / Mal Mas / Purushottam Masa",
+      "description": "The intercalary (leap) month added to synchronize the lunar calendar with the solar year. Occurs approximately every 3 years.",
+      "significance": "Lord Vishnu (Purushottam) is the presiding deity of this month. It is excellent for spiritual activities — fasting, chanting, charitable acts — but inauspicious for auspicious rituals like weddings, upanayana, and griha pravesh.",
+      "auspicious_for": ["Vishnu puja", "charity", "fasting", "pilgrimage", "chanting Vishnu Sahasranama"],
+      "avoid_rituals": ["marriage", "griha pravesh", "upanayana", "new business inauguration"],
+      "notes": "Any charity or tapas performed in Adhika Masa yields many times the usual merit."
+    }
+  },
+  "sankashti_chaturthi": {
+    "description": "Sankashti Chaturthi falls on Krishna Chaturthi (4th day of the waning moon) every month. 'Sankashti' means 'deliverance from troubles'.",
+    "deity": "Lord Ganesha",
+    "fast": "Complete fast observed till moonrise. After seeing the moon, Ganesha is worshipped and prasad is consumed.",
+    "significance": "Fasting on Sankashti removes obstacles and sorrows. Ganesha grants wisdom, good health, and removes Vignas (obstacles).",
+    "puja_items": ["Modak (sweet)", "Durva grass", "Red flowers", "Sindoor", "Incense", "Lamp"],
+    "key_shloka_id": "ganesh-atharvashirsha",
+    "moonrise_note": "The fast must be broken only after sighting the moon. The app should show moonrise time prominently on Sankashti days."
+  },
+  "gold_silver_buying": {
+    "favorable_varas": ["Shukrawara"],
+    "favorable_tithis": ["Shukla Tritiya", "Shukla Panchami", "Shukla Saptami", "Purnima", "Shukla Dashami"],
+    "favorable_festivals": ["Dhanteras", "Akshaya Tritiya", "Diwali", "Pushya Nakshatra days"],
+    "avoid_tithis": ["Amavasya", "Krishna Chaturdashi", "Shukla Chaturdashi"],
+    "best_overall": "Akshaya Tritiya (Shukla Tritiya of Vaishakha) and Dhanteras are the most auspicious days for buying gold and silver.",
+    "pushya_nakshatra_note": "Any day when Pushya nakshatra falls on a Thursday (Gurupushyamrut Yoga) is extremely auspicious for gold purchase."
+  },
+  "food_donation": {
+    "best_tithis": ["Amavasya", "Purnima", "Ekadashi", "Dwadashi"],
+    "best_varas": ["Guruwara"],
+    "best_festivals": ["Pitrupaksha any day", "Makar Sankranti", "Kartik Purnima"],
+    "notes": "Annadaan (food donation) on Amavasya and during Pitrupaksha is believed to reach and satisfy the departed ancestors. Donating on Ekadashi pacifies Vishnu and brings peace."
+  }
+}

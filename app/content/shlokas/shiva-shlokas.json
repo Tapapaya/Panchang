@@ -1,0 +1,87 @@
+{
+  "id": "shiva-shlokas",
+  "name": "Core Shlokas for Shiva Worship",
+  "category": "shiva",
+
+  "shlokas": [
+    {
+      "id": "panchakshara-mantra",
+      "name": "Panchakshara Mantra — The Five-Syllable Mantra of Shiva",
+      "purpose": "The root mantra of Lord Shiva — chanted at all times, especially on Mondays and Shivaratri",
+      "when_to_chant": "Daily, on Mondays (Somavar), on Pradosha, on Maha Shivaratri — anytime you think of Shiva",
+      "sanskrit": "ॐ नमः शिवाय ।",
+      "iast": "oṃ namaḥ śivāya |",
+      "english_meaning": "Salutations to the auspicious one (Shiva). 'Na Ma Si Va Ya' are the five elements (earth, water, fire, air, space) — this mantra salutes Shiva who pervades and transcends all five.",
+      "word_meanings": {
+        "namaḥ": "salutation, I bow",
+        "śivāya": "to the auspicious one; to Shiva — 'shiva' means auspiciousness, goodness, the one who is eternally benevolent"
+      },
+      "five_syllable_meaning": {
+        "Na": "Earth (Prithvi) — removes attachment, grants groundedness",
+        "Ma": "Water (Jala) — removes sin, grants flow",
+        "Si": "Fire (Agni) — burns karma, grants transformation",
+        "Va": "Air (Vayu) — removes fear, grants freedom",
+        "Ya": "Space (Akasha) — grants liberation, pure consciousness"
+      },
+      "how_to_chant": "Chant 108 times with a Rudraksha mala. Or chant continuously as a japa (repetition) throughout the day. On Shivaratri, chant throughout the 4 prahar (night watches).",
+      "what_to_visualize": "Lord Shiva seated in deep meditation on Mount Kailash, covered in vibhuti (ash), wearing rudraksha, with the Ganga flowing from his matted hair and the crescent moon on his forehead. He is stillness itself.",
+      "reviewed": false
+    },
+    {
+      "id": "maha-mrityunjaya-mantra",
+      "name": "Maha Mrityunjaya Mantra — The Great Death-Conquering Mantra",
+      "purpose": "For healing, protection from untimely death, relief from suffering, and liberation",
+      "when_to_chant": "During illness, fear, grief, Maha Shivaratri, Pradosha, on Mondays in Shravan. Also chanted for recently deceased.",
+      "sanskrit": "ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् ।\nउर्वारुकमिव बन्धनान् मृत्योर्मुक्षीय माऽमृतात् ॥",
+      "iast": "oṃ tryambakaṃ yajāmahe sugandhinṃ puṣṭivardhanam |\nurvārukamiva bandhanān mṛtyormukṣīya māmṛtāt ||",
+      "english_meaning": "We worship the three-eyed one (Shiva) who is fragrant and who nourishes all beings. May He liberate us from the bondage of death, just as a ripe cucumber is released from its vine — and may He not withhold immortality from us.",
+      "word_meanings": {
+        "tryambaka": "three-eyed (tri = three, ambaka = eye) — the three eyes represent sun, moon, and fire; past, present, and future",
+        "yajāmahe": "we worship/we offer",
+        "sugandhi": "fragrant — Shiva whose presence is as sweet as fragrance; who pervades everything like fragrance",
+        "puṣṭivardhanam": "one who increases (nourishes) all beings",
+        "urvāruka": "a type of cucumber/melon",
+        "bandhana": "bondage, binding",
+        "mṛtyu": "death",
+        "mukṣīya": "may we be liberated/released",
+        "amṛta": "immortality, nectar"
+      },
+      "significance": "This mantra is from the Rigveda (7.59.12) — one of the oldest mantras in existence. The cucumber simile is profound: a ripe fruit detaches from the vine naturally, without force. The prayer asks Shiva to allow us to detach from death as naturally as a ripe fruit — not clinging, not afraid.",
+      "how_to_chant": "For healing: 108 times daily for 40 days. For protection: 11 times daily. On Maha Shivaratri: chant throughout the night, especially during Abhishek. Can be whispered into the ear of a sick person.",
+      "what_to_visualize": "Shiva as the great healer — not the fierce destroyer, but the compassionate physician. His third eye is closed (when it opens it burns — when closed it heals). You are releasing your grip on suffering, like a fruit releasing from its vine.",
+      "reviewed": false
+    },
+    {
+      "id": "shiva-panchakshara-stotram-verse1",
+      "name": "Shiva Panchakshara Stotram (First Verse)",
+      "purpose": "Hymn by Adi Shankaracharya explaining the meaning of 'Na Ma Si Va Ya' — one verse per syllable",
+      "when_to_chant": "On Mondays, Pradosha, Maha Shivaratri — full poem has 5 verses; this is verse 1 (for 'Na')",
+      "sanskrit": "नागेन्द्रहाराय त्रिलोचनाय\nभस्माङ्गरागाय महेश्वराय ।\nनित्याय शुद्धाय दिगम्बराय\nतस्मै 'न' काराय नमः शिवाय ॥",
+      "iast": "nāgendrahārāya trilocanāya\nbhasmāṅgarāgāya maheśvarāya |\nnityāya śuddhāya digambarāya\ntasmai 'na' kārāya namaḥ śivāya ||",
+      "english_meaning": "Salutations to Shiva — the syllable 'Na' — who wears a garland of serpents, who has three eyes, whose body is smeared with ash, who is the great lord, who is eternal, who is pure, who wears the sky as his garment (digambara — naked, unattached to the world).",
+      "reviewed": false
+    },
+    {
+      "id": "shiva-abhishek-mantra",
+      "name": "Shiva Abhishek Mantra (During Milk/Water Offering)",
+      "purpose": "Chanted while performing Abhishek (bathing the Shiva Lingam with water, milk, honey, etc.)",
+      "when_to_chant": "While pouring water, milk, or Panchamrit over the Shiva Lingam during Abhishek puja",
+      "sanskrit": "ॐ नमः शिवाय शान्ताय कारणत्रयहेतवे ।\nनिवेदयामि चात्मानं त्वं गतिः परमेश्वर ॥",
+      "iast": "oṃ namaḥ śivāya śāntāya kāraṇatrayahetave |\nniveday āmi cātmānaṃ tvaṃ gatiḥ parameśvara ||",
+      "english_meaning": "Salutations to the peaceful Shiva, who is the cause of the three causes (creation, preservation, dissolution). I offer myself to You. O Supreme Lord, You are my refuge.",
+      "how_to_chant": "Pour the liquid slowly and steadily on the Shiva Lingam. Chant this mantra continuously while pouring. Visualize the water washing away impurities — external and internal.",
+      "reviewed": false
+    },
+    {
+      "id": "shiva-pradosha-stuti",
+      "name": "Pradosha Stuti",
+      "purpose": "Short prayer for Pradosha Vrata — Shiva worship at dusk (sunset to 3 hours after)",
+      "when_to_chant": "On Trayodashi evenings (Pradosha time) — approximately 45 minutes before and after sunset",
+      "sanskrit": "देवदेव महादेव नीलकण्ठ नमोऽस्तु ते ।\nकर्तुमिच्छाम्यहं देव शिवरात्रिव्रतं तव ॥\nतव व्रतस्य देवेश निर्विघ्नं कर्तुमीश्वर ।\nशक्तिं प्रयच्छ मे देव त्वं भक्तिं च सदाशिव ॥",
+      "iast": "devadeva mahādeva nīlakaṇṭha namo'stu te |\nkartumiccāmyahaṃ deva śivarātrivrataṃ tava ||\ntava vratasya deveśa nirvighnaṃ kartumīśvara |\nśaktiṃ prayaccha me deva tvaṃ bhaktiṃ ca sadāśiva ||",
+      "english_meaning": "O God of gods, O Mahadeva, O blue-throated one — salutations to You. I wish to perform Your Shivaratri vrat, O Lord. O Lord of lords, O Ishvara — grant me the power and devotion to perform Your vrat without obstacles, O Sadashiva.",
+      "when_to_use": "Used as the sankalpa-like prayer at the beginning of Pradosha puja",
+      "reviewed": false
+    }
+  ]
+}

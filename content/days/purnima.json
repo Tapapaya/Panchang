@@ -1,0 +1,105 @@
+{
+  "key": "purnima",
+  "type": "observance",
+  "tithi": "Purnima",
+  "alternate_names": ["Poornima", "Full Moon Day", "Poonam"],
+  "deity": "Lord Vishnu (primary), Chandra Dev (Moon deity)",
+
+  "significance": {
+    "title": "Purnima — The Full Moon, the Fullness of Grace",
+    "summary": "Purnima (Full Moon) is the 15th tithi of the Shukla Paksha — the peak of the lunar cycle. All positive energies are said to be at their maximum. Vishnu's grace flows most abundantly on Purnima. It is the ideal day for fasting, charity, Satyanarayan Puja, river bathing, and ancestral offerings. Medicinally (Ayurveda), the full moon amplifies all herbs, tides, and bodily fluids — it is a powerful day for healing practices.",
+    "purnima_by_month": [
+      { "month": "Chaitra", "name": "Hanuman Jayanti / Chaitra Purnima", "significance": "Birth of Hanuman. Major celebration in North India. Fast for Hanuman's strength and protection." },
+      { "month": "Vaishakha", "name": "Buddha Purnima / Vaishakha Purnima", "significance": "Birth of Gautama Buddha (revered as Vishnu's avatar). Also highly sacred in Hindu tradition." },
+      { "month": "Jyeshtha", "name": "Jyeshtha Purnima", "significance": "Vat Purnima (Vat Savitri Vrat) — women fast for husbands' long life, tying threads around banyan trees." },
+      { "month": "Ashadha", "name": "Guru Purnima / Ashadha Purnima", "significance": "The greatest Guru day — honor your teacher, spiritual guide. Vyas Purnima (birth of Sage Vyasa, who wrote the Mahabharata). Most important day in the Guru-Shishya tradition." },
+      { "month": "Shravana", "name": "Raksha Bandhan / Shravana Purnima", "significance": "Raksha Bandhan — sisters tie rakhis on brothers' wrists. Also called Narali Purnima in coastal Maharashtra — coconuts offered to the sea." },
+      { "month": "Bhadrapada", "name": "Bhadrapada Purnima", "significance": "Ganesh Chaturthi season. Purnima in this month ends the major Ganesha festival period." },
+      { "month": "Ashwin", "name": "Sharad Purnima / Kojagari Purnima", "significance": "THE most celebrated Purnima — moon is said to be at its closest and largest. Lakshmi descends to earth. Kheer placed under moonlight as healing prasad. Night of 'Ko Jagarti?' (Who is awake?)." },
+      { "month": "Kartika", "name": "Kartika Purnima / Dev Diwali", "significance": "Gods' own Diwali — 15 days after human Diwali. Lamps floated on rivers. Tripura Sundari festival. Shiva's victory over the demon Tripura." },
+      { "month": "Margashirsha", "name": "Margashirsha Purnima", "significance": "Dattatreya Jayanti (birth of Lord Dattatreya — Trinity of Brahma/Vishnu/Shiva)." },
+      { "month": "Pausha", "name": "Pausha Purnima", "significance": "Beginning of Magha Mela bathing period. Makar Sankranti season." },
+      { "month": "Magha", "name": "Maghi Purnima", "significance": "Major Kumbh Mela bathing day. Guru Ravidas Jayanti." },
+      { "month": "Phalguna", "name": "Holi Purnima / Holika Dahan", "significance": "Night of Holika Dahan (burning of the demoness Holika). Next morning is the festival of colors, Holi." }
+    ]
+  },
+
+  "vrat_guide": {
+    "fast_type": "Sunrise to moonrise fast. Same structure as the Purnima Vrat template.",
+    "key_practice": "The Chandra Arghya (water offering to the moon at moonrise) is the signature Purnima practice. This is the minimum observance — even if not fasting, offering water to the full moon while chanting the Chandra mantra is complete Purnima puja.",
+    "satyanarayan_puja": "Satyanarayan Puja is traditionally performed on Purnima. If both are planned: fast through the day, perform Satyanarayan Puja in the afternoon, offer Arghya to the moon at moonrise, then break the fast."
+  },
+
+  "moonrise": {
+    "importance": "HIGH — Purnima moonrise is the primary ritual event of the evening",
+    "note": "Full moon rises approximately at the same time as sunset on Purnima — the moon and sun are directly opposite. The moonrise on Purnima is simultaneous with (or very close to) sunset.",
+    "display_prominence": "HIGH"
+  },
+
+  "gold_silver_buying": {
+    "favorable": true,
+    "reason": "Purnima is among the auspicious days for purchasing gold and silver — especially Kojagari Purnima (Lakshmi's full moon). Dhanteras and Akshaya Tritiya are more auspicious, but any Purnima is considered favorable.",
+    "note": "Not as powerful as Akshaya Tritiya or Dhanteras, but favorable nonetheless"
+  },
+
+  "food_donation": {
+    "favorable": true,
+    "reason": "Purnima is one of the primary days for Annadaan (food charity). Feeding anyone on Purnima in God's name carries high merit."
+  },
+
+  "shlokas": [
+    {
+      "shloka_id": "chandra-arghya-mantra",
+      "context": "Chanted at moonrise while offering water to the full moon",
+      "source_file": "purnima-shlokas.json"
+    },
+    {
+      "shloka_id": "chandra-stotra",
+      "context": "Full hymn to the moon — recited in the evening before moonrise",
+      "source_file": "purnima-shlokas.json"
+    },
+    {
+      "shloka_id": "kojagari-lakshmi-puja",
+      "context": "Specific to Sharad Purnima (Kojagari) — chanted during the night vigil",
+      "source_file": "purnima-shlokas.json"
+    }
+  ],
+
+  "dos_and_donts": {
+    "dos": [
+      "Bathe before sunrise (river bath is especially auspicious on Purnima)",
+      "Fast till moonrise (water and fruit is acceptable)",
+      "Perform Satyanarayan Puja in the afternoon if time allows",
+      "Offer Chandra Arghya (water) to the moon at moonrise",
+      "Give food and water to the needy — especially in the evening",
+      "Light extra lamps throughout the home — Purnima night is considered as bright as the day",
+      "On Sharad Purnima: place kheer under open moonlight for 1–2 hours"
+    ],
+    "donts": [
+      "Avoid non-veg on Purnima — it is Vishnu's tithi",
+      "Avoid starting new conflicts or legal disputes on this day",
+      "Do not waste food on Purnima",
+      "Avoid sleeping immediately after seeing the moon — stay awake for at least an hour after moonrise to absorb the blessing"
+    ]
+  },
+
+  "hair_nail_non_veg": {
+    "override_rules": true,
+    "haircut": false,
+    "nailcut": false,
+    "non_veg": false,
+    "notes": "Purnima is forbidden for haircut, nailcut, and non-veg — it is Vishnu's peak tithi."
+  },
+
+  "marathi_calendar_notes": {
+    "vat_purnima_note": "In Maharashtra and Gujarat, Jyeshtha Purnima is observed as Vat Savitri / Vat Purnima — a major women's fast. Women fast for their husbands and tie 108 threads around a banyan tree while reciting the story of Savitri and Satyavan.",
+    "raksha_bandhan": "Shravana Purnima = Raksha Bandhan in all regions. In coastal Maharashtra, it is also Narali Purnima — coconuts are offered to the sea to mark the end of the monsoon fishing season.",
+    "guru_purnima": "Ashadha Purnima (Guru Purnima) is one of the most important festivals in Maharashtra — the spiritual teacher-disciple tradition is very strong here. Sant tradition (Tukaram, Namdev, Dnyaneshwar) is honored on this day.",
+    "note": "Not a standard regional holiday in Maharashtra government calendar, but universally observed in households"
+  },
+
+  "rashifal": {
+    "general": "Purnima amplifies the energy of all signs. For water signs (Cancer, Scorpio, Pisces) — Purnima is especially powerful as the moon rules water and emotions.",
+    "note": "Rashifal for this specific Purnima would show the sign the full moon is in — the moon is always in the sign opposite to the sun on Purnima."
+  }
+}

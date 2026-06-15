@@ -1,0 +1,109 @@
+{
+  "key": "amavasya",
+  "type": "observance",
+  "tithi": "Amavasya",
+  "alternate_names": ["Amaas", "New Moon Day", "No Moon Day", "Pitru Tithi"],
+  "deity": "Pitru Devatas (Ancestral deities), Lord Vishnu (Vaishnava Amavasya)",
+
+  "significance": {
+    "title": "Amavasya — The Night of No Moon, the Day of Ancestors",
+    "summary": "Amavasya (the 30th tithi — the new moon) is the most powerful day for ancestral remembrance and offering. The moon is invisible, and in Hindu cosmology, the moon is the realm (Pitru Lok) where ancestral souls reside — when the moon is 'empty' of light, the ancestors are said to descend to earth to receive offerings from their descendants. It is also the most auspicious day for Pitru Tarpan, Shraddha, and any form of ancestral worship.",
+    "pitru_connection": "The Mahabharata says: 'As long as water runs on earth, there are rivers; as long as the sun shines, the world exists — so long does a man live in Pitru Lok whose son offers Tarpan.' The monthly Amavasya Tarpan is the most accessible form of honoring this duty.",
+    "amavasya_by_month": [
+      { "month": "Chaitra", "name": "Chaitra Amavasya", "significance": "Ancestor Tarpan + Mahalaya ancestor prayers" },
+      { "month": "Vaishakha", "name": "Vaishakha Amavasya", "significance": "Particularly auspicious for offering Tarpan in the Vaishakha holy month" },
+      { "month": "Jyeshtha", "name": "Shani Amavasya (if Saturday)", "significance": "Saturday Amavasya (Shani Amavasya) is considered very powerful for both Pitru worship and Saturn appeasement" },
+      { "month": "Ashadha", "name": "Ashadha Amavasya", "significance": "Beginning of Chaturmas — especially significant for ancestral prayers at the start of the rain season" },
+      { "month": "Shravana", "name": "Hariyali Amavasya", "significance": "In Rajasthan/MP, marked by tree planting and nature worship alongside Pitru Tarpan" },
+      { "month": "Bhadrapada", "name": "Kushotpata Amavasya / Pithori Amavasya", "significance": "Women observe a fast for children's welfare" },
+      { "month": "Ashwin", "name": "Mahalaya Amavasya (Sarvapitru Amavasya)", "significance": "THE most important Amavasya of the year — the final and most powerful day of Pitrupaksha. Every ancestor receives offerings on this day. NEVER miss Mahalaya Amavasya." },
+      { "month": "Kartika", "name": "Diwali Amavasya", "significance": "This is the night of Diwali — Lakshmi Puja on the night of no moon. Paradoxically the most festive Amavasya." },
+      { "month": "Margashirsha", "name": "Margashirsha Amavasya", "significance": "Ancestor Tarpan; also considered auspicious for Vishnu worship in Margashirsha (Krishna's favorite month)" },
+      { "month": "Pausha", "name": "Pausha Amavasya", "significance": "Ancestor worship in the winter season — considered especially powerful" },
+      { "month": "Magha", "name": "Maghi Amavasya", "significance": "Major bathing day in Prayag (Allahabad) during Magha Mela / Kumbh period" },
+      { "month": "Phalguna", "name": "Shivratri Amavasya", "significance": "Close to Maha Shivaratri — Pitru Tarpan followed by Shiva puja" }
+    ]
+  },
+
+  "vrat_guide": {
+    "fast_type": "Many devotees fast on Amavasya from sunrise to evening. Some fast only half-day (until the Kutupa Muhurta Tarpan is complete). Water is permitted.",
+    "key_practice": "Pitru Tarpan (water offering to ancestors with sesame) is the defining act. Even those who do not fast should perform at least 3 rounds of Tarpan on Amavasya.",
+    "who_should_observe": "Traditionally performed by the eldest son/male descendant. But in modern times, any sincere family member can and should offer Tarpan for their ancestors — daughters, sons-in-law, wives.",
+    "kutupa_muhurta": "The most auspicious window for Tarpan is around midday (approximately 11:30 AM–12:30 PM local time) — called the Kutupa Muhurta. Tarpan performed in this window has maximum merit.",
+    "crow_feeding": "Feeding cooked rice (with sesame) to crows on Amavasya is an important practice. Crows are Yama's messengers and receive the ancestors' share."
+  },
+
+  "food_donation": {
+    "favorable": true,
+    "importance": "HIGHEST among regular days — Amavasya is THE primary day for Annadaan",
+    "reason": "Merit of food charity on Amavasya in ancestors' name goes directly to those ancestors. The Skanda Purana says: 'He who gives food to the hungry on Amavasya — his ancestors eat abundantly in Pitru Lok for an entire month.'"
+  },
+
+  "shlokas": [
+    {
+      "shloka_id": "pitru-tarpan-sankalpa",
+      "context": "Recited at the start of Tarpan on Amavasya morning",
+      "source_file": "amavasya-pitru-shlokas.json"
+    },
+    {
+      "shloka_id": "tarpan-mantra-pita",
+      "context": "The water offering mantra for the father and ancestors",
+      "source_file": "amavasya-pitru-shlokas.json"
+    },
+    {
+      "shloka_id": "pitru-gayatri",
+      "context": "Meditative prayer to ancestral souls — chanted before and after Tarpan",
+      "source_file": "amavasya-pitru-shlokas.json"
+    },
+    {
+      "shloka_id": "mahalaya-prayer",
+      "context": "Used specifically on Mahalaya Amavasya — calls all ancestors from all lifetimes",
+      "source_file": "amavasya-pitru-shlokas.json"
+    },
+    {
+      "shloka_id": "crow-offering-mantra",
+      "context": "Chanted when placing rice offering for crows",
+      "source_file": "amavasya-pitru-shlokas.json"
+    }
+  ],
+
+  "dos_and_donts": {
+    "dos": [
+      "Bathe before sunrise — river bath is especially auspicious on Amavasya",
+      "Perform Pitru Tarpan with black sesame seeds and water, facing south",
+      "Feed crows (rice with sesame) in the morning or afternoon",
+      "Give food and water to the poor and needy",
+      "Light a ghee lamp in memory of ancestors in the evening",
+      "Visit your family temple and offer prayers for ancestors",
+      "On Shani Amavasya (Saturday): also offer sesame oil to Shani (Saturn) at a Shani temple"
+    ],
+    "donts": [
+      "Do not eat non-vegetarian food on Amavasya",
+      "Do not cut hair or nails on Amavasya",
+      "Do not start new ventures or auspicious ceremonies on Amavasya — it is not a shubha (auspicious for beginnings) day",
+      "Exception: Diwali Amavasya is the one time when Lakshmi puja and new beginnings ARE observed on Amavasya — that Amavasya is unique",
+      "Do not disrespect elder family members on this day",
+      "Avoid excess celebration or frivolity — it is a solemn, introspective day"
+    ]
+  },
+
+  "hair_nail_non_veg": {
+    "override_rules": true,
+    "haircut": false,
+    "nailcut": false,
+    "non_veg": false,
+    "notes": "Amavasya is prohibited for all three — it is the ancestral day and cutting hair/nails on this day is considered disrespectful to the ancestors."
+  },
+
+  "marathi_calendar_notes": {
+    "pitrupaksha_in_maharashtra": "In Maharashtra, Pitrupaksha (the 15-day ancestral fortnight ending on Mahalaya Amavasya) is taken very seriously. Most families perform at least token Tarpan on the Amavasya.",
+    "shani_amavasya": "Shani Amavasya (Saturday New Moon) is especially observed in Maharashtra — the Shani temples (especially Shingnapur Shaneshwar) see massive gatherings.",
+    "diwali_note": "Kartika Amavasya = Diwali in Maharashtra and across India. This is the greatest exception — Amavasya as the biggest festival.",
+    "regional_significance": "Konkan region (coastal Maharashtra): Amavasya is the primary day for Pitru worship — the Konkan tradition has elaborate Shraddha ceremonies on Amavasya."
+  },
+
+  "rashifal": {
+    "note": "Amavasya affects all signs through the absence of the moon's light — emotions run deeper and more hidden. This is a day for introspection, not external action.",
+    "general_guidance": "Dreams on Amavasya night are considered to carry messages from ancestors — pay attention to them. Not a favorable day for financial transactions or new business decisions."
+  }
+}

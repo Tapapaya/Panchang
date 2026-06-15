@@ -1,0 +1,164 @@
+{
+  "template_id": "shravan-somvar-vrat",
+  "name": "Shravan Somvar Vrat — Monday Fast in the Holy Month",
+  "deity": "Lord Shiva",
+  "duration_days": 1,
+  "duration_note": "Fast observed on each Monday (Somavar) of the Shravan month. Shravan has 4–5 Mondays depending on the year.",
+  "recurrence": {
+    "pattern": "weekly",
+    "suggested_repeat_count": 5,
+    "repeat_note": "Observed on all Mondays of Shravan month (typically 4–5 Mondays). Some devotees extend it to Solah Somvar Vrat (16 consecutive Mondays, not limited to Shravan)."
+  },
+  "calendar_color": "saffron",
+
+  "sankalpa_text_template": "ममात्मनः सर्वपापक्षयपूर्वकदीर्घायुर्बलपुष्टिनैरुज्यैश्वर्याभिवृद्ध्यर्थं श्रीशिवप्रसादसिद्ध्यर्थं श्रावणसोमवारे उपवासं करिष्ये शिवं च पूजयिष्ये ।",
+  "sankalpa_guide": "Monday morning, after bathing. Hold water. Say your name, gotra. Recite the sankalpa. Release water.",
+
+  "guide": {
+    "preparation": [
+      "Shravan (Sanskrit: Shraavana) is the 5th month of the Hindu calendar, typically July–August. All Mondays in Shravan are sacred to Shiva.",
+      "Prepare for the fast: take only sattvic food the previous evening. Avoid meat, onion, garlic — these are forbidden for all of Shravan month.",
+      "Collect puja materials for Shiva: Bilva (bel) leaves (essential — minimum 3), white flowers, milk for Abhishek, Panchamrit",
+      "The Shiva Linga at home or a temple Abhishek is the main act of Shravan Somvar — try to visit a Shiva temple",
+      "Wear white or light colors on Shravan Mondays"
+    ],
+
+    "materials": [
+      { "name": "Bilva (Bael/Bel) leaves", "quantity": "Minimum 3, ideally 11 or 108", "purpose": "The single most essential item for Shiva puja — the 3-lobed leaf represents the Trishul and the Trinity", "substitute": "No substitute — if genuinely unavailable, offer Tulsi instead with a prayer of apology" },
+      { "name": "Milk (raw, fresh)", "quantity": "500ml – 1L", "purpose": "For Abhishek (pouring over Shiva Linga) — Shiva is pleased by milk Abhishek", "substitute": "Water — Shiva is equally pleased by pure water" },
+      { "name": "Panchamrit", "quantity": "Small quantities of each: milk, curd, honey, ghee, sugar", "purpose": "For a proper Panchamrit Abhishek — the 5 nectars bathing the Linga", "substitute": "Just milk and honey if others unavailable" },
+      { "name": "White flowers (Datura/Dhatura preferred)", "quantity": "A handful", "purpose": "Shiva's flowers — white and mildly intoxicating (Datura = Shiva's intoxication of the divine). Do not use: Tulsi, Ketaki flowers.", "substitute": "White jasmine, white rose — any white flower. Never Tulsi for Shiva." },
+      { "name": "Vibhuti (sacred ash)", "quantity": "A small amount", "purpose": "Applied to the Shiva Linga and to your own forehead (3 horizontal lines = Tripundra)", "substitute": "Cannot be substituted — it is the most sacred Shiva item" },
+      { "name": "Rudraksha mala", "quantity": "1 (if available)", "purpose": "For counting Panchakshara mantra repetitions", "substitute": "Any mala" },
+      { "name": "Copper vessel of water", "quantity": "As needed", "purpose": "For pouring water on the Shiva Linga continuously during Abhishek", "substitute": "Any clean vessel" }
+    ],
+
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Pre-dawn or dawn bath",
+        "action": "Bathe in the early hours. The ideal time for Shiva puja in Shravan is Brahma Muhurta or at minimum sunrise. During the bath, mentally dedicate the cleansing to Shiva: 'This water cleanses not just my body but my mind.'",
+        "mantra_id": "panchakshara-mantra",
+        "mantra_count": 5,
+        "note": "Even chanting Om Namah Shivaya 5 times during the bath makes the bath sacred."
+      },
+      {
+        "step_number": 2,
+        "title": "Sankalpa",
+        "action": "After bathing, before eating anything. Stand facing east (or north for Shiva). Hold water. Take the Shravan Somvar Vrat Sankalpa.",
+        "mantra_id": "shiva-pradosha-stuti",
+        "mantra_count": 1
+      },
+      {
+        "step_number": 3,
+        "title": "Shiva Abhishek (Bathing the Linga)",
+        "action": "If at home: pour water or Panchamrit over your Shiva Linga while chanting Om Namah Shivaya continuously. If at temple: offer milk, water, honey in the Abhishek counter. The chanting never stops during pouring.",
+        "mantra_id": "panchakshara-mantra",
+        "mantra_count": 108,
+        "duration_minutes": 20,
+        "note": "Shiva Abhishek is the defining act of Shravan Somvar. Even if you do nothing else — Abhishek with milk or water and Om Namah Shivaya is complete worship."
+      },
+      {
+        "step_number": 4,
+        "title": "Bilva Archana — Offering Bel Leaves",
+        "action": "Offer Bilva leaves to the Shiva Linga one by one. With each leaf, chant 'Om Namah Shivaya'. If offering 108 leaves, use a mala to count. Even offering 3 leaves with complete attention is valid.",
+        "mantra_id": "panchakshara-mantra",
+        "mantra_count": 108,
+        "duration_minutes": 15,
+        "note": "The Bilva leaf represents the three qualities (Trigunas) — Sattva, Rajas, Tamas. Offering it to Shiva is symbolically offering all three qualities back to the source."
+      },
+      {
+        "step_number": 5,
+        "title": "Chant Maha Mrityunjaya Mantra",
+        "action": "After Abhishek, sit quietly and chant the Maha Mrityunjaya Mantra 11 or 108 times. Shravan is the season of Shiva and healing mantras. This is specifically for health and longevity.",
+        "mantra_id": "maha-mrityunjaya-mantra",
+        "mantra_count": 108,
+        "duration_minutes": 20
+      },
+      {
+        "step_number": 6,
+        "title": "Fast through the day",
+        "action": "The traditional Shravan Somvar fast is until sunset (or until after evening puja). Permitted: fruits, milk, sabudana, water. Not permitted: grains, non-veg, onion-garlic (entire Shravan month).",
+        "note": "Even if you cannot do a full fast, avoiding meat and onion-garlic on Shravan Mondays is the minimum observance."
+      },
+      {
+        "step_number": 7,
+        "title": "Evening Shiva Puja (Pradosha time)",
+        "action": "At sunset, light a ghee lamp before Shiva. Offer vibhuti. Chant the Shiva Panchakshara Stotram and the Pradosha Stuti. Perform aarti.",
+        "mantra_id": "shiva-panchakshara-stotram-verse1",
+        "mantra_count": 5,
+        "duration_minutes": 10
+      },
+      {
+        "step_number": 8,
+        "title": "Break Fast",
+        "action": "After evening puja, break the fast with prasad — ideally a simple meal of rice, lentils, or fruit. First eat the prasad from the puja, then have your regular sattvic meal.",
+        "note": "During all of Shravan: no meat, no alcohol, no onion-garlic — even after breaking the Monday fast."
+      },
+      {
+        "step_number": 9,
+        "title": "Kshama Prarthana",
+        "action": "Before sleeping, recite the Kshama Prarthana for any ritual errors.",
+        "mantra_id": "kshama-prarthana",
+        "mantra_count": 1
+      }
+    ],
+
+    "mantras_explained": [
+      {
+        "mantra_id": "panchakshara-mantra",
+        "why_this_mantra": "Om Namah Shivaya is Shiva's identity condensed into 5 sounds. During Abhishek, the mantra flows with the water — the sound enters the Linga, the water washes away impurity, and the two together create a complete cleansing both physical and subtle. In Shravan, Shiva is considered most accessible — the sky opens, rain falls, and the veil between the physical and the divine thins. The mantra in Shravan carries extra power.",
+        "how_to_pronounce": "Om — Na-Mah — Shi-Vaa-Ya. Five syllables exactly. Na = earth. Ma = water. Si = fire. Va = air. Ya = space. When you say the full mantra, you are acknowledging that Shiva IS all 5 elements — everything that exists is him.",
+        "what_to_visualize": "The Shiva Linga as the axis of the universe — an infinite pillar of light that extends upward and downward beyond what can be seen. You are pouring water on this cosmic pillar. The water you pour disappears into the infinite."
+      },
+      {
+        "mantra_id": "maha-mrityunjaya-mantra",
+        "why_this_mantra": "Shravan is the rainy season — historically, diseases spread in the monsoon. Shravan fasting and Maha Mrityunjaya chanting were practical health practices that also had spiritual depth. The mantra asks Shiva for liberation from suffering, from fear, and from untimely death — like a ripe fruit released naturally from its vine. Today it is equally valid: whenever there is illness, fear, or anxiety in the family, Maha Mrityunjaya chanting on Shravan Mondays is the most powerful remedy.",
+        "how_to_pronounce": "Om Try-am-ba-kam Ya-jaa-ma-he Su-gan-dhim Pus-hti-var-dha-nam | Ur-vaa-ru-ka-mi-va Ban-dha-naan Mri-tyor-Muk-shee-ya Maa-Mri-taat ||",
+        "what_to_visualize": "Shiva as physician — not the fearsome destroyer but the compassionate healer. His third eye is closed (it burns when open — it heals when closed). You are the ripe cucumber, ready to let go of the vine. Repeat the mantra until you feel the grip of worry loosen."
+      }
+    ]
+  },
+
+  "alarms": [
+    {
+      "alarm_id": "shravan-somvar-brahma-muhurta",
+      "label": "Shravan Monday — Wake for Shiva Abhishek",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": -96,
+      "mantra_id": "panchakshara-mantra",
+      "notification_message": "Shravan Somvar — wake for Shiva Abhishek in Brahma Muhurta",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "shravan-somvar-evening-puja",
+      "label": "Shravan Monday Evening — Shiva Pradosha Puja",
+      "time_type": "relative_to_sunset",
+      "offset_minutes": 0,
+      "mantra_id": "shiva-panchakshara-stotram-verse1",
+      "notification_message": "Pradosha time — light the lamp for Shiva's evening puja and break your fast after",
+      "repeat_daily": false
+    }
+  ],
+
+  "after_completion": {
+    "materials_disposal": [
+      { "material": "Bilva leaves (offered)", "disposal_method": "Leave on the Shiva Linga (temple) or place at the base of the Bel tree", "note": "Offered Bilva leaves are sacred — return them to nature" },
+      { "material": "Abhishek water/milk", "disposal_method": "The liquid that flows off the Shiva Linga during Abhishek is called Charanamrit — collect and distribute to devotees or sprinkle around the home", "note": "" },
+      { "material": "Vibhuti", "disposal_method": "Apply remaining vibhuti to your own forehead as Tripundra (3 horizontal lines). Do not throw.", "note": "Vibhuti can be kept and applied daily — it remains sacred" },
+      { "material": "White flowers", "disposal_method": "Immerse in running water or bury", "note": "" }
+    ],
+    "prasad_distribution": "The Abhishek Charanamrit (water/milk from Shiva Linga bath) is the primary prasad — distribute to all family members. Pancha-amrit can be drunk as prasad.",
+    "next_steps": [
+      "Mark this Shravan Monday as complete",
+      "Next Shravan Monday is in 7 days — the app will remind you the evening before",
+      "Count the remaining Shravan Mondays — this year's Shravan Somvar Vrat concludes on [Shravan's last Monday]"
+    ],
+    "udyapan": {
+      "required": true,
+      "description": "The last Shravan Monday (or the final Somvar of your vrat count for Solah Somvar) requires a full Shiva Puja with Brahmin dakshina. Offer 5 coconuts, 5 sets of Bilva, distribute food to 5 or 11 Brahmins or the needy. The final Monday is the most important — it must be observed with full rigor even if earlier ones were difficult."
+    }
+  },
+
+  "forgiveness_mantra_id": "kshama-prarthana"
+}

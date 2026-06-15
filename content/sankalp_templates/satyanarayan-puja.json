@@ -1,0 +1,173 @@
+{
+  "template_id": "satyanarayan-puja",
+  "name": "Satyanarayan Puja",
+  "deity": "Lord Satyanarayan (Vishnu as the True One)",
+  "duration_days": 1,
+  "duration_note": "Typically performed in an afternoon session of 1.5–2 hours. Not a fasting ritual — it is a puja + katha (storytelling) event.",
+  "recurrence": {
+    "pattern": "monthly_tithi",
+    "tithi": "purnima",
+    "suggested_repeat_count": 12,
+    "repeat_note": "Most commonly performed on Purnima (full moon) or on special occasions: housewarming, promotions, anniversaries, childbirth, business inaugurations. Can also be done on any auspicious day."
+  },
+  "calendar_color": "yellow",
+
+  "sankalpa_text_template": "ममात्मनः श्रेयःसिद्ध्यर्थं सकलपापक्षयपूर्वकं धर्मार्थकाममोक्षचतुर्विधफलप्राप्त्यर्थं श्रीसत्यनारायणदेवप्रसादसिद्ध्यर्थं च सत्यनारायणव्रतपूजां करिष्ये ।",
+  "sankalpa_guide": "Sit facing east. Hold water and a flower. Say your name, gotra, and the occasion (Purnima / Griha Pravesh / etc.), then recite the sankalpa. Release the water.",
+
+  "guide": {
+    "preparation": [
+      "Choose the occasion and invite family/friends — Satyanarayan Puja is a communal event, not a solitary ritual",
+      "Prepare the prasad (Sheera): Semolina (sooji) fried in ghee, then add milk, sugar, banana, and dried fruits. Make enough for all attendees.",
+      "Set up the altar: yellow cloth, Vishnu's image/idol, a Kalash (pot of water with mango leaves and coconut on top)",
+      "Prepare puja items: yellow flowers, Tulsi leaves, incense, ghee lamp, sandalwood paste",
+      "Print or have the Satyanarayan Katha available — you will read all 5 chapters during the puja",
+      "Fast is optional but preferred on the day until the puja is complete"
+    ],
+
+    "materials": [
+      { "name": "Sooji (semolina)", "quantity": "500g–1kg (depending on guests)", "purpose": "Main ingredient for the Sheera prasad — Satyanarayan's special offering", "substitute": "No substitute for Sheera — it is the defining element of this puja" },
+      { "name": "Ghee (clarified butter)", "quantity": "100–200ml", "purpose": "For frying the sooji and for the lamp", "substitute": "Cannot be substituted in Sheera — must use ghee" },
+      { "name": "Banana", "quantity": "2–3", "purpose": "Goes into the Sheera prasad — ripens and adds sweetness", "substitute": "Can omit if allergy" },
+      { "name": "Tulsi leaves", "quantity": "11–21 fresh leaves", "purpose": "Essential for Vishnu puja — placed on the Kalash and offered with each mantra", "substitute": "Dried Tulsi if fresh unavailable" },
+      { "name": "Yellow flowers (marigold)", "quantity": "A large handful", "purpose": "Vishnu's flowers are yellow — this puja is vibrant and festive", "substitute": "Any flower" },
+      { "name": "Kalash (copper or silver pot)", "quantity": "1", "purpose": "Represents Lord Vishnu — decorated with mango leaves and topped with coconut", "substitute": "Any wide-mouthed pot" },
+      { "name": "Pancha-amrit (5 nectars)", "quantity": "Milk, curd, honey, ghee, sugar — small quantities", "purpose": "For Abhishek (bathing the deity image)", "substitute": "At minimum: milk and honey" },
+      { "name": "Panchaphala (5 fruits)", "quantity": "5 types of seasonal fruit", "purpose": "Offering to Vishnu — fruits represent the fullness of creation", "substitute": "Even 2–3 fruits work" },
+      { "name": "Sat-pan-diya (7 wicks lamp)", "quantity": "1 if available", "purpose": "For the aarti — 7-wick lamp is traditional for Satyanarayan Puja", "substitute": "Regular ghee lamp" }
+    ],
+
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Purification and Setup",
+        "action": "Bathe. Set up the altar with yellow cloth, Vishnu's image/idol, Kalash, and flowers. Place the Sheera (prepared prasad) covered with a cloth — it will be offered later.",
+        "note": "The Sheera should be prepared before guests arrive so it's ready to offer. Keep it warm."
+      },
+      {
+        "step_number": 2,
+        "title": "Ganesha Puja (Always First)",
+        "action": "Begin any puja with Ganesha. Light the lamp. Offer durva grass and modak to Ganesha's image or the sankalp. Chant 'Om Gam Ganapataye Namah' 3 times.",
+        "mantra_id": "ganesh-dhyana-shloka",
+        "mantra_count": 1,
+        "note": "Never begin any puja without Ganesha's permission. He removes the obstacles that would interrupt the puja."
+      },
+      {
+        "step_number": 3,
+        "title": "Sankalpa",
+        "action": "Priest/elder leads the sankalpa. All participants touch water together (or each holds a flower). Sankalpa is recited: name, occasion, intent.",
+        "mantra_id": "satyanarayan-sankalpa",
+        "mantra_count": 1,
+        "note": "When doing this with family, all members ideally participate in the sankalpa — even children."
+      },
+      {
+        "step_number": 4,
+        "title": "Kalash Puja",
+        "action": "Invoke all gods into the Kalash — place Tulsi leaves into the water. Offer flowers to the Kalash. Touch the coconut on top with sandalwood paste and kumkum. The Kalash is now Lord Vishnu's temporary abode.",
+        "duration_minutes": 10
+      },
+      {
+        "step_number": 5,
+        "title": "Shodashopachara Puja — 16-Step Vishnu Worship",
+        "action": "Offer each of the 16 items (Dhyana, Avahana, Asana... through Namaskara) to Lord Vishnu's image or the Kalash. Chant each step's mantra while making the offering.",
+        "mantra_id": "vishnu-shodashopachara",
+        "duration_minutes": 20,
+        "note": "If you don't know all 16 steps, even offering flowers, incense, and food with the mantra 'Om Namo Narayanaya' for each is valid."
+      },
+      {
+        "step_number": 6,
+        "title": "Satyanarayan Katha — Reading the 5 Stories",
+        "action": "Sit comfortably. Read all 5 chapters of the Satyanarayan Katha aloud. All participants listen with attention — the stories carry the actual teaching of the puja. Tulsi leaves should be in hand while listening.",
+        "mantra_id": "satyanarayan-katha-shloka",
+        "mantra_count": 1,
+        "duration_minutes": 30,
+        "note": "The katha is not optional. The puja's merit comes from hearing the stories with attention. If someone leaves the room, they come back with full attention — the story must be heard completely."
+      },
+      {
+        "step_number": 7,
+        "title": "Naivedya — Offering the Sheera",
+        "action": "Uncover the prepared Sheera. Place it before Vishnu's image. Offer it with 'Om Namo Bhagavate Vasudevaya' and the Satyanarayan Prasad Mantra. Light fresh incense at this moment.",
+        "mantra_id": "satyanarayan-prasad-mantra",
+        "mantra_count": 1,
+        "note": "The Sheera must be offered to the Lord BEFORE anyone eats. This is the defining moment of the puja."
+      },
+      {
+        "step_number": 8,
+        "title": "Aarti — Jay Lakshmi Ramana",
+        "action": "Wave the ghee lamp in clockwise circles before the deity while all participants sing the Satyanarayan Aarti. Ring the bell throughout. After aarti, everyone prostrates.",
+        "mantra_id": "satyanarayan-arti",
+        "mantra_count": 1,
+        "duration_minutes": 5
+      },
+      {
+        "step_number": 9,
+        "title": "Prasad Distribution",
+        "action": "Distribute the Sheera to all participants. Accept with both hands, eat with devotion. This is not just food — it is the Lord's direct blessing.",
+        "note": "The fourth chapter of the Satyanarayan Katha specifically warns against disrespecting the prasad. Accept it, eat at least a small spoonful."
+      },
+      {
+        "step_number": 10,
+        "title": "Kshama Prarthana",
+        "action": "Elder or priest recites the Kshama Prarthana for any errors in the puja. All bow together.",
+        "mantra_id": "kshama-prarthana",
+        "mantra_count": 1
+      }
+    ],
+
+    "mantras_explained": [
+      {
+        "mantra_id": "satyanarayan-sankalpa",
+        "why_this_mantra": "The Satyanarayan Sankalpa mentions all four Purusharthas: Dharma, Artha, Kama, Moksha. Most people do this puja for Artha (prosperity). But the mantra says: I seek all four. This is Vishnu's teaching — do not be ashamed of material wants, but do not stop there either. Satyanarayan gives abundance and guides you toward liberation at the same time.",
+        "how_to_pronounce": "Ma-ma-at-ma-nah shrey-ah-sid-dhyar-tham sa-ka-la-paa-pa-ksha-ya-pur-va-kam",
+        "what_to_visualize": "Lord Vishnu in Vaikuntha, four-armed, gold-complexioned, Lakshmi seated beside him. He is smiling at you the way a wealthy, loving uncle smiles at a nephew who asks for help — fully happy to give, fully capable of giving."
+      },
+      {
+        "mantra_id": "satyanarayan-prasad-mantra",
+        "why_this_mantra": "The prasad mantra transforms a bowl of semolina into divine food. Not metaphorically — the act of offering, combined with the story of the Lord receiving offerings with joy, changes how the food is received by those who eat it. The katha's warning: those who received this prasad but disrespected it lost everything. Those who accepted it with humility prospered.",
+        "how_to_pronounce": "Om Na-mo Bha-ga-va-te Vaa-su-de-vaa-ya | Nai-ved-yam Sa-mar-pa-yaa-mi | Sa-tya-naa-raa-ya-naa-ya Na-mah",
+        "what_to_visualize": "See the bowl of Sheera glowing golden as you offer it. The Lord reaches forward and accepts your offering — the same hands that hold the universe accept your bowl of sweet pudding. That is Bhakti: God receiving what you give, however small."
+      }
+    ]
+  },
+
+  "alarms": [
+    {
+      "alarm_id": "satyanarayan-morning-prep",
+      "label": "Prepare Satyanarayan Sheera",
+      "time_type": "fixed_time",
+      "time_of_day": "08:00",
+      "notification_message": "Prepare Satyanarayan Sheera and set up the puja altar — guests arrive later",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "satyanarayan-puja-start",
+      "label": "Satyanarayan Puja — Begin",
+      "time_type": "fixed_time",
+      "time_of_day": "11:00",
+      "notification_message": "Time to begin Satyanarayan Puja — gather family and guests",
+      "repeat_daily": false
+    }
+  ],
+
+  "after_completion": {
+    "materials_disposal": [
+      { "material": "Kalash water (after puja)", "disposal_method": "Pour on a plant or in the garden — or sprinkle around the house for purification", "note": "This water is now sanctified — it is called 'Charanamrit'" },
+      { "material": "Kalash coconut", "disposal_method": "Break and distribute to all present as prasad", "note": "" },
+      { "material": "Tulsi leaves (offered)", "disposal_method": "Place at the base of the Tulsi plant or in the garden", "note": "" },
+      { "material": "Flowers (offered)", "disposal_method": "Immerse in water or bury in garden", "note": "" },
+      { "material": "Remaining Sheera", "disposal_method": "Distribute to all family and neighbors. No Sheera should be wasted.", "note": "Offering Sheera to neighbors is itself a meritorious act (Annadaan)" }
+    ],
+    "prasad_distribution": "Distribute Sheera to all present. Then send portions to immediate neighbors and elderly relatives who could not attend. Every person who receives the Sheera participates in the puja's merit.",
+    "next_steps": [
+      "Mark this Satyanarayan Puja as completed",
+      "If performing monthly (Purnima): next puja is next Purnima — app will remind 3 days before",
+      "Share the Satyanarayan Katha stories with children — the stories are simple enough for children to understand and remember"
+    ],
+    "udyapan": {
+      "required": false,
+      "description": "Satyanarayan Puja is self-contained and does not require Udyapan after a fixed count. However, if you vowed to perform it for a specific occasion (house completion, business success), then once the occasion is fulfilled, perform one more puja as a thank-you."
+    }
+  },
+
+  "forgiveness_mantra_id": "kshama-prarthana"
+}

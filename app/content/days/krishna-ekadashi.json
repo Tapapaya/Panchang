@@ -1,0 +1,79 @@
+{
+  "key": "krishna-ekadashi",
+  "type": "observance",
+  "tithi": "Krishna Ekadashi",
+  "alternate_names": ["Vaishnava Ekadashi (Smarta next day)", "Krishnapaksha Ekadashi"],
+  "deity": "Lord Vishnu",
+
+  "significance": {
+    "title": "Krishna Ekadashi — The Waning Moon Fast of Vishnu",
+    "summary": "Krishna (dark fortnight) Ekadashi carries the same spiritual weight as Shukla (bright fortnight) Ekadashi — Lord Vishnu is worshipped on both. Together, the two Ekadashis per month form the most important regular fast in the Vaishnava tradition. Some Ekadashis of the Krishna Paksha have particular names and stories (Saphala, Utpanna, Vijaya) that are celebrated even more widely.",
+    "comparison_with_shukla": "In traditional understanding, both Shukla and Krishna Ekadashi are equally meritorious. Vishnu does not favor one over the other. However, the popular observance varies by region — some traditions observe primarily Shukla Ekadashi, others observe both.",
+    "key_krishna_ekadashis": [
+      { "name": "Utpanna Ekadashi", "month": "Margashirsha Krishna Ekadashi", "significance": "The origin story: Ekadashi Devi herself was born on this day from Lord Vishnu to fight the demon Mura. This is the 'birthday' of Ekadashi as a divine entity." },
+      { "name": "Saphala Ekadashi", "month": "Pausha Krishna Ekadashi", "significance": "Saphala = fruitful. Said to be especially auspicious for fulfilling desires and beginning new ventures after the winter solstice." },
+      { "name": "Vijaya Ekadashi", "month": "Phalguna Krishna Ekadashi", "significance": "Vijaya = victory. Lord Rama fasted on this day before crossing the ocean to Lanka. Observing it brings victory over enemies and obstacles." },
+      { "name": "Apara Ekadashi", "month": "Vaishakha Krishna Ekadashi", "significance": "Apara = immeasurable. Said to destroy sins from previous births. One of the most widely observed Krishna Ekadashis." },
+      { "name": "Kamika Ekadashi", "month": "Shravana Krishna Ekadashi", "significance": "During the holy Shravan month — this Ekadashi is doubly auspicious. Kamika means 'fulfiller of desires'. Tulsi worship is emphasized." }
+    ]
+  },
+
+  "vrat_guide": {
+    "core_procedure": "Identical to Shukla Ekadashi — see the full Shukla Ekadashi day entry. The ritual framework, Parana timing, and all do's and don'ts are the same.",
+    "parana_note": "Parana must happen on Dwadashi morning (the day after Krishna Ekadashi), within the window between sunrise and midday Dwadashi. The same Parana Shloka is recited.",
+    "note_on_smarta_vaishnava": "Smarta and Vaishnava traditions may observe different days for Krishna Ekadashi if the tithi spans two solar days. The panchang-ts library computes this correctly for both traditions. The app shows which tradition observes on which day."
+  },
+
+  "shlokas": [
+    {
+      "shloka_id": "ekadashi-sankalpa",
+      "context": "Morning sankalpa before the fast",
+      "source_file": "ekadashi-core-shlokas.json"
+    },
+    {
+      "shloka_id": "vishnu-ashtottara-ekadashi",
+      "context": "Chant during morning and evening Vishnu puja",
+      "source_file": "ekadashi-core-shlokas.json"
+    },
+    {
+      "shloka_id": "ekadashi-parana-shloka",
+      "context": "Chanted when breaking the fast on Dwadashi morning",
+      "source_file": "ekadashi-core-shlokas.json"
+    }
+  ],
+
+  "dos_and_donts": {
+    "dos": [
+      "Fast from sunrise on Ekadashi — no grains, lentils, or non-veg",
+      "Perform Vishnu puja with Tulsi leaves in the morning and evening",
+      "Chant Vishnu's names throughout the day (Om Namo Narayanaya, Om Namo Bhagavate Vasudevaya)",
+      "Read the specific mahatmya (story) of today's Krishna Ekadashi if it is a named one",
+      "Break fast on Dwadashi morning within the Parana window (app shows the window)"
+    ],
+    "donts": [
+      "Do not eat rice, wheat, lentils, or any grain on Ekadashi",
+      "Do not eat non-veg",
+      "Do not cut hair or nails",
+      "Do not sleep in the daytime — sleeping on Ekadashi is said to reduce the vrat's merit",
+      "Do not break the fast before the Parana window opens on Dwadashi"
+    ]
+  },
+
+  "hair_nail_non_veg": {
+    "override_rules": true,
+    "haircut": false,
+    "nailcut": false,
+    "non_veg": false,
+    "notes": "Same as Shukla Ekadashi. All forbidden — Ekadashi is Vishnu's most sacred tithi."
+  },
+
+  "marathi_calendar_notes": {
+    "warkari_tradition": "In Maharashtra, the Warkari Sampradaya observes every Ekadashi with pilgrimages to Pandharpur. Lakhs of Warkaris walk to Vitthal (Vithoba = Vishnu/Krishna) temple on both Ashadi and Kartiki Ekadashi — but Krishna Ekadashi is also observed with devotion.",
+    "note": "Krishna Ekadashis that fall in Shravan (like Kamika) and Kartika (Utpanna) have enhanced significance in Maharashtra."
+  },
+
+  "rashifal": {
+    "note": "Same as Shukla Ekadashi — Vishnu's grace on Ekadashi transcends astrological signs. All rashis benefit from fasting and Vishnu worship.",
+    "general_guidance": "Good day to resolve long-standing disputes or make important life decisions after prayer. Avoid signing contracts or financial transactions during the fast period."
+  }
+}

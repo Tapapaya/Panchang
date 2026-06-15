@@ -1,0 +1,332 @@
+{
+  "schema_version": "1.0",
+  "id": "diwali-2026",
+  "name": "Diwali 2026",
+  "type": "multi_day_festival",
+  "regions": ["general", "north-indian", "maharashtra", "gujarat"],
+  "year": 2026,
+  "unverified": false,
+  "reviewed_by": {
+    "name": "Pending pandit review",
+    "source": "Skanda Purana, Padma Purana, traditional Marathi puja paddhati"
+  },
+
+  "overview": {
+    "what_is_diwali": "Diwali (Deepavali — 'row of lights') is the festival of lights, celebrated over five days in Kartik month. It marks the victory of light over darkness, knowledge over ignorance, and good over evil.",
+    "primary_significance": "The return of Lord Rama to Ayodhya after 14 years of exile and the defeat of Ravana. The people of Ayodhya lit rows of lamps (diyas) to welcome Him — this is the origin of Diwali.",
+    "alternate_significances": [
+      "Worship of Goddess Lakshmi — the night of Diwali (Amavasya) is the most auspicious night of the year for Lakshmi's grace",
+      "Defeat of Narakasura by Lord Krishna (celebrated as Narak Chaturdashi / Choti Diwali)",
+      "The Jain festival of Mahavira's nirvana falls on the same day",
+      "In some traditions, this marks the beginning of the new business year (Gujarati New Year)"
+    ],
+    "core_theme": "The diya (lamp) is not decoration — it is prayer. Each lamp you light says: 'I choose light over darkness, awareness over ignorance, love over fear.' This is the deepest meaning of Diwali."
+  },
+
+  "days": [
+    {
+      "day_number": 1,
+      "name": "Dhanteras",
+      "alternate_names": ["Dhanvantari Jayanti", "Dhan Trayodashi"],
+      "date_2026": "2026-11-06",
+      "tithi": "Krishna Trayodashi (Kartik)",
+      "deity": "Lord Dhanvantari (physician of the gods) and Goddess Lakshmi",
+      "significance": "Dhanteras marks the emergence of Lord Dhanvantari from the ocean during Samudra Manthan (churning of the cosmic ocean), carrying the pot of Amrit (immortal nectar). He is the deity of health and Ayurveda. This day is also the first day of Lakshmi's welcome.",
+      "rituals": [
+        {
+          "time": "Evening (after sunset)",
+          "action": "Light a diya at the entrance of the home facing south — this is Yama Deepa (lamp for Lord Yama) to ward off untimely death",
+          "materials": ["Mustard oil diya", "Cotton wick"],
+          "note": "The south-facing diya on Dhanteras is one of the most important traditions — many families have done this for centuries"
+        },
+        {
+          "time": "Evening",
+          "action": "Perform Lakshmi puja and Dhanvantari puja",
+          "materials": ["Idol or image of Lakshmi", "Yellow flowers", "Kumkum", "Turmeric", "Incense", "Ghee lamp", "Coins", "Sweets"],
+          "note": ""
+        },
+        {
+          "time": "Evening",
+          "action": "Buy gold, silver, or new utensils — Dhanteras is the most auspicious day of the year for this purchase",
+          "note": "Even buying a small silver coin counts. The tradition is that any purchase on Dhanteras multiplies in the coming year."
+        },
+        {
+          "time": "Night",
+          "action": "Light diyas at every door and window of the house",
+          "note": ""
+        }
+      ],
+      "dos": [
+        "Buy gold, silver, or utensils — highly auspicious",
+        "Light a south-facing lamp (Yama Deepa) at the entrance",
+        "Worship Lord Dhanvantari — offer prayers for good health",
+        "Clean and decorate the home with rangoli",
+        "Donate medicines or health supplies to those in need"
+      ],
+      "donts": [
+        "Do not buy iron, aluminium, or sharp objects (scissors, knives) — considered inauspicious on this day",
+        "Avoid making large financial decisions on credit/debt — Dhanteras is for adding wealth, not debt"
+      ],
+      "shlokas": [
+        {
+          "id": "dhanvantari-mantra",
+          "name": "Dhanvantari Mantra",
+          "sanskrit": "ओं नमो भगवते वासुदेवाय धन्वन्तरये अमृतकलश हस्ताय सर्वामयविनाशाय त्रैलोक्यनाथाय श्रीमहाविष्णवे नमः ॥",
+          "iast": "oṃ namo bhagavate vāsudevāya dhanvantaraye amṛtakalaśa hastāya sarvāmayavināśāya trailokyānāthāya śrīmahāviṣṇave namaḥ ||",
+          "english_meaning": "Salutations to Lord Dhanvantari, who is Vasudeva, who holds the pot of nectar in His hands, who destroys all diseases, who is the lord of all three worlds, and who is the great Vishnu.",
+          "when_to_chant": "During Dhanvantari puja on Dhanteras evening"
+        },
+        {
+          "id": "lakshmi-dhanteras",
+          "name": "Lakshmi Vandana for Dhanteras",
+          "sanskrit": "ओं श्रीं ह्रीं श्रीं महालक्ष्म्यै नमः ।",
+          "iast": "oṃ śrīṃ hrīṃ śrīṃ mahālakṣmyai namaḥ |",
+          "english_meaning": "Salutations to Mahalakshmi, the great goddess of wealth and abundance.",
+          "when_to_chant": "108 times during Lakshmi puja — can be chanted while holding a rosary (mala)"
+        }
+      ]
+    },
+    {
+      "day_number": 2,
+      "name": "Narak Chaturdashi",
+      "alternate_names": ["Choti Diwali", "Kali Chaudas", "Narak Nivaran Chaturdashi"],
+      "date_2026": "2026-11-08",
+      "tithi": "Krishna Chaturdashi (Kartik)",
+      "deity": "Lord Krishna (as Narakantaka — slayer of Narakasura) and Goddess Kali",
+      "significance": "On this day, Lord Krishna (with Satyabhama) defeated and killed the demon Narakasura who had imprisoned 16,000 women. He freed them and declared this day as a day of joy. The 'Narak' in the name means 'hell' — this is the day that washes away the Narak (sin/suffering) from one's life. In Maharashtra and Gujarat, this is also Kali Chaudas — a day for Goddess Kali worship to remove fear and negative energies.",
+      "rituals": [
+        {
+          "time": "Before sunrise (Abhyang Snan)",
+          "action": "Bathe with sesame oil (til tel) before sunrise — this is the Narak Nivaran (hell-removing) bath",
+          "materials": ["Sesame oil (til ka tel)", "Ubtan (turmeric + gram flour paste)", "Fragrant water"],
+          "note": "The tradition is that the sesame oil removes the sin of Narak. The bath must happen before the sun rises. This is one of the most important rituals of the entire Diwali season — don't skip it."
+        },
+        {
+          "time": "Morning after bath",
+          "action": "Wear new clothes and burst crackers (traditional) to celebrate Krishna's victory",
+          "note": "The crackers symbolize the sound of joy at Narakasura's defeat"
+        },
+        {
+          "time": "Evening",
+          "action": "Light more diyas than the previous night — every part of the home, including the back and roof",
+          "note": ""
+        },
+        {
+          "time": "Night",
+          "action": "In Maharashtra: Kali Chaudas puja for Goddess Kali and Hanuman — these deities protect against evil on the darkest night of the year (Amavasya is the next night)",
+          "note": "Kali Chaudas is the night before Amavasya — the darkest night. Worshipping Kali and Hanuman provides protection."
+        }
+      ],
+      "dos": [
+        "Take the Abhyang Snan (sesame oil bath) before sunrise — this is the most important ritual of the day",
+        "Wear new clothes after the bath",
+        "Light diyas at every corner of the home",
+        "Worship Lord Krishna and give thanks for His protection"
+      ],
+      "donts": [
+        "Do not skip the pre-sunrise oil bath — it is considered the primary ritual of Narak Chaturdashi",
+        "Avoid sleeping in — you must wake before sunrise for the Abhyang Snan",
+        "Non-veg is avoided (Chaturdashi + Diwali period)"
+      ],
+      "shlokas": [
+        {
+          "id": "krishna-narak-shloka",
+          "name": "Krishna's Prayer for Narak Chaturdashi",
+          "sanskrit": "हे कृष्ण करुणासिन्धो दीनबन्धो जगत्पते ।\nगोपेश गोपिकाकान्त राधाकान्त नमोऽस्तु ते ॥",
+          "iast": "he kṛṣṇa karuṇāsindho dīnabandho jagatpate |\ngopesa gopikākānta rādhākānta namo'stu te ||",
+          "english_meaning": "O Krishna, ocean of compassion, friend of the humble, lord of the world, lord of the gopas, beloved of the gopis, beloved of Radha — salutations to You.",
+          "when_to_chant": "Morning after Abhyang Snan, while facing east"
+        }
+      ]
+    },
+    {
+      "day_number": 3,
+      "name": "Diwali — Lakshmi Puja",
+      "alternate_names": ["Deepawali", "Badi Diwali", "Main Diwali"],
+      "date_2026": "2026-11-08",
+      "tithi": "Amavasya (Kartik)",
+      "deity": "Goddess Lakshmi (primary), Lord Ganesha, Lord Kubera",
+      "significance": "The main night of Diwali falls on Amavasya — the new moon, the darkest night of the lunar month. On the darkest night, we light the most lamps. This is not coincidence — it is the deepest teaching of Diwali. Goddess Lakshmi is said to visit every home on this night where diyas are lit, the home is clean, and the inhabitants are awake and joyful. Lakshmi does not enter a dark, unclean, or sad home.",
+      "lakshmi_puja_muhurat": {
+        "note": "Pradosh Kaal (twilight after sunset) during Vrishchika Lagna is considered the best time for Lakshmi Puja. The exact muhurat for 2026 is computed by the app based on location.",
+        "general_window": "The puja should happen between sunset and 2 hours after sunset. The Amavasya night's deepest spiritual energy peaks around midnight."
+      },
+      "rituals": [
+        {
+          "time": "Afternoon",
+          "action": "Deep clean the entire home — Lakshmi arrives only where cleanliness and order reign",
+          "note": "This is not metaphor — a physically clean and fragrant home reflects an ordered, welcoming mind"
+        },
+        {
+          "time": "Before sunset",
+          "action": "Make rangoli at the entrance — traditional patterns with lotus motifs (Lakshmi's flower) and footprints leading INTO the home",
+          "note": "The footprints represent Lakshmi walking into your home. Face them inward, not outward."
+        },
+        {
+          "time": "Sunset",
+          "action": "Light all diyas simultaneously — home, entrance, windows, balcony, roof",
+          "note": "The more lights, the more joy. Oil diyas are traditional; ghee diyas are most auspicious."
+        },
+        {
+          "time": "After sunset (Pradosh Kaal)",
+          "action": "Lakshmi Puja — the main ritual",
+          "materials": [
+            "Lakshmi and Ganesha idols or images",
+            "Red cloth for the altar",
+            "Coins (all your coins and notes — place them before Lakshmi)",
+            "Yellow flowers (marigold)",
+            "Kumkum and haldi",
+            "Kheel (puffed rice) and batasha (sugar drops)",
+            "Lotus flowers if available",
+            "Ghee lamp (panch-batti — 5-wick lamp)",
+            "Incense sticks",
+            "Fruits and sweets as prasad",
+            "Tulsi leaves",
+            "Panchamrit (milk, curd, honey, ghee, sugar)"
+          ],
+          "puja_steps": [
+            "Place Ganesha on the left and Lakshmi on the right on a red cloth",
+            "Sprinkle Ganga jal (or clean water) to purify",
+            "Offer Panchamrit to both deities",
+            "Apply kumkum and haldi to both",
+            "Offer flowers — lotus or marigold",
+            "Light the ghee lamp and incense",
+            "Place all your coins and currency notes before Lakshmi",
+            "Chant Lakshmi Chalisa or Shri Suktam",
+            "Offer kheel and batasha as prasad",
+            "Perform aarti",
+            "Distribute prasad to family members"
+          ]
+        },
+        {
+          "time": "Night (optional, meritorious)",
+          "action": "Stay awake through the night — play family games, sing bhajans, or meditate",
+          "note": "Lakshmi is said to be pleased by a joyful, awake household. Sleeping on Diwali night is traditionally avoided."
+        }
+      ],
+      "dos": [
+        "Clean the home thoroughly before Diwali",
+        "Light as many oil/ghee diyas as possible",
+        "Draw rangoli with lotus footprints facing inward",
+        "Perform Lakshmi-Ganesha puja during Pradosh Kaal",
+        "Place all your coins and notes before Lakshmi for her blessing",
+        "Share sweets with neighbours, family, and the less fortunate",
+        "Stay awake through the night in joyful celebration",
+        "Forgive old grudges — Diwali is the festival of new beginnings"
+      ],
+      "donts": [
+        "Do not keep the home dark or dirty on Diwali night — Lakshmi does not enter such spaces",
+        "Do not be quarrelsome or harsh on this day",
+        "Do not eat non-vegetarian food",
+        "Do not gamble (Jua/cards) — this tradition is a corruption; true Diwali is about Lakshmi's grace, not luck games",
+        "Do not sleep early — the energy of Amavasya night peaks after midnight"
+      ],
+      "shlokas": [
+        {
+          "id": "lakshmi-chalisa-verse",
+          "name": "Lakshmi Vandana",
+          "sanskrit": "ओं महालक्ष्म्यै च विद्महे विष्णु पत्न्यै च धीमहि ।\nतन्नो लक्ष्मीः प्रचोदयात् ॥",
+          "iast": "oṃ mahālakṣmyai ca vidmahe viṣṇu patnyai ca dhīmahi |\ntanno lakṣmīḥ pracodayāt ||",
+          "english_meaning": "We know Mahalakshmi; we meditate on the consort of Vishnu. May Lakshmi inspire and illuminate us.",
+          "when_to_chant": "During Lakshmi Puja aarti"
+        },
+        {
+          "id": "shri-suktam-first-verse",
+          "name": "Shri Suktam (First Verse)",
+          "sanskrit": "हिरण्यवर्णां हरिणीं सुवर्णरजतस्रजाम् ।\nचन्द्रां हिरण्मयीं लक्ष्मीं जातवेदो म आवह ॥",
+          "iast": "hiraṇyavarṇāṃ hariṇīṃ suvarṇarajatasrajām |\nchandrāṃ hiraṇmayīṃ lakṣmīṃ jātavedo ma āvaha ||",
+          "english_meaning": "O Jataveda (Fire god), invoke for me Lakshmi — golden in complexion, radiant as a doe, garlanded with gold and silver, as brilliant as the moon, herself made of gold.",
+          "when_to_chant": "During the Lakshmi Puja — chant the full Shri Suktam if time permits; this first verse is the invocation",
+          "note": "Shri Suktam is from the Rigveda and is the oldest and most powerful hymn to Goddess Lakshmi."
+        },
+        {
+          "id": "ganesh-diwali",
+          "name": "Ganesha Vandana (before Lakshmi puja)",
+          "sanskrit": "वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ।\nनिर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥",
+          "iast": "vakratuṇḍa mahākāya sūryakoṭi samaprabha |\nnirviGhnaṃ kuru me deva sarvakāryeṣu sarvadā ||",
+          "english_meaning": "O curved-trunk, large-bodied one, brilliant as ten million suns — may You always make all my endeavours free of obstacles.",
+          "when_to_chant": "Before beginning the Lakshmi Puja — Ganesha is always worshipped first to remove obstacles"
+        }
+      ]
+    },
+    {
+      "day_number": 4,
+      "name": "Govardhan Puja",
+      "alternate_names": ["Annakut", "Padwa (Marathi New Year)", "Bali Pratipada"],
+      "date_2026": "2026-11-10",
+      "tithi": "Shukla Pratipada (Kartik)",
+      "deity": "Lord Krishna (as Govardhandhari — lifter of Govardhan mountain) and Lord Vishnu (as Vamana defeating Bali)",
+      "significance": "Krishna lifted the Govardhan mountain with his little finger to shelter the people of Vrindavan from Indra's wrath. This day celebrates that act of divine protection and the relationship between God and his devotees. In Maharashtra, this is also Padwa — the Marathi New Year — when husbands give gifts to wives, and couples celebrate their bond.",
+      "rituals": [
+        {
+          "time": "Morning",
+          "action": "Create a hill of food (Annakut) — a symbolic Govardhan mountain made of 56 food items (Chhappan Bhog) offered to Krishna",
+          "note": "In households: cook a variety of foods and pile them as a mountain before Krishna's image. Even 5-7 items count."
+        },
+        {
+          "time": "Morning",
+          "action": "In Maharashtra: Padwa — husband applies haldi-kumkum to wife and gives a gift",
+          "note": "This is the day of celebrating the marital bond"
+        },
+        {
+          "time": "Evening",
+          "action": "Perform Govardhan Puja — offer the Annakut to Krishna",
+          "note": ""
+        }
+      ],
+      "dos": [
+        "Prepare Annakut (variety of food offerings to Krishna)",
+        "Celebrate the marital bond (Padwa in Maharashtra)",
+        "Visit temples for Govardhan Puja",
+        "Begin new accounts or business activities (auspicious day for new starts)"
+      ],
+      "donts": [],
+      "shlokas": [
+        {
+          "id": "govardhan-puja-mantra",
+          "name": "Govardhan Dharan Shloka",
+          "sanskrit": "गोवर्धन धराधार गोकुल त्राण कारक ।\nविष्णु बाहु कृतोत्सङ्ग गवां कोटि नमोऽस्तु ते ॥",
+          "iast": "govardhan dharādhāra gokula trāṇa kāraka |\nviṣṇu bāhu kṛtotsaṅga gavāṃ koṭi namo'stu te ||",
+          "english_meaning": "O Govardhan, bearer of the earth, protector of Gokula, held in the arm of Vishnu, worshipped by millions — salutations to you.",
+          "when_to_chant": "During Govardhan Puja"
+        }
+      ]
+    },
+    {
+      "day_number": 5,
+      "name": "Bhai Dooj",
+      "alternate_names": ["Bhau Beej (Maharashtra)", "Yama Dwitiya"],
+      "date_2026": "2026-11-11",
+      "tithi": "Shukla Dwitiya (Kartik)",
+      "deity": "Lord Yama (god of death) and his sister Yamuna",
+      "significance": "On this day, Yama visited his sister Yamuna who welcomed him with great love, fed him, and applied tilak on his forehead. Yama blessed her that any brother who receives tilak from his sister on this day will be protected from untimely death. This is the festival of the brother-sister bond.",
+      "rituals": [
+        {
+          "time": "Morning/Afternoon",
+          "action": "Sister applies tilak (kumkum/vermillion) on her brother's forehead and performs aarti",
+          "materials": ["Kumkum", "Diya", "Sweets", "Coconut"],
+          "note": "The brother gives a gift to the sister in return — it is a day of mutual love and protection"
+        }
+      ],
+      "dos": [
+        "Sisters: apply tilak on brother's forehead and pray for his long life",
+        "Brothers: receive the tilak with gratitude and give a gift to the sister"
+      ],
+      "donts": [
+        "Avoid eating at your own home on Bhai Dooj if possible — the tradition is to eat at the sister's home"
+      ],
+      "shlokas": []
+    }
+  ],
+
+  "hair_nail_non_veg": {
+    "override_rules": true,
+    "haircut": { "allowed": false, "reason": "No haircut or nailcut during the 5 days of Diwali" },
+    "nailcut": { "allowed": false, "reason": "Same as above" },
+    "non_veg": { "allowed": false, "reason": "Non-veg is avoided throughout the Diwali period — Kartik month observance" }
+  },
+
+  "sankalp_template_id": "lakshmi-puja-sankalp",
+
+  "forgiveness_shloka_id": "kshama-prarthana"
+}

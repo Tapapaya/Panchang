@@ -1,0 +1,174 @@
+{
+  "template_id": "ganesh-sankashti-vrat",
+  "name": "Sankashti Chaturthi Vrat",
+  "deity": "Lord Ganesha",
+  "duration_days": 1,
+  "duration_note": "The fast begins at sunrise and is broken only after sighting the moon on Chaturthi evening",
+  "recurrence": {
+    "pattern": "monthly_tithi",
+    "tithi": "krishna_chaturthi",
+    "suggested_repeat_count": 12,
+    "repeat_note": "Ideally observed every Sankashti Chaturthi (Krishna Chaturthi). Some devotees observe all 12 Sankashtis in a year, others begin with 3, 5, or 7."
+  },
+  "calendar_color": "saffron",
+
+  "sankalpa_text_template": "ममात्मनः सर्वविघ्ननिवारणार्थं कार्यसिद्ध्यर्थं च संकष्टचतुर्थ्यां उपवासं करिष्ये गणपतिं च पूजयिष्ये ।",
+  "sankalpa_guide": "Stand facing east. Hold water in cupped hands. Say your name and gotra. Recite the sankalpa. Release the water.",
+
+  "guide": {
+    "preparation": [
+      "On Tritiya (day before): eat a simple sattvic dinner. Avoid non-veg, onion, garlic.",
+      "Prepare puja items: red flowers (hibiscus is Ganesha's favourite), durva grass (essential), modak (sweet dumpling — either prepared or brought), red cloth for the altar",
+      "Find out the moonrise time in your city for that Chaturthi — the app shows this. Plan your day around it.",
+      "The Moonrise time is the key time — everything leads up to it"
+    ],
+
+    "materials": [
+      { "name": "Durva grass (fresh)", "quantity": "21 blades", "purpose": "The most essential offering to Ganesha — 21 is the sacred number. Without durva, Sankashti puja is incomplete.", "substitute": "If genuinely unavailable, offer Kusha grass or 21 green leaves" },
+      { "name": "Red hibiscus flowers (Jaswand)", "quantity": "5–11 flowers", "purpose": "Ganesha's favorite flower — red symbolises power and energy", "substitute": "Any red flowers, or white if red unavailable" },
+      { "name": "Modak (sweet)", "quantity": "5 or 21", "purpose": "Ganesha's bhog — traditionally steamed rice modak, or fried/chocolate modak is fine too", "substitute": "Any sweet — laddoo, barfi" },
+      { "name": "Red cloth", "quantity": "Small piece", "purpose": "For covering the altar surface or as Ganesha's seat", "substitute": "Any cloth — saffron is second best" },
+      { "name": "Ghee lamp (diya)", "quantity": "1–3", "purpose": "Light offering — Ganesha puja with a lamp is called 'deepa puja'", "substitute": "Any oil lamp" },
+      { "name": "Coconut (whole)", "quantity": "1", "purpose": "Traditional offering — offered whole and then broken for prasad", "substitute": "Not essential — omit if unavailable" },
+      { "name": "Water in a copper vessel", "quantity": "For Arghya to the moon", "purpose": "At moonrise, you offer water toward the moon — this is the closing ritual", "substitute": "Any clean vessel" },
+      { "name": "Incense sticks (Agarbatti)", "quantity": "3–5 sandalwood or jasmine", "purpose": "Fragrance offering", "substitute": "Any incense" }
+    ],
+
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Morning Sankalpa",
+        "action": "Wake up at sunrise. Bathe. Stand facing east, hold water, and take the Sankashti Vrat Sankalpa.",
+        "mantra_id": "ganesh-mool-mantra",
+        "mantra_count": 3,
+        "note": "The fast begins from this moment. No food, ideally no water either (though water is permitted if health requires it)."
+      },
+      {
+        "step_number": 2,
+        "title": "Ganesha Puja — Morning",
+        "action": "Set up Ganesha's image or idol on a clean red cloth. Offer durva grass in bunches of 3 (total 21 blades). Offer red flowers. Light the ghee lamp. Light incense. Chant the Ganesha Dhyana shloka to begin.",
+        "mantra_id": "ganesh-dhyana-shloka",
+        "mantra_count": 1,
+        "duration_minutes": 15,
+        "note": "Durva is THE essential item. If you have durva, the puja is valid. If not, do your best with substitutes."
+      },
+      {
+        "step_number": 3,
+        "title": "Chant the Ganesha Mool Mantra — 108 times",
+        "action": "Using a mala (rosary), chant 'Om Gam Ganapataye Namah' 108 times. Sit comfortably. Focus on Ganesha's face — smiling, elephant-headed, holding modak.",
+        "mantra_id": "ganesh-mool-mantra",
+        "mantra_count": 108,
+        "duration_minutes": 20,
+        "note": "108 is the minimum for Sankashti. If time allows, do 3 rounds (324). Quality of attention on each repetition matters more than speed."
+      },
+      {
+        "step_number": 4,
+        "title": "Read or listen to Sankashti Katha",
+        "action": "Read or listen to the story associated with that day's Sankashti (each month has a different Ganesha name and a different story). The app will show today's specific Sankashti name.",
+        "duration_minutes": 15,
+        "note": "There are 13 Sankashtis in a year (12 + 1 Adhika Masa). Each has its own name and story. Angaraki Sankashti (Tuesday Chaturthi) is the most powerful of all."
+      },
+      {
+        "step_number": 5,
+        "title": "Spend the day in Ganesha's name",
+        "action": "Throughout the day, chant 'Om Gam Ganapataye Namah' whenever you remember. Avoid TV, gossip, and negative conversations. Meditate if possible.",
+        "note": "The fast is not just physical. It's also a fast from distraction."
+      },
+      {
+        "step_number": 6,
+        "title": "Evening Puja before moonrise",
+        "action": "One hour before moonrise (app shows the time): light a fresh lamp. Offer fresh durva and flowers. Chant the Ganesha Pancharatnam verse.",
+        "mantra_id": "ganesh-pancharatnam",
+        "mantra_count": 5,
+        "duration_minutes": 10,
+        "note": "Prepare the water in the copper vessel now — you will offer it to the moon."
+      },
+      {
+        "step_number": 7,
+        "title": "Moon sighting and Arghya (Moonrise — the key moment)",
+        "action": "When the moonrise alarm fires: go outside and look for the moon. Once you see it, cup water in your hands (or use the vessel) and pour it toward the moon while chanting the Sankashti Moonrise Prayer.",
+        "mantra_id": "sankashti-moonrise-prayer",
+        "mantra_count": 1,
+        "note": "The fast is COMPLETE after this Arghya. You may now eat. If clouds obscure the moon, check the moonrise time and offer water in that direction."
+      },
+      {
+        "step_number": 8,
+        "title": "Break fast with prasad",
+        "action": "Offer the modak to Ganesha first. Then distribute to family. Begin your meal with the modak prasad. Eat sattvic food — avoid non-veg on this night too.",
+        "note": "The first food after the fast should be Ganesha's prasad — this is the reward and the blessing."
+      },
+      {
+        "step_number": 9,
+        "title": "Kshama Prarthana",
+        "action": "Before sleeping, sit quietly and offer the Kshama Prarthana for any steps missed or any ritual errors.",
+        "mantra_id": "kshama-prarthana",
+        "mantra_count": 1
+      }
+    ],
+
+    "mantras_explained": [
+      {
+        "mantra_id": "ganesh-mool-mantra",
+        "why_this_mantra": "Om Gam Ganapataye Namah is the seed (bija) mantra of Ganesha. The syllable 'Gam' contains the entire shakti of Ganesha compressed into a single sound. 108 repetitions is one full circuit of divine connection — ancient texts say 108 is the relationship between the Sun and Earth, between moon and Earth.",
+        "how_to_pronounce": "Om — Gum (not Gam) — Ga-na-pa-ta-ye — Na-mah. The 'G' is hard like in 'go', not soft like 'gem'.",
+        "what_to_visualize": "Red-colored Ganesha with a big, joyful belly. He holds a modak in one hand (your desire fulfilled) and an ankusha in another (guiding you away from wrong paths). He is looking directly at you with total acceptance."
+      },
+      {
+        "mantra_id": "sankashti-moonrise-prayer",
+        "why_this_mantra": "The moonrise prayer is the formal conclusion of the fast. In it, you name all of Ganesha's epithets — these names describe his qualities: large-bellied (holding the universe), fan-eared (he hears everything), bearing the moon (he holds time itself). Saying all the names is like meeting Ganesha from 12 different angles at once.",
+        "how_to_pronounce": "Ga-naa-dhi-pam Ga-ne-sham cha He-ram-bam Ga-ja-kar-na-kam | Lam-bo-daram Shur-pa-kar-nam Paa-shaan-ku-sha-dha-ram Vi-bhum ||",
+        "what_to_visualize": "The full moon rising. Pour the water in an arc toward the moon. See the moonlight catch the water as it falls. In this moment, Ganesha — who wears the moon — receives your offering through the moonlight."
+      }
+    ]
+  },
+
+  "alarms": [
+    {
+      "alarm_id": "sankashti-sunrise",
+      "label": "Sankashti Chaturthi — Take Sankalpa at Sunrise",
+      "time_type": "relative_to_sunrise",
+      "offset_minutes": 0,
+      "mantra_id": "ganesh-mool-mantra",
+      "notification_message": "Sankashti begins — bathe, take Sankalpa, and start Ganesha puja",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "sankashti-pre-moon-puja",
+      "label": "Evening Puja — Moonrise in 60 min",
+      "time_type": "moonrise",
+      "offset_minutes": -60,
+      "notification_message": "Moonrise in 1 hour — begin evening Ganesha puja now",
+      "repeat_daily": false
+    },
+    {
+      "alarm_id": "sankashti-moonrise",
+      "label": "MOONRISE — Offer Arghya Now!",
+      "time_type": "moonrise",
+      "offset_minutes": 0,
+      "mantra_id": "sankashti-moonrise-prayer",
+      "notification_message": "Moon has risen! Go outside, sight the moon, offer water, and break your fast",
+      "repeat_daily": false
+    }
+  ],
+
+  "after_completion": {
+    "materials_disposal": [
+      { "material": "Durva grass (offered)", "disposal_method": "Leave on the altar overnight; in the morning place at the base of any plant or tree", "note": "Durva is sacred — never throw in trash" },
+      { "material": "Red flowers", "disposal_method": "Immerse in water or bury in the garden", "note": "" },
+      { "material": "Modak/sweets (offered)", "disposal_method": "Distribute to all family members as prasad and eat yourself", "note": "Ganesha's modak prasad is the sweet blessing of the completed fast" },
+      { "material": "Coconut", "disposal_method": "Break open the coconut, distribute pieces to family. The coconut shell can be discarded.", "note": "" }
+    ],
+    "prasad_distribution": "Distribute modak to all present. The offering that Ganesha touched first now carries His blessing.",
+    "next_steps": [
+      "Mark this Sankashti as completed in the app",
+      "The next Sankashti is in approximately 1 month — the app will remind you 2 days before",
+      "If today was Angaraki (Tuesday), it was especially powerful — merit is said to be 10x on Angaraki Sankashti"
+    ],
+    "udyapan": {
+      "required": false,
+      "description": "Sankashti vrat does not require formal Udyapan after every 12. However, some families observe a special 'Ganesh Puja' or 'Ganapati Puja' on completing their first year of Sankashtis — offering 21 modaks, 21 durva, and distributing to 21 children."
+    }
+  },
+
+  "forgiveness_mantra_id": "kshama-prarthana"
+}

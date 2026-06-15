@@ -1,0 +1,100 @@
+{
+  "key": "krishna-chaturthi-sankashti",
+  "type": "observance",
+  "tithi": "Krishna Chaturthi",
+  "alternate_names": ["Sankashti Chaturthi", "Sankatahara Chaturthi"],
+  "deity": "Lord Ganesha",
+
+  "significance": {
+    "title": "Sankashti Chaturthi — The Day of Release from Difficulties",
+    "summary": "Sankashti Chaturthi is the most regularly observed Ganesha fast day. 'Sankashti' means 'difficult crossing' or 'release from danger' — this day specifically invokes Ganesha's power to remove obstacles and grant passage through life's difficulties. While Ganesh Chaturthi (Bhadrapada Shukla Chaturthi) is the grand annual festival, Sankashti is the monthly devotion that maintains the connection.",
+    "story": "According to the Narada Purana, the gods once faced a great crisis when they were defeated by the asuras. All the gods prayed to Ganesha on the Krishna Chaturthi day — sighting the moon after sunset and worshipping Ganesha through the night. Ganesha granted them his blessings and the gods won the next battle. Since then, Krishna Chaturthi became Sankatahara (obstacle-removing) Chaturthi.",
+    "angaraki_note": "When Sankashti falls on a Tuesday (Mangalvara), it is called Angaraki Sankashti — by far the most powerful of all Sankashtis. The planetary energy of Mars (Mangal = Angaraka) combined with Ganesha's energy is considered supremely potent for removing obstacles. Missing Angaraki Sankashti is considered a significant spiritual loss for Ganesha devotees.",
+    "thirteen_sankashtis": "There are 12 Sankashtis in a year (one per lunar month) — 13 in an Adhika Masa year. Each month has a different name for the Sankashti and a different epithet of Ganesha is celebrated.",
+    "monthly_names": [
+      { "month": "Chaitra", "name": "Vinkanka Chaturthi", "ganesha_name": "Vikkata" },
+      { "month": "Vaishakha", "name": "Bhalchandra Chaturthi", "ganesha_name": "Bhalchandra" },
+      { "month": "Jyeshtha", "name": "Lambodara Chaturthi", "ganesha_name": "Lambodara" },
+      { "month": "Ashadha", "name": "Vikata Chaturthi", "ganesha_name": "Vikata" },
+      { "month": "Shravana", "name": "Ekadanta Chaturthi", "ganesha_name": "Ekadanta" },
+      { "month": "Bhadrapada", "name": "Ganesha Chaturthi", "ganesha_name": "Mahagaṇapati — Grand Festival!" },
+      { "month": "Ashwin", "name": "Harisiddhi Chaturthi", "ganesha_name": "Vighnaraja" },
+      { "month": "Kartika", "name": "Chaturthi", "ganesha_name": "Gajanana" },
+      { "month": "Margashirsha", "name": "Chaturthi", "ganesha_name": "Dhumraketu" },
+      { "month": "Pausha", "name": "Chaturthi", "ganesha_name": "Vakratunda" },
+      { "month": "Magha", "name": "Chaturthi", "ganesha_name": "Mahodara" },
+      { "month": "Phalguna", "name": "Chaturthi", "ganesha_name": "Ganapati" }
+    ]
+  },
+
+  "moonrise": {
+    "importance": "CRITICAL — The entire fast is held until moonrise. The time varies by date and location. The app shows today's moonrise time.",
+    "why_moon": "The moon rising on Chaturthi is the sign that Ganesha's blessings have been released for the day. Sighting the moon is the formal completion of the fast.",
+    "display_prominence": "HIGHEST — moonrise time should be the most prominently displayed time element on a Sankashti day"
+  },
+
+  "vrat_guide": {
+    "fast_type": "From sunrise to moonrise — ideally no food or water, though water is permitted for health",
+    "who_observes": "Traditionally women observe Sankashti — especially young unmarried women and married women. But anyone can observe regardless of gender.",
+    "puja_sequence": [
+      "Morning: Ganesha Sankalpa and brief puja with durva grass",
+      "During the day: chant Om Gam Ganapataye Namah 108 times",
+      "Evening (before moonrise): full Ganesha puja with 21 durva grass blades, red flowers, modak",
+      "At moonrise: sight the moon, offer Chandra Arghya (water offering toward the moon)",
+      "After moonrise: break fast with Ganesha's prasad (modak)"
+    ]
+  },
+
+  "shlokas": [
+    {
+      "shloka_id": "ganesh-mool-mantra",
+      "context": "Chant 108 times during the day and at the moonrise moment",
+      "source_file": "ganesh-shlokas.json"
+    },
+    {
+      "shloka_id": "sankashti-moonrise-prayer",
+      "context": "Chanted at moonrise — the formal conclusion of the fast",
+      "source_file": "ganesh-shlokas.json"
+    },
+    {
+      "shloka_id": "ganesh-dhyana-shloka",
+      "context": "For the morning sankalpa and evening puja opening",
+      "source_file": "ganesh-shlokas.json"
+    }
+  ],
+
+  "dos_and_donts": {
+    "dos": [
+      "Complete fast until moonrise — this is the core of the vrat",
+      "Offer 21 blades of durva grass to Ganesha in the evening",
+      "Sight the moon with your own eyes before eating",
+      "Distribute modak prasad to children",
+      "Read or listen to the specific Sankashti story for this month"
+    ],
+    "donts": [
+      "Do not eat anything before the moonrise Arghya",
+      "Do not skip the moonrise sighting — even cloudy, offer water in the moon's direction",
+      "Do not offer Tulsi to Ganesha — Tulsi is specifically not offered to him",
+      "Do not use the sharp edge of the palm for the Tarpan gesture"
+    ]
+  },
+
+  "hair_nail_non_veg": {
+    "override_rules": true,
+    "haircut": false,
+    "nailcut": false,
+    "non_veg": false,
+    "notes": "Chaturthi is specifically Ganesha's tithi — haircut and nailcut are forbidden on all Chaturthis as a mark of respect to him. Non-veg is forbidden on Sankashti (full fast day)."
+  },
+
+  "marathi_calendar_notes": {
+    "significance_in_maharashtra": "Sankashti is one of the most widely observed vratas in Maharashtra — the Ganesha devotion in this state is unparalleled. Even people who do not observe any other fast observe Sankashti.",
+    "regional_prasad": "Ukad (steamed rice dumpling) with coconut and jaggery filling is the traditional Maharashtrian modak — the original Ganesha prasad. Fried modak (thalipeeth variety) is also traditional.",
+    "warkari_connection": "Sant Tukaram, the great Marathi saint, composed many abhangas (devotional poems) to Ganesha. His teachings say: 'Ganesha is the first step. Without the first step, no journey begins.'"
+  },
+
+  "rashifal": {
+    "note": "Rashifal is not traditionally associated with Sankashti — this day's focus is entirely on Ganesha. However, Ganesha's grace is said to be especially potent for the fire signs (Aries, Leo, Sagittarius — signs ruled by Tuesday's planet Mars) when it is Angaraki Sankashti.",
+    "general_guidance": "For all rashis on Sankashti: obstacles in current projects may loosen. Good day to restart stalled work after the fast."
+  }
+}

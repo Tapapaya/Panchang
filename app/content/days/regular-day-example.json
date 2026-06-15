@@ -1,0 +1,95 @@
+{
+  "_comment": "Example of a regular day entry — no major festival. Most data is computed by panchang-ts at runtime. This file adds the meaning layer that the library cannot provide.",
+  "schema_version": "1.0",
+  "key": "shukla-tritiya-ashadha",
+  "type": "regular",
+  "regions": ["general", "north-indian", "maharashtra"],
+  "unverified": false,
+  "reviewed_by": {
+    "name": "Pending",
+    "source": ""
+  },
+
+  "_panchang_computed": {
+    "_note": "These fields are computed by panchang-ts at runtime from the user's device timezone. They are listed here for schema reference only — the app does NOT read them from this file.",
+    "tithi": "Shukla Tritiya",
+    "nakshatra": "varies",
+    "yoga": "varies",
+    "vara": "varies",
+    "masa": "Ashadha"
+  },
+
+  "day_overview": {
+    "title": "Shukla Tritiya — Third Day of the Bright Fortnight",
+    "brief": "Tritiya (the 3rd day) of Shukla Paksha is considered auspicious. No major vrat today, but an excellent day for new beginnings, travel planning, and Devi worship.",
+    "deity_of_the_day": "Goddess Parvati / Gauri",
+    "color_of_the_day": "White or light yellow (Shukla Paksha days are generally auspicious)"
+  },
+
+  "marathi_calendar_info": {
+    "significance": "Shukla Tritiya is the tithi of Goddess Gauri. This is the tithi of Akshaya Tritiya (Vaishakha Shukla Tritiya) — though not today's specific festival, any Shukla Tritiya carries this Gauri energy.",
+    "special_muhurat": null,
+    "nakshatra_significance": "Check today's nakshatra in the panchang view for additional guidance — nakshatra determines the quality of the day more than the tithi on regular days.",
+    "pitrupaksha_active": false,
+    "adhika_masa_active": false,
+    "sankashti_today": false,
+    "shubha_vivah_muhurat": null,
+    "planetary_changes_today": []
+  },
+
+  "rashifal": {
+    "_note": "Rashifal is computed dynamically in the app from the Chandra Rashi (moon sign) position returned by panchang-ts. The content below is a template — the app fills in the actual rashi predictions for the day.",
+    "source": "Moon sign–based daily predictions",
+    "all_rashis": {
+      "Mesha":    { "lucky_number": 1, "lucky_color": "Red",    "brief": "Good day for leadership and new projects. Avoid arguments in the evening." },
+      "Vrishabha":{ "lucky_number": 6, "lucky_color": "White",  "brief": "Focus on financial matters. Unexpected gains possible. Avoid impulsive spending." },
+      "Mithuna":  { "lucky_number": 5, "lucky_color": "Green",  "brief": "Communication skills are sharp today. Good for negotiations and creative work." },
+      "Karka":    { "lucky_number": 2, "lucky_color": "Silver", "brief": "Family harmony is highlighted. Good day to resolve old misunderstandings." },
+      "Simha":    { "lucky_number": 1, "lucky_color": "Golden", "brief": "Your confidence is high. Professional matters go well. Stay humble." },
+      "Kanya":    { "lucky_number": 5, "lucky_color": "Grey",   "brief": "Detail-oriented tasks thrive. Health requires attention — rest well." },
+      "Tula":     { "lucky_number": 6, "lucky_color": "White",  "brief": "Relationships are favored. A good day for social events and collaborations." },
+      "Vrishchika":{ "lucky_number": 9,"lucky_color": "Red",    "brief": "Inner strength is your asset today. Transformation and letting go bring peace." },
+      "Dhanu":    { "lucky_number": 3, "lucky_color": "Yellow", "brief": "Optimism flows. Spiritual pursuits are rewarding. Long-distance travel is favorable." },
+      "Makara":   { "lucky_number": 8, "lucky_color": "Blue",   "brief": "Hard work pays off. Career matters are prominent. Avoid overthinking." },
+      "Kumbha":   { "lucky_number": 4, "lucky_color": "Purple", "brief": "Innovation and originality are your strengths. Good day for creative solutions." },
+      "Meena":    { "lucky_number": 7, "lucky_color": "Sea green","brief": "Intuition is strong. Spiritual and creative work excels. Avoid confusion in decisions." }
+    }
+  },
+
+  "hair_nail_non_veg": {
+    "override_rules": false,
+    "_note": "Since override_rules is false, the app computes hair/nail/non-veg from tithi_rules.json + vara_rules.json dynamically. No override needed for a regular day."
+  },
+
+  "dos_and_donts": {
+    "dos": [
+      "Start new work or ventures — Shukla Tritiya is auspicious for beginnings",
+      "Offer white flowers to Goddess Parvati/Gauri",
+      "Plan travel — Shukla Paksha days are generally favorable for journeys",
+      "Perform Surya Namaskar at sunrise and offer water (Arghya) to the rising sun",
+      "Donate white items — rice, white sesame, white cloth — for general merit"
+    ],
+    "donts": [
+      "Don't delay important decisions indefinitely — auspicious tithis are windows, not permanent states",
+      "Avoid harsh speech and arguments — the day's Gauri energy rewards gentleness"
+    ]
+  },
+
+  "daily_morning_shloka": {
+    "id": "brahma-muhurta-shloka",
+    "name": "Morning Prayer (Pratah Smarana)",
+    "purpose": "Chant upon waking, before rising from bed",
+    "sanskrit": "कराग्रे वसते लक्ष्मीः करमध्ये सरस्वती ।\nकरमूले तु गोविन्दः प्रभाते करदर्शनम् ॥",
+    "iast": "karāgre vasate lakṣmīḥ karamadhye sarasvatī |\nkaramūle tu govindaḥ prabhāte karadarśanam ||",
+    "english_meaning": "At the tip of the palm dwells Lakshmi (prosperity); in the middle of the palm dwells Saraswati (knowledge); at the base of the palm dwells Govinda (Lord Vishnu/Krishna). One should look at one's palms at dawn.",
+    "how_to": "Upon waking, before your feet touch the floor, hold both palms before your eyes and look at them while chanting this shloka. It acknowledges that the work of your hands is blessed by the divine."
+  },
+
+  "additional_marathi_calendar_notes": {
+    "good_for_gold_silver": false,
+    "good_for_donation": true,
+    "donation_note": "Shukla Paksha Tritiya is a good day for charitable acts. Donate food or white cloth.",
+    "vrat_today": null,
+    "month_note": "Ashadha is the beginning of the monsoon season (Varsha Ritu). This marks the start of Chaturmas — the four sacred months when ascetics stop traveling and rest. Avoid new long journeys if possible during this period."
+  }
+}
