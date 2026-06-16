@@ -5,7 +5,7 @@ import { Colors, Radius, Spacing, Type } from '../../constants/design';
 
 interface VratData {
   name: string;
-  significance: string;
+  significance?: string;
   guidelines?: string[];
   breakFastWindow?: string;
 }
@@ -61,8 +61,7 @@ const styles = StyleSheet.create({
   },
   eyebrow: {
     ...Type.eyebrow,
-    color: Colors.ink,
-    opacity: 0.55,
+    color: Colors.inkSoft,
   },
   title: {
     ...Type.displayLg,
@@ -71,19 +70,19 @@ const styles = StyleSheet.create({
   significance: {
     ...Type.bodyLg,
     color: Colors.ink,
-    opacity: 0.75,
     marginBottom: Spacing.xs,
   },
   sectionLabel: {
     ...Type.eyebrow,
-    color: Colors.ink,
-    opacity: 0.55,
-    marginTop: Spacing.xs,
+    color: Colors.inkSoft,
+    marginTop: Spacing.md,
+    marginBottom: Spacing.xxs,
   },
   stepRow: {
     flexDirection: 'row',
     alignItems: 'flex-start',
     gap: Spacing.sm,
+    marginTop: Spacing.sm,
   },
   stepBadge: {
     width: 24,
@@ -106,16 +105,15 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   breakFastCard: {
-    backgroundColor: Colors.blockNavy,
-    borderRadius: Radius.md,
-    padding: Spacing.md,
-    marginTop: Spacing.sm,
+    backgroundColor: Colors.bandDark,
+    borderRadius: Radius.lg,
+    padding: Spacing.lg,
+    marginTop: Spacing.md,
     gap: Spacing.xxs,
   },
   breakFastLabel: {
     ...Type.eyebrow,
-    color: Colors.inverseInk,
-    opacity: 0.65,
+    color: Colors.inverseInkSoft,
   },
   breakFastTime: {
     ...Type.headline,
@@ -123,8 +121,7 @@ const styles = StyleSheet.create({
   },
   breakFastNote: {
     ...Type.bodySm,
-    color: Colors.inverseInk,
-    opacity: 0.55,
+    color: Colors.inverseInkSoft,
     marginTop: Spacing.xxs,
   },
 });

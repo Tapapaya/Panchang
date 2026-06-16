@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "react-2026": {
+      "source": "PatternsDev/skills",
+      "sourceType": "github",
+      "skillPath": "react/react-2026/SKILL.md",
+      "computedHash": "1a756763884ce5f0fae7cb3b44a934ccb6e5a2192d04b9c06308aed9e22a63ab"
+    }
+  }
+}

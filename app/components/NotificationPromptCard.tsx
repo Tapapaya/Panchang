@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import React, { useRef, useState } from 'react';
+import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Colors, Radius, Spacing, Type } from '../constants/design';
 
 interface NotificationPromptCardProps {
@@ -9,11 +9,14 @@ interface NotificationPromptCardProps {
 
 export function NotificationPromptCard({ onAllow, onDismiss }: NotificationPromptCardProps) {
   const [confirmed, setConfirmed] = useState(false);
+  const primaryScale = useRef(new Animated.Value(1)).current;
 
   if (confirmed) {
     return (
       <View style={[styles.card, { backgroundColor: Colors.blockLime }]}>
-        <Text style={styles.check}>✓</Text>
+        <View style={styles.checkCircle}>
+          <Text style={styles.checkMark}>✓</Text>
+        </View>
         <Text style={styles.confirmTitle}>Reminder set for 7 AM</Text>
         <Text style={styles.confirmBody}>
           You'll hear from us only when there's something worth knowing. See you tomorrow.
@@ -30,16 +33,39 @@ export function NotificationPromptCard({ onAllow, onDismiss }: NotificationPromp
       </Text>
       <View style={styles.btnRow}>
         <Pressable
-          style={({ pressed }) => [styles.primaryBtn, { opacity: pressed ? 0.82 : 1 }]}
+          accessibilityRole="button"
+          accessibilityLabel="Set reminder for 7 AM"
+          onPressIn={() =>
+            Animated.spring(primaryScale, {
+              toValue: 0.95,
+              useNativeDriver: true,
+              speed: 80,
+              bounciness: 0,
+            }).start()
+          }
+          onPressOut={() =>
+            Animated.spring(primaryScale, {
+              toValue: 1,
+              useNativeDriver: true,
+              speed: 50,
+              bounciness: 4,
+            }).start()
+          }
           onPress={() => {
             setConfirmed(true);
             onAllow();
           }}
         >
-          <Text style={styles.primaryBtnText}>Yes, at 7 AM</Text>
+          <Animated.View
+            style={[styles.primaryBtn, { transform: [{ scale: primaryScale }] }]}
+          >
+            <Text style={styles.primaryBtnText}>Yes, at 7 AM</Text>
+          </Animated.View>
         </Pressable>
         <Pressable
-          style={({ pressed }) => [styles.ghostBtn, { opacity: pressed ? 0.6 : 1 }]}
+          accessibilityRole="button"
+          accessibilityLabel="Dismiss notification prompt"
+          style={({ pressed }) => [styles.ghostBtn, { opacity: pressed ? 0.55 : 1 }]}
           onPress={onDismiss}
         >
           <Text style={styles.ghostBtnText}>Not now</Text>
@@ -54,11 +80,22 @@ const styles = StyleSheet.create({
     borderRadius: Radius.lg,
     padding: Spacing.lg,
   },
-  // confirmed state
-  check: {
-    ...Type.displayLg,
-    color: Colors.ink,
-    marginBottom: Spacing.xs,
+
+  // ── confirmed state ──────────────────────────────────────
+  checkCircle: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: Colors.ink,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: Spacing.sm,
+  },
+  checkMark: {
+    ...Type.label,
+    color: Colors.blockLime,
+    fontFamily: 'Inter_700Bold',
+    lineHeight: 16,
   },
   confirmTitle: {
     ...Type.headline,
@@ -69,8 +106,10 @@ const styles = StyleSheet.create({
     ...Type.body,
     color: Colors.ink,
     opacity: 0.65,
+    lineHeight: 22,
   },
-  // prompt state
+
+  // ── prompt state ─────────────────────────────────────────
   prompt: {
     ...Type.headline,
     color: Colors.ink,
@@ -91,22 +130,25 @@ const styles = StyleSheet.create({
   primaryBtn: {
     backgroundColor: Colors.ink,
     borderRadius: Radius.pill,
-    paddingVertical: Spacing.sm,
+    paddingVertical: 11,
     paddingHorizontal: Spacing.lg,
   },
   primaryBtnText: {
-    ...Type.body,
-    fontFamily: 'Inter_600SemiBold',
+    ...Type.label,
     color: Colors.inverseInk,
+    fontFamily: 'Inter_700Bold',
   },
   ghostBtn: {
-    paddingVertical: Spacing.sm,
-    paddingHorizontal: Spacing.xs,
+    borderRadius: Radius.pill,
+    borderWidth: 1.5,
+    borderColor: Colors.ink,
+    paddingVertical: 10,
+    paddingHorizontal: Spacing.md,
+    opacity: 0.55,
   },
   ghostBtnText: {
-    ...Type.body,
-    fontFamily: 'Inter_600SemiBold',
+    ...Type.label,
     color: Colors.ink,
-    opacity: 0.5,
+    fontFamily: 'Inter_600SemiBold',
   },
 });

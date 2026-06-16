@@ -78,9 +78,9 @@ export function computeRules(params: ComputeRulesParams): DayRules {
   const hnv = dayContent?.hair_nail_non_veg;
   if (hnv?.override_rules) {
     return {
-      haircut: hnv.haircut,
-      nailcut: hnv.nailcut,
-      nonVeg: hnv.non_veg,
+      haircut: hnv.haircut ?? false,
+      nailcut: hnv.nailcut ?? false,
+      nonVeg: hnv.non_veg ?? false,
       reason: hnv.notes || undefined,
     };
   }

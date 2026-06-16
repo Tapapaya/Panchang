@@ -1,4 +1,4 @@
-{
+﻿{
   "key": "krishna-ekadashi",
   "type": "observance",
   "tithi": "Krishna Ekadashi",
@@ -28,17 +28,17 @@
     {
       "shloka_id": "ekadashi-sankalpa",
       "context": "Morning sankalpa before the fast",
-      "source_file": "ekadashi-core-shlokas.json"
+      "ref": "ekadashi-core-shlokas"
     },
     {
       "shloka_id": "vishnu-ashtottara-ekadashi",
       "context": "Chant during morning and evening Vishnu puja",
-      "source_file": "ekadashi-core-shlokas.json"
+      "ref": "ekadashi-core-shlokas"
     },
     {
       "shloka_id": "ekadashi-parana-shloka",
       "context": "Chanted when breaking the fast on Dwadashi morning",
-      "source_file": "ekadashi-core-shlokas.json"
+      "ref": "ekadashi-core-shlokas"
     }
   ],
 

@@ -1,4 +1,4 @@
-{
+﻿{
   "key": "purnima",
   "type": "observance",
   "tithi": "Purnima",
@@ -51,17 +51,17 @@
     {
       "shloka_id": "chandra-arghya-mantra",
       "context": "Chanted at moonrise while offering water to the full moon",
-      "source_file": "purnima-shlokas.json"
+      "ref": "purnima-shlokas"
     },
     {
       "shloka_id": "chandra-stotra",
       "context": "Full hymn to the moon — recited in the evening before moonrise",
-      "source_file": "purnima-shlokas.json"
+      "ref": "purnima-shlokas"
     },
     {
       "shloka_id": "kojagari-lakshmi-puja",
       "context": "Specific to Sharad Purnima (Kojagari) — chanted during the night vigil",
-      "source_file": "purnima-shlokas.json"
+      "ref": "purnima-shlokas"
     }
   ],
 

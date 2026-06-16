@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ActivityIndicator, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { BentoCard } from '../components/BentoCard';
 import { NotificationPromptCard } from '../components/NotificationPromptCard';
@@ -19,9 +19,10 @@ function getGreeting(): string {
 
 interface Props {
   city: City;
+  headerSlot?: React.ReactNode;
 }
 
-export function TodayScreen({ city }: Props) {
+export function TodayScreen({ city, headerSlot }: Props) {
   const insets = useSafeAreaInsets();
   const liveData = useTodayData(city);
   const d = liveData ?? MOCK_TODAY;
@@ -30,12 +31,12 @@ export function TodayScreen({ city }: Props) {
   const [yogaOpen, setYogaOpen] = useState(false);
   const [vratOpen, setVratOpen] = useState(false);
   const [rahuOpen, setRahuOpen] = useState(false);
-  // TODO: gate on AsyncStorage 'notif_prompted' flag so this shows only on Day 1
   const [showNotifPrompt, setShowNotifPrompt] = useState(true);
 
   return (
     <View style={[styles.root, { paddingTop: insets.top }]}>
-      {/* ─── Header ─────────────────────────────────────────── */}
+
+      {/* ─── Header ───────────────────────────────────────────────── */}
       <View style={styles.header}>
         <View>
           <Text style={styles.headerBrand}>पंचांग</Text>
@@ -55,8 +56,10 @@ export function TodayScreen({ city }: Props) {
         ]}
         showsVerticalScrollIndicator={false}
       >
-        {/* ─── 1. Date Hero ────────────────────────────────── */}
-        <BentoCard color="cream" style={styles.heroCard}>
+        {headerSlot}
+
+        {/* ─── 1. Date Hero (dark feature band) ────────────────────── */}
+        <BentoCard color="navy" style={styles.heroCard}>
           <Text style={styles.heroEyebrow}>
             {d.vikramSamvat.masaAmanta} · {d.vikramSamvat.paksha}
           </Text>
@@ -66,7 +69,8 @@ export function TodayScreen({ city }: Props) {
           </Text>
           <View style={styles.heroFooter}>
             <Text style={styles.heroCaption}>
-              {d.vara.name.toUpperCase()} · {d.vara.deity.toUpperCase()}
+              {d.vara.name.toUpperCase()} · {' '}
+              <Text style={styles.heroDiety}>{d.vara.deity.toUpperCase()}</Text>
             </Text>
             {d.tithi.endTime && (
               <Text style={styles.heroCaption}>
@@ -76,7 +80,7 @@ export function TodayScreen({ city }: Props) {
           </View>
         </BentoCard>
 
-        {/* ─── 2. Nakshatra + Yoga ─────────────────────────── */}
+        {/* ─── 2. Nakshatra + Yoga ──────────────────────────────────── */}
         <View style={styles.row}>
           <BentoCard
             color="lilac"
@@ -106,7 +110,7 @@ export function TodayScreen({ city }: Props) {
           </BentoCard>
         </View>
 
-        {/* ─── 3. Vrat (conditional) ───────────────────────── */}
+        {/* ─── 3. Vrat (conditional) ────────────────────────────────── */}
         {d.vrat && (
           <BentoCard color="coral" onPress={() => setVratOpen(true)}>
             <Text style={styles.eyebrow}>Vrat · Fast</Text>
@@ -117,22 +121,22 @@ export function TodayScreen({ city }: Props) {
           </BentoCard>
         )}
 
-        {/* ─── 4. Sunrise + Sunset ─────────────────────────── */}
+        {/* ─── 4. Sunrise + Sunset ──────────────────────────────────── */}
         <View style={styles.row}>
           <BentoCard color="navy" style={styles.half}>
             <Text style={[styles.eyebrow, styles.inv]}>Sunrise ☀</Text>
             <Text style={[styles.sunTime, styles.inv]}>{d.sunrise}</Text>
-            <Text style={[styles.cardCaption, styles.inv]}>AM</Text>
+            <Text style={[styles.cardCaption, styles.invSoft]}>AM</Text>
           </BentoCard>
 
           <BentoCard color="navy" style={styles.half}>
             <Text style={[styles.eyebrow, styles.inv]}>Sunset ☽</Text>
             <Text style={[styles.sunTime, styles.inv]}>{d.sunset}</Text>
-            <Text style={[styles.cardCaption, styles.inv]}>PM</Text>
+            <Text style={[styles.cardCaption, styles.invSoft]}>PM</Text>
           </BentoCard>
         </View>
 
-        {/* ─── 5. Shloka ───────────────────────────────────── */}
+        {/* ─── 5. Shloka ────────────────────────────────────────────── */}
         <BentoCard color="lime">
           <Text style={styles.eyebrow}>
             Shloka · {d.shloka.context}
@@ -145,7 +149,7 @@ export function TodayScreen({ city }: Props) {
           <Text style={styles.shlokaMeaning}>{d.shloka.meaning}</Text>
         </BentoCard>
 
-        {/* ─── 6. Do + Avoid ───────────────────────────────── */}
+        {/* ─── 6. Do + Avoid ────────────────────────────────────────── */}
         <View style={styles.row}>
           <BentoCard color="soft" style={styles.half}>
             <Text style={styles.eyebrow}>Do Today</Text>
@@ -168,7 +172,7 @@ export function TodayScreen({ city }: Props) {
           </BentoCard>
         </View>
 
-        {/* ─── 7. Rahu Kalam ───────────────────────────────── */}
+        {/* ─── 7. Rahu Kalam ────────────────────────────────────────── */}
         {d.rahuKalam && (
           <BentoCard color="pink" onPress={() => setRahuOpen(true)}>
             <Text style={styles.eyebrow}>Rahu Kalam</Text>
@@ -181,19 +185,16 @@ export function TodayScreen({ city }: Props) {
           </BentoCard>
         )}
 
-        {/* ─── 8. Notification prompt (Day 1 only) ─────────── */}
+        {/* ─── 8. Notification prompt ───────────────────────────────── */}
         {showNotifPrompt && (
           <NotificationPromptCard
-            onAllow={() => {
-              // TODO: expo-notifications permission request
-              setShowNotifPrompt(false);
-            }}
+            onAllow={() => setShowNotifPrompt(false)}
             onDismiss={() => setShowNotifPrompt(false)}
           />
         )}
       </ScrollView>
 
-      {/* ─── Bottom sheets ───────────────────────────────────── */}
+      {/* ─── Bottom sheets ────────────────────────────────────────────── */}
       <ExplainerSheet
         visible={nakshatraOpen}
         onClose={() => setNakshatraOpen(false)}
@@ -241,10 +242,10 @@ export function TodayScreen({ city }: Props) {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: Colors.canvas,
+    backgroundColor: Colors.canvasWarm,
   },
 
-  // ─── Header ──────────────────────────────────────────────
+  // ─── Header ──────────────────────────────────────────────────────────────
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -252,8 +253,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.sm,
     paddingBottom: Spacing.sm,
+    backgroundColor: Colors.canvasWarm,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.hairlineSoft,
+    borderBottomColor: Colors.hairline,
   },
   headerBrand: {
     ...Type.headline,
@@ -261,8 +263,7 @@ const styles = StyleSheet.create({
   },
   headerGreeting: {
     ...Type.bodySm,
-    color: Colors.ink,
-    opacity: 0.55,
+    color: Colors.inkSoft,
     marginTop: 2,
   },
   headerRight: {
@@ -271,16 +272,14 @@ const styles = StyleSheet.create({
   },
   headerDate: {
     ...Type.bodySm,
-    color: Colors.ink,
-    opacity: 0.45,
+    color: Colors.inkSoft,
   },
   headerDeity: {
     ...Type.caption,
-    color: Colors.ink,
-    opacity: 0.35,
+    color: Colors.inkSoft,
   },
 
-  // ─── Scroll container ────────────────────────────────────
+  // ─── Scroll container ────────────────────────────────────────────────────
   scroll: {
     flex: 1,
   },
@@ -289,7 +288,7 @@ const styles = StyleSheet.create({
     gap: Spacing.sm,
   },
 
-  // ─── Layout helpers ──────────────────────────────────────
+  // ─── Layout helpers ──────────────────────────────────────────────────────
   row: {
     flexDirection: 'row',
     gap: Spacing.sm,
@@ -298,27 +297,27 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  // ─── Hero card ───────────────────────────────────────────
+  // ─── Hero card (dark feature band) ──────────────────────────────────────
   heroCard: {
     justifyContent: 'flex-end',
-    minHeight: 180,
-    padding: Spacing.xl,
+    minHeight: 220,
+    paddingHorizontal: Spacing.lg,
+    paddingBottom: Spacing.lg,
+    paddingTop: Spacing.xxl,
   },
   heroEyebrow: {
     ...Type.eyebrow,
-    color: Colors.ink,
-    opacity: 0.55,
+    color: Colors.inverseInkSoft,
     marginBottom: Spacing.xs,
   },
   heroTitle: {
-    ...Type.displayXl,
-    color: Colors.ink,
+    ...Type.displayHero,
+    color: Colors.inverseInk,
   },
   heroSubtitle: {
-    ...Type.subhead,
-    color: Colors.ink,
-    opacity: 0.65,
-    marginTop: Spacing.xxs,
+    ...Type.bodySm,
+    color: Colors.inverseInkSoft,
+    marginTop: Spacing.xs,
     marginBottom: Spacing.md,
   },
   heroFooter: {
@@ -328,11 +327,13 @@ const styles = StyleSheet.create({
   },
   heroCaption: {
     ...Type.caption,
-    color: Colors.ink,
-    opacity: 0.45,
+    color: Colors.inverseInkSoft,
+  },
+  heroDiety: {
+    color: Colors.accentGold,
   },
 
-  // ─── Generic card parts ──────────────────────────────────
+  // ─── Generic card parts ──────────────────────────────────────────────────
   eyebrow: {
     ...Type.eyebrow,
     color: Colors.ink,
@@ -341,45 +342,46 @@ const styles = StyleSheet.create({
   bigTitle: {
     ...Type.headline,
     color: Colors.ink,
-    marginBottom: Spacing.xxs,
+    marginBottom: Spacing.xs,
   },
   cardBody: {
-    ...Type.bodySm,
+    ...Type.body,
     color: Colors.ink,
   },
   cardCaption: {
     ...Type.caption,
-    color: Colors.ink,
-    opacity: 0.55,
+    color: Colors.inkSoft,
     marginTop: Spacing.xs,
   },
 
-  // ─── Inverse text (navy cards) ───────────────────────────
+  // ─── Inverse text (navy cards) ───────────────────────────────────────────
   inv: {
     color: Colors.inverseInk,
   },
+  invSoft: {
+    color: Colors.inverseInkSoft,
+  },
 
-  // ─── Sun times ───────────────────────────────────────────
+  // ─── Sun times ───────────────────────────────────────────────────────────
   sunTime: {
     ...Type.displayXl,
     color: Colors.inverseInk,
     marginVertical: Spacing.xs,
   },
 
-  // ─── Vrat card ───────────────────────────────────────────
+  // ─── Vrat card ───────────────────────────────────────────────────────────
   vratBody: {
     marginTop: Spacing.xs,
-    lineHeight: 20,
   },
 
-  // ─── Shloka card ─────────────────────────────────────────
+  // ─── Shloka card ─────────────────────────────────────────────────────────
   shlokaTitle: {
     ...Type.cardTitle,
     color: Colors.ink,
     marginBottom: Spacing.md,
   },
   shlokaSanskrit: {
-    // No fontFamily — system font handles Devanagari correctly
+    // No fontFamily — system font handles Devanagari on both iOS and Android
     fontSize: 22,
     lineHeight: 36,
     color: Colors.ink,
@@ -389,8 +391,9 @@ const styles = StyleSheet.create({
     borderLeftWidth: 2,
     borderLeftColor: Colors.ink,
     paddingLeft: Spacing.sm,
+    marginTop: Spacing.xs,
     marginBottom: Spacing.sm,
-    opacity: 0.55,
+    opacity: 0.5,
   },
   shlokaIast: {
     ...Type.body,
@@ -403,12 +406,12 @@ const styles = StyleSheet.create({
     marginTop: Spacing.xs,
   },
 
-  // ─── Do / Avoid lists ────────────────────────────────────
+  // ─── Do / Avoid lists ────────────────────────────────────────────────────
   listRow: {
     flexDirection: 'row',
     alignItems: 'flex-start',
     marginTop: Spacing.xs,
-    gap: Spacing.xxs,
+    gap: Spacing.xs,
   },
   listItem: {
     flex: 1,
@@ -421,12 +424,12 @@ const styles = StyleSheet.create({
   },
   crossMark: {
     ...Type.bodySm,
-    color: '#c0392b',
+    color: Colors.semanticError,
     fontFamily: 'Inter_700Bold',
     width: 14,
   },
 
-  // ─── Rahu Kalam card ─────────────────────────────────────
+  // ─── Rahu Kalam card ─────────────────────────────────────────────────────
   rahuTime: {
     ...Type.displayLg,
     color: Colors.ink,

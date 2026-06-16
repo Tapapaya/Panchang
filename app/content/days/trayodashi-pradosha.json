@@ -1,4 +1,4 @@
-{
+﻿{
   "key": "trayodashi-pradosha",
   "type": "observance",
   "tithi": "Trayodashi",
@@ -39,27 +39,27 @@
     {
       "shloka_id": "panchakshara-mantra",
       "context": "Continuous chanting during Abhishek in the Pradosha window",
-      "source_file": "shiva-shlokas.json"
+      "ref": "shiva-shlokas"
     },
     {
       "shloka_id": "shiva-pradosha-stuti",
       "context": "The formal prayer/sankalpa for Pradosha vrat — recited at the opening of Pradosha Kaal",
-      "source_file": "shiva-shlokas.json"
+      "ref": "shiva-shlokas"
     },
     {
       "shloka_id": "shiva-panchakshara-stotram-verse1",
       "context": "Recited during the Pradosha window — all 5 verses if possible",
-      "source_file": "shiva-shlokas.json"
+      "ref": "shiva-shlokas"
     },
     {
       "shloka_id": "maha-mrityunjaya-mantra",
       "context": "Chanted at least 11 times during the Pradosha window for healing",
-      "source_file": "shiva-shlokas.json"
+      "ref": "shiva-shlokas"
     },
     {
       "shloka_id": "shiva-abhishek-mantra",
       "context": "Chanted while pouring water/milk on the Shiva Linga during Abhishek",
-      "source_file": "shiva-shlokas.json"
+      "ref": "shiva-shlokas"
     }
   ],
 

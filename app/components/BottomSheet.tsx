@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Colors, Radius, Spacing } from '../constants/design';
+import { Colors, Radius, Shadows, Spacing } from '../constants/design';
 
 interface BottomSheetProps {
   visible: boolean;
@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: Radius.xl,
     borderTopRightRadius: Radius.xl,
     maxHeight: '82%',
+    ...Shadows.sheet,
   },
   handle: {
     width: 36,

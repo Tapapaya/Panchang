@@ -41,7 +41,7 @@ export interface TodayData {
   rahuKalam?: { start: string; end: string; explanation?: string };
   vrat?: {
     name: string;
-    significance: string;
+    significance?: string;
     guidelines?: string[];
     breakFastWindow?: string;
   };

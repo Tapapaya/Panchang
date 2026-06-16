@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-  FlatList,
   Pressable,
+  SectionList,
   StyleSheet,
   Text,
   View,
@@ -10,8 +10,25 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Colors, Radius, Spacing, Type } from '../constants/design';
 import { CITY_LIST, City } from '../src/types/content';
+import { CITY_KEY } from '../src/types/profile';
 
-const STORAGE_KEY = 'panchang:city';
+const STORAGE_KEY = CITY_KEY;
+
+interface Section {
+  title: string;
+  data: City[];
+}
+
+function buildSections(): Section[] {
+  const byCountry = new Map<string, City[]>();
+  for (const city of CITY_LIST) {
+    const existing = byCountry.get(city.country) ?? [];
+    byCountry.set(city.country, [...existing, city]);
+  }
+  return Array.from(byCountry.entries()).map(([title, data]) => ({ title, data }));
+}
+
+const SECTIONS = buildSections();
 
 interface Props {
   onCityPicked: (city: City) => void;
@@ -38,8 +55,19 @@ export function CityPickerScreen({ onCityPicked }: Props) {
         accessibilityLabel={`${item.name}, ${item.country}`}
       >
         <Text style={styles.cityName}>{item.name}</Text>
-        <Text style={styles.countryName}>{item.country}</Text>
+        <View style={styles.rowRight}>
+          <Text style={styles.countryName}>{item.country}</Text>
+          <Text style={styles.chevron}>›</Text>
+        </View>
       </Pressable>
+    );
+  }
+
+  function renderSectionHeader({ section }: { section: Section }) {
+    return (
+      <View style={styles.sectionHeader}>
+        <Text style={styles.sectionTitle}>{section.title}</Text>
+      </View>
     );
   }
 
@@ -58,14 +86,17 @@ export function CityPickerScreen({ onCityPicked }: Props) {
         </Text>
       </View>
 
-      {/* ─── City list ───────────────────────────────────── */}
-      <FlatList
-        data={CITY_LIST}
+      {/* ─── City list (grouped by country) ─────────────── */}
+      <SectionList
+        sections={SECTIONS}
         keyExtractor={(item) => item.id}
         renderItem={renderItem}
+        renderSectionHeader={renderSectionHeader}
         contentContainerStyle={{ paddingBottom: insets.bottom + Spacing.xl }}
-        ItemSeparatorComponent={() => <View style={styles.separator} />}
+        SectionSeparatorComponent={() => <View style={styles.sectionSeparator} />}
+        ItemSeparatorComponent={() => <View style={styles.itemSeparator} />}
         showsVerticalScrollIndicator={false}
+        stickySectionHeadersEnabled={false}
       />
     </View>
   );
@@ -74,15 +105,16 @@ export function CityPickerScreen({ onCityPicked }: Props) {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: Colors.canvas,
+    backgroundColor: Colors.canvasWarm,
   },
 
   // ─── Header ────────────────────────────────────────────
   header: {
     paddingHorizontal: Spacing.lg,
     paddingVertical: Spacing.sm,
+    backgroundColor: Colors.canvasWarm,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.hairlineSoft,
+    borderBottomColor: Colors.hairline,
   },
   headerBrand: {
     ...Type.headline,
@@ -102,8 +134,19 @@ const styles = StyleSheet.create({
   },
   promptSubtitle: {
     ...Type.bodyLg,
-    color: Colors.ink,
-    opacity: 0.55,
+    color: Colors.inkSoft,
+  },
+
+  // ─── Section headers ───────────────────────────────────
+  sectionHeader: {
+    paddingHorizontal: Spacing.lg,
+    paddingTop: Spacing.md,
+    paddingBottom: Spacing.xs,
+    backgroundColor: Colors.canvasWarm,
+  },
+  sectionTitle: {
+    ...Type.eyebrow,
+    color: Colors.inkSoft,
   },
 
   // ─── City rows ─────────────────────────────────────────
@@ -112,25 +155,42 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: Spacing.lg,
-    paddingVertical: Spacing.md,
-    backgroundColor: Colors.canvas,
+    paddingVertical: 14,
+    backgroundColor: Colors.canvasWarm,
+    minHeight: 44,
   },
   rowPressed: {
-    backgroundColor: Colors.surfaceSoft,
+    backgroundColor: Colors.canvasCeramic,
   },
   cityName: {
     ...Type.bodyLg,
     color: Colors.ink,
+    flex: 1,
+  },
+  rowRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.xs,
   },
   countryName: {
     ...Type.bodySm,
-    color: Colors.ink,
-    opacity: 0.4,
+    color: Colors.inkSoft,
+  },
+  chevron: {
+    ...Type.bodyLg,
+    color: Colors.inkSoft,
   },
 
-  separator: {
+  // ─── Separators ────────────────────────────────────────
+  itemSeparator: {
     height: 1,
     marginHorizontal: Spacing.lg,
-    backgroundColor: Colors.hairlineSoft,
+    // hairlineSoft invisible on canvasWarm rows — use hairline (#e7e7e7)
+    backgroundColor: Colors.hairline,
+  },
+  sectionSeparator: {
+    height: 1,
+    backgroundColor: Colors.hairline,
+    marginTop: Spacing.xs,
   },
 });

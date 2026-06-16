@@ -1,4 +1,4 @@
-{
+﻿{
   "key": "amavasya",
   "type": "observance",
   "tithi": "Amavasya",
@@ -43,27 +43,27 @@
     {
       "shloka_id": "pitru-tarpan-sankalpa",
       "context": "Recited at the start of Tarpan on Amavasya morning",
-      "source_file": "amavasya-pitru-shlokas.json"
+      "ref": "amavasya-pitru-shlokas"
     },
     {
       "shloka_id": "tarpan-mantra-pita",
       "context": "The water offering mantra for the father and ancestors",
-      "source_file": "amavasya-pitru-shlokas.json"
+      "ref": "amavasya-pitru-shlokas"
     },
     {
       "shloka_id": "pitru-gayatri",
       "context": "Meditative prayer to ancestral souls — chanted before and after Tarpan",
-      "source_file": "amavasya-pitru-shlokas.json"
+      "ref": "amavasya-pitru-shlokas"
     },
     {
       "shloka_id": "mahalaya-prayer",
       "context": "Used specifically on Mahalaya Amavasya — calls all ancestors from all lifetimes",
-      "source_file": "amavasya-pitru-shlokas.json"
+      "ref": "amavasya-pitru-shlokas"
     },
     {
       "shloka_id": "crow-offering-mantra",
       "context": "Chanted when placing rice offering for crows",
-      "source_file": "amavasya-pitru-shlokas.json"
+      "ref": "amavasya-pitru-shlokas"
     }
   ],
 

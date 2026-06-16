@@ -1,4 +1,4 @@
-{
+﻿{
   "key": "krishna-chaturthi-sankashti",
   "type": "observance",
   "tithi": "Krishna Chaturthi",
@@ -49,17 +49,17 @@
     {
       "shloka_id": "ganesh-mool-mantra",
       "context": "Chant 108 times during the day and at the moonrise moment",
-      "source_file": "ganesh-shlokas.json"
+      "ref": "ganesh-shlokas"
     },
     {
       "shloka_id": "sankashti-moonrise-prayer",
       "context": "Chanted at moonrise — the formal conclusion of the fast",
-      "source_file": "ganesh-shlokas.json"
+      "ref": "ganesh-shlokas"
     },
     {
       "shloka_id": "ganesh-dhyana-shloka",
       "context": "For the morning sankalpa and evening puja opening",
-      "source_file": "ganesh-shlokas.json"
+      "ref": "ganesh-shlokas"
     }
   ],
 

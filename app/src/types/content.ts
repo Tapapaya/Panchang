@@ -58,11 +58,11 @@ export interface DayContentShloka {
 }
 
 export interface HairNailRules {
-  override_rules: boolean;
-  haircut: boolean;
-  nailcut: boolean;
-  non_veg: boolean;
-  notes: string;
+  override_rules?: boolean;
+  haircut?: boolean;
+  nailcut?: boolean;
+  non_veg?: boolean;
+  notes?: string;
 }
 
 export interface DayContent {
@@ -73,12 +73,12 @@ export interface DayContent {
   deity?: string;
   significance?: {
     title: string;
-    summary: string;
+    summary?: string;
     [key: string]: unknown;
   };
   vrat_guide?: {
-    fast_type: string;
-    key_practice: string;
+    fast_type?: string;
+    key_practice?: string;
     [key: string]: unknown;
   };
   shlokas?: DayContentShloka[];
@@ -129,15 +129,16 @@ export interface SankalpMaterial {
 
 export interface SankalpTemplate {
   template_id: string;
-  vrat_name: string;
+  name: string;          // JSON field — human-readable vrat name
+  vrat_name?: string;    // legacy alias, same as name
   deity: string;
-  recurrence: 'once' | 'weekly' | 'monthly_tithi' | 'yearly_festival';
+  recurrence: 'once' | 'weekly' | 'monthly_tithi' | 'yearly_festival' | { pattern: string; [key: string]: unknown };
   tithi?: string;
   masa?: string;
   duration_days?: number;
   suggested_repeat_count?: number;
-  steps: SankalpStep[];
-  alarms: Alarm[];
+  steps?: SankalpStep[];
+  alarms?: Alarm[];
   materials?: SankalpMaterial[];
   forgiveness_mantra_id?: string;
   [key: string]: unknown;

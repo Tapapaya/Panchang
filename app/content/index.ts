@@ -47,41 +47,45 @@ import shivaShlokas from './shlokas/shiva-shlokas.json';
 
 // ─── Registries ───────────────────────────────────────────────────────────
 
+// JSON content files vary in structure — cast through unknown is intentional.
+// The [key: string]: unknown index signature on each interface makes runtime access safe.
+const as = <T>(v: unknown): T => v as T;
+
 export const DAY_CONTENT: Record<string, DayContent> = {
-  amavasya: amavasya as DayContent,
-  'krishna-chaturthi-sankashti': krishnaChaturthi as DayContent,
-  'krishna-ekadashi': krishnaEkadashi as DayContent,
-  purnima: purnima as DayContent,
-  'regular-day-example': regularDay as DayContent,
-  'shukla-ekadashi': shuklaEkadashi as DayContent,
-  'trayodashi-pradosha': trayodashiPradosha as DayContent,
-  diwali: diwali as DayContent,
+  amavasya:                     as<DayContent>(amavasya),
+  'krishna-chaturthi-sankashti': as<DayContent>(krishnaChaturthi),
+  'krishna-ekadashi':           as<DayContent>(krishnaEkadashi),
+  purnima:                      as<DayContent>(purnima),
+  'regular-day-example':        as<DayContent>(regularDay),
+  'shukla-ekadashi':            as<DayContent>(shuklaEkadashi),
+  'trayodashi-pradosha':        as<DayContent>(trayodashiPradosha),
+  diwali:                       as<DayContent>(diwali),
 };
 
 export const SHLOKAS: Record<string, ShlokasFile> = {
-  'amavasya-pitru-shlokas': amaavasyaShlokas as ShlokasFile,
-  'ekadashi-core-shlokas': ekadashiShlokas as ShlokasFile,
-  'ganesh-shlokas': ganeshShlokas as ShlokasFile,
-  'kshama-prarthana': kshamaShlokas as ShlokasFile,
-  'lakshmi-puja-shlokas': lakshmiShlokas as ShlokasFile,
-  'navratri-shlokas': navratriShlokas as ShlokasFile,
-  'purnima-shlokas': purnimaShlokas as ShlokasFile,
-  'satyanarayan-shlokas': satyanarayanShlokas as ShlokasFile,
-  'shiva-shlokas': shivaShlokas as ShlokasFile,
+  'amavasya-pitru-shlokas': as<ShlokasFile>(amaavasyaShlokas),
+  'ekadashi-core-shlokas':  as<ShlokasFile>(ekadashiShlokas),
+  'ganesh-shlokas':         as<ShlokasFile>(ganeshShlokas),
+  'kshama-prarthana':       as<ShlokasFile>(kshamaShlokas),
+  'lakshmi-puja-shlokas':   as<ShlokasFile>(lakshmiShlokas),
+  'navratri-shlokas':       as<ShlokasFile>(navratriShlokas),
+  'purnima-shlokas':        as<ShlokasFile>(purnimaShlokas),
+  'satyanarayan-shlokas':   as<ShlokasFile>(satyanarayanShlokas),
+  'shiva-shlokas':          as<ShlokasFile>(shivaShlokas),
 };
 
 export const SANKALP_TEMPLATES: Record<string, SankalpTemplate> = {
-  'amavasya-pitru-tarpan': amaavasyaTarpan as SankalpTemplate,
-  'ekadashi-vrat': ekadashiVrat as SankalpTemplate,
-  'ganesh-sankashti-vrat': ganeshSankashti as SankalpTemplate,
-  'krishna-janmashtami-vrat': janmashtami as SankalpTemplate,
-  'lakshmi-puja-sankalp': lakshmiPuja as SankalpTemplate,
-  'maha-shivaratri-vrat': mahaShivaratri as SankalpTemplate,
-  'navratri-vrat': navratriVrat as SankalpTemplate,
-  'pradosha-vrat': pradoshaVrat as SankalpTemplate,
-  'purnima-vrat': purnimaVrat as SankalpTemplate,
-  'satyanarayan-puja': satyanarayanPuja as SankalpTemplate,
-  'shravan-somvar-vrat': shravanSomvar as SankalpTemplate,
+  'amavasya-pitru-tarpan':    as<SankalpTemplate>(amaavasyaTarpan),
+  'ekadashi-vrat':            as<SankalpTemplate>(ekadashiVrat),
+  'ganesh-sankashti-vrat':    as<SankalpTemplate>(ganeshSankashti),
+  'krishna-janmashtami-vrat': as<SankalpTemplate>(janmashtami),
+  'lakshmi-puja-sankalp':     as<SankalpTemplate>(lakshmiPuja),
+  'maha-shivaratri-vrat':     as<SankalpTemplate>(mahaShivaratri),
+  'navratri-vrat':            as<SankalpTemplate>(navratriVrat),
+  'pradosha-vrat':            as<SankalpTemplate>(pradoshaVrat),
+  'purnima-vrat':             as<SankalpTemplate>(purnimaVrat),
+  'satyanarayan-puja':        as<SankalpTemplate>(satyanarayanPuja),
+  'shravan-somvar-vrat':      as<SankalpTemplate>(shravanSomvar),
 };
 
 export const RULES = {
