@@ -567,9 +567,10 @@ export default function VastuTab() {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: Colors.canvas,
+    backgroundColor: Colors.canvasWarm,
   },
   pageHeader: {
+    backgroundColor: Colors.canvas,
     paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.sm,
     paddingBottom: Spacing.sm,

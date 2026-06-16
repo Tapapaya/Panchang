@@ -334,7 +334,7 @@ export default function ProfileTab() {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: Colors.surfaceSoft,
+    backgroundColor: Colors.canvasWarm,
   },
   pageHeader: {
     backgroundColor: Colors.canvas,
