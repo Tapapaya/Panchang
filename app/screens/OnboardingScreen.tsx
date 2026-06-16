@@ -206,17 +206,22 @@ interface FieldProps extends TextInputProps {
 }
 
 const Field = React.forwardRef<TextInput, FieldProps>(
-  ({ label, ...inputProps }, ref) => (
-    <View style={styles.fieldWrap}>
-      <Text style={styles.fieldLabel}>{label}</Text>
-      <TextInput
-        ref={ref}
-        style={styles.input}
-        placeholderTextColor={Colors.ink + '55'}
-        {...inputProps}
-      />
-    </View>
-  )
+  ({ label, ...inputProps }, ref) => {
+    const [isFocused, setIsFocused] = useState(false);
+    return (
+      <View style={styles.fieldWrap}>
+        <Text style={styles.fieldLabel}>{label}</Text>
+        <TextInput
+          ref={ref}
+          style={[styles.input, isFocused && styles.inputFocused]}
+          placeholderTextColor={Colors.ink + '55'}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => setIsFocused(false)}
+          {...inputProps}
+        />
+      </View>
+    );
+  }
 );
 
 // ─── Styles ───────────────────────────────────────────────────────────────────
@@ -334,6 +339,10 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.sm + 2,
     borderWidth: 1,
     borderColor: Colors.hairline,
+  },
+  inputFocused: {
+    borderColor: Colors.ink,
+    backgroundColor: Colors.canvas,
   },
 
   // ─── CTA ─────────────────────────────────────────────────
