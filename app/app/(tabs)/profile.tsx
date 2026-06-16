@@ -314,7 +314,7 @@ export default function ProfileTab() {
         )}
 
         {/* ─── Sign out ────────────────────────────────────── */}
-        <SectionHeader title="ACCOUNT" />
+        <SectionHeader title="DANGER ZONE" />
         <View style={styles.card}>
           <RowItem
             icon="🚪"
