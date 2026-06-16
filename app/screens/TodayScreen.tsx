@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { BentoCard } from '../components/BentoCard';
 import { NotificationPromptCard } from '../components/NotificationPromptCard';
@@ -31,7 +32,13 @@ export function TodayScreen({ city, headerSlot }: Props) {
   const [yogaOpen, setYogaOpen] = useState(false);
   const [vratOpen, setVratOpen] = useState(false);
   const [rahuOpen, setRahuOpen] = useState(false);
-  const [showNotifPrompt, setShowNotifPrompt] = useState(true);
+  const [showNotifPrompt, setShowNotifPrompt] = useState(false);
+
+  useEffect(() => {
+    AsyncStorage.getItem('notif_prompted').then(val => {
+      if (!val) setShowNotifPrompt(true);
+    });
+  }, []);
 
   return (
     <View style={[styles.root, { paddingTop: insets.top }]}>
@@ -188,8 +195,14 @@ export function TodayScreen({ city, headerSlot }: Props) {
         {/* ─── 8. Notification prompt ───────────────────────────────── */}
         {showNotifPrompt && (
           <NotificationPromptCard
-            onAllow={() => setShowNotifPrompt(false)}
-            onDismiss={() => setShowNotifPrompt(false)}
+            onAllow={() => {
+              AsyncStorage.setItem('notif_prompted', '1');
+              setShowNotifPrompt(false);
+            }}
+            onDismiss={() => {
+              AsyncStorage.setItem('notif_prompted', '1');
+              setShowNotifPrompt(false);
+            }}
           />
         )}
       </ScrollView>
