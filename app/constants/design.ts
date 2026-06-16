@@ -142,9 +142,9 @@ export const Type = {
   },
   caption: {
     fontFamily:    'Inter_500Medium',
-    fontSize:      9,
-    lineHeight:    12,
-    letterSpacing: 0.8,
+    fontSize:      11,
+    lineHeight:    14,
+    letterSpacing: 0.6,
     textTransform: 'uppercase' as const,
   },
 } as const;
