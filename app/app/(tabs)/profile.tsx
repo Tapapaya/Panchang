@@ -63,7 +63,7 @@ function RowItem({
         <Ionicons
           name="chevron-forward"
           size={16}
-          color={destructive ? '#e74c3c' : Colors.ink}
+          color={destructive ? Colors.semanticError : Colors.ink}
           style={{ opacity: destructive ? 0.8 : 0.3 }}
         />
       )}
@@ -435,7 +435,7 @@ const styles = StyleSheet.create({
     opacity: 0.5,
   },
   destructiveText: {
-    color: '#e74c3c',
+    color: Colors.semanticError,
   },
   divider: {
     height: 1,
