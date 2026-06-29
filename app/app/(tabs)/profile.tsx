@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import {
   View,
   Text,
@@ -15,21 +15,7 @@ import { Colors, Spacing, Type, Radius } from '../../constants/design';
 import { useApp } from '../../src/context/AppContext';
 import { CITY_LIST } from '../../src/types/content';
 import { PROFILE_KEY, CITY_KEY, ONBOARDING_KEY } from '../../src/types/profile';
-
-const RASHIS = [
-  { slug: 'mesha', name: 'Mesha', symbol: '♈', english: 'Aries' },
-  { slug: 'vrishabha', name: 'Vrishabha', symbol: '♉', english: 'Taurus' },
-  { slug: 'mithuna', name: 'Mithuna', symbol: '♊', english: 'Gemini' },
-  { slug: 'karka', name: 'Karka', symbol: '♋', english: 'Cancer' },
-  { slug: 'simha', name: 'Simha', symbol: '♌', english: 'Leo' },
-  { slug: 'kanya', name: 'Kanya', symbol: '♍', english: 'Virgo' },
-  { slug: 'tula', name: 'Tula', symbol: '♎', english: 'Libra' },
-  { slug: 'vrishchika', name: 'Vrishchika', symbol: '♏', english: 'Scorpio' },
-  { slug: 'dhanu', name: 'Dhanu', symbol: '♐', english: 'Sagittarius' },
-  { slug: 'makara', name: 'Makara', symbol: '♑', english: 'Capricorn' },
-  { slug: 'kumbha', name: 'Kumbha', symbol: '♒', english: 'Aquarius' },
-  { slug: 'meena', name: 'Meena', symbol: '♓', english: 'Pisces' },
-];
+import { RASHIS } from '../../src/constants/rashis';
 
 function SectionHeader({ title }: { title: string }) {
   return <Text style={styles.sectionHeader}>{title}</Text>;
@@ -106,7 +92,7 @@ function CityPicker({
   currentCityId: string | undefined;
   onSelect: (cityId: string) => void;
 }) {
-  const countries = [...new Set(CITY_LIST.map(c => c.country))];
+  const countries = useMemo(() => [...new Set(CITY_LIST.map(c => c.country))], []);
   return (
     <View>
       {countries.map(country => (
@@ -388,7 +374,7 @@ const styles = StyleSheet.create({
     width: 52,
     height: 52,
     borderRadius: 26,
-    backgroundColor: Colors.blockLilac,
+    backgroundColor: Colors.accentWash,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -488,8 +474,8 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.surfaceSoft,
   },
   rashiItemActive: {
-    backgroundColor: Colors.ink,
-    borderColor: Colors.ink,
+    backgroundColor: Colors.accent,
+    borderColor: Colors.accent,
   },
   rashiSymbol: {
     fontSize: 20,
@@ -540,7 +526,7 @@ const styles = StyleSheet.create({
     color: Colors.ink,
   },
   cityNameActive: {
-    fontFamily: 'Inter_600SemiBold',
+    fontFamily: 'Urbanist_600SemiBold',
   },
 
   hintText: {

@@ -458,14 +458,13 @@ function TipCard({ tip }: { tip: VastuTip }) {
 function RoomCard({ room, onPress }: { room: VastuRoom; onPress: () => void }) {
   return (
     <TouchableOpacity
-      style={[styles.roomCard, { backgroundColor: room.color }]}
+      style={styles.roomCard}
       onPress={onPress}
       activeOpacity={0.75}
     >
-      <Text style={styles.roomIcon}>{room.icon}</Text>
       <Text style={styles.roomName}>{room.name}</Text>
       <Text style={styles.roomTagline}>{room.tagline}</Text>
-      <Text style={styles.roomCount}>{room.tips.length} tips</Text>
+      <Text style={styles.roomCount}>{room.tips.length} tips →</Text>
     </TouchableOpacity>
   );
 }
@@ -476,7 +475,7 @@ function RoomDetail({ room, onBack }: { room: VastuRoom; onBack: () => void }) {
   const insets = useSafeAreaInsets();
   return (
     <View style={[styles.detailRoot, { paddingTop: insets.top }]}>
-      <View style={[styles.detailHeader, { backgroundColor: room.color }]}>
+      <View style={styles.detailHeader}>
         <TouchableOpacity
           onPress={onBack}
           style={styles.backButton}
@@ -485,7 +484,6 @@ function RoomDetail({ room, onBack }: { room: VastuRoom; onBack: () => void }) {
           <Ionicons name="arrow-back" size={20} color={Colors.ink} />
         </TouchableOpacity>
         <View style={styles.detailMeta}>
-          <Text style={styles.detailIcon}>{room.icon}</Text>
           <Text style={styles.detailRoomName}>{room.name}</Text>
           <Text style={styles.detailTagline}>{room.tagline}</Text>
         </View>
@@ -595,7 +593,7 @@ const styles = StyleSheet.create({
     gap: Spacing.md,
   },
   introCard: {
-    backgroundColor: Colors.blockCream,
+    backgroundColor: Colors.accentWash,
     borderRadius: Radius.lg,
     padding: Spacing.lg,
   },
@@ -619,13 +617,12 @@ const styles = StyleSheet.create({
     gap: Spacing.sm,
   },
   roomCard: {
+    backgroundColor: Colors.surface,
     borderRadius: Radius.lg,
     padding: Spacing.md,
     minHeight: 120,
-  },
-  roomIcon: {
-    fontSize: 28,
-    marginBottom: Spacing.xs,
+    borderWidth: 1,
+    borderColor: Colors.hairline,
   },
   roomName: {
     ...Type.cardTitle,
@@ -662,19 +659,18 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.canvas,
   },
   detailHeader: {
+    backgroundColor: Colors.canvas,
     paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.sm,
     paddingBottom: Spacing.lg,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.hairlineSoft,
   },
   backButton: {
     marginBottom: Spacing.md,
   },
   detailMeta: {
     gap: 2,
-  },
-  detailIcon: {
-    fontSize: 32,
-    marginBottom: Spacing.xs,
   },
   detailRoomName: {
     ...Type.headline,
@@ -733,7 +729,7 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.md,
   },
   sanskritBlock: {
-    backgroundColor: Colors.blockCream,
+    backgroundColor: Colors.accentWash,
     borderRadius: Radius.md,
     padding: Spacing.sm,
     marginBottom: Spacing.md,

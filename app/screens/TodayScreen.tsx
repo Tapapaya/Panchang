@@ -1,12 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import React, { useEffect, useRef, useState } from 'react';
+import {
+  Animated,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { BentoCard } from '../components/BentoCard';
 import { NotificationPromptCard } from '../components/NotificationPromptCard';
 import { ExplainerSheet } from '../components/sheets/ExplainerSheet';
 import { VratGuideSheet } from '../components/sheets/VratGuideSheet';
-import { Colors, Spacing, Type } from '../constants/design';
+import { Colors, Radius, Shadows, Spacing, Type } from '../constants/design';
 import { MOCK_TODAY } from '../constants/mockData';
 import { useTodayData } from '../src/hooks/useTodayData';
 import type { City } from '../src/types/content';
@@ -23,6 +29,63 @@ interface Props {
   headerSlot?: React.ReactNode;
 }
 
+// ─── Small section header ─────────────────────────────────────────────────────
+function SectionLabel({ label }: { label: string }) {
+  return <Text style={sectionStyles.label}>{label}</Text>;
+}
+const sectionStyles = StyleSheet.create({
+  label: { ...Type.eyebrow, color: Colors.ink, marginBottom: Spacing.sm },
+});
+
+// ─── Glance card (horizontal scroll) ─────────────────────────────────────────
+interface GlanceCardProps {
+  eyebrow: string;
+  value: string;
+  sub?: string;
+  detail?: string;
+  dark?: boolean;
+  onPress?: () => void;
+}
+function GlanceCard({ eyebrow, value, sub, detail, dark, onPress }: GlanceCardProps) {
+  const bg = dark ? Colors.bandDark : Colors.surface;
+  const clr = dark ? Colors.inverseInk : Colors.ink;
+  const clrSoft = dark ? Colors.inverseInkSoft : Colors.inkSoft;
+
+  const inner = (
+    <View style={[glanceStyles.card, { backgroundColor: bg }]}>
+      <Text style={[glanceStyles.eyebrow, { color: clrSoft }]}>{eyebrow}</Text>
+      <Text style={[glanceStyles.value, { color: clr }]}>{value}</Text>
+      {sub ? <Text style={[glanceStyles.sub, { color: clrSoft }]}>{sub}</Text> : null}
+      {detail ? <Text style={[glanceStyles.detail, { color: clrSoft }]}>{detail}</Text> : null}
+    </View>
+  );
+
+  if (!onPress) return inner;
+  return (
+    <Pressable
+      onPress={onPress}
+      style={({ pressed }) => [{ opacity: pressed ? 0.82 : 1 }]}
+      accessibilityRole="button"
+    >
+      {inner}
+    </Pressable>
+  );
+}
+const glanceStyles = StyleSheet.create({
+  card: {
+    width: 128,
+    borderRadius: Radius.lg,
+    padding: Spacing.md,
+    marginRight: Spacing.sm,
+    ...Shadows.card,
+  },
+  eyebrow: { ...Type.eyebrow, marginBottom: Spacing.xs },
+  value:   { ...Type.headline, fontSize: 18, lineHeight: 24 },
+  sub:     { ...Type.bodySm, marginTop: 2 },
+  detail:  { ...Type.caption, marginTop: Spacing.xs },
+});
+
+// ─── Main screen ─────────────────────────────────────────────────────────────
 export function TodayScreen({ city, headerSlot }: Props) {
   const insets = useSafeAreaInsets();
   const liveData = useTodayData(city);
@@ -33,6 +96,22 @@ export function TodayScreen({ city, headerSlot }: Props) {
   const [vratOpen, setVratOpen] = useState(false);
   const [rahuOpen, setRahuOpen] = useState(false);
   const [showNotifPrompt, setShowNotifPrompt] = useState(false);
+
+  const heroPulse = useRef(new Animated.Value(1)).current;
+  useEffect(() => {
+    if (liveData !== null) {
+      heroPulse.setValue(1);
+      return;
+    }
+    const anim = Animated.loop(
+      Animated.sequence([
+        Animated.timing(heroPulse, { toValue: 0.55, duration: 700, useNativeDriver: true }),
+        Animated.timing(heroPulse, { toValue: 1, duration: 700, useNativeDriver: true }),
+      ])
+    );
+    anim.start();
+    return () => anim.stop();
+  }, [liveData, heroPulse]);
 
   useEffect(() => {
     AsyncStorage.getItem('notif_prompted').then(val => {
@@ -47,7 +126,7 @@ export function TodayScreen({ city, headerSlot }: Props) {
       <View style={styles.header}>
         <View>
           <Text style={styles.headerBrand}>पंचांग</Text>
-          <Text style={styles.headerGreeting}>{getGreeting()} 🙏</Text>
+          <Text style={styles.headerGreeting}>{getGreeting()}</Text>
         </View>
         <View style={styles.headerRight}>
           <Text style={styles.headerDate}>{d.gregorian.date}</Text>
@@ -65,8 +144,8 @@ export function TodayScreen({ city, headerSlot }: Props) {
       >
         {headerSlot}
 
-        {/* ─── 1. Date Hero (dark feature band) ────────────────────── */}
-        <BentoCard color="navy" style={styles.heroCard}>
+        {/* ─── 1. Tithi hero (full-width dark card) ──────────────── */}
+        <Animated.View style={[styles.heroCard, { opacity: heroPulse }]}>
           <Text style={styles.heroEyebrow}>
             {d.vikramSamvat.masaAmanta} · {d.vikramSamvat.paksha}
           </Text>
@@ -76,123 +155,109 @@ export function TodayScreen({ city, headerSlot }: Props) {
           </Text>
           <View style={styles.heroFooter}>
             <Text style={styles.heroCaption}>
-              {d.vara.name.toUpperCase()} · {' '}
-              <Text style={styles.heroDiety}>{d.vara.deity.toUpperCase()}</Text>
+              {d.vara.name.toUpperCase()} ·{' '}
+              <Text style={styles.heroAccent}>{d.vara.deity.toUpperCase()}</Text>
             </Text>
             {d.tithi.endTime && (
-              <Text style={styles.heroCaption}>
-                Tithi ends {d.tithi.endTime}
-              </Text>
+              <Text style={styles.heroCaption}>ends {d.tithi.endTime}</Text>
             )}
           </View>
-        </BentoCard>
+        </Animated.View>
 
-        {/* ─── 2. Nakshatra + Yoga ──────────────────────────────────── */}
-        <View style={styles.row}>
-          <BentoCard
-            color="lilac"
-            style={styles.half}
+        {/* ─── 2. At a Glance — horizontal scroll ────────────────── */}
+        <SectionLabel label="At a Glance" />
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.glanceRow}
+        >
+          <GlanceCard
+            eyebrow="Nakshatra"
+            value={d.nakshatra.name}
+            sub={d.nakshatra.meaning}
+            detail={`Pada ${d.nakshatra.pada}${d.nakshatra.endTime ? ` · ${d.nakshatra.endTime}` : ''}`}
             onPress={() => setNakshatraOpen(true)}
-          >
-            <Text style={styles.eyebrow}>Nakshatra</Text>
-            <Text style={styles.bigTitle}>{d.nakshatra.name}</Text>
-            <Text style={styles.cardBody}>{d.nakshatra.meaning}</Text>
-            <Text style={styles.cardCaption}>
-              pada {d.nakshatra.pada}
-              {d.nakshatra.endTime ? ` · ends ${d.nakshatra.endTime}` : ''}
-            </Text>
-          </BentoCard>
-
-          <BentoCard
-            color="mint"
-            style={styles.half}
+          />
+          <GlanceCard
+            eyebrow="Yoga"
+            value={d.yoga.name}
+            sub={d.yoga.meaning}
+            detail={d.yoga.endTime ? `ends ${d.yoga.endTime}` : undefined}
             onPress={() => setYogaOpen(true)}
-          >
-            <Text style={styles.eyebrow}>Yoga</Text>
-            <Text style={styles.bigTitle}>{d.yoga.name}</Text>
-            <Text style={styles.cardBody}>{d.yoga.meaning}</Text>
-            {d.yoga.endTime && (
-              <Text style={styles.cardCaption}>ends {d.yoga.endTime}</Text>
-            )}
-          </BentoCard>
-        </View>
+          />
+          <GlanceCard
+            eyebrow="Sunrise"
+            value={d.sunrise}
+            sub="AM"
+            dark
+          />
+          <GlanceCard
+            eyebrow="Sunset"
+            value={d.sunset}
+            sub="PM"
+            dark
+          />
+          {d.rahuKalam && (
+            <GlanceCard
+              eyebrow="Rahu Kalam"
+              value={d.rahuKalam.start}
+              sub={`– ${d.rahuKalam.end}`}
+              onPress={() => setRahuOpen(true)}
+            />
+          )}
+        </ScrollView>
 
-        {/* ─── 3. Vrat (conditional) ────────────────────────────────── */}
+        {/* ─── 3. Vrat (conditional, full-width) ────────────────── */}
         {d.vrat && (
-          <BentoCard color="coral" onPress={() => setVratOpen(true)}>
-            <Text style={styles.eyebrow}>Vrat · Fast</Text>
-            <Text style={styles.bigTitle}>{d.vrat.name}</Text>
-            <Text style={[styles.cardBody, styles.vratBody]}>
-              {d.vrat.significance}
-            </Text>
-          </BentoCard>
+          <Pressable
+            style={({ pressed }) => [styles.vratCard, { opacity: pressed ? 0.9 : 1 }]}
+            onPress={() => setVratOpen(true)}
+            accessibilityRole="button"
+          >
+            <Text style={styles.vratEyebrow}>Vrat · Fast</Text>
+            <Text style={styles.vratName}>{d.vrat.name}</Text>
+            <Text style={styles.vratSig}>{d.vrat.significance}</Text>
+            <Text style={styles.vratCta}>View guide →</Text>
+          </Pressable>
         )}
 
-        {/* ─── 4. Sunrise + Sunset ──────────────────────────────────── */}
-        <View style={styles.row}>
-          <BentoCard color="navy" style={styles.half}>
-            <Text style={[styles.eyebrow, styles.inv]}>Sunrise ☀</Text>
-            <Text style={[styles.sunTime, styles.inv]}>{d.sunrise}</Text>
-            <Text style={[styles.cardCaption, styles.invSoft]}>AM</Text>
-          </BentoCard>
-
-          <BentoCard color="navy" style={styles.half}>
-            <Text style={[styles.eyebrow, styles.inv]}>Sunset ☽</Text>
-            <Text style={[styles.sunTime, styles.inv]}>{d.sunset}</Text>
-            <Text style={[styles.cardCaption, styles.invSoft]}>PM</Text>
-          </BentoCard>
-        </View>
-
-        {/* ─── 5. Shloka ────────────────────────────────────────────── */}
-        <BentoCard color="lime">
-          <Text style={styles.eyebrow}>
-            Shloka · {d.shloka.context}
-          </Text>
-          <Text style={styles.shlokaTitle}>{d.shloka.name}</Text>
+        {/* ─── 4. Shloka (full-width) ───────────────────────────── */}
+        <SectionLabel label="Daily Shloka" />
+        <View style={styles.shlokaCard}>
+          <Text style={styles.shlokaContext}>{d.shloka.context}</Text>
+          <Text style={styles.shlokaName}>{d.shloka.name}</Text>
           <Text style={styles.shlokaSanskrit}>{d.shloka.sanskrit}</Text>
           <View style={styles.iastBar}>
             <Text style={styles.shlokaIast}>{d.shloka.iast}</Text>
           </View>
           <Text style={styles.shlokaMeaning}>{d.shloka.meaning}</Text>
-        </BentoCard>
-
-        {/* ─── 6. Do + Avoid ────────────────────────────────────────── */}
-        <View style={styles.row}>
-          <BentoCard color="soft" style={styles.half}>
-            <Text style={styles.eyebrow}>Do Today</Text>
-            {d.doToday.map((item, i) => (
-              <View key={i} style={styles.listRow}>
-                <Text style={styles.checkMark}>✓</Text>
-                <Text style={[styles.cardBody, styles.listItem]}>{item}</Text>
-              </View>
-            ))}
-          </BentoCard>
-
-          <BentoCard color="soft" style={styles.half}>
-            <Text style={styles.eyebrow}>Avoid</Text>
-            {d.avoidToday.map((item, i) => (
-              <View key={i} style={styles.listRow}>
-                <Text style={styles.crossMark}>×</Text>
-                <Text style={[styles.cardBody, styles.listItem]}>{item}</Text>
-              </View>
-            ))}
-          </BentoCard>
         </View>
 
-        {/* ─── 7. Rahu Kalam ────────────────────────────────────────── */}
-        {d.rahuKalam && (
-          <BentoCard color="pink" onPress={() => setRahuOpen(true)}>
-            <Text style={styles.eyebrow}>Rahu Kalam</Text>
-            <Text style={styles.rahuTime}>
-              {d.rahuKalam.start} – {d.rahuKalam.end}
-            </Text>
-            <Text style={styles.cardBody}>
-              Avoid important decisions and new starts during this window.
-            </Text>
-          </BentoCard>
-        )}
+        {/* ─── 5. Today's Guide — do/avoid ──────────────────────── */}
+        <SectionLabel label="Today's Guide" />
+        <View style={styles.guideCard}>
+          <View style={styles.guideCol}>
+            <Text style={styles.guideColLabel}>Do Today</Text>
+            {d.doToday.map((item, i) => (
+              <View key={i} style={styles.guideRow}>
+                <Text style={styles.checkMark}>✓</Text>
+                <Text style={styles.guideText}>{item}</Text>
+              </View>
+            ))}
+          </View>
+          <View style={styles.guideDivider} />
+          <View style={styles.guideCol}>
+            <Text style={styles.guideColLabel}>Avoid</Text>
+            {d.avoidToday.map((item, i) => (
+              <View key={i} style={styles.guideRow}>
+                <Text style={styles.crossMark}>×</Text>
+                <Text style={styles.guideText}>{item}</Text>
+              </View>
+            ))}
+          </View>
+        </View>
 
-        {/* ─── 8. Notification prompt ───────────────────────────────── */}
+        {/* ─── 6. Notification prompt ───────────────────────────── */}
         {showNotifPrompt && (
           <NotificationPromptCard
             onAllow={() => {
@@ -216,7 +281,6 @@ export function TodayScreen({ city, headerSlot }: Props) {
         subtitle={d.nakshatra.meaning}
         detail={`pada ${d.nakshatra.pada}${d.nakshatra.endTime ? ` · ends ${d.nakshatra.endTime}` : ''}`}
         explanation={d.nakshatra.explanation ?? ''}
-        backgroundColor={Colors.blockLilac}
       />
 
       <ExplainerSheet
@@ -227,7 +291,6 @@ export function TodayScreen({ city, headerSlot }: Props) {
         subtitle={d.yoga.meaning}
         detail={d.yoga.endTime ? `ends ${d.yoga.endTime}` : undefined}
         explanation={d.yoga.explanation ?? ''}
-        backgroundColor={Colors.blockMint}
       />
 
       {d.vrat && (
@@ -245,17 +308,18 @@ export function TodayScreen({ city, headerSlot }: Props) {
           eyebrow="Rahu Kalam"
           title={`${d.rahuKalam.start} – ${d.rahuKalam.end}`}
           explanation={d.rahuKalam.explanation ?? ''}
-          backgroundColor={Colors.blockPink}
         />
       )}
     </View>
   );
 }
 
+// ─── Styles ───────────────────────────────────────────────────────────────────
+
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: Colors.canvasWarm,
+    backgroundColor: Colors.canvas,
   },
 
   // ─── Header ──────────────────────────────────────────────────────────────
@@ -266,7 +330,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.sm,
     paddingBottom: Spacing.sm,
-    backgroundColor: Colors.canvasWarm,
+    backgroundColor: Colors.surface,
     borderBottomWidth: 1,
     borderBottomColor: Colors.hairline,
   },
@@ -289,34 +353,23 @@ const styles = StyleSheet.create({
   },
   headerDeity: {
     ...Type.caption,
-    color: Colors.inkSoft,
+    color: Colors.accent,
   },
 
-  // ─── Scroll container ────────────────────────────────────────────────────
-  scroll: {
-    flex: 1,
-  },
+  // ─── Scroll ──────────────────────────────────────────────────────────────
+  scroll: { flex: 1 },
   content: {
     padding: Spacing.md,
-    gap: Spacing.sm,
+    gap: Spacing.lg,
   },
 
-  // ─── Layout helpers ──────────────────────────────────────────────────────
-  row: {
-    flexDirection: 'row',
-    gap: Spacing.sm,
-  },
-  half: {
-    flex: 1,
-  },
-
-  // ─── Hero card (dark feature band) ──────────────────────────────────────
+  // ─── Hero card ───────────────────────────────────────────────────────────
   heroCard: {
-    justifyContent: 'flex-end',
-    minHeight: 220,
+    backgroundColor: Colors.bandDark,
+    borderRadius: Radius.lg,
     paddingHorizontal: Spacing.lg,
-    paddingBottom: Spacing.lg,
-    paddingTop: Spacing.xxl,
+    paddingVertical: Spacing.xl,
+    ...Shadows.card,
   },
   heroEyebrow: {
     ...Type.eyebrow,
@@ -331,7 +384,7 @@ const styles = StyleSheet.create({
     ...Type.bodySm,
     color: Colors.inverseInkSoft,
     marginTop: Spacing.xs,
-    marginBottom: Spacing.md,
+    marginBottom: Spacing.lg,
   },
   heroFooter: {
     flexDirection: 'row',
@@ -342,75 +395,77 @@ const styles = StyleSheet.create({
     ...Type.caption,
     color: Colors.inverseInkSoft,
   },
-  heroDiety: {
-    color: Colors.accentGold,
+  heroAccent: {
+    color: Colors.accent,
   },
 
-  // ─── Generic card parts ──────────────────────────────────────────────────
-  eyebrow: {
+  // ─── At a Glance horizontal scroll ───────────────────────────────────────
+  glanceRow: {
+    paddingBottom: Spacing.xs,
+  },
+
+  // ─── Vrat card ───────────────────────────────────────────────────────────
+  vratCard: {
+    backgroundColor: Colors.accentWash,
+    borderRadius: Radius.lg,
+    padding: Spacing.lg,
+    borderLeftWidth: 4,
+    borderLeftColor: Colors.accent,
+    ...Shadows.card,
+  },
+  vratEyebrow: {
     ...Type.eyebrow,
-    color: Colors.ink,
+    color: Colors.accent,
     marginBottom: Spacing.xs,
   },
-  bigTitle: {
+  vratName: {
     ...Type.headline,
     color: Colors.ink,
     marginBottom: Spacing.xs,
   },
-  cardBody: {
+  vratSig: {
     ...Type.body,
-    color: Colors.ink,
-  },
-  cardCaption: {
-    ...Type.caption,
     color: Colors.inkSoft,
-    marginTop: Spacing.xs,
+    marginBottom: Spacing.md,
   },
-
-  // ─── Inverse text (navy cards) ───────────────────────────────────────────
-  inv: {
-    color: Colors.inverseInk,
-  },
-  invSoft: {
-    color: Colors.inverseInkSoft,
-  },
-
-  // ─── Sun times ───────────────────────────────────────────────────────────
-  sunTime: {
-    ...Type.displayXl,
-    color: Colors.inverseInk,
-    marginVertical: Spacing.xs,
-  },
-
-  // ─── Vrat card ───────────────────────────────────────────────────────────
-  vratBody: {
-    marginTop: Spacing.xs,
+  vratCta: {
+    ...Type.label,
+    color: Colors.accent,
   },
 
   // ─── Shloka card ─────────────────────────────────────────────────────────
-  shlokaTitle: {
+  shlokaCard: {
+    backgroundColor: Colors.surface,
+    borderRadius: Radius.lg,
+    padding: Spacing.lg,
+    ...Shadows.card,
+  },
+  shlokaContext: {
+    ...Type.eyebrow,
+    color: Colors.accent,
+    marginBottom: Spacing.xs,
+  },
+  shlokaName: {
     ...Type.cardTitle,
     color: Colors.ink,
     marginBottom: Spacing.md,
   },
   shlokaSanskrit: {
-    // No fontFamily — system font handles Devanagari on both iOS and Android
-    fontSize: 22,
-    lineHeight: 36,
+    // No fontFamily — system font handles Devanagari
+    fontSize: 21,
+    lineHeight: 34,
     color: Colors.ink,
     marginBottom: Spacing.sm,
   },
   iastBar: {
     borderLeftWidth: 2,
-    borderLeftColor: Colors.ink,
+    borderLeftColor: Colors.accent,
     paddingLeft: Spacing.sm,
-    marginTop: Spacing.xs,
-    marginBottom: Spacing.sm,
-    opacity: 0.5,
+    marginVertical: Spacing.sm,
   },
   shlokaIast: {
     ...Type.body,
-    color: Colors.ink,
+    color: Colors.inkSoft,
     fontStyle: 'italic',
   },
   shlokaMeaning: {
@@ -419,33 +474,49 @@ const styles = StyleSheet.create({
     marginTop: Spacing.xs,
   },
 
-  // ─── Do / Avoid lists ────────────────────────────────────────────────────
-  listRow: {
+  // ─── Today's Guide (do/avoid) ────────────────────────────────────────────
+  guideCard: {
+    backgroundColor: Colors.surface,
+    borderRadius: Radius.lg,
+    padding: Spacing.lg,
     flexDirection: 'row',
-    alignItems: 'flex-start',
-    marginTop: Spacing.xs,
+    gap: Spacing.md,
+    ...Shadows.card,
+  },
+  guideCol: {
+    flex: 1,
     gap: Spacing.xs,
   },
-  listItem: {
+  guideDivider: {
+    width: 1,
+    backgroundColor: Colors.hairline,
+    marginVertical: Spacing.xxs,
+  },
+  guideColLabel: {
+    ...Type.eyebrow,
+    color: Colors.inkSoft,
+    marginBottom: Spacing.sm,
+  },
+  guideRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: Spacing.xs,
+  },
+  guideText: {
+    ...Type.bodySm,
+    color: Colors.ink,
     flex: 1,
   },
   checkMark: {
     ...Type.bodySm,
     color: Colors.semanticSuccess,
-    fontFamily: 'Inter_700Bold',
+    fontFamily: 'Urbanist_700Bold',
     width: 14,
   },
   crossMark: {
     ...Type.bodySm,
     color: Colors.semanticError,
-    fontFamily: 'Inter_700Bold',
+    fontFamily: 'Urbanist_700Bold',
     width: 14,
-  },
-
-  // ─── Rahu Kalam card ─────────────────────────────────────────────────────
-  rahuTime: {
-    ...Type.displayLg,
-    color: Colors.ink,
-    marginVertical: Spacing.xs,
   },
 });

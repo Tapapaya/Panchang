@@ -1,11 +1,16 @@
+import { StyleSheet, View } from 'react-native';
 import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { Colors, Type } from '../../constants/design';
 
 type IconName = React.ComponentProps<typeof Ionicons>['name'];
 
-function TabIcon({ name, color }: { name: IconName; color: string }) {
-  return <Ionicons name={name} size={24} color={color} />;
+function TabIcon({ name, color, focused }: { name: IconName; color: string; focused: boolean }) {
+  return (
+    <View style={focused ? styles.activeIconWrap : styles.iconWrap}>
+      <Ionicons name={name} size={22} color={color} />
+    </View>
+  );
 }
 
 export default function TabLayout() {
@@ -13,51 +18,74 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: Colors.ink,
+        tabBarActiveTintColor: Colors.accent,
         tabBarInactiveTintColor: Colors.inkSoft,
         tabBarStyle: {
-          backgroundColor: Colors.canvas,
+          backgroundColor: Colors.surface,
           borderTopColor: Colors.hairline,
           borderTopWidth: 1,
-          paddingBottom: 4,
-          height: 60,
+          paddingBottom: 6,
+          height: 64,
         },
         tabBarLabelStyle: {
-          fontSize: 10,
-          fontFamily: 'Inter_500Medium',
-          letterSpacing: 0.3,
-          marginBottom: 4,
+          ...Type.caption,
+          marginBottom: 2,
         },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Dashboard',
-          tabBarIcon: ({ color }) => <TabIcon name="sunny-outline" color={color} />,
+          title: 'Today',
+          tabBarIcon: ({ color, focused }) => (
+            <TabIcon name="sunny-outline" color={focused ? Colors.inverseInk : color} focused={focused} />
+          ),
         }}
       />
       <Tabs.Screen
         name="stotras"
         options={{
           title: 'Stotras',
-          tabBarIcon: ({ color }) => <TabIcon name="book-outline" color={color} />,
+          tabBarIcon: ({ color, focused }) => (
+            <TabIcon name="book-outline" color={focused ? Colors.inverseInk : color} focused={focused} />
+          ),
         }}
       />
       <Tabs.Screen
         name="vastu"
         options={{
           title: 'Vastu',
-          tabBarIcon: ({ color }) => <TabIcon name="home-outline" color={color} />,
+          tabBarIcon: ({ color, focused }) => (
+            <TabIcon name="home-outline" color={focused ? Colors.inverseInk : color} focused={focused} />
+          ),
         }}
       />
       <Tabs.Screen
         name="profile"
         options={{
           title: 'Profile',
-          tabBarIcon: ({ color }) => <TabIcon name="person-outline" color={color} />,
+          tabBarIcon: ({ color, focused }) => (
+            <TabIcon name="person-outline" color={focused ? Colors.inverseInk : color} focused={focused} />
+          ),
         }}
       />
     </Tabs>
   );
 }
+
+const styles = StyleSheet.create({
+  iconWrap: {
+    width: 44,
+    height: 32,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  activeIconWrap: {
+    width: 44,
+    height: 32,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: Colors.accent,
+    borderRadius: 16,
+  },
+});

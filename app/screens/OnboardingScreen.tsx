@@ -68,7 +68,7 @@ export function OnboardingScreen({ onComplete }: Props) {
       style={styles.root}
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
     >
-      {/* ─── Header ──────────────────────────────────────── */}
+      {/* ─── Header ──────────────────────────────────────────────── */}
       <View style={[styles.header, { paddingTop: insets.top + Spacing.sm }]}>
         <Text style={styles.brand}>पंचांग</Text>
       </View>
@@ -82,7 +82,7 @@ export function OnboardingScreen({ onComplete }: Props) {
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
       >
-        {/* ─── Welcome ─────────────────────────────────── */}
+        {/* ─── Welcome ─────────────────────────────────────────── */}
         <View style={styles.welcome}>
           <Text style={styles.welcomeTitle}>Welcome</Text>
           <Text style={styles.welcomeSubtitle}>
@@ -90,7 +90,7 @@ export function OnboardingScreen({ onComplete }: Props) {
           </Text>
         </View>
 
-        {/* ─── Name + Email ────────────────────────────── */}
+        {/* ─── Name + Email ─────────────────────────────────────── */}
         <View style={styles.section}>
           <Field
             label="Your name"
@@ -114,12 +114,15 @@ export function OnboardingScreen({ onComplete }: Props) {
           />
         </View>
 
-        {/* ─── Birth details ───────────────────────────── */}
+        {/* ─── Birth details ────────────────────────────────────── */}
         <View style={styles.section}>
           <View style={styles.sectionHeadingRow}>
             <Text style={styles.sectionLabel}>Birth details</Text>
             <Text style={styles.optionalTag}>Optional</Text>
           </View>
+          <Text style={styles.sectionHint}>
+            Used to calculate your Janma Nakshatra and personalise your daily panchang.
+          </Text>
           <Text style={styles.note}>
             Your birth date, time, and place let us calculate a personalised
             Rashifal for you. Otherwise your name and email are enough to get
@@ -178,7 +181,7 @@ export function OnboardingScreen({ onComplete }: Props) {
           />
         </View>
 
-        {/* ─── CTA ─────────────────────────────────────── */}
+        {/* ─── CTA ─────────────────────────────────────────────── */}
         <Pressable
           style={({ pressed }) => [styles.cta, pressed && styles.ctaPressed]}
           onPress={saveAndContinue}
@@ -214,7 +217,7 @@ const Field = React.forwardRef<TextInput, FieldProps>(
         <TextInput
           ref={ref}
           style={[styles.input, isFocused && styles.inputFocused]}
-          placeholderTextColor={Colors.ink + '55'}
+          placeholderTextColor={Colors.inkSoft}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           {...inputProps}
@@ -237,7 +240,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.lg,
     paddingBottom: Spacing.sm,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.hairlineSoft,
+    borderBottomColor: Colors.hairline,
+    backgroundColor: Colors.surface,
   },
   brand: {
     ...Type.headline,
@@ -260,8 +264,7 @@ const styles = StyleSheet.create({
   },
   welcomeSubtitle: {
     ...Type.bodyLg,
-    color: Colors.ink,
-    opacity: 0.6,
+    color: Colors.inkSoft,
   },
 
   // ─── Sections ────────────────────────────────────────────
@@ -277,21 +280,24 @@ const styles = StyleSheet.create({
   },
   optionalTag: {
     ...Type.eyebrow,
-    color: Colors.ink,
-    opacity: 0.4,
+    color: Colors.inkSoft,
     paddingHorizontal: Spacing.xs,
     paddingVertical: 2,
-    backgroundColor: Colors.surfaceSoft,
+    backgroundColor: Colors.surfaceDim,
     borderRadius: Radius.sm,
     overflow: 'hidden',
+  },
+  sectionHint: {
+    ...Type.bodySm,
+    color: Colors.inkSoft,
+    marginTop: -Spacing.xs,
   },
 
   // ─── Note ────────────────────────────────────────────────
   note: {
     ...Type.body,
-    color: Colors.ink,
-    opacity: 0.55,
-    backgroundColor: Colors.surfaceSoft,
+    color: Colors.inkSoft,
+    backgroundColor: Colors.surface,
     borderRadius: Radius.md,
     padding: Spacing.md,
     lineHeight: 20,
@@ -306,14 +312,14 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: Spacing.sm,
     borderRadius: Radius.pill,
-    backgroundColor: Colors.surfaceSoft,
+    backgroundColor: Colors.surface,
     alignItems: 'center',
     borderWidth: 1,
     borderColor: Colors.hairline,
   },
   pillActive: {
-    backgroundColor: Colors.ink,
-    borderColor: Colors.ink,
+    backgroundColor: Colors.accent,
+    borderColor: Colors.accent,
   },
   pillText: {
     ...Type.label,
@@ -327,13 +333,12 @@ const styles = StyleSheet.create({
   fieldWrap: { gap: Spacing.xxs },
   fieldLabel: {
     ...Type.eyebrow,
-    color: Colors.ink,
-    opacity: 0.5,
+    color: Colors.inkSoft,
   },
   input: {
     ...Type.bodyLg,
     color: Colors.ink,
-    backgroundColor: Colors.surfaceSoft,
+    backgroundColor: Colors.surface,
     borderRadius: Radius.md,
     paddingHorizontal: Spacing.md,
     paddingVertical: Spacing.sm + 2,
@@ -341,19 +346,19 @@ const styles = StyleSheet.create({
     borderColor: Colors.hairline,
   },
   inputFocused: {
-    borderColor: Colors.ink,
-    backgroundColor: Colors.canvas,
+    borderColor: Colors.accent,
+    backgroundColor: Colors.surface,
   },
 
   // ─── CTA ─────────────────────────────────────────────────
   cta: {
-    backgroundColor: Colors.ink,
+    backgroundColor: Colors.accent,
     borderRadius: Radius.pill,
     paddingVertical: Spacing.md,
     alignItems: 'center',
   },
   ctaPressed: {
-    opacity: 0.75,
+    opacity: 0.85,
   },
   ctaText: {
     ...Type.label,
@@ -368,7 +373,6 @@ const styles = StyleSheet.create({
   },
   skipText: {
     ...Type.body,
-    color: Colors.ink,
-    opacity: 0.35,
+    color: Colors.inkSoft,
   },
 });

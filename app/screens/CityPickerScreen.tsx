@@ -105,14 +105,14 @@ export function CityPickerScreen({ onCityPicked }: Props) {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: Colors.canvasWarm,
+    backgroundColor: Colors.canvas,
   },
 
   // ─── Header ────────────────────────────────────────────
   header: {
     paddingHorizontal: Spacing.lg,
     paddingVertical: Spacing.sm,
-    backgroundColor: Colors.canvasWarm,
+    backgroundColor: Colors.surface,
     borderBottomWidth: 1,
     borderBottomColor: Colors.hairline,
   },
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.lg,
     paddingTop: Spacing.md,
     paddingBottom: Spacing.xs,
-    backgroundColor: Colors.canvasWarm,
+    backgroundColor: Colors.canvas,
   },
   sectionTitle: {
     ...Type.eyebrow,
@@ -156,11 +156,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: Spacing.lg,
     paddingVertical: 14,
-    backgroundColor: Colors.canvasWarm,
+    backgroundColor: Colors.canvas,
     minHeight: 44,
   },
   rowPressed: {
-    backgroundColor: Colors.canvasCeramic,
+    backgroundColor: Colors.surfaceDim,
   },
   cityName: {
     ...Type.bodyLg,

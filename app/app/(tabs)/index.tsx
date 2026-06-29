@@ -3,27 +3,11 @@ import { useRouter } from 'expo-router';
 import { TodayScreen } from '../../screens/TodayScreen';
 import { useApp } from '../../src/context/AppContext';
 import { Colors, Spacing, Type, Radius } from '../../constants/design';
-import { BentoCard } from '../../components/BentoCard';
-
-const RASHIS = [
-  { slug: 'mesha', name: 'Mesha', symbol: '♈' },
-  { slug: 'vrishabha', name: 'Vrishabha', symbol: '♉' },
-  { slug: 'mithuna', name: 'Mithuna', symbol: '♊' },
-  { slug: 'karka', name: 'Karka', symbol: '♋' },
-  { slug: 'simha', name: 'Simha', symbol: '♌' },
-  { slug: 'kanya', name: 'Kanya', symbol: '♍' },
-  { slug: 'tula', name: 'Tula', symbol: '♎' },
-  { slug: 'vrishchika', name: 'Vrishchika', symbol: '♏' },
-  { slug: 'dhanu', name: 'Dhanu', symbol: '♐' },
-  { slug: 'makara', name: 'Makara', symbol: '♑' },
-  { slug: 'kumbha', name: 'Kumbha', symbol: '♒' },
-  { slug: 'meena', name: 'Meena', symbol: '♓' },
-];
+import { RASHIS } from '../../src/constants/rashis';
+import { getISOWeek } from '../../src/lib/weekUtils';
 
 function getWeekNumber(): number {
-  const d = new Date();
-  const start = new Date(d.getFullYear(), 0, 1);
-  return Math.ceil((((d.getTime() - start.getTime()) / 86400000) + start.getDay() + 1) / 7);
+  return getISOWeek(new Date());
 }
 
 function getRashiData(rashi: string): { headline: string; body: string } | null {
@@ -69,15 +53,15 @@ export default function DashboardTab() {
         city={city}
         headerSlot={
           rashi && rashiContent && rashiMeta ? (
-            <BentoCard color="lilac" style={styles.rashiCard}>
+            <View style={styles.rashiCard}>
               <View style={styles.rashiHeader}>
-                <Text style={styles.rashiEyebrow}>YOUR RASHIFAL · WEEK {getWeekNumber()}</Text>
+                <Text style={styles.rashiEyebrow}>RASHIFAL · WEEK {getWeekNumber()}</Text>
                 <Text style={styles.rashiSymbol}>{rashiMeta.symbol}</Text>
               </View>
               <Text style={styles.rashiRashi}>{rashiMeta.name}</Text>
               <Text style={styles.rashiHeadline}>{rashiContent.headline}</Text>
               <Text style={styles.rashiBody}>{rashiContent.body}</Text>
-            </BentoCard>
+            </View>
           ) : (
             <TouchableOpacity
               style={styles.rashiPrompt}
@@ -102,7 +86,12 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.canvas,
   },
   rashiCard: {
+    backgroundColor: Colors.accentWash,
+    borderRadius: Radius.lg,
+    padding: Spacing.lg,
     marginBottom: Spacing.sm,
+    borderLeftWidth: 4,
+    borderLeftColor: Colors.accent,
   },
   rashiHeader: {
     flexDirection: 'row',

@@ -22,7 +22,7 @@ export function ExplainerSheet({
   subtitle,
   detail,
   explanation,
-  backgroundColor = Colors.surfaceSoft,
+  backgroundColor = Colors.surface,
 }: ExplainerSheetProps) {
   return (
     <BottomSheet visible={visible} onClose={onClose} backgroundColor={backgroundColor}>
@@ -50,8 +50,7 @@ const styles = StyleSheet.create({
   },
   eyebrow: {
     ...Type.eyebrow,
-    color: Colors.ink,
-    opacity: 0.5,
+    color: Colors.inkSoft,
     marginBottom: Spacing.xs,
   },
   title: {
@@ -61,20 +60,17 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     ...Type.subhead,
-    color: Colors.ink,
-    opacity: 0.65,
+    color: Colors.inkSoft,
     marginBottom: Spacing.xxs,
   },
   detail: {
     ...Type.caption,
-    color: Colors.ink,
-    opacity: 0.5,
+    color: Colors.inkSoft,
     marginTop: Spacing.xxs,
   },
   divider: {
     height: 1,
-    backgroundColor: Colors.ink,
-    opacity: 0.12,
+    backgroundColor: Colors.hairline,
     marginVertical: Spacing.md,
   },
   explanation: {

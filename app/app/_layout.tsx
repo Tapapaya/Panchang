@@ -1,25 +1,38 @@
 import { useEffect } from 'react';
 import { Stack } from 'expo-router';
 import {
-  Inter_400Regular,
-  Inter_500Medium,
-  Inter_600SemiBold,
-  Inter_700Bold,
+  Urbanist_400Regular,
+  Urbanist_500Medium,
+  Urbanist_600SemiBold,
+  Urbanist_700Bold,
   useFonts,
-} from '@expo-google-fonts/inter';
+} from '@expo-google-fonts/urbanist';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { AppProvider } from '../src/context/AppContext';
+import { AppProvider, useApp } from '../src/context/AppContext';
+import { registerForPushNotifications } from '../src/lib/pushNotifications';
 
 SplashScreen.preventAutoHideAsync();
 
+// Runs inside AppProvider so it can read city from context.
+// Fires registerForPushNotifications whenever city.id changes (initial load + city change).
+function PushRegistrar() {
+  const { city } = useApp();
+  useEffect(() => {
+    if (city) {
+      registerForPushNotifications(city.id);
+    }
+  }, [city?.id]);
+  return null;
+}
+
 export default function RootLayout() {
   const [fontsLoaded, fontError] = useFonts({
-    Inter_400Regular,
-    Inter_500Medium,
-    Inter_600SemiBold,
-    Inter_700Bold,
+    Urbanist_400Regular,
+    Urbanist_500Medium,
+    Urbanist_600SemiBold,
+    Urbanist_700Bold,
   });
 
   useEffect(() => {
@@ -33,6 +46,7 @@ export default function RootLayout() {
   return (
     <AppProvider>
       <SafeAreaProvider>
+        <PushRegistrar />
         <StatusBar style="dark" />
         <Stack screenOptions={{ headerShown: false }} />
       </SafeAreaProvider>

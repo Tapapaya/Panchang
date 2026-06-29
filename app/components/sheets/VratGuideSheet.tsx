@@ -18,7 +18,7 @@ interface VratGuideSheetProps {
 
 export function VratGuideSheet({ visible, onClose, vrat }: VratGuideSheetProps) {
   return (
-    <BottomSheet visible={visible} onClose={onClose} backgroundColor={Colors.blockCoral}>
+    <BottomSheet visible={visible} onClose={onClose}>
       <View style={styles.inner}>
         <Text style={styles.eyebrow}>Vrat Guide</Text>
         <Text style={styles.title}>{vrat.name}</Text>
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
     borderRadius: 12,
-    backgroundColor: Colors.ink,
+    backgroundColor: Colors.accent,
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: 0,
@@ -96,8 +96,7 @@ const styles = StyleSheet.create({
   },
   stepNum: {
     ...Type.caption,
-    color: Colors.blockCoral,
-    fontFamily: 'Inter_700Bold',
+    color: Colors.inverseInk,
   },
   stepText: {
     ...Type.body,

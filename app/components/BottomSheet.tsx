@@ -14,7 +14,7 @@ export function BottomSheet({
   visible,
   onClose,
   children,
-  backgroundColor = Colors.canvas,
+  backgroundColor = Colors.surface,
 }: BottomSheetProps) {
   const insets = useSafeAreaInsets();
 
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     width: 36,
     height: 4,
     backgroundColor: Colors.ink,
-    opacity: 0.15,
+    opacity: 0.12,
     borderRadius: 2,
     alignSelf: 'center',
     marginTop: 12,

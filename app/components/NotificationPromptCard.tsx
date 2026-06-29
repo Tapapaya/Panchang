@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
-import { Colors, Radius, Spacing, Type } from '../constants/design';
+import { Colors, Radius, Shadows, Spacing, Type } from '../constants/design';
 
 interface NotificationPromptCardProps {
   onAllow: () => void;
@@ -13,7 +13,7 @@ export function NotificationPromptCard({ onAllow, onDismiss }: NotificationPromp
 
   if (confirmed) {
     return (
-      <View style={[styles.card, { backgroundColor: Colors.blockLime }]}>
+      <View style={styles.card}>
         <View style={styles.checkCircle}>
           <Text style={styles.checkMark}>✓</Text>
         </View>
@@ -26,7 +26,7 @@ export function NotificationPromptCard({ onAllow, onDismiss }: NotificationPromp
   }
 
   return (
-    <View style={[styles.card, { backgroundColor: Colors.blockLime }]}>
+    <View style={styles.card}>
       <Text style={styles.prompt}>Want a morning nudge?</Text>
       <Text style={styles.body}>
         A gentle reminder on sacred days. No spam — just your panchang, once a day at sunrise.
@@ -56,9 +56,7 @@ export function NotificationPromptCard({ onAllow, onDismiss }: NotificationPromp
             onAllow();
           }}
         >
-          <Animated.View
-            style={[styles.primaryBtn, { transform: [{ scale: primaryScale }] }]}
-          >
+          <Animated.View style={[styles.primaryBtn, { transform: [{ scale: primaryScale }] }]}>
             <Text style={styles.primaryBtnText}>Yes, at 7 AM</Text>
           </Animated.View>
         </Pressable>
@@ -77,8 +75,10 @@ export function NotificationPromptCard({ onAllow, onDismiss }: NotificationPromp
 
 const styles = StyleSheet.create({
   card: {
+    backgroundColor: Colors.surface,
     borderRadius: Radius.lg,
     padding: Spacing.lg,
+    ...Shadows.card,
   },
 
   // ── confirmed state ──────────────────────────────────────
@@ -86,15 +86,14 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: Colors.ink,
+    backgroundColor: Colors.accent,
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: Spacing.sm,
   },
   checkMark: {
     ...Type.label,
-    color: Colors.blockLime,
-    fontFamily: 'Inter_700Bold',
+    color: Colors.inverseInk,
     lineHeight: 16,
   },
   confirmTitle: {
@@ -104,8 +103,7 @@ const styles = StyleSheet.create({
   },
   confirmBody: {
     ...Type.body,
-    color: Colors.ink,
-    opacity: 0.65,
+    color: Colors.inkSoft,
     lineHeight: 22,
   },
 
@@ -117,8 +115,7 @@ const styles = StyleSheet.create({
   },
   body: {
     ...Type.body,
-    color: Colors.ink,
-    opacity: 0.7,
+    color: Colors.inkSoft,
     marginBottom: Spacing.md,
     lineHeight: 22,
   },
@@ -128,7 +125,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   primaryBtn: {
-    backgroundColor: Colors.ink,
+    backgroundColor: Colors.accent,
     borderRadius: Radius.pill,
     paddingVertical: 11,
     paddingHorizontal: Spacing.lg,
@@ -136,19 +133,16 @@ const styles = StyleSheet.create({
   primaryBtnText: {
     ...Type.label,
     color: Colors.inverseInk,
-    fontFamily: 'Inter_700Bold',
   },
   ghostBtn: {
     borderRadius: Radius.pill,
     borderWidth: 1.5,
-    borderColor: Colors.ink,
+    borderColor: Colors.hairline,
     paddingVertical: 10,
     paddingHorizontal: Spacing.md,
-    opacity: 0.55,
   },
   ghostBtnText: {
     ...Type.label,
     color: Colors.ink,
-    fontFamily: 'Inter_600SemiBold',
   },
 });

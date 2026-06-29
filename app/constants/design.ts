@@ -1,49 +1,52 @@
-// Design tokens rebuilt from DESIGN.md (Starbucks system → Panchang identity).
-// Three surface levels: canvasWarm (screen bg) → canvas (card) → bandDark (feature band).
-// Universal tracking rule: -0.01em. Weight shift creates hierarchy, not size shift.
+// Design tokens — Urbanist + #FF660E orange accent.
+// Two surfaces: canvas (page #F5F5F5) and surface (card #FFFFFF).
+// Single accent: orange. No bento block palette.
 
 export const Colors = {
-  // ── Canvas hierarchy ────────────────────────────────────────────────────
-  canvasWarm:    '#f2f0eb',   // DESIGN.md "Neutral Warm" — all screen backgrounds
-  canvasCeramic: '#edebe9',   // DESIGN.md "Ceramic" — pressed states, zone separators
-  canvas:        '#ffffff',   // DESIGN.md "White" — card surface on warm canvas
-  bandDark:      '#1f1d3d',   // Feature band (Panchang equivalent of House Green)
-  blockNavy:     '#1f1d3d',   // Alias — BentoCard 'navy' color
+  // ── Page & card surfaces ────────────────────────────────────────────────
+  canvas:      '#F5F5F5',   // screen / page background
+  surface:     '#FFFFFF',   // elevated card surface
+  surfaceDim:  '#EFEFEF',   // pressed / skeleton state
+
+  // ── Feature band ────────────────────────────────────────────────────────
+  bandDark:    '#1A1A1A',   // dark hero surface (tithi card, sunrise/sunset)
+
+  // ── Accent ──────────────────────────────────────────────────────────────
+  accent:      '#FF660E',   // orange — CTAs, active tab, selected states
+  accentWash:  '#FFF0E8',   // light orange tint — vrat / sacred day cards
 
   // ── Ink ─────────────────────────────────────────────────────────────────
-  ink:             'rgba(0,0,0,0.87)',   // DESIGN.md "Text Black" — adapts to bg warmth
-  inkSoft:         'rgba(0,0,0,0.50)',   // DESIGN.md "Text Black Soft" — metadata, captions
-  inverseInk:      '#ffffff',
-  inverseInkSoft:  'rgba(255,255,255,0.65)', // Secondary text inside dark band surfaces
+  ink:             '#000000',
+  inkSoft:         '#A5A5A5',               // secondary / muted text
+  inkFaint:        'rgba(0,0,0,0.35)',      // ghost labels, placeholders
+  inverseInk:      '#FFFFFF',
+  inverseInkSoft:  'rgba(255,255,255,0.65)',
 
-  // ── Legacy aliases ───────────────────────────────────────────────────────
-  primary:       '#1a1a1a',
-  onPrimary:     '#ffffff',
-  inverseCanvas: '#1a1a1a',
+  // ── Hairlines ───────────────────────────────────────────────────────────
+  hairline:     '#EBEBEB',
+  hairlineDark: 'rgba(255,255,255,0.12)',
 
-  // ── Surfaces ─────────────────────────────────────────────────────────────
-  surfaceSoft:  '#f5f4f1',
-  hairline:     '#e7e7e7',   // DESIGN.md nutrition table hairline
-  hairlineSoft: '#ede9e3',   // Softer warm divider (use hairline for high-contrast needs)
-  hairlineDark: 'rgba(255,255,255,0.12)', // Dividers inside dark band
-
-  // ── Bento block palette (Panchang identity) ──────────────────────────────
-  blockLime:  '#dceeb1',
-  blockLilac: '#c5b0f4',
-  blockCream: '#f4ecd6',
-  blockMint:  '#c8e6cd',
-  blockPink:  '#efd4d4',
-  blockCoral: '#f3c9b6',
-
-  // ── Ceremony accent ──────────────────────────────────────────────────────
-  // DESIGN.md: Gold reserved for festival / vrat ceremony moments only.
-  accentGold:     '#cba258',
-  accentGoldWash: '#faf6ee',
-  accentMagenta:  '#ff3d8b',
-
-  // ── Semantic ─────────────────────────────────────────────────────────────
+  // ── Semantic ────────────────────────────────────────────────────────────
   semanticSuccess: '#1ea64a',
-  semanticError:   '#c82014',  // DESIGN.md "Red"
+  semanticError:   '#c82014',
+
+  // ── Backward-compat aliases ─────────────────────────────────────────────
+  canvasWarm:     '#F5F5F5',
+  canvasCeramic:  '#EFEFEF',
+  blockNavy:      '#1A1A1A',
+  surfaceSoft:    '#F8F8F8',
+  // Subtle category tints — used for vastu room cards and shloka chips
+  blockLilac:     '#EEECFF',  // soft periwinkle
+  blockCream:     '#FFF8EE',  // warm sand
+  blockMint:      '#EEFAF3',  // cool sage
+  blockCoral:     '#FFF0E8',  // matches accentWash
+  blockLime:      '#F4FAE8',  // soft lime
+  blockPink:      '#FFEFF5',  // soft rose
+  accentGold:     '#FF660E',
+  accentGoldWash: '#FFF0E8',
+  accentMagenta:  '#FF660E',
+  hairlineSoft:   '#EBEBEB',
+  inverseCanvas:  '#1A1A1A',
 } as const;
 
 export const Spacing = {
@@ -61,109 +64,107 @@ export const Radius = {
   xs:   2,
   sm:   4,
   md:   8,
-  // DESIGN.md §5 cards = 12px. Previous value was 20 — most visible single change.
-  lg:   12,
-  card: 12,
+  lg:   16,   // card radius — rounder than before
+  card: 16,
   xl:   24,
-  pill: 50,   // DESIGN.md: ALL buttons 50px full-pill, no exceptions
+  pill: 50,   // all buttons full-pill
   full: 9999,
 } as const;
 
-// Inter substitutes for SoDoSans (DESIGN.md §3 Note on Font Substitutes).
+// Urbanist — geometric sans-serif from Google Fonts.
+// Weights loaded: 400 Regular, 500 Medium, 600 SemiBold, 700 Bold.
 export const Type = {
-  // 54px editorial hero — tithi name, the screen's ONE BIG MOMENT.
+  // 52px editorial hero — tithi name, the ONE BIG MOMENT on screen.
   displayHero: {
-    fontFamily:    'Inter_700Bold',
-    fontSize:      54,
-    lineHeight:    58,
-    letterSpacing: -1.5,
-  },
-  displayXl: {
-    fontFamily:    'Inter_700Bold',
-    fontSize:      40,
-    lineHeight:    44,
+    fontFamily:    'Urbanist_700Bold',
+    fontSize:      52,
+    lineHeight:    56,
     letterSpacing: -1.0,
   },
-  displayLg: {
-    fontFamily:    'Inter_700Bold',
-    fontSize:      30,
-    lineHeight:    36,
+  displayXl: {
+    fontFamily:    'Urbanist_700Bold',
+    fontSize:      38,
+    lineHeight:    42,
     letterSpacing: -0.6,
   },
-  headline: {
-    fontFamily:    'Inter_600SemiBold',
-    fontSize:      22,
-    lineHeight:    28,
+  displayLg: {
+    fontFamily:    'Urbanist_700Bold',
+    fontSize:      28,
+    lineHeight:    34,
     letterSpacing: -0.3,
   },
-  subhead: {
-    fontFamily:    'Inter_400Regular',
-    fontSize:      18,
+  headline: {
+    fontFamily:    'Urbanist_600SemiBold',
+    fontSize:      20,
     lineHeight:    26,
     letterSpacing: -0.2,
   },
-  cardTitle: {
-    fontFamily:    'Inter_700Bold',
+  subhead: {
+    fontFamily:    'Urbanist_400Regular',
     fontSize:      17,
+    lineHeight:    25,
+    letterSpacing: 0,
+  },
+  cardTitle: {
+    fontFamily:    'Urbanist_600SemiBold',
+    fontSize:      16,
     lineHeight:    22,
     letterSpacing: -0.1,
   },
   bodyLg: {
-    fontFamily:    'Inter_400Regular',
+    fontFamily:    'Urbanist_400Regular',
     fontSize:      16,
     lineHeight:    26,
-    letterSpacing: -0.16,
+    letterSpacing: 0,
   },
   body: {
-    fontFamily:    'Inter_400Regular',
+    fontFamily:    'Urbanist_400Regular',
     fontSize:      14,
     lineHeight:    22,
-    letterSpacing: -0.14,
+    letterSpacing: 0,
   },
   bodySm: {
-    fontFamily:    'Inter_400Regular',
+    fontFamily:    'Urbanist_400Regular',
     fontSize:      13,
     lineHeight:    20,
-    letterSpacing: -0.13,
+    letterSpacing: 0,
   },
   label: {
-    fontFamily:    'Inter_600SemiBold',
-    fontSize:      13,
+    fontFamily:    'Urbanist_600SemiBold',
+    fontSize:      14,
     lineHeight:    18,
-    letterSpacing: -0.13,
+    letterSpacing: 0.1,
   },
-  // DESIGN.md "letterSpacingLooser: 0.15em" for uppercase section labels
+  // Uppercase section labels — wider tracking
   eyebrow: {
-    fontFamily:    'Inter_600SemiBold',
-    fontSize:      10,
+    fontFamily:    'Urbanist_600SemiBold',
+    fontSize:      11,
     lineHeight:    14,
-    letterSpacing: 1.5,
+    letterSpacing: 1.0,
     textTransform: 'uppercase' as const,
   },
   caption: {
-    fontFamily:    'Inter_500Medium',
+    fontFamily:    'Urbanist_500Medium',
     fontSize:      11,
     lineHeight:    14,
-    letterSpacing: 0.6,
+    letterSpacing: 0.4,
     textTransform: 'uppercase' as const,
   },
 } as const;
 
-// DESIGN.md §6: Whisper-soft layered shadows. RN supports one shadow per View.
+// Whisper-soft shadows — white cards on gray canvas need very subtle lift.
 export const Shadows = {
-  // Approximates: 0 0 0.5px rgba(0,0,0,0.14), 0 1px 1px rgba(0,0,0,0.24)
   card: {
     shadowColor:   '#000000',
     shadowOffset:  { width: 0, height: 1 },
-    shadowOpacity: 0.18,
-    shadowRadius:  2,
+    shadowOpacity: 0.08,
+    shadowRadius:  4,
     elevation:     2,
   },
-  // Approximates Starbucks nav triple-layer: 0.1 / 0.06 / 0.07
   sheet: {
     shadowColor:   '#000000',
     shadowOffset:  { width: 0, height: -4 },
-    shadowOpacity: 0.12,
+    shadowOpacity: 0.10,
     shadowRadius:  16,
     elevation:     16,
   },
