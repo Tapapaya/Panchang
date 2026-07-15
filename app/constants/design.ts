@@ -1,171 +1,165 @@
-// Design tokens — Urbanist + #FF660E orange accent.
-// Two surfaces: canvas (page #F5F5F5) and surface (card #FFFFFF).
-// Single accent: orange. No bento block palette.
+// Panchang Design System v3 — "Soft Data" light mode.
+// Reference: rounded fintech-statistics aesthetic (dribbble/sendz) translated to light.
+// Font: Manrope. Cards radius 24–28 on a muted gray canvas. Dark pill = active state.
+// A small saturated data palette (sky/indigo/green/coral/lime/amber) drives rings,
+// legend dots, and badges — never large surfaces.
 
 export const Colors = {
-  // ── Page & card surfaces ────────────────────────────────────────────────
-  canvas:      '#F5F5F5',   // screen / page background
-  surface:     '#FFFFFF',   // elevated card surface
-  surfaceDim:  '#EFEFEF',   // pressed / skeleton state
+  // ── Surfaces ─────────────────────────────────────────────────────────────
+  canvas:      '#F2F2F4',   // page background — muted cool gray
+  surface:     '#FFFFFF',   // card
+  surfaceSoft: '#F6F6F8',   // inset chip / input / segmented track
+  surfaceDim:  '#ECECEF',   // pressed state, skeleton
 
-  // ── Feature band ────────────────────────────────────────────────────────
-  bandDark:    '#1A1A1A',   // dark hero surface (tithi card, sunrise/sunset)
+  // ── Ink ──────────────────────────────────────────────────────────────────
+  ink:        '#17181A',    // primary text — near-black, not pure black
+  inkMute:    '#84858C',    // secondary text
+  inkFaint:   '#B9BAC2',    // placeholders, disabled
+  inverseInk: '#FFFFFF',    // text on dark pill / ink surfaces
 
-  // ── Accent ──────────────────────────────────────────────────────────────
-  accent:      '#FF660E',   // orange — CTAs, active tab, selected states
-  accentWash:  '#FFF0E8',   // light orange tint — vrat / sacred day cards
+  // ── Dark pill (active segmented state, hero chips) ───────────────────────
+  pill:       '#1E1F22',    // the dark rounded pill from the reference
 
-  // ── Ink ─────────────────────────────────────────────────────────────────
-  ink:             '#000000',
-  inkSoft:         '#A5A5A5',               // secondary / muted text
-  inkFaint:        'rgba(0,0,0,0.35)',      // ghost labels, placeholders
-  inverseInk:      '#FFFFFF',
-  inverseInkSoft:  'rgba(255,255,255,0.65)',
+  // ── Brand accent ─────────────────────────────────────────────────────────
+  accent:     '#F4590D',    // saffron — CTAs, active tab, sacred highlights
+  accentWash: '#FEEFE6',    // saffron tint for featured cards
 
-  // ── Hairlines ───────────────────────────────────────────────────────────
-  hairline:     '#EBEBEB',
-  hairlineDark: 'rgba(255,255,255,0.12)',
+  // ── Data palette (rings, legend dots, deity chips) ───────────────────────
+  dataSky:    '#7EC4F0',
+  dataIndigo: '#7D8CFB',
+  dataGreen:  '#63BE7E',
+  dataCoral:  '#FC7F6C',
+  dataLime:   '#D3EC5C',
+  dataAmber:  '#FFAE55',
+  dataGray:   '#A9AAB1',
 
-  // ── Semantic ────────────────────────────────────────────────────────────
-  semanticSuccess: '#1ea64a',
-  semanticError:   '#c82014',
+  // ── Washes for the data palette (chip/badge backgrounds) ─────────────────
+  washSky:    '#E9F5FD',
+  washIndigo: '#EDEFFE',
+  washGreen:  '#E9F7EE',
+  washCoral:  '#FEEEEB',
+  washLime:   '#F5FBDC',
+  washAmber:  '#FFF3E4',
 
-  // ── Backward-compat aliases ─────────────────────────────────────────────
-  canvasWarm:     '#F5F5F5',
-  canvasCeramic:  '#EFEFEF',
-  blockNavy:      '#1A1A1A',
-  surfaceSoft:    '#F8F8F8',
-  // Subtle category tints — used for vastu room cards and shloka chips
-  blockLilac:     '#EEECFF',  // soft periwinkle
-  blockCream:     '#FFF8EE',  // warm sand
-  blockMint:      '#EEFAF3',  // cool sage
-  blockCoral:     '#FFF0E8',  // matches accentWash
-  blockLime:      '#F4FAE8',  // soft lime
-  blockPink:      '#FFEFF5',  // soft rose
-  accentGold:     '#FF660E',
-  accentGoldWash: '#FFF0E8',
-  accentMagenta:  '#FF660E',
-  hairlineSoft:   '#EBEBEB',
-  inverseCanvas:  '#1A1A1A',
+  // ── Hairlines ────────────────────────────────────────────────────────────
+  hairline:   '#E8E8EC',
+
+  // ── Semantic ─────────────────────────────────────────────────────────────
+  success:    '#3BA55D',
+  error:      '#D9463E',
 } as const;
 
 export const Spacing = {
-  hair: 1,
-  xxs:  4,
-  xs:   8,
-  sm:   12,
-  md:   16,
-  lg:   24,
-  xl:   32,
-  xxl:  56,
+  xxs: 4,
+  xs:  8,
+  sm:  12,
+  md:  16,
+  lg:  24,
+  xl:  32,
+  xxl: 48,
 } as const;
 
 export const Radius = {
-  xs:   2,
-  sm:   4,
-  md:   8,
-  lg:   16,   // card radius — rounder than before
-  card: 16,
-  xl:   24,
-  pill: 50,   // all buttons full-pill
-  full: 9999,
+  sm:   10,
+  md:   16,
+  chip: 18,
+  card: 26,    // signature big-radius card from the reference
+  pill: 999,
 } as const;
 
-// Urbanist — geometric sans-serif from Google Fonts.
-// Weights loaded: 400 Regular, 500 Medium, 600 SemiBold, 700 Bold.
+// Manrope — geometric grotesque with softly rounded terminals.
+// Weights loaded: 400, 500, 600, 700, 800.
+// Devanagari text must NOT set fontFamily — the system font renders it.
 export const Type = {
-  // 52px editorial hero — tithi name, the ONE BIG MOMENT on screen.
-  displayHero: {
-    fontFamily:    'Urbanist_700Bold',
-    fontSize:      52,
-    lineHeight:    56,
-    letterSpacing: -1.0,
-  },
+  // Hero numerals / tithi name — the one big moment per screen
   displayXl: {
-    fontFamily:    'Urbanist_700Bold',
-    fontSize:      38,
-    lineHeight:    42,
-    letterSpacing: -0.6,
+    fontFamily: 'Manrope_800ExtraBold',
+    fontSize: 38,
+    lineHeight: 44,
+    letterSpacing: -0.8,
   },
-  displayLg: {
-    fontFamily:    'Urbanist_700Bold',
-    fontSize:      28,
-    lineHeight:    34,
+  display: {
+    fontFamily: 'Manrope_800ExtraBold',
+    fontSize: 30,
+    lineHeight: 36,
+    letterSpacing: -0.5,
+  },
+  // Screen title ("Statistics" in the reference)
+  title: {
+    fontFamily: 'Manrope_700Bold',
+    fontSize: 21,
+    lineHeight: 28,
     letterSpacing: -0.3,
   },
-  headline: {
-    fontFamily:    'Urbanist_600SemiBold',
-    fontSize:      20,
-    lineHeight:    26,
+  heading: {
+    fontFamily: 'Manrope_700Bold',
+    fontSize: 17,
+    lineHeight: 24,
     letterSpacing: -0.2,
   },
-  subhead: {
-    fontFamily:    'Urbanist_400Regular',
-    fontSize:      17,
-    lineHeight:    25,
-    letterSpacing: 0,
-  },
-  cardTitle: {
-    fontFamily:    'Urbanist_600SemiBold',
-    fontSize:      16,
-    lineHeight:    22,
-    letterSpacing: -0.1,
-  },
-  bodyLg: {
-    fontFamily:    'Urbanist_400Regular',
-    fontSize:      16,
-    lineHeight:    26,
-    letterSpacing: 0,
+  // Legend rows, list values ("Home 36%")
+  label: {
+    fontFamily: 'Manrope_700Bold',
+    fontSize: 14,
+    lineHeight: 20,
   },
   body: {
-    fontFamily:    'Urbanist_400Regular',
-    fontSize:      14,
-    lineHeight:    22,
-    letterSpacing: 0,
+    fontFamily: 'Manrope_500Medium',
+    fontSize: 15,
+    lineHeight: 23,
   },
   bodySm: {
-    fontFamily:    'Urbanist_400Regular',
-    fontSize:      13,
-    lineHeight:    20,
-    letterSpacing: 0,
+    fontFamily: 'Manrope_500Medium',
+    fontSize: 13,
+    lineHeight: 19,
   },
-  label: {
-    fontFamily:    'Urbanist_600SemiBold',
-    fontSize:      14,
-    lineHeight:    18,
-    letterSpacing: 0.1,
-  },
-  // Uppercase section labels — wider tracking
-  eyebrow: {
-    fontFamily:    'Urbanist_600SemiBold',
-    fontSize:      11,
-    lineHeight:    14,
-    letterSpacing: 1.0,
-    textTransform: 'uppercase' as const,
-  },
+  // Muted small labels ("Debit Card") — sentence case, never uppercase
   caption: {
-    fontFamily:    'Urbanist_500Medium',
-    fontSize:      11,
-    lineHeight:    14,
-    letterSpacing: 0.4,
-    textTransform: 'uppercase' as const,
+    fontFamily: 'Manrope_600SemiBold',
+    fontSize: 12,
+    lineHeight: 16,
+  },
+  captionSm: {
+    fontFamily: 'Manrope_600SemiBold',
+    fontSize: 11,
+    lineHeight: 14,
   },
 } as const;
 
-// Whisper-soft shadows — white cards on gray canvas need very subtle lift.
 export const Shadows = {
+  // Barely-there ambient shadow — the reference relies on contrast, not depth
   card: {
-    shadowColor:   '#000000',
-    shadowOffset:  { width: 0, height: 1 },
-    shadowOpacity: 0.08,
-    shadowRadius:  4,
-    elevation:     2,
-  },
-  sheet: {
-    shadowColor:   '#000000',
-    shadowOffset:  { width: 0, height: -4 },
-    shadowOpacity: 0.10,
-    shadowRadius:  16,
-    elevation:     16,
+    shadowColor: '#17181A',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.05,
+    shadowRadius: 14,
+    elevation: 2,
   },
 } as const;
+
+// Deity → data-palette assignment, used for legend dots and chips
+// across Stotras and Today screens. Keep stable — users learn the colors.
+export const DeityColors: Record<string, { dot: string; wash: string }> = {
+  Ganesha:  { dot: Colors.dataAmber,  wash: Colors.washAmber },
+  Shiva:    { dot: Colors.dataIndigo, wash: Colors.washIndigo },
+  Vishnu:   { dot: Colors.dataSky,    wash: Colors.washSky },
+  Krishna:  { dot: Colors.dataSky,    wash: Colors.washSky },
+  Rama:     { dot: Colors.dataSky,    wash: Colors.washSky },
+  Devi:     { dot: Colors.dataCoral,  wash: Colors.washCoral },
+  Lakshmi:  { dot: Colors.dataLime,   wash: Colors.washLime },
+  Hanuman:  { dot: Colors.dataCoral,  wash: Colors.washCoral },
+  Saraswati:{ dot: Colors.dataGreen,  wash: Colors.washGreen },
+  Universal:{ dot: Colors.dataGray,   wash: Colors.surfaceSoft },
+};
+
+export function deityColor(deity: string): { dot: string; wash: string } {
+  // Match on the first word so "Durga / Devi", "Krishna", "Vishnu / Universal" resolve
+  for (const key of Object.keys(DeityColors)) {
+    if (deity.toLowerCase().includes(key.toLowerCase())) return DeityColors[key];
+  }
+  if (/durga|kali|shakti|amba|gauri/i.test(deity)) return DeityColors.Devi;
+  if (/surya|chandra|navagraha|ganga|tulasi|skanda|murugan|dattatreya|swami|guru|bhairav/i.test(deity)) {
+    return { dot: Colors.dataGreen, wash: Colors.washGreen };
+  }
+  return DeityColors.Universal;
+}

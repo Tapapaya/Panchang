@@ -1,120 +1,98 @@
-# Panchang Design System v2
+# Panchang Design System v3 — "Soft Data"
 
-**Font:** Urbanist (Google Fonts)  
-**Accent:** #FF660E (orange)  
-**Background:** #F5F5F5 (light gray canvas) + #FFFFFF (white cards)  
+**Reference:** rounded fintech-statistics aesthetic (soft cards, chunky rings, legend dots, pill controls) translated to **light mode**.
+**Font:** Manrope (Google Fonts) · **Canvas:** `#F2F2F4` · **Cards:** `#FFFFFF` radius 26 · **Brand accent:** saffron `#F4590D`
 
 ---
 
 ## §1 — Philosophy
 
-Clean, modern consumer-app aesthetic. White cards on a light gray page. One orange accent, used sparingly — only for CTAs, active states, and sacred-day highlights. No colored bento blocks. Hierarchy through typography weight, not surface hue.
+One muted gray page, very round white cards, near-black ink. Color lives only in
+small data elements — ring segments, legend dots, chips, one pill badge — never on
+large surfaces. Active states use a **dark pill** (`#1E1F22`, white text), exactly like
+the reference's Month/Year segmented control. Numbers are the heroes: extra-bold,
+tight tracking. Icons are thin outline (Ionicons `-outline` variants) only.
 
 ---
 
-## §2 — Color Palette
+## §2 — Color
 
 | Token | Hex | Usage |
-|-------|-----|-------|
-| `Colors.canvas` | `#F5F5F5` | Screen / page background |
-| `Colors.canvasWarm` | `#F5F5F5` | Alias for canvas — tab root backgrounds |
-| `Colors.surface` | `#FFFFFF` | Card, input, sheet surfaces |
-| `Colors.surfaceSoft` | `#F8F8F8` | Subtle inset surfaces (search bars, locked rows) |
-| `Colors.surfaceDim` | `#EFEFEF` | Pressed / skeleton state |
-| `Colors.bandDark` | `#1A1A1A` | Hero feature band (tithi, sunrise) |
-| `Colors.accent` | `#FF660E` | Primary CTA, active tab, selected |
-| `Colors.accentWash` | `#FFF0E8` | Vrat / sacred day card tint |
-| `Colors.ink` | `#000000` | Primary text |
-| `Colors.inkSoft` | `#A5A5A5` | Secondary / muted text, tab inactive |
-| `Colors.inkFaint` | `rgba(0,0,0,0.35)` | Placeholder, ghost labels |
-| `Colors.inverseInk` | `#FFFFFF` | Text on dark surfaces |
-| `Colors.inverseInkSoft` | `rgba(255,255,255,0.65)` | Secondary text on dark |
-| `Colors.hairline` | `#EBEBEB` | Dividers, borders |
-| `Colors.hairlineSoft` | `#EBEBEB` | Alias for hairline — page header borders |
-| `Colors.hairlineDark` | `rgba(255,255,255,0.12)` | Dividers on dark (bandDark) surfaces |
-| `Colors.semanticSuccess` | `#1ea64a` | Success states, confirmations |
-| `Colors.semanticError` | `#c82014` | Destructive actions, error states |
+|---|---|---|
+| `canvas` | `#F2F2F4` | Page background |
+| `surface` | `#FFFFFF` | Cards |
+| `surfaceSoft` | `#F6F6F8` | Inset chips, inputs, segmented track |
+| `surfaceDim` | `#ECECEF` | Pressed, skeleton |
+| `ink` | `#17181A` | Primary text |
+| `inkMute` | `#84858C` | Secondary text |
+| `inkFaint` | `#B9BAC2` | Placeholder, disabled |
+| `pill` | `#1E1F22` | Active segmented pill, dark chips |
+| `accent` | `#F4590D` | Saffron — CTA, active tab, sacred highlight |
+| `accentWash` | `#FEEFE6` | Featured card tint |
+| `hairline` | `#E8E8EC` | Dividers |
+| `success` / `error` | `#3BA55D` / `#D9463E` | Semantic |
 
-**Deprecated / do not use:** `blockLilac`, `blockCream`, `blockMint`, `blockCoral`, `blockLime`, `blockPink` — removed from Vastu tab, not for new UI. `accentGold`, `accentGoldWash`, `accentMagenta`, `canvasCeramic`, `inverseCanvas` — aliases pointing to canonical tokens above.
+**Data palette** (rings, dots, deity chips): `dataSky #7EC4F0`, `dataIndigo #7D8CFB`,
+`dataGreen #63BE7E`, `dataCoral #FC7F6C`, `dataLime #D3EC5C`, `dataAmber #FFAE55`,
+`dataGray #A9AAB1`. Each has a `wash*` background tint. The lime pill badge
+(`dataLime` bg + ink text) marks the single most positive fact on a screen —
+use at most once per screen.
 
-**Rule:** Orange touches only 3 things per screen — the active tab indicator, the primary CTA button, and at most one content highlight. Everything else is black, white, or gray.
-
----
-
-## §3 — Typography
-
-Font family: **Urbanist** (geometric sans-serif). Loaded weights: 400 Regular, 500 Medium, 600 SemiBold, 700 Bold.
-
-| Token | Family | Size | Line-height | Weight |
-|-------|--------|------|-------------|--------|
-| `displayHero` | Bold | 52 | 56 | 700 |
-| `displayXl` | Bold | 38 | 42 | 700 |
-| `displayLg` | Bold | 28 | 34 | 700 |
-| `headline` | SemiBold | 20 | 26 | 600 |
-| `subhead` | Regular | 17 | 25 | 400 |
-| `cardTitle` | SemiBold | 16 | 22 | 600 |
-| `bodyLg` | Regular | 16 | 26 | 400 |
-| `body` | Regular | 14 | 22 | 400 |
-| `bodySm` | Regular | 13 | 20 | 400 |
-| `label` | SemiBold | 14 | 18 | 600 |
-| `eyebrow` | SemiBold | 11 | 14 | 600 | UPPERCASE |
-| `caption` | Medium | 11 | 14 | 500 | UPPERCASE |
-
-**Rule:** Use weight shifts (400 → 600 → 700) to create hierarchy, not size shifts.
-
-**Devanagari note:** Sanskrit glyphs MUST NOT use `fontFamily`. The system font handles Devanagari on both iOS and Android — Urbanist only covers Latin.
+**Deity color map** (stable, users learn it): Ganesha=amber, Shiva=indigo,
+Vishnu/Krishna/Rama=sky, Devi/Durga/Kali/Hanuman=coral, Lakshmi=lime,
+Saraswati=green, Universal=gray. Helper: `deityColor(deity)`.
 
 ---
 
-## §4 — Card System
+## §3 — Typography (Manrope)
 
-BentoCard has 4 variants:
+| Token | Weight | Size/Line | Usage |
+|---|---|---|---|
+| `displayXl` | 800 | 38/44, −0.8 | Tithi hero, big numerals |
+| `display` | 800 | 30/36, −0.5 | Ring center %, section heroes |
+| `title` | 700 | 21/28 | Screen title (centered header) |
+| `heading` | 700 | 17/24 | Card titles |
+| `label` | 700 | 14/20 | Legend rows, values, buttons |
+| `body` | 500 | 15/23 | Prose |
+| `bodySm` | 500 | 13/19 | Secondary prose |
+| `caption` | 600 | 12/16 | Muted labels — sentence case, **never uppercase** |
+| `captionSm` | 600 | 11/14 | Tiny meta |
 
-| Variant | Background | Text | Usage |
-|---------|-----------|------|-------|
-| `white` (default) | `#FFFFFF` | `ink` | All general content cards |
-| `dark` | `#1A1A1A` | `inverseInk` | Hero feature band, Tithi, Sunrise/Sunset |
-| `featured` | `#FFF0E8` | `ink` | Vrat / sacred day — the one card with color |
-| `soft` | `#F5F5F5` | `ink` | Do Today / Avoid — flush on canvas |
-
-Cards are `borderRadius: 16`, padding `24px`, shadow `Shadows.card`.
-
----
-
-## §5 — Spacing & Radius
-
-**Scale:** 4 / 8 / 12 / 16 / 24 / 32 / 56 (4pt base)
-
-**Radius:** 16px cards (rounder than v1), 50px pill for all buttons.
+**Devanagari rule:** Sanskrit text must NOT set `fontFamily` — the system font
+renders Devanagari on iOS and Android; Manrope covers Latin only. Sanskrit sits at
+19–21px with relaxed 1.6 line-height.
 
 ---
 
-## §6 — Buttons
+## §4 — Shape & Depth
 
-All buttons are full-pill (`borderRadius: 50`).
+- Card radius **26**, chips **18**, controls full-pill **999**.
+- Card padding 20. Cards sit flush on canvas with a barely-there shadow
+  (`opacity 0.05, radius 14`) — contrast does the work, not depth.
+- Screen header: back/menu icons at edges, `title` centered (reference layout).
 
-| Variant | Background | Text | Usage |
-|---------|-----------|------|-------|
-| Primary | `#FF660E` | `#FFFFFF` | Continue, Yes/Allow, Save |
-| Ghost | transparent + `#EBEBEB` border | `#000000` | Skip, Not now |
-| Destructive | `#c82014` | `#FFFFFF` | Sign out, Delete |
+## §5 — Components
 
-Press animation: `Animated.spring` scale 0.95 → 1.0.
+- **SegmentedPill** — `surfaceSoft` track, active option gets the dark `pill` with
+  white text. Used for Month/Week toggles, deity filters.
+- **ProgressRing** — SVG donut, stroke 12, round caps, segments separated by gaps
+  (reference donut). Center holds a `display` value.
+- **LegendRow** — 10px colored dot + `label` name + `label` value right-aligned.
+- **Chip** — wash background + dot + caption text.
+- **Badge (lime)** — `dataLime` pill, ink `label` text.
+- **ListRow** — icon in a `surfaceSoft` squircle (radius 16), title + sub, chevron.
+- **Tab bar** — white, no border, height 62, **icon-only** thin outline icons;
+  active = ink color + 4px dot below; inactive = `inkFaint`.
+- **Sheets** — full-width bottom sheets, radius 26 top corners, drag handle.
 
----
+## §6 — Motion
 
-## §7 — Bottom Tab Bar
+- Press feedback: opacity 0.85 + scale 0.98, 120ms.
+- Sheets: 260ms ease-out slide.
+- No looping/pulsing animations except skeleton shimmer while loading.
 
-- Background: `Colors.surface` (white)
-- Border top: `Colors.hairline` 1px
-- Active: `Colors.accent` icon + label; icon wrapped in orange pill
-- Inactive: `Colors.inkSoft` (#A5A5A5)
-- Label: Urbanist_600SemiBold 10px
+## §7 — Voice
 
----
-
-## §8 — AI Slop Guard
-
-Never: gradient backgrounds, 3-column icon grids, generic placeholder copy, decorative separators every section, drop shadows on text, colored text outside `ink` / `inkSoft` / `inverseInk` / `accent`.
-
-Orange is load-bearing. More than 3 orange elements per screen means you're using it wrong.
+Sentence case everywhere (no ALL-CAPS labels). Numbers first, words second.
+English UI with Sanskrit terms romanized inline; Devanagari reserved for
+shloka text itself.

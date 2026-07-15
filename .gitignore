@@ -21,3 +21,9 @@ Thumbs.db
 
 # Jest cache
 app/.jest-cache/
+
+# Logs
+*.log
+
+# External tooling (separate repo)
+figma-console-mcp/
