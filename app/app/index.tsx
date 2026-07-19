@@ -9,15 +9,13 @@ export default function Index() {
 
   useEffect(() => {
     if (isLoading) return;
-
-    if (!onboardingDone) {
+    // Onboarding sets name + city together; missing city means an incomplete setup.
+    if (!onboardingDone || !city) {
       router.replace('/onboarding');
-    } else if (!city) {
-      router.replace('/city-picker');
     } else {
       router.replace('/(tabs)');
     }
   }, [isLoading, onboardingDone, city]);
 
-  return <View style={{ flex: 1 }} />;
+  return <View style={{ flex: 1, backgroundColor: '#F2F2F4' }} />;
 }

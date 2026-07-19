@@ -1,6 +1,6 @@
 # Panchang
 
-A Hindu calendar app for the diaspora — daily Panchang, Stotras, Rashifal, and Vastu guidance in your pocket.
+A Hindu calendar app for the diaspora — daily Panchang, a complete stotra library, moon-sign transits, and Vastu guidance. Everything is computed on-device; nothing is guessed.
 
 ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20Android-black)
 ![Expo](https://img.shields.io/badge/expo-SDK%2054-blue)
@@ -11,210 +11,96 @@ A Hindu calendar app for the diaspora — daily Panchang, Stotras, Rashifal, and
 
 ## What is this?
 
-Panchang is a React Native / Expo app built for Hindu families living outside India who want a simple, beautiful daily spiritual companion.
+Panchang (Sanskrit **पञ्चाङ्ग**, "five limbs") is the traditional Hindu almanac built from five elements — **Tithi** (lunar day), **Vara** (weekday), **Nakshatra** (lunar mansion), **Yoga** (Sun–Moon combination), and **Karana** (half-tithi). This app computes all of them astronomically for your city and timezone, and pairs them with a fully sourced devotional library.
 
-The name comes from the Sanskrit **पञ्चाङ्ग** — literally "five limbs" — the five elements of the traditional Hindu almanac that govern auspicious timing:
-
-| Anga | Meaning |
-|------|---------|
-| **Tithi** | Lunar day |
-| **Vara** | Day of the week |
-| **Nakshatra** | Lunar mansion |
-| **Yoga** | Auspicious combination |
-| **Karana** | Half-day period |
+**Design principle: no fabricated content.** Every number in the app is derived from real astronomical computation (`panchang-ts`), and every "personalised" feature (like the Chandrashtama alert) is a deterministic, traditional rule — not generated horoscope filler.
 
 ---
 
 ## Features
 
-### Today Tab
-- Live Panchang for your city: Tithi, Nakshatra, Yoga, Vara, Karana
-- Sunrise / Sunset times calculated for your location
-- Today's festival, Ekadashi, or Vrat — with a guide on how to observe it
-- Weekly Rashifal (horoscope) for your Moon Sign
-- "Do Today" and "Avoid Today" guidance based on the current Tithi
+### Today
+- **Tithi hero** — lunar day, paksha, masa, and Vikram Samvat year for your city
+- **Daylight ring** — live % of daylight elapsed, sunrise/sunset/moonrise, and the computed **Brahma muhurta** window
+- **Panchang elements** — Nakshatra (with pada and end time), Yoga, weekday deity, **Rahu Kalam** — each with a tap-through explainer of what it actually is
+- **Vrat & festival detection** — engine-detected festivals plus tithi-derived observances, with an observance guide
+- **Moon today** — the Moon's current rashi computed from nakshatra + pada, with a **Chandrashtama alert** when the Moon transits the 8th sign from your janma rashi (a real, fully computable Vedic rule)
+- **Upcoming** — the next Ekadashis, Purnima, Amavasya, Sankashti and Pradosh dates plus named festivals, found by scanning the panchang engine forward 21 days (cached daily)
+- **Daily shloka** and tithi-based do/avoid guidance
 
-### Stotras Tab
-- 25+ complete Sanskrit prayers and stotras — fully end-to-end, not just opening verses
-- Includes: Hanuman Chalisa (all 40 chaupais), Nirvana Shatakam, Lingashtakam, Bilvashtakam, Rudrashtakam, Mahalakshmi Ashtakam, Ganesh Pancharatnam, Saraswati Ashtakam, Tulasi Ashtakam, Shri Suktam (all 16 riks), Purusha Suktam, Saundarya Lahari, Shiv Mahimna Stotra, Madhura Ashtakam, Govinda Ashtakam, Aigiri Nandini, Kaal Bhairav Ashtakam, Kali Ashtakam, Argala Stotram, Bajrang Baan, and more
-- IAST transliteration + English meaning for every verse
-- Searchable by deity, occasion, or keyword
+### Stotras
+- **45+ compositions, verse by verse** — every verse carries its own Sanskrit, IAST transliteration, and English meaning, interleaved in a dedicated reader
+- **About every composition** — origin, composer, and what it is chanted for; honest labeling when only key verses of a long work are included (e.g. "4 of 41 verses")
+- Complete texts include the **Hanuman Chalisa** (all 40 chaupais + dohas), Rudrashtakam, Lingashtakam, Bilvashtakam, Nirvana Shatakam, Shiva Panchakshara, Ganesh Pancharatnam, Madhurashtakam, Govindashtakam, Mahalakshmi Ashtakam, Gurvashtakam, Navagraha Stotra, Sankat Mochan Hanumanashtak, and many more
+- **Search + deity filter chips + favorites** (persisted locally)
 
-### Rashifal Tab
-- Moon sign (Rashi) based weekly horoscope
-- Set your Rashi in Profile; updated weekly using ISO 8601 week numbers
+### Vastu
+- **Interactive Vastu Purusha Mandala** — a 3×3 direction grid (N/Kubera, NE/Ishana, SE/Agni, SW/Nirriti…) with per-zone deity, element, and recommended use
+- **Room guides** — entrance, kitchen, bedroom, puja room, colours, and quick-reference essentials; each tip expands to show the Sanskrit term, the traditional reasoning, and its source text
 
-### Vastu Tab
-- Room-by-room Vastu guidance
-- Direction recommendations for furniture, deities, and energy flow
-
-### Profile Tab
-- Pick your city from a curated list across India, UK, US, Canada, and Australia
-- Set your Moon Sign (Rashi) for personalized Rashifal
-- Birth details storage (name, date, time, place of birth)
-- Push notifications for festival reminders (linked to your city)
+### Profile
+- Name, moon sign (drives the Chandrashtama alert), and city (drives all timings)
+- 21 cities across India, USA, UK, Canada, Australia, Singapore, UAE — with IANA timezones and DST handled by the engine
+- Push notification registration per city
 
 ---
 
-## Tech Stack
+## Design system — "Soft Data" (v3)
+
+Light-mode translation of a rounded fintech-statistics aesthetic: muted gray canvas (`#F2F2F4`), white cards with radius 26, near-black ink, **Manrope** type with extra-bold numerals, thin outline icons, icon-only tab bar. Color appears only in small data elements — ring segments, legend dots, deity chips, and one lime badge per screen. Active states use a dark pill (`#1E1F22`). Full spec in [`app/DESIGN.md`](app/DESIGN.md), tokens in [`design/tokens.json`](design/tokens.json).
+
+Deity color map (stable across the app): Ganesha=amber · Shiva=indigo · Vishnu/Krishna/Rama=sky · Devi/Hanuman=coral · Lakshmi=lime · Saraswati=green.
+
+---
+
+## Tech stack
 
 | Layer | Choice |
-|-------|--------|
-| Framework | [Expo SDK 54](https://expo.dev) + [expo-router](https://expo.github.io/router) v6 |
-| Language | TypeScript 5.9 |
-| UI | React Native 0.81 + custom design system (`Urbanist` font, `#FF660E` accent) |
-| State | React Context (`AppContext`) + AsyncStorage |
-| Calendar engine | [`panchang-ts`](https://www.npmjs.com/package/panchang-ts) — Tithi, Nakshatra, Yoga, Karana, sunrise/sunset |
-| Backend | Supabase (auth + future sync) |
-| Notifications | `expo-notifications` — city-aware push registration |
-| Testing | Jest 29 + `jest-expo` + `@testing-library/react-native` |
-| Navigation | File-based routing via `expo-router` |
+|---|---|
+| Framework | Expo SDK 54 + expo-router v6 (file-based routing) |
+| Language | TypeScript 5.9, strict |
+| Calendar engine | [`panchang-ts`](https://www.npmjs.com/package/panchang-ts) — tithi, nakshatra, yoga, sunrise/sunset, Rahu Kalam, festivals |
+| New logic | `moonRashi.ts` (nakshatra+pada → rashi, Chandrashtama), `upcoming.ts` (21-day observance scanner), `sunWindows.ts` (Brahma muhurta, daylight progress) |
+| UI | Custom kit (`Card`, `SegmentedPill`, `ProgressRing` on react-native-svg, `Chip`, `LegendRow`, `Sheet`) |
+| State | React Context + AsyncStorage (local-first; no accounts) |
+| Notifications | expo-notifications, city-scoped registration |
+| Testing | Jest 29 + jest-expo — 42 tests incl. full 108-pada moon-rashi mapping |
 
----
-
-## Project Structure
+## Project structure
 
 ```
 app/
-├── app/
-│   ├── _layout.tsx          # Root layout — AppProvider + PushRegistrar
-│   ├── (tabs)/
-│   │   ├── index.tsx        # Today tab
-│   │   ├── stotras.tsx      # Stotras tab (25+ complete prayers)
-│   │   ├── vastu.tsx        # Vastu tab
-│   │   └── profile.tsx      # Profile + settings
-│   └── onboarding.tsx
-├── components/
-│   ├── BentoCard.tsx        # 4-variant card system (white/dark/featured/soft)
-│   ├── BottomSheet.tsx
-│   ├── NotificationPromptCard.tsx
-│   └── sheets/
-│       ├── ExplainerSheet.tsx
-│       └── VratGuideSheet.tsx
-├── constants/
-│   └── design.ts            # Full design token system
-├── screens/
-│   ├── TodayScreen.tsx
-│   ├── CityPickerScreen.tsx
-│   └── OnboardingScreen.tsx
+├── app/                      # expo-router routes
+│   ├── _layout.tsx           # Root: fonts, AppProvider, PushRegistrar
+│   ├── index.tsx             # Routing gate (onboarding vs tabs)
+│   ├── onboarding.tsx        # 3-step: name → city → rashi
+│   └── (tabs)/               # Today · Stotras · Vastu · Profile
+├── components/ui/            # Kit.tsx, ProgressRing.tsx, Sheet.tsx
+├── constants/design.ts       # Soft Data tokens (colors, type, radius, deity map)
 ├── src/
-│   ├── constants/
-│   │   └── rashis.ts        # Canonical 12-rashi definitions (single source of truth)
-│   ├── context/
-│   │   └── AppContext.tsx   # City, profile, rashi state
-│   ├── lib/
-│   │   ├── weekUtils.ts     # ISO 8601 week number (for Rashifal JSON key)
-│   │   └── __tests__/
-│   │       └── weekUtils.test.ts
-│   └── types/
-│       ├── content.ts       # City list and content types
-│       └── profile.ts       # Profile and storage key types
-└── content/
-    ├── shlokas/             # Shloka JSON (future use)
-    ├── sankalp_templates/   # Vrat sankalp templates
-    ├── festivals/           # Festival content
-    └── rules/               # Tithi/vara rules
+│   ├── data/stotras/         # Verse-structured library (6 files by deity)
+│   ├── hooks/                # useTodayData, useUpcoming
+│   ├── lib/                  # PanchangService, moonRashi, upcoming, sunWindows, rules
+│   └── types/                # City list, profile
+└── content/                  # Day-content JSON (daily shloka, vrat guides, rules)
 ```
 
----
-
-## Design System
-
-The app uses a custom token-based design system documented in [`DESIGN.md`](app/DESIGN.md).
-
-**Philosophy:** Clean, modern consumer-app aesthetic. White cards on light gray. One orange accent (`#FF660E`), used sparingly — only for CTAs, active states, and sacred-day highlights. Hierarchy through weight, not color.
-
-**Typography:** [Urbanist](https://fonts.google.com/specimen/Urbanist) (Google Fonts). Sanskrit/Devanagari text uses the system font — Urbanist only covers Latin.
-
-**Card variants:** `white` (default), `dark` (hero band), `featured` (Vrat/sacred day, orange wash), `soft` (flush on canvas).
-
----
-
-## Getting Started
-
-### Prerequisites
-- Node.js 18+
-- Expo CLI (`npm install -g expo-cli`)
-- iOS Simulator (Mac) or Android emulator, or the [Expo Go](https://expo.dev/client) app
-
-### Install
+## Getting started
 
 ```bash
-git clone https://github.com/yourusername/panchang.git
-cd panchang/app
-npm install
+git clone https://github.com/tapanmujumdar04-blip/Panchang.git
+cd Panchang/app
+npm install --legacy-peer-deps
+npm start            # Expo dev server (i = iOS, a = Android)
+npx jest             # run the test suite
+npx tsc --noEmit     # typecheck
 ```
 
-### Run
+## What was deliberately removed
 
-```bash
-npm start          # Expo dev server
-npm run ios        # iOS simulator
-npm run android    # Android emulator
-npm run web        # Web browser
-```
-
-### Test
-
-```bash
-cd app
-npx jest
-```
-
----
-
-## Stotras Coverage
-
-Every prayer in the Stotras tab is complete — full Sanskrit text, IAST transliteration, and English meaning. No stub entries.
-
-| Stotra | Verses | Deity |
-|--------|--------|-------|
-| Hanuman Chalisa | 2 dohas + 40 chaupais + closing doha | Hanuman |
-| Nirvana Shatakam | 6 | Shiva (Advaita) |
-| Lingashtakam | 8 | Shiva |
-| Bilvashtakam | 8 | Shiva |
-| Rudrashtakam | 8 | Shiva |
-| Shiv Mahimna Stotra | Selected from 41 | Shiva |
-| Mahalakshmi Ashtakam | 8 | Lakshmi |
-| Shri Suktam | 16 riks | Lakshmi |
-| Ganesh Pancharatnam | 5 | Ganesha |
-| Saraswati Ashtakam | 8 | Saraswati |
-| Madhura Ashtakam | 8 | Krishna |
-| Govinda Ashtakam | 8 | Krishna |
-| Aigiri Nandini | 6 | Durga |
-| Jai Ambe Gauri (Durga Aarti) | 12 | Durga |
-| Argala Stotram | Key verses | Durga |
-| Kaal Bhairav Ashtakam | 8 | Bhairava |
-| Kali Ashtakam | 8 | Kali |
-| Sankat Mochan Hanumanashtak | 8 | Hanuman |
-| Bajrang Baan | Key chaupais | Hanuman |
-| Vishnu Aarti (Om Jai Jagdish) | 8 | Vishnu |
-| Saundarya Lahari | Selected from 100 | Devi |
-| Gurvashtakam | 8 | Guru |
-| Tulasi Ashtakam | 8 | Tulasi |
-| Purusha Suktam | 10 of 16 | Universal |
-| + Gayatri, Navagraha, Ganga, and more | — | — |
-
----
-
-## Roadmap
-
-See [`TODOS.md`](app/TODOS.md) for the current task list. Key items:
-
-- [ ] **Rashifal content** — Write `content/rashifal/{rashi}.json` for all 12 rashis (weeks 25–27 minimum = 36 entries) and replace the current placeholder generator
-- [ ] **Editable birth details** — Allow inline editing of birth date/time/place in Profile without requiring a full sign-out
-
----
-
-## Contributing
-
-This project is for personal and family use. PRs welcome for:
-- Correcting Sanskrit or IAST errors
-- Adding missing stotras or festivals
-- City timezone data
-- Rashifal content (JSON format documented in `DESIGN.md`)
-
----
+- **Weekly "rashifal" horoscope** — the previous version generated pseudo-random horoscope text from a seed. Replaced with the honest, computable **Moon transit + Chandrashtama** feature.
+- **Birth date/time/place collection** — the app collected them but computed nothing from them. Gone until there's a real feature behind them.
+- **Email field, dead `App.tsx` entry, mock panchang fallback** — the Today tab now shows a loading skeleton rather than fake data.
 
 ## License
 

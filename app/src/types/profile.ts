@@ -1,11 +1,7 @@
 export interface UserProfile {
   name: string;
-  email: string;
-  gender?: 'male' | 'female' | 'other';
-  birthDate?: string;   // "DD/MM/YYYY"
-  birthTime?: string;   // "HH:MM"
-  birthPlace?: string;
-  rashi?: string;       // moon sign slug, e.g. "mesha"
+  /** Moon sign slug, e.g. "mesha" — drives the Chandrashtama alert. */
+  rashi?: string;
 }
 
 export const PROFILE_KEY = 'panchang:profile';

@@ -1,23 +1,29 @@
 # TODOS
 
-## TODO-1: Rashifal content (content/rashifal/)
+Both v1 TODOs were resolved by the v2 rebuild — not by building them, but by removing
+the features that demanded them:
 
-**What:** Write `content/rashifal/{rashi}.json` for all 12 rashis (weeks 25, 26, 27 minimum = 36 entries) and replace `getRashiData()` in `app/(tabs)/index.tsx` with a real JSON loader using `getISOWeek()` as the key.
+- ~~TODO-1: Rashifal JSON content~~ — the pseudo-random weekly rashifal was removed
+  entirely. Replaced with the computable **Moon transit + Chandrashtama** feature
+  (`src/lib/moonRashi.ts`), which needs no editorial content.
+- ~~TODO-2: Editable birth details~~ — birth date/time/place collection was removed;
+  nothing computed from them. Name is now edited inline in Profile.
 
-**Why:** The Rashifal card currently shows algorithmically generated placeholder text (seed-based pseudo-random). Users see content that was never written by a human.
+## Open items
 
-**Context:** JSON schema is in DESIGN.md (rashifal section). `getRashiData()` and the static `headlines`/`bodies` arrays in `app/(tabs)/index.tsx:28–52` are temporary scaffolding to be replaced. The `getISOWeek()` utility in `src/lib/weekUtils.ts` is already the correct key function. Design doc calls for 52 weeks × 12 rashis = 624 entries at full coverage; ship current week + 2 ahead (36 entries) at v1.
+### TODO-3: Vrat guide depth
+**What:** Expand `content/days/*.json` coverage so more tithi keys (Chaturthi, Pradosh,
+Purnima, Amavasya variants per masa) have real dos/donts and vrat guides instead of the
+regular-day fallback.
+**Why:** The Today tab's vrat sheet currently shows generic observance basics when the
+day-content JSON has no entry.
 
-**Depends on:** Nothing. Content can be authored independently.
+### TODO-4: Notification scheduling
+**What:** Schedule local notifications from the upcoming-events scanner (e.g. "Ekadashi
+tomorrow") instead of relying only on server push.
+**Context:** `useUpcoming` already computes the events and caches them daily; wiring
+`expo-notifications` scheduleNotificationAsync to the top event is straightforward.
 
----
-
-## TODO-2: Editable birth details in Profile
-
-**What:** Add inline editing for birth date, time, and place in the Profile tab (or a dedicated edit screen), so users don't have to sign out to correct a typo.
-
-**Why:** The only way to change birth details is "Sign out & reset", which also clears rashi, city, and all saved preferences. This is too destructive for a simple correction.
-
-**Context:** Birth details are read-only RowItems at `app/(tabs)/profile.tsx:298–313`. The field inputs already exist in `screens/OnboardingScreen.tsx`. Profile data key: `PROFILE_KEY` (AsyncStorage). Pattern: expand the BIRTH DETAILS section into an accordion (same pattern as Rashi and City) with `TextInput` fields pre-filled from `profile`.
-
-**Depends on:** Nothing.
+### TODO-5: Karana display
+**What:** panchang-ts exposes karanas; the Today tab shows 4 of the 5 panchang limbs.
+Add Karana to the Panchang card for completeness.
